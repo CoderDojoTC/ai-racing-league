@@ -1,5 +1,5 @@
 # ai-racing-league
-Shared code for the AI Racing League
+This repository for a the AI Racing League - A fun way to learn AI using the Raspberry Pi and Python powered RC-cars.  Content includes mission, documentation, concept cards and sample labs.
 
 ## Summary
 The AI Racing League is a project to create fun RC-car based ways to learn the concepts around Artificial Intelligence (AI).  Our curriculum is inspired by the DonkeyCar which is a Raspberry Pi-based system built on a remote-control car chasis.  
