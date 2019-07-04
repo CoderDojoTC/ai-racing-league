@@ -15,6 +15,12 @@ Students will walk into the AI Racing League and see a stack of cards.  They wil
 
 [Concept Cards in Google Docks](https://docs.google.com/presentation/d/1VKzVaDYbqKQ5ykSnNVem5_K7A-I5YtGPhbS73h1SrPI/edit?usp=sharing)
 
+# Licensing
+Like all CoderDojo created content, you are free to use this content in K-12 noncomercial educational settings for teaching without paying license fees.  We also encourge our community to create variations and help us enlarge the cirriculum.  We appreciate attribution.
+
+Details of the license terms are here:
+[Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0)
+
 # References
 Here are some sites that are of interest:
 
