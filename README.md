@@ -24,6 +24,6 @@ Details of the license terms are here:
 # References
 Here are some sites that are of interest:
 
-* [DonkeyCar](http://donkeycar.com)
+* [DonkeyCar web site](http://donkeycar.com)
 * [AI Racing League Meetup Site](https://www.meetup.com/Artificial-Intelligent-Racing-League/)
-
+* [CoderDojo St. Paul](https://wiki.coderdojosaintpaul.org/wiki/Main_Page)
