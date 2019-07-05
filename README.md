@@ -32,8 +32,14 @@ Many people that are building DonkeyCars use a standard Mac or PC laptop.  These
 
 One solution is to acquire some robust GPUs that students can use to quickly train complex models - typically in 15 to 20 minutes.  This hardware needs to be easy to use - for example we need to do folder-based drag and drops and press a single button to begin training.
 
-# Raspberry Pi 3, 4, the Nvidia Nano, the Nvdia DX2, and the Intel Mobius Neural Stick
-The base DonkeyCar today uses the Raspberry Pi 3+ which has a list price of $35.  This hardware is just barly able to process images in real-time in ideal lighting conditions and a well defined track.  The Nvidia Nano on the other hand has 128 CUDA core processors and has more than enough power to drive around a track in real time with varied lighting conditions.
+# Hardware Options: Raspberry Pi 3, 4, the Nvidia Nano, the Nvdia DX2, and the Intel Mobius Neural Stick
+The base DonkeyCar today uses the Raspberry Pi 3+ which has a list price of $35.  This hardware is just barly able to process images in real-time in ideal lighting conditions and a well defined track.  There are now many other options that will allow us better performance.  The question is what option should we standardize on?
+
+The Nvidia Nano on the other hand has 128 CUDA core processors and has more than enough power to drive around a track in real time with varied lighting conditions.  The list price is $99 and there seems to be widespread support for building cars using the Nano using both the traditional TensorFlow and the increasingly popular PyTorch.
+
+The Intel Mobius stick is a low-power way to do image recognition using a USB dongle to do the image processing.  It would cost $75 in additon to the Raspberry Pi.  However, the software built around Intel's OpenVino libraries are complex to use and there is little on-line help.
+
+There are also college-level autonomous driving teams that use the more expensive Nvidia DX2 hardware.
 
 # References
 Here are some sites that are of interest:
