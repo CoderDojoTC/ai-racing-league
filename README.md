@@ -25,4 +25,5 @@ Details of the license terms are here:
 Here are some sites that are of interest:
 
 [DonkeyCar](http://donkeycar.com)
+[AI Racing League Meetup Site](https://www.meetup.com/Artificial-Intelligent-Racing-League/)
 
