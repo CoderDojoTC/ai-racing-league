@@ -4,6 +4,9 @@ This repository for a the AI Racing League - A fun way to learn AI using the Ras
 ## Summary
 The AI Racing League is a project to create fun RC-car based ways to learn the concepts around Artificial Intelligence (AI).  Our curriculum is inspired by the DonkeyCar which is a Raspberry Pi-based system built on a remote-control car chasis.  
 
+## Mission
+Our mission is to create and deliver educational materials that will make fun AI training accessible to everyone. We place a special focus on students from disadvantaged communities including women and minorities.  We  work as a sub-project of the CodeSavvy not-for-profit organization and we will adhere to their guildlines for quality and security of our students.
+
 ## Concept Cards
 Our cirruculim is based around building a series of concept cards that adhere to the "one concept per card" rule.  Each card is a 5.5in X 11in laminated card with questions or challenges on the front and anwers on the back.  Concept cards have three difficulty levels with different colored borders.
 
@@ -47,3 +50,9 @@ Here are some sites that are of interest:
 * [DonkeyCar web site](http://donkeycar.com)
 * [AI Racing League Meetup Site](https://www.meetup.com/Artificial-Intelligent-Racing-League/)
 * [CoderDojo St. Paul](https://wiki.coderdojosaintpaul.org/wiki/Main_Page)
+
+Jetson Nano References
+[Donkey Car Nano Setup Page](https://docs.donkeycar.com/guide/robot_sbc/setup_jetson_nano/)
+[Joseph Bastulli PyTorch Nano](https://github.com/bastulli/AutoCarJetsonNano)
+[Nvidia Jetson Developer Kit](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)
+[Nvidia Jetson Nano Kaya Video](https://www.youtube.com/watch?v=X3qGDYie1_I)
