@@ -56,3 +56,4 @@ Jetson Nano References
 [Joseph Bastulli PyTorch Nano](https://github.com/bastulli/AutoCarJetsonNano)
 [Nvidia Jetson Developer Kit](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)
 [Nvidia Jetson Nano Kaya Video](https://www.youtube.com/watch?v=X3qGDYie1_I)
+[Twin Cities AI Racing League](https://www.meetup.com/Artificial-Intelligent-Racing-League/)
