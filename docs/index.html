@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Racing League</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'AI Racing League',
+      
+      //search components
+      search: 'auto',
+      noData: 'No Results!',
+      depth: 2,
+      namespace: 'website-1',
+      hideOtherSidebarContent: false,
+      placeholder: {
+        '/': 'Type to search'
+      },
+      search : [
+      '/',            // => /README.md
+      ],
+      
+      loadNavbar: true, //add custom nav bar on top
+      logo: 'assets/images/AIRL_logo2.png', //add github logo
+      repo: 'https://github.com/CoderDojoTC/ai-racing-league' //add github cat
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+</body>
+</html>
