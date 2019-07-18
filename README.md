@@ -8,7 +8,7 @@ The AI Racing League is a project to create fun ways to learn the concepts aroun
 Our mission is to create and deliver educational materials that will make fun AI training accessible to everyone. We place a special focus on students from disadvantaged communities including women and minorities.  We  work as a sub-project of the CodeSavvy not-for-profit organization and we adhere to their guildlines for quality and security of our students.  This means that all our volunteers have background checks and we limit the student to mentor ratios to no more than three students per mentor.  We are committed to equal opportunity mentoring.  We strive to recruit, train and retain the best mentors we can find.
 
 ## Concept Cards
-Our cirruculim is based around building a series of concept cards that adhere to the "one concept per card" rule.  Each card is a 5.5in X 11in laminated card with questions or challenges on the front and anwers on the back.  Concept cards have three difficulty levels with different colored borders.
+Our cirruculim is based around building a series of concept cards that adhere to the "one concept per card" rule.  Each card is a 4.25in X 11in laminated card with questions or challenges on the front and anwers on the back.  Concept cards have three difficulty levels with different colored borders.
 
 1. Green - Beginner
 2. Blue - Intermediate
