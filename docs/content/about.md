@@ -10,3 +10,9 @@ Visit [https://coderdojo.com](https://coderdojo.com)
 ## Code Savvy
 Code Savvy strives to make kids and teens more code-savvy through creative educational programs and services. We incubate and support community-based programs that bring technology and know-how to local kids and educators, all the while championing gender and ethnic diversity. Code Savvy is dedicated to ensuring the next generation of computer science professionals represents the billions of users of tomorrow’s innovative technologies.
 Visit [https://codesavvy.org](https://codesavvy.org)
+
+# Licensing
+Like all CoderDojo created content, you are free to use this content in K-12 noncomercial educational settings for teaching without paying license fees.  We also encourge our community to create variations and help us enlarge the cirriculum.  We appreciate attribution.
+
+Details of the license terms are here:
+[Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0)
