@@ -16,7 +16,7 @@ Our cirruculim is based around building a series of concept cards that adhere to
 
 Students will walk into the AI Racing League and see a stack of cards.  They will pick up one card or a set of cards and work on these.  When they are done they return the cards and select another set of cards.
 
-[Concept Cards in Google Docks](https://docs.google.com/presentation/d/1VKzVaDYbqKQ5ykSnNVem5_K7A-I5YtGPhbS73h1SrPI/edit?usp=sharing)
+[Concept Cards in Google Docs](https://docs.google.com/presentation/d/1VKzVaDYbqKQ5ykSnNVem5_K7A-I5YtGPhbS73h1SrPI/edit?usp=sharing)
 
 # Licensing
 Like all CoderDojo created content, you are free to use this content in K-12 noncomercial educational settings for teaching without paying license fees.  We also encourge our community to create variations and help us enlarge the cirriculum.  We appreciate attribution.
