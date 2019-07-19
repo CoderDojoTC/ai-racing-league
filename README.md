@@ -1,4 +1,7 @@
-# ai-racing-league
+# Visit AI Racing League Site 
+https://coderdojotc.github.io/ai-racing-league/#/README
+
+## About
 This repository for a the AI Racing League - A fun way to learn AI using the Raspberry Pi and Python powered RC-cars.  Content includes mission, documentation, concept cards and sample labs.
 
 Our documentation site is [here](https://coderdojotc.github.io/ai-racing-league)
