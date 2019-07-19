@@ -1,6 +1,6 @@
 <p align="center"> <img alt="logical" width="400px" src="/docs/assets/images/AIRL_logo.png" /> </p>
 
-# Visit the Official Site 
+# Visit The Official AI:RL Site 
 https://coderdojotc.github.io/ai-racing-league/#/README
 
 ## About
