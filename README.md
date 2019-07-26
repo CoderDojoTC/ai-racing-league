@@ -42,7 +42,12 @@ Many people that are building DonkeyCars use a standard Mac or PC laptop.  These
 
 One solution is to acquire some robust GPUs that students can use to quickly train complex models - typically in 15 to 20 minutes.  This hardware needs to be easy to use - for example we need to do folder-based drag and drops and press a single button to begin training.
 
+## Challenge #3: Is Crowdsourcing Concept Cards Really Going to Work?
+We have this vision of allowing a large community of volunteers to help build and maintain the concept cards needed to build a DonkeyCar or similar devices.  How realistic is this?  Can we really build an coherent and integrated cirriculum that our users will trust?  Can we use the GitHub Issues to identify and assign concept card development?  Will our our authors take time to test their concept cards in a real setting?  Can we build a concept graph to contain the concepts and then automate the printing of the concept cards using a reproducable build tool?
+
 # Hardware Options: Raspberry Pi 3, 4, the Nvidia Nano, the Nvdia DX2, and the Intel Mobius Neural Stick
+Update: We have decided to go with the $99 Nvidia Nanos for our first event.  This was based on the fact that we could not source the Pi 4s and we feel that the Nanos will be useful for at least a year.
+
 The base DonkeyCar today uses the Raspberry Pi 3+ which has a list price of $35.  This hardware is just barly able to process images in real-time in ideal lighting conditions and a well defined track.  There are now many other options that will allow us better performance.  The question is what option should we standardize on?
 
 The Nvidia Nano on the other hand has 128 CUDA core processors and has more than enough power to drive around a track in real time with varied lighting conditions.  The list price is $99 and there seems to be widespread support for building cars using the Nano using both the traditional TensorFlow and the increasingly popular PyTorch.
