@@ -7,7 +7,7 @@ Our cirruculim is based around building a series of concept cards that adhere to
 
 Students will walk into the AI Racing League and see a stack of cards.  They will pick up one card or a set of cards and work on these.  When they are done they return the cards and select another set of cards.
 
-[Concept Cards in Google Docks](https://docs.google.com/presentation/d/1VKzVaDYbqKQ5ykSnNVem5_K7A-I5YtGPhbS73h1SrPI/edit?usp=sharing)
+[Concept Cards in Google Docs](https://docs.google.com/presentation/d/1VKzVaDYbqKQ5ykSnNVem5_K7A-I5YtGPhbS73h1SrPI/edit?usp=sharing)
 
 # Engineering Challenges
 To develop a world class ciriculum, we need to partner with senior engineers and ciriculum developers.  Here are some of the challenges we need to address.
