@@ -1,4 +1,7 @@
 # Green Concepts
+
+------------------------------------
+
 ## Donkey Car
 ### Activity
 Go to the donkey car station and look at the sample Donkey Car. Ask a mentor to show you the parts.
@@ -82,6 +85,8 @@ They call it a "Donkey Car" because, like a Donkey, it is functional but not ver
 </p>
 </details>
 
+----------------------------------------------------
+
 ## Machine Learning
 ### Activity
 Go to the machine learning station and watch the demos. Ask about the difference between if-else statements and machine learning.
@@ -125,6 +130,8 @@ Some applications of machine learning are:
 
 </p>
 </details>
+
+------------------------------------
 
 # Blue Concepts
 
