@@ -4,7 +4,7 @@
 https://coderdojotc.github.io/ai-racing-league/#/README
 
 ## About
-This repository for a the AI Racing League - A fun way to learn AI using the Raspberry Pi (or Nvidia Nano), Python, DeepLearning and RC-cars.  This github repo and content includes our mission, documentation, concept cards and sample labs.
+This repository is for a the *AI Racing League* - A fun way to learn AI using the Raspberry Pi (or Nvidia Nano), Python, DeepLearning and RC-cars.  This github repo and content includes our mission, documentation, concept cards and sample labs.
 
 Our documentation site is [here](https://coderdojotc.github.io/ai-racing-league).  Note that you must edit the docs branch to make updates to the documentation.
 
