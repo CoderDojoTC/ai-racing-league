@@ -22,5 +22,4 @@ Jetson Nano References
 * [Joseph Bastulli PyTorch Nano](https://github.com/bastulli/AutoCarJetsonNano)
 * [Nvidia Jetson Developer Kit](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)
 * [Nvidia Jetson Nano Kaya Video](https://www.youtube.com/watch?v=X3qGDYie1_I)
-
-
+* [Explaining Computers Video Jetson Nano: Vision Recognition Neural Network Demo](https://www.youtube.com/watch?v=k5pXXmTkPNM) This video is based on the "Hello AI World" demo provided by NVIDIA for their Jetson boards, and employs a Raspberry Pi V2 camera.
