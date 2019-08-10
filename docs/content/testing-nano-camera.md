@@ -1,6 +1,6 @@
-* Testing the Camera on the Nvidia Nano
+# Testing the Camera on the Nvidia Nano
 
-You can test the camera on the Nvidia Nano by doing the following:
+In this lab we will test the ability to stream a video image from the camera directly to the dispay using the CSI-Camera software on github.  We can test the camera on the Nvidia Nano by doing the following:
 
 ```
 cd
@@ -10,6 +10,8 @@ git clond https://github.com/JetsonHacksNano/CSI-Camera
 cd CSI-Camera
 ```
 You can now create a UNIX shell script of the following:
+
+Create the following file using either the nano editor or the vi command.
 
 test-camera.sh
 ```
