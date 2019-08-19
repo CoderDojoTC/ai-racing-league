@@ -22,6 +22,7 @@ Jetson Nano References
 * [Joseph Bastulli PyTorch Nano](https://github.com/bastulli/AutoCarJetsonNano)
 * [Nvidia Jetson Developer Kit](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)
 * [Nvidia Jetson Nano Kaya Video](https://www.youtube.com/watch?v=X3qGDYie1_I)
+* [Jetson + Gaming Controller](https://medium.com/@dmccreary/a-joystick-for-your-donkeycar-d4266c0b91f4)
 
 **Nvidia Nano Parts List**
 
