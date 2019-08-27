@@ -10,9 +10,7 @@ Here are some sites that are of interest:
 **Hardware Options:** Raspberry Pi 3, 4, the Nvidia Nano, the Nvdia DX2, and the Intel Mobius Neural Stick
 The base DonkeyCar today uses the Raspberry Pi 3+ which has a list price of $35.  This hardware is just barly able to process images in real-time.  Small changes in lighting will throw the car off the track.  The new Raspberry Pi 4 with 4GB RAM is a new option.
 
-The Nvidia Nano on the other hand has 128 CUDA core processors and has more than enough power to drive around a track in real time with varied lighting conditions.
-
-The Intel Mobius stick is a low-power way to do image recognition using a USB dongle to do the image processing.  It would cost $75 in additon to the Raspberry Pi.  There are many complex steps to get the Mobius stick working so we will not be using it in our courses.
+The Nvidia Nano on the other hand has 128 CUDA core processors and has more than enough power to drive around a track in real time with varied lighting conditions.  This is the hardware we have used for our first generation cars in the AI Racing League.
 
 There are also college-level autonomous driving teams that use the more expensive Nvidia DX2 hardware.
 
