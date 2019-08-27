@@ -8,11 +8,11 @@ Here are some sites that are of interest:
 
 # Hardware
 **Hardware Options:** Raspberry Pi 3, 4, the Nvidia Nano, the Nvdia DX2, and the Intel Mobius Neural Stick
-The base DonkeyCar today uses the Raspberry Pi 3+ which has a list price of $35.  This hardware is just barly able to process images in real-time in ide
+The base DonkeyCar today uses the Raspberry Pi 3+ which has a list price of $35.  This hardware is just barly able to process images in real-time.  Small changes in lighting will throw the car off the track.  The new Raspberry Pi 4 with 4GB RAM is a new option.
 
-The Nvidia Nano on the other hand has 128 CUDA core processors and has more than enough power to drive around a track in real time with varied lighting
+The Nvidia Nano on the other hand has 128 CUDA core processors and has more than enough power to drive around a track in real time with varied lighting conditions.
 
-The Intel Mobius stick is a low-power way to do image recognition using a USB dongle to do the image processing.  It would cost $75 in additon to the Ra
+The Intel Mobius stick is a low-power way to do image recognition using a USB dongle to do the image processing.  It would cost $75 in additon to the Raspberry Pi.  There are many complex steps to get the Mobius stick working so we will not be using it in our courses.
 
 There are also college-level autonomous driving teams that use the more expensive Nvidia DX2 hardware.
 
@@ -22,7 +22,7 @@ Jetson Nano References
 * [Joseph Bastulli PyTorch Nano](https://github.com/bastulli/AutoCarJetsonNano)
 * [Nvidia Jetson Developer Kit](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)
 * [Nvidia Jetson Nano Kaya Video](https://www.youtube.com/watch?v=X3qGDYie1_I)
-* [Jetson + Gaming Controller](https://medium.com/@dmccreary/a-joystick-for-your-donkeycar-d4266c0b91f4)
+* [Adding a Joystick to your DonkeyCar - From Dan McCreary's Blog](https://medium.com/@dmccreary/a-joystick-for-your-donkeycar-d4266c0b91f4)
 
 **Nvidia Nano Parts List**
 
