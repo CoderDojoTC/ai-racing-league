@@ -8,11 +8,9 @@ Here are some sites that are of interest:
 
 # Hardware
 **Hardware Options:** Raspberry Pi 3, 4, the Nvidia Nano, the Nvdia DX2, and the Intel Mobius Neural Stick
-The base DonkeyCar today uses the Raspberry Pi 3+ which has a list price of $35.  This hardware is just barly able to process images in real-time in ide
+The base DonkeyCar today uses the Raspberry Pi 3+ which has a list price of $35.  This hardware is just barly able to process images in real-time.  Small changes in lighting will throw the car off the track.  The new Raspberry Pi 4 with 4GB RAM is a new option.
 
-The Nvidia Nano on the other hand has 128 CUDA core processors and has more than enough power to drive around a track in real time with varied lighting
-
-The Intel Mobius stick is a low-power way to do image recognition using a USB dongle to do the image processing.  It would cost $75 in additon to the Ra
+The Nvidia Nano on the other hand has 128 CUDA core processors and has more than enough power to drive around a track in real time with varied lighting conditions.  This is the hardware we have used for our first generation cars in the AI Racing League.
 
 There are also college-level autonomous driving teams that use the more expensive Nvidia DX2 hardware.
 
@@ -22,6 +20,7 @@ Jetson Nano References
 * [Joseph Bastulli PyTorch Nano](https://github.com/bastulli/AutoCarJetsonNano)
 * [Nvidia Jetson Developer Kit](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)
 * [Nvidia Jetson Nano Kaya Video](https://www.youtube.com/watch?v=X3qGDYie1_I)
+* [Adding a Joystick to your DonkeyCar - From Dan McCreary's Blog](https://medium.com/@dmccreary/a-joystick-for-your-donkeycar-d4266c0b91f4)
 
 **Nvidia Nano Parts List**
 
@@ -37,3 +36,4 @@ Jetson Nano References
 | RC Car                            | 1/16 2.4Ghz Exceed RC Magnet Electric Powered RTR Off Road Truck Stripe Blue NEW                                                                                                           | $119       | https://www.ebay.com/itm/1-16-2-4Ghz-Exceed-RC-Magnet-Electric-Powered-RTR-Off-Road-Truck-Stripe-Blue-NEW/223337258165 | E-Bay| 
 Wifi USB Dongle | N150 USB wireless WiFi network Adapter for PC with SoftAP Mode - Nano Size, Compatible with Linux Kernal 2.6.18~4.4.3 (TL-WN725N) | $7 | https://www.amazon.com/TP-Link-TL-WN725N-wireless-network-Adapter/dp/B008IFXQFU/ |  I purchased one at Microcenter and it worked out-of-the-box on the Nano.  The Ubuntu drivers are pre-loaded!                                                                                                                       |                                                                              |
 | Servo Module                      | HiLetgo 2pcs PCA9685 16 Channel 12-Bit PWM Servo Motor Driver IIC Module for Arduino Robot                                                                                                 | $10 for 2  | https://www.amazon.com/gp/product/B07BRS249H/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1                          | Note the quantity is 2                                                       |
+| Replacement Battery  | 7.2V 1100mAh 6x 2/3A Rechargeable Ni-MH RC Battery Pack w/Small Tamiya Connector 10cmX3cmX1.5cm | $9.88 + $2.39 Shipping| https://www.ebay.com/i/183877810537 | Takes several weeks to ship from China.  We are looking for a local supplier.
