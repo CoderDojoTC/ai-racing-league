@@ -13,4 +13,9 @@
 1. The Chrome browser and the Terminal are on the dock
 1. The Chome bookmark bar is enabled (go to the Chrome Settings)
 1. The latest version of OpenCV (cv2) is installed, compiled and tested
+1. Jetson hacks
+1. Decent python editor
+1. Jupyter notebook support (arm version)
+1. Download copies of notebooks to card
+1. Swap file setup (at least 6 gig)
 
