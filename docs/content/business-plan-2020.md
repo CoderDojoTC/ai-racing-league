@@ -22,14 +22,15 @@ and initial set of approximatly 50 mentors that are familair with the use of the
 ## Status as of January 2020
 
 ## Inventory of Assets
-.1 2 GPU Servers
-.1 10 DonkeyCars
-.1 AI Racing League Web Site
-.1 AI Racing League Concept Cards
-.1 AI Racing League Concept Dependancy Graph
-.1 Documented best practices (Lessons learned, SD image inventory etc.)
-.1 Miscellenous training materials
-.1 Post on social media
+1. 2 GPU Servers
+1. 10 DonkeyCars
+1. AI Racing League Web Site
+1. AI Racing League Concept Cards
+1. AI Racing League Concept Dependancy Graph
+1. Documented best practices (Lessons learned, SD image inventory etc.)
+1. Miscellenous training material
+1. Marketing materials including testimonials
+1. Post on social media
 
 ## Goals for 2020
 
