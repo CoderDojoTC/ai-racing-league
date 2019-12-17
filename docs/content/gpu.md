@@ -1,12 +1,15 @@
 # GPU
 
 # Design Goals
-We wanted to create a system that had fast training times but was portable so that we can easily carry it in a car and ship
-it to remote events.  Here are our design objectives.
+We wanted to create a local training system that had fast training times but was portable so that we can easily carry it in a car and ship
+it to remote events.  We can't assume any connectivity to the Internet for our events since some of them might
+be held in parking lots with no network access.  Here are our design objectives.
 ## Fast Training Times
 We want students to be able to drive around a track 20 times (10 times clockwise and 10 times counterclockwise) and
 generate a reasonable sized data set of 20 frames per second and 224X224 images.  We want to train with this
 data set in under five minutes.  This means that we want to use a GPU card that has about 2000 CUDA cores.
+An example of this is the Nvidia GTX graphic cards.  [The RTZ 2080](https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080)
+
 ## Small and Lightweight
 We originally were "gifted" a somewhat old GPU server used in a data center for training deep learning models.  Although
 the sever was "free", it was over 70 pounds and had far more capability for RAM and power then we needed at events.
