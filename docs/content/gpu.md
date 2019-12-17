@@ -19,7 +19,12 @@ parts to a minimum.
 ## Easy to ship to remote sites
 We had to be able to put the unit is a remote shipping case.
 ## Visibility
-We wanted students to be able to look into the case and see the parts.
+We wanted students to be able to look into the case and see the parts.  There is
+a trend to also purchase RGB LED versions of components which we thought we could
+program to change from RED to Green during the training process as the model
+converges.  We have not found a good API for the parts so a simple $5 LED strip
+on a Arduino Nano might be a better idea.  See the [Moving Rainbow](https://github.com/dmccreary/moving-rainbow) project for
+sample designs.  We create these at the IoT hackthons each year.
 
 # Sample Parts List
 
@@ -36,3 +41,8 @@ We wanted students to be able to look into the case and see the parts.
 | GPU Card | NVIDIA GeForce RTX 2080 Ti 11 GB Founders Edition Video Card | $1199.99 | Link | 4000 CUDA cores makes for fast training
 | Case | Lian Li TU150 Mini ITX Desktop Case | 	$109.99 | Link | We love the handle on this small case and the glass side panel.
 | Power Supply | Corsair SF 600 W 80+ Gold Certified Fully Modular SFX Power Supply | $114.99 | Link | Is 600W really needed?
+
+# Assembly
+There are several good videos on YouTube that show how to assemble custom systems.  You can also use a search
+engine to find videos for each of the parts.  The Liquid coolers can be tricky to install correctly if you
+don't have experience.  We also recommend reading the user manauals for each of the parts.  They are usually on line.
