@@ -19,3 +19,6 @@ Static IP Address: ______________________
 Optional Accessories
 1. Keyboard
 1. External Monitor
+
+Nvidia Nano Serial Number: __________________________
+Nvidia Nano Purchase Date: December 12, 2019
