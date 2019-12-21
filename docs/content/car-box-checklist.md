@@ -4,7 +4,7 @@ Car Name: _____________________________<br/><br/>
 Mac Address: ____________________________<br/><br/>
 Static IP Address: ______________________
 
-1. RC Car with the following components
+1. [ ] RC Car with the following components
    1. Nvidia Nano
    1. Pi Camera Module V2 with 3D printed chassis
    1. 128GB micro SD card (inserted in Nvidia Nano) (2)
