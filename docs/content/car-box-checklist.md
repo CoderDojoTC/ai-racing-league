@@ -1,7 +1,7 @@
 # AI Racing Leage Car Box Checklist
 
-Car Name: ___________________________
-Mac Address: ____________________________
+Car Name: ___________________________<br/>
+Mac Address: ____________________________<br/>
 Static IP Address: ______________________
 
 1. RC Car with
