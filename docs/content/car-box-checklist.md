@@ -1,7 +1,7 @@
 # AI Racing Leage Car Box Checklist
 
-Car Name: ___________________________<br/>
-Mac Address: ____________________________<br/>
+Car Name: _____________________________<br/><br/>
+Mac Address: ____________________________<br/><br/>
 Static IP Address: ______________________
 
 1. RC Car with
@@ -20,5 +20,5 @@ Optional Accessories
 1. Keyboard
 1. External Monitor
 
-Nvidia Nano Serial Number: __________________________
+Nvidia Nano Serial Number: __________________________<br/><br/>
 Nvidia Nano Purchase Date: December 12, 2019
