@@ -1,5 +1,5 @@
 # Welcome to the AI Racing League
-*Promoting* *equity* *and* *innovation* *in* *AI* *education.*
+*Promoting* *equity* *and* *innovation* *in* *AI* *education.*</br>
 The AI Racing League is a fun way to learn AI using small computers (Raspberry Pi and Nvidia Nano), computer vision, Python, machine learning, and RC-cars. Our curriculum is inspired by the DonkeyCar and the CoderDojo mentoring system.
 
 ## Mission
