@@ -1,8 +1,12 @@
 # Demos
 
-## Nvidia Nano Demo 1
+Although our students love hands-on learning with our DonkeyCars, there are other aspects of Artificial Intellice we like discuss in our classes.  Here some demos we use in our classrooms.
 
-## Nvidia Nano Demo 2
+## The Teachable Machine by Google
+This demo works with almost any PC that has a built-in video camera.  You give it a set of images or pictures, or sounds and you build a model that predicts what a new images our sounds might be.  This is called a "classification" model.
+[Teachable Machine](https://teachablemachine.withgoogle.com/)
+
+Much of our classroom work is centered around the hot topic of Deep Learning.  But AI is much more than just Deep Learning.  Here are a few other areas to consider.  (Taken from the book The Master Algorithm)
 
 ## 5 Camps of Machine Learning Demos
 ### Connectionists (Neural Networks)
