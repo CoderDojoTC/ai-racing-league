@@ -45,8 +45,8 @@ sample designs.  We create these at the IoT hackthons each year.
 | RAM |  Corsair Vengeance RGB Pro 32 GB (2 x 16 GB) DDR4-3200 Memory | $162.99 | Link | Notes
 | Storage |  	Gigabyte AORUS NVMe Gen4 1 TB M.2-2280 NVME Solid State Drive | $209.99 | Link | Notes
 | Cooling |  be quiet! Dark Rock Pro 4, BK022, 250W TDP | $89.90 | https://www.amazon.com/dp/B07BY6F8D9/ref=cm_sw_r_cp_api_i_PYp-DbFCY51CH | We have also used a liquid cooler but we were worried about it freezing in cold
-| GPU Card | NVIDIA GeForce RTX 2080 Ti 11 GB Founders Edition Video Card | $1199.99 | https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/ | 4000 CUDA cores makes for fast training
-| GPU Card | NVIDIA GeForce RTX 2070 Ti 8 GB Founders Edition Video Card | $499.99 | https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2070-super/ | $500 price is a lower cost alternative
+| High End GPU Card | NVIDIA GeForce RTX 2080 Ti 11 GB Founders Edition Video Card | $1199.99 | https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/ | 4000 CUDA cores makes for fast training
+| Cost Effrective GPU Card | NVIDIA GeForce RTX 2070 Ti 8 GB Founders Edition Video Card | $499.99 | https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2070-super/ | $500 price is a lower cost alternative
 | Case | Lian Li TU150 Mini ITX Desktop Case | 	$109.99 | Link | We love the handle on this small case and the glass side panel.
 | Power Supply | Corsair SF 600 W 80+ Gold Certified Fully Modular SFX Power Supply | $114.99 | Link | Is 600W really needed?
 
