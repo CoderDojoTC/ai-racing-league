@@ -34,3 +34,6 @@ As students walk in, give them a tablet to register.  It will also ask them basi
 It will then ask them how long they will be there.  It will then suggest a set of activities
 and some concepts to master.  The graph is a dependacy graph of all the concepts we teach
 at the event.  Also suggest a probability they will have fun at the event.
+
+## Single Source Publishing for Concept Cards
+Our cards need to be authored in MarkDown but we want to disply on the web, in PPT and with PDF.  To do this we want to adopt a single-source publishing pipeline.
