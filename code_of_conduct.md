@@ -335,4 +335,4 @@ Community Impact Guidelines were inspired by [Mozilla's code of conduct enforcem
 For answers to common questions about this code of conduct, see the FAQ at
 https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations.
 
-Please report any code of conduct issues to [Dan McCreary](dan.mccreary@gmail.com).  If you have issues with Dan's conduct please report them to [Jean Weiss](jean@codesavvy.org)
+Please report any code of conduct issues to [Dan McCreary](mailto:dan.mccreary@gmail.com).  If you have issues with Dan's conduct please report them to [Jean Weiss](mailto:jean@codesavvy.org)
