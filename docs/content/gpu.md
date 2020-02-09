@@ -54,3 +54,11 @@ sample designs.  We create these at the IoT hackthons each year.
 There are several good videos on YouTube that show how to assemble custom systems.  You can also use a search
 engine to find videos for each of the parts.  The Liquid coolers can be tricky to install correctly if you
 don't have experience.  We also recommend reading the user manauals for each of the parts.  They are usually on line.
+
+# Drivers
+We used the UNIX command line to install the drivers
+
+A guide to do this is here:
+[Installation of Nvidia Drivers on Ubuntu 18](https://www.linuxbabe.com/ubuntu/install-nvidia-driver-ubuntu-18-04)
+
+
