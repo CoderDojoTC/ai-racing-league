@@ -2,7 +2,7 @@
 This folder contains three items
 
 1. A zip file with 12 sample images for discussion (without their JSON pairs)
-2. A zip file of a reference data tub - which has about 2,600 images and JSON files.  It is about19 megabytes.
+2. A zip file of a reference data tub - which has about 2,600 120X160 images and JSON files.  It is about19 megabytes.  We use this to demonstrate our Jupyter Notebooks.
 3. A sample model file in h5 format - it is about 12M
 
 You can use these files to test inference the model file on any laptop.  No GPU is needed!
