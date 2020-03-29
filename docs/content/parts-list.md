@@ -1,5 +1,7 @@
-**DonkeyCar Nvidia Nano Parts List**
+# DonkeyCar Nvidia Nano Parts List**
 We have looked at many variations of parts and decided to go with the Nvidia Nano, a TP-Link WiFi dongle and the Logitech F710 Joystick.  Here are our recomended parts.
+
+We are also looking into getting the wide-angle (160 degree) cameras but we have not tested these enough.
 
 
 | Part Name                         | Description                                                                                                                                                                                | Price      | Link                                                                                                                   | Note                                                                         |
