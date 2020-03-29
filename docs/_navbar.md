@@ -5,4 +5,6 @@
 * [AI Demos](content/demo.md)
 * [About](content/about.md)
 * [Parts List](content/parts-list.md)
+* [GPU](content/gpu.md)
 * [Curriculum](content/curriculum.md)
+* [Hackathon](content/hackathon.md)
