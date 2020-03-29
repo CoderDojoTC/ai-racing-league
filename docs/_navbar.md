@@ -2,6 +2,7 @@
 * [Home](README.md)
 * [Resources](content/resources.md)
 * [Education](content/education.md)
-* [Demos](content/demo.md)
+* [AI Demos](content/demo.md)
 * [About](content/about.md)
+* [Parts List](content/parts-list.md)
 * [Curriculum](content/curriculum.md)
