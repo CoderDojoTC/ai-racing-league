@@ -8,7 +8,7 @@ nav:
     - Contacts: contacts.md
   - Curriculum:
     - Curriculum: curriculum.md
-    - Education: eduction.md
+    - Education: education.md
   - Hardware:
     - Cars Parts List: car-parts-list.md
     - GPU Parts List: gpu-parts.md
@@ -34,8 +34,6 @@ theme:
     accent: 'blue'
   custom_dir: 'theme'
   include_sidebar: true
-#  features:
-#    - navigation.tabs
 markdown_extensions:
   - admonition
   - footnotes
