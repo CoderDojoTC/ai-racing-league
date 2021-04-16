@@ -1,8 +1,15 @@
-# Green Concepts
+# Curriculum
 
-------------------------------------
+We have a long term vision of using an intelligent agent that will recommend the right content for each of our students based on their current knowledge and their learning goals.
 
-## Donkey Car
+![](img/concept-map.png)
+
+
+## Beginning (Green) Concepts
+
+### Batteries
+### Motors
+### Donkey Car
 ### Activity
 Go to the donkey car station and look at the sample Donkey Car. Ask a mentor to show you the parts.
 ### Questions
@@ -87,10 +94,11 @@ They call it a "Donkey Car" because, like a Donkey, it is functional but not ver
 
 ----------------------------------------------------
 
-## Machine Learning
-### Activity
+### Intermediate Concepts
+### Machine Learning
+#### Activity
 Go to the machine learning station and watch the demos. Ask about the difference between if-else statements and machine learning.
-### Questions
+#### Questions
 <details><summary>1) What is Machine Learning? How does it differ from traditional rule-based programming?</summary>
 <p>
   
