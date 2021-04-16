@@ -1,0 +1,50 @@
+site_name: 'AI Racing League'
+nav:
+  - Home: index.md
+  - About:
+    - About at ARL: about.md
+    - Business Plan: business-plan-2020.md
+    - Presentations: presentations.md
+    - Contacts: contacts.md
+  - Curriculum:
+    - Curriculum: curriculum.md
+    - Education: eduction.md
+  - Hardware:
+    - Cars Parts List: car-parts-list.md
+    - GPU Parts List: gpu-parts.md
+    - Car Box Checklist: car-box-checklist.md
+    - Joystick: joystick.md
+  - Misc:
+    - Hackathon: hackathon.md
+    - Demos: demos.md
+    - Media: media.md
+  - Glossary: glossary.md
+  - Resources: resources.md
+
+repo_name: 'otu-ai-racing-league'
+repo_url: 'https://github.optum.com/OptumTechUniversity/otu-ai-racing-league'
+
+edit_uri: 'blob/master/docs'
+theme:
+  name: material
+  logo: img/car-small.png
+  favicon: img/favicon.png
+  palette:
+    primary: 'black'
+    accent: 'blue'
+  custom_dir: 'theme'
+  include_sidebar: true
+#  features:
+#    - navigation.tabs
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - codehilite:
+      linenums: true
+plugins:
+    - search
+markdown_extensions:
+  - codehilite:
+      linenums: true

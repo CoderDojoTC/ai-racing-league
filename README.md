@@ -1,4 +1,4 @@
-<p align="center"> <img alt="logical" width="400px" src="/docs/assets/images/AIRL_logo.png" /> </p>
+<p align="center"> <img alt="logical" width="400px" src="/docs/assets/images/arl-logo.png" /> </p>
 
 # Visit The Official AI:RL Site 
 https://coderdojotc.github.io/ai-racing-league/#/README
