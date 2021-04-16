@@ -14,7 +14,7 @@
     
     
       
-        <title>Hackathon - AI Racing League</title>
+        <title>Learning Strategy - AI Racing League</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hackathon-ideas" class="md-skip">
+        <a href="#ai-racing-league-educational-philosophy" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Hackathon
+              Learning Strategy
             
           </span>
         </div>
@@ -293,12 +293,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
       
       <label class="md-nav__link" for="nav-3">
         Curriculum
@@ -315,11 +317,20 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../learning-strategy/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Learning Strategy
       </a>
+      
     </li>
   
 
@@ -429,14 +440,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
       
       <label class="md-nav__link" for="nav-5">
         Misc
@@ -453,20 +462,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../hackathon/" class="md-nav__link">
         Hackathon
       </a>
-      
     </li>
   
 
@@ -577,86 +577,38 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.optum.com/OptumTechUniversity/otu-ai-racing-league/blob/master/docs/hackathon.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.optum.com/OptumTechUniversity/otu-ai-racing-league/blob/master/docs/learning-strategy.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="hackathon-ideas">Hackathon Ideas</h1>
-<p>Here are a set of ideas that can be used to plan a Hackathon around the DonkeyCar.
-Of course, if people are not familiar with the DonkeyCar, just getting it
-to work is a good project!  These are more for teams that are extending
-the DonkeyCar software.</p>
-<h1 id="beginner-projects-done-in-under-one-day">Beginner Projects - done in under one day</h1>
+                <h1 id="ai-racing-league-educational-philosophy">AI Racing League Educational Philosophy</h1>
+<p>The AI Racing League educational philosophy is founded on the following values:</p>
 <ol>
-<li>Ceate a UNIX shell script for managing the tub and model files.  The script
-should present a menu of options that includes seending one or more tubs
-to a server for training and getting the model file back.  Bonus points 
-for listing models and sizes.</li>
-<li>Build an RGB strip interface to display car and GPU status.
-The car status can move from red to green as the number of images
-gathered reaches a 10K image target.  Use the Arduino Moving Rainbow site
-as your guide.  Background with Arduino is helpful.</li>
-<li>Build an RGB strip interface to display the GPU training status.
-The RGB strip should change from red to green as the model
-error approaches a reasonable value like 0.01. Background with Arduino is helpful.
-You will also need to modify the TensorFlow interface to write error values to
-a serial port using python.</li>
+<li><strong>Equal Opportunity</strong> - we work hard to keep all AI Racing League activities free and we work hard to encourage girls to be part of our programs.</li>
+<li><strong>Student driven</strong> - we ask each student what their learning goals are and adapt to their needs</li>
+<li><strong>Project based</strong> - we prefer to let students define their own projects and we find resources to support them.  If learning about how to get a car to drive by itself that is great, but if they have other objectives we work hard to connect them with the mentor that will help them build whatever they are interested in building.</li>
+<li><strong>Teamwork</strong> - we want students to work in teams so they learn not just about AI, but how to work with others.</li>
+<li><strong>Flexibility</strong> - we want to be known as one of the most flexible learning organizations around.  We don't force everyone to learn the same things.  We take students in for 20 minutes or two years.  We adapt to the needs of our students and we design our curriculum around their needs.</li>
+<li><strong>Agility</strong> - in software there is a strong concept of "Agile Development" where team constantly get feedback on what works and adapt their goals every two weeks to meet the needs of their users.  We use these same strategies to develop flexible content to meet the ever-changing interests of our students.</li>
 </ol>
-<h1 id="medium-projects-could-be-done-with-prep-over-a-weekend">Medium Projects - could be done with prep over a weekend</h1>
+<p>Our Curriculum is based around building a series of concept cards that adhere to the "one concept per card" rule.  Each card is a 5.5in X 8in laminated card with questions or challenges on the front and answers on the back.  Concept cards have three difficulty levels with different colored borders.</p>
 <ol>
-<li>Ceate a web interface for managing the tub and model files.
-The web interface should present a menu of options that includes seending one or more tubs
-to a server for training and getting the model file back.  Bonus points for listing models and sizes.</li>
-<li>Create a Jypyter notebook for analysing data and managing the tub and model files.
-The web interface should present a menu of options that includes seending one or more tubs
-to a server for training and getting the model file back.  Bonus points for listing models and sizes.</li>
+<li><strong>Green Borders</strong> - Beginner cards that anyone can start with at any time</li>
+<li><strong>Blue Borders</strong> - Intermediate - where you may need to know some beginning concepts before you start</li>
+<li><strong>Black Borders</strong> - Advanced - where you need to master several intermediate concepts before you take these on</li>
 </ol>
-<h1 id="advanced-projects">Advanced Projects</h1>
-<ol>
-<li>Create a mobile application to drive the car during training.<br />
-This is the best practice for many low-cost robots like the MiP.
-Use the tilt APIs to make the car easy to steer.</li>
-<li>Create small and large versions of the DonkeyCar.  The small version should
-work on a 12x16 track and the large version should work outdoors on grass.
-Use a Raspberry Pi or Nvidia Nano.</li>
-<li>Create a learning management system for running AI Racing League events.
-Create a list of concepts and load a dependancy list of concepts into
-a graph database like TigerGraph.  Create a quiz that attendees use
-to enter their learning objectives and background.  The app should
-then recomend what content they should use, what tables they should visit,
-and what mentors they should connect with in the right order.
-Bonus points of you build a cell phone front end.</li>
-</ol>
-<h2 id="car-to-gpu-file-transfer-scripts">Car to GPU File Transfer Scripts</h2>
-<p>Make it easy to transfer DonkeyCar test data to our GPU server.  Start with a UNIX shell script that
-compresses the tub file and puts the data on a jump drive.  Then work on using SSH to copy the files
-to the GPU server.  Then add configuration of the Avahi application and the mDNS protocols to autodiscover
-the ARL GPU servers and prompte the user.</p>
-<h2 id="mobile-app-to-drive-the-car">Mobile App to Drive The Car</h2>
-<p>Most robot systems like the MIP have a simple mobile application for driving your robot around.  There are two modes:
-A tilt mode (where you steer by tilting the phone) and a pressure mode where you can control the speed and direction
-by pressing on a virtual joystick.  The problem we have with the current DonkeyCar 3.X system is that the web-based
-application is difficult to use.  The tilt mode does not work on web browsers.  We suggest you use a program like AppInventor
-for Android or Google Flutter and Dash building mobile apps.</p>
-<h2 id="leaderboard-web-page">Leaderboard Web Page</h2>
-<p>Create a web application that tracks what teams are in the lead.  The app should be a single-page application that allows
-team scores to be updated on a web form.  The leaderboard can also be "smart" a look for the team config files on each
-DonkeyCar on the local-area network.</p>
-<h2 id="oled-extension">OLED Extension</h2>
-<p>Add a low-cost OLED screen to each car using the SPI bus.  Have the OLED screen show key parameters such as hostname, static IP address,
-disk space free, training data size etc.  Bonus points for a mode button to cycle through screens.  See Dan McCreary
-for the hardware.</p>
-<h2 id="led-strips-for-training-server-status">LED Strips for Training Server Status</h2>
-<p>Add an low-cost WS-2811-B LED strip to the GPU server.  Make the strip blue when idle, red when you start training
-an new model, and have it fade to green as the model converges.  See Dan McCreary for the hardware.</p>
-<h2 id="training-graph">Training Graph</h2>
-<p>As students walk in, give them a tablet to register.  It will also ask them basic questions.
-It will then ask them how long they will be there.  It will then suggest a set of activities
-and some concepts to master.  The graph is a dependacy graph of all the concepts we teach
-at the event.  Also suggest a probability they will have fun at the event.</p>
-<h2 id="single-source-publishing-for-concept-cards">Single Source Publishing for Concept Cards</h2>
-<p>Our cards need to be authored in MarkDown but we want to disply on the web, in PPT and with PDF.  To do this we want to adopt a single-source publishing pipeline.</p>
+<p>Our goal is to keep the concepts as "flat" as possible without a deep level of dependency.  We try to keep at least half of our cards mostly green beginner cards.</p>
+<p>Students will walk into the AI Racing League and see a stack of cards.  They will pick up one card or a set of cards and work on these.  When they are done they return the cards and select another set of cards.</p>
+<p>Because of our </p>
+<p><a href="https://docs.google.com/presentation/d/1VKzVaDYbqKQ5ykSnNVem5_K7A-I5YtGPhbS73h1SrPI/edit?usp=sharing">Concept Cards in Google Docs</a></p>
+<h1 id="engineering-challenges">Engineering Challenges</h1>
+<p>To develop a world class curriculum, we need to partner with senior engineers and curriculum developers.  Here are some of the challenges we need to address.</p>
+<h2 id="challenge-1-make-it-easy-for-short-term-learning">Challenge #1: Make it easy for short term learning</h2>
+<p>Engineers with experience in both hardware and software can build their own DonkeyCar from parts in a few weeks, our goal is to allow students from a wide variety of backgrounds to be able to participate in events in a flexible way.  A typical CoderDojo event typically only lasts two hours and students may not have the appropriate background in hardware, Python programming or UNIX.</p>
+<h2 id="challenge-2-on-site-traning-hardware">Challenge #2: On site traning hardware</h2>
+<p>Many people that are building DonkeyCars use a standard Mac or PC laptop.  These systems take up to two hours to train a typical model - too long for many events.  One solution would be to leverage clound-based GPUs to accelerate learning.  This option typically requires transferring around 1/2 GB of images up to the clound for training the models.  Models, which can typically be 10MB, then need to be transferred back from the clound to the local car.  Our challenge here is that many locations may not have high-bandwith uploading and downloading services that could handle this traffic.</p>
+<p>One solution is to acquire some robust GPUs that students can use to quickly train complex models - typically in 15 to 20 minutes.  This hardware needs to be easy to use - for example we need to do folder-based drag and drops and press a single button to begin training.</p>
                 
               
               
@@ -675,7 +627,7 @@ at the event.  Also suggest a probability they will have fun at the event.</p>
       <div class="md-footer-nav">
         <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../joystick/" title="Joystick" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <a href="../contacts/" title="Contacts" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
                 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
               </div>
@@ -684,19 +636,19 @@ at the event.  Also suggest a probability they will have fun at the event.</p>
                   <span class="md-footer-nav__direction">
                     Previous
                   </span>
-                  Joystick
+                  Contacts
                 </span>
               </div>
             </a>
           
           
-            <a href="../media/" title="Media" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <a href="../curriculum/" title="Curriculum" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span class="md-footer-nav__direction">
                     Next
                   </span>
-                  Media
+                  Curriculum
                 </span>
               </div>
               <div class="md-flex__cell md-flex__cell--shrink">
