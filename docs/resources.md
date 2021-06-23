@@ -11,6 +11,14 @@ Here are some sites that are of interest:
 * [DonkeyCar web site](http://donkeycar.com)
 * [Donkey Car Nano Setup Page](https://docs.donkeycar.com/guide/robot_sbc/setup_jetson_nano/)
 
+## Track Options
+
+In Minnesota there is a place that sells used vynil sign material.
+
+[Billboard Tarps and Vinyl](https://billboardtarps.com/product-category/billboard-vinyl/) - We suggest you get a dark color (block or dark blue) and then tape down white edges and a yellow dashed line in the center.
+
+![Sample Track Template](img/donkeycartrack4_1080x.jpg)
+
 ## Hardware Options
 
 Raspberry Pi 3, 4, the Nvidia Nano, the Nvdia DX2, and the Intel Mobius Neural Stick
