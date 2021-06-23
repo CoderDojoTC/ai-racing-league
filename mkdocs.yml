@@ -22,10 +22,10 @@ nav:
   - FAQs: faqs.md
   - Glossary: glossary.md
   - Resources: resources.md
-
-repo_name: 'otu-ai-racing-league'
 repo_url: 'https://github.com/CoderDojoTC/ai-racing-league'
 
+# Standard Stuff
+repo_name: 'Link to GitHub'
 edit_uri: 'blob/master/docs'
 theme:
   name: material
