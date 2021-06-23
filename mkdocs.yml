@@ -9,6 +9,7 @@ nav:
   - Curriculum:
     - Learning Strategy: learning-strategy.md
     - Curriculum: curriculum.md
+    - Sample Six Week Course: six-week-curriculum.md
   - Hardware:
     - Cars Parts List: car-parts-list.md
     - GPU Parts List: gpu-parts.md
@@ -23,7 +24,7 @@ nav:
   - Resources: resources.md
 
 repo_name: 'otu-ai-racing-league'
-repo_url: 'https://github.optum.com/OptumTechUniversity/otu-ai-racing-league'
+repo_url: 'https://github.com/CoderDojoTC/ai-racing-league'
 
 edit_uri: 'blob/master/docs'
 theme:
