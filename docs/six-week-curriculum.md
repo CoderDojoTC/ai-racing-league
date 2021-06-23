@@ -15,12 +15,20 @@ This is a sample suggested curriculum for a six week AI Racing League summer sch
 
 See the suggested parts list for week 1
 
-## Week 2: UNIX, Calibration, Intro to Python and Raspberry Pi
+## Week 2: Booting a Raspberry Pi, UNIX, Calibration, Intro to Python and Raspberry Pi
 
-1. Download a Raspberry Pi image
-2. Burn a microSD card with that image
-3. Use the microSD card to boot your Raspberry Pi (requires 4GB Raspberry Pi Pico, keyboard, mouse, power supply, monitor)
-4. Configure Pi desktop - learn how to use menus, add bookmarks to the web browser, manage bookmarks
+1. Booting a Raspberry Pi from Micro SD card
+   1. What is a Raspberry Pi?
+   2. How much RAM do we need?
+   3. Why is 4GB important for the AI Racing League?
+   4. What is a micro SD card?  How big a card do we need? 32GB vs 65GB vs 128GB
+   5. Can we train our model on a Pi?  Training vs. Inference - when do we need a GPU?
+   6. What is an Operating System Image file?
+   7. How do we create an image file?
+   8. Download a Raspberry Pi image [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
+   9. Burn a microSD card with that image - include customization
+   10. Use the microSD card to boot your Raspberry Pi (requires 4GB Raspberry Pi Pico, keyboard, mouse, power supply, monitor)
+2. Configure Pi desktop - learn how to use menus, add bookmarks to the web browser, manage bookmarks
 5. Start Python IDE
 6. Run "hello world" in Python
 7. Open a Terminal and type "ls"
@@ -37,6 +45,7 @@ See the suggested parts list for week 1
 4. Find the Drive command
 5. Discuss options for controlling the car: Joystick vs Web Application
 6. Backup Career Exploration: What is a Software Engineer?
+5. Backup Lab: [Google Teachable Machines](https://teachablemachine.withgoogle.com/)
 
 ## Week 4: Gather Image Data and Analyze Quality with Jupyter Notebooks
 
@@ -50,11 +59,12 @@ See the suggested parts list for week 1
 
 1. Learn about the GPU - what are GPU cores? - Why is training time faster?
 2. What is a conda environment for Python?
+2. What is Miniconda [Download here](https://docs.conda.io/en/latest/miniconda.html)
 3. Activating conda environments
 4. Verifying that the GPU setting are correct
 5. Run a test program on the GPU
 6. Learn how to transfer files from the car's memory to the GPU (compress tubs, copy to jump drive)
-7. What is a model file
+7. What is a model file?  How big is your model?  What are model parameters?
 8. Backup: What is Bias in AI?  How to we detect it?  How dow we measure it?
 
 ## Week 6: Using the Model to Drive Autonomously
