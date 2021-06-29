@@ -20,6 +20,7 @@ nav:
     - Demos: demos.md
     - Media: media.md
   - Presentations:
+    - List of Presentations: presentations.md
     - Welcome: slides/Welcome-to-the-ARL.pptx
     - Command Reference Card: Command-Reference-Card.md
     - Code Savvy Slides: AI-Racing-League-Code-Savvy.pptx
