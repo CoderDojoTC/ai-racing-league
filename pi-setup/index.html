@@ -14,7 +14,7 @@
     
     
       
-        <title>Hackathon - AI Racing League</title>
+        <title>Setup Conda on Pi - AI Racing League</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hackathon-ideas" class="md-skip">
+        <a href="#raspberry-pi-setup" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Hackathon
+              Setup Conda on Pi
             
           </span>
         </div>
@@ -361,12 +361,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
       
       <label class="md-nav__link" for="nav-4">
         Setup
@@ -383,11 +385,112 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../pi-setup/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Setup Conda on Pi
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Setup Conda on Pi
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-conda-for-the-arm-processor" class="md-nav__link">
+    Install Conda for the ARM Processor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-conda-in-your-path" class="md-nav__link">
+    Test Conda In Your PATH
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-the-raspberry-pi-channel-to-conda" class="md-nav__link">
+    Add the Raspberry Pi Channel to Conda
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-python" class="md-nav__link">
+    Test Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-donkeycar-conda-environment" class="md-nav__link">
+    Create a DonkeyCar Conda Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-the-conda-shell-to-the-end-of-our-bashrc-file" class="md-nav__link">
+    Add the conda shell to the end of our .bashrc file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activate-your-donkey-python-environment" class="md-nav__link">
+    Activate Your Donkey Python Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify-git-is-installed" class="md-nav__link">
+    Verify Git Is installed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clone-the-donkeycar-repository" class="md-nav__link">
+    Clone the DonkeyCar repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clone-donkeycar-repo" class="md-nav__link">
+    Clone DonkeyCar Repo
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -485,14 +588,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
       
       <label class="md-nav__link" for="nav-6">
         Misc
@@ -509,20 +610,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../hackathon/" class="md-nav__link">
         Hackathon
       </a>
-      
     </li>
   
 
@@ -703,6 +795,84 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-conda-for-the-arm-processor" class="md-nav__link">
+    Install Conda for the ARM Processor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-conda-in-your-path" class="md-nav__link">
+    Test Conda In Your PATH
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-the-raspberry-pi-channel-to-conda" class="md-nav__link">
+    Add the Raspberry Pi Channel to Conda
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-python" class="md-nav__link">
+    Test Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-donkeycar-conda-environment" class="md-nav__link">
+    Create a DonkeyCar Conda Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-the-conda-shell-to-the-end-of-our-bashrc-file" class="md-nav__link">
+    Add the conda shell to the end of our .bashrc file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activate-your-donkey-python-environment" class="md-nav__link">
+    Activate Your Donkey Python Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify-git-is-installed" class="md-nav__link">
+    Verify Git Is installed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clone-the-donkeycar-repository" class="md-nav__link">
+    Clone the DonkeyCar repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clone-donkeycar-repo" class="md-nav__link">
+    Clone DonkeyCar Repo
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -713,86 +883,132 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/ai-racing-league/blob/master/docs/hackathon.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/ai-racing-league/blob/master/docs/pi-setup.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="hackathon-ideas">Hackathon Ideas</h1>
-<p>Here are a set of ideas that can be used to plan a Hackathon around the DonkeyCar.
-Of course, if people are not familiar with the DonkeyCar, just getting it
-to work is a good project!  These are more for teams that are extending
-the DonkeyCar software.</p>
-<h1 id="beginner-projects-done-in-under-one-day">Beginner Projects - done in under one day</h1>
-<ol>
-<li>Ceate a UNIX shell script for managing the tub and model files.  The script
-should present a menu of options that includes seending one or more tubs
-to a server for training and getting the model file back.  Bonus points 
-for listing models and sizes.</li>
-<li>Build an RGB strip interface to display car and GPU status.
-The car status can move from red to green as the number of images
-gathered reaches a 10K image target.  Use the Arduino Moving Rainbow site
-as your guide.  Background with Arduino is helpful.</li>
-<li>Build an RGB strip interface to display the GPU training status.
-The RGB strip should change from red to green as the model
-error approaches a reasonable value like 0.01. Background with Arduino is helpful.
-You will also need to modify the TensorFlow interface to write error values to
-a serial port using python.</li>
-</ol>
-<h1 id="medium-projects-could-be-done-with-prep-over-a-weekend">Medium Projects - could be done with prep over a weekend</h1>
-<ol>
-<li>Ceate a web interface for managing the tub and model files.
-The web interface should present a menu of options that includes seending one or more tubs
-to a server for training and getting the model file back.  Bonus points for listing models and sizes.</li>
-<li>Create a Jypyter notebook for analysing data and managing the tub and model files.
-The web interface should present a menu of options that includes seending one or more tubs
-to a server for training and getting the model file back.  Bonus points for listing models and sizes.</li>
-</ol>
-<h1 id="advanced-projects">Advanced Projects</h1>
-<ol>
-<li>Create a mobile application to drive the car during training.<br />
-This is the best practice for many low-cost robots like the MiP.
-Use the tilt APIs to make the car easy to steer.</li>
-<li>Create small and large versions of the DonkeyCar.  The small version should
-work on a 12x16 track and the large version should work outdoors on grass.
-Use a Raspberry Pi or Nvidia Nano.</li>
-<li>Create a learning management system for running AI Racing League events.
-Create a list of concepts and load a dependancy list of concepts into
-a graph database like TigerGraph.  Create a quiz that attendees use
-to enter their learning objectives and background.  The app should
-then recomend what content they should use, what tables they should visit,
-and what mentors they should connect with in the right order.
-Bonus points of you build a cell phone front end.</li>
-</ol>
-<h2 id="car-to-gpu-file-transfer-scripts">Car to GPU File Transfer Scripts</h2>
-<p>Make it easy to transfer DonkeyCar test data to our GPU server.  Start with a UNIX shell script that
-compresses the tub file and puts the data on a jump drive.  Then work on using SSH to copy the files
-to the GPU server.  Then add configuration of the Avahi application and the mDNS protocols to autodiscover
-the ARL GPU servers and prompte the user.</p>
-<h2 id="mobile-app-to-drive-the-car">Mobile App to Drive The Car</h2>
-<p>Most robot systems like the MIP have a simple mobile application for driving your robot around.  There are two modes:
-A tilt mode (where you steer by tilting the phone) and a pressure mode where you can control the speed and direction
-by pressing on a virtual joystick.  The problem we have with the current DonkeyCar 3.X system is that the web-based
-application is difficult to use.  The tilt mode does not work on web browsers.  We suggest you use a program like AppInventor
-for Android or Google Flutter and Dash building mobile apps.</p>
-<h2 id="leaderboard-web-page">Leaderboard Web Page</h2>
-<p>Create a web application that tracks what teams are in the lead.  The app should be a single-page application that allows
-team scores to be updated on a web form.  The leaderboard can also be "smart" a look for the team config files on each
-DonkeyCar on the local-area network.</p>
-<h2 id="oled-extension">OLED Extension</h2>
-<p>Add a low-cost OLED screen to each car using the SPI bus.  Have the OLED screen show key parameters such as hostname, static IP address,
-disk space free, training data size etc.  Bonus points for a mode button to cycle through screens.  See Dan McCreary
-for the hardware.</p>
-<h2 id="led-strips-for-training-server-status">LED Strips for Training Server Status</h2>
-<p>Add an low-cost WS-2811-B LED strip to the GPU server.  Make the strip blue when idle, red when you start training
-an new model, and have it fade to green as the model converges.  See Dan McCreary for the hardware.</p>
-<h2 id="training-graph">Training Graph</h2>
-<p>As students walk in, give them a tablet to register.  It will also ask them basic questions.
-It will then ask them how long they will be there.  It will then suggest a set of activities
-and some concepts to master.  The graph is a dependacy graph of all the concepts we teach
-at the event.  Also suggest a probability they will have fun at the event.</p>
-<h2 id="single-source-publishing-for-concept-cards">Single Source Publishing for Concept Cards</h2>
-<p>Our cards need to be authored in MarkDown but we want to disply on the web, in PPT and with PDF.  To do this we want to adopt a single-source publishing pipeline.</p>
+                <h1 id="raspberry-pi-setup">Raspberry Pi Setup</h1>
+<h2 id="install-conda-for-the-arm-processor">Install Conda for the ARM Processor</h2>
+<p>When asked:</p>
+<p><em>Do you wish the installer to prepend the Miniconda3 install location to PATH in your /root/.bashrc?</em></p>
+<p>Answer: yes</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">cd</span> /tmp
+wget http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-armv7l.sh
+chmod <span class="m">755</span> Miniconda3-latest-Linux-armv7l.sh
+./Miniconda3-latest-Linux-armv7l.sh
+</code></pre></div>
+</td></tr></table>
+<h2 id="test-conda-in-your-path">Test Conda In Your PATH</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>which conda
+</code></pre></div>
+</td></tr></table>
+<p>Should return:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">/home/pi/miniconda3/bin/conda</span>
+</code></pre></div>
+</td></tr></table>
+<h2 id="add-the-raspberry-pi-channel-to-conda">Add the Raspberry Pi Channel to Conda</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>conda config --add channels rpi
+conda install <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.6
+</code></pre></div>
+</td></tr></table>
+<h2 id="test-python">Test Python</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>python --version
+</code></pre></div>
+</td></tr></table>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">Python 3.6.6</span>
+</code></pre></div>
+</td></tr></table>
+<h2 id="create-a-donkeycar-conda-environment">Create a DonkeyCar Conda Environment</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>conda create --name donkey <span class="nv">python</span><span class="o">=</span><span class="m">3</span>
+</code></pre></div>
+</td></tr></table>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">The</span><span class="w"> </span><span class="n">following</span><span class="w"> </span><span class="k">NEW</span><span class="w"> </span><span class="n">packages</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="nl">INSTALLED</span><span class="p">:</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">ca</span><span class="o">-</span><span class="nl">certificates</span><span class="p">:</span><span class="w"> </span><span class="mf">2018.8.24</span><span class="o">-</span><span class="mi">0</span><span class="w">          </span><span class="n">rpi</span><span class="w"></span>
+<span class="w">    </span><span class="nl">certifi</span><span class="p">:</span><span class="w">         </span><span class="mf">2018.8.24</span><span class="o">-</span><span class="n">py36_1</span><span class="w">     </span><span class="n">rpi</span><span class="w"></span>
+<span class="w">    </span><span class="nl">ncurses</span><span class="p">:</span><span class="w">         </span><span class="mf">6.1</span><span class="o">-</span><span class="n">h4f752ac_1</span><span class="w">       </span><span class="n">rpi</span><span class="w"></span>
+<span class="w">    </span><span class="nl">openssl</span><span class="p">:</span><span class="w">         </span><span class="mf">1.0.2</span><span class="n">r</span><span class="o">-</span><span class="n">hdff2a78_0</span><span class="w">    </span><span class="n">rpi</span><span class="w"></span>
+<span class="w">    </span><span class="nl">pip</span><span class="p">:</span><span class="w">             </span><span class="mf">18.0</span><span class="o">-</span><span class="n">py36_1</span><span class="w">          </span><span class="n">rpi</span><span class="w"></span>
+<span class="w">    </span><span class="nl">python</span><span class="p">:</span><span class="w">          </span><span class="mf">3.6.6</span><span class="o">-</span><span class="n">hd0568c0_1</span><span class="w">     </span><span class="n">rpi</span><span class="w"></span>
+<span class="w">    </span><span class="nl">readline</span><span class="p">:</span><span class="w">        </span><span class="mf">7.0</span><span class="o">-</span><span class="n">hcb560eb_1</span><span class="w">       </span><span class="n">rpi</span><span class="w"></span>
+<span class="w">    </span><span class="nl">setuptools</span><span class="p">:</span><span class="w">      </span><span class="mf">40.2.0</span><span class="o">-</span><span class="n">py36_0</span><span class="w">        </span><span class="n">rpi</span><span class="w"></span>
+<span class="w">    </span><span class="nl">sqlite</span><span class="p">:</span><span class="w">          </span><span class="mf">3.24.0</span><span class="o">-</span><span class="n">hfcb1bcf_1</span><span class="w">    </span><span class="n">rpi</span><span class="w"></span>
+<span class="w">    </span><span class="nl">tk</span><span class="p">:</span><span class="w">              </span><span class="mf">8.6.8</span><span class="o">-</span><span class="n">h849d6a0_0</span><span class="w">     </span><span class="n">rpi</span><span class="w"></span>
+<span class="w">    </span><span class="nl">wheel</span><span class="p">:</span><span class="w">           </span><span class="mf">0.31.1</span><span class="o">-</span><span class="n">py36_1</span><span class="w">        </span><span class="n">rpi</span><span class="w"></span>
+<span class="w">    </span><span class="nl">xz</span><span class="p">:</span><span class="w">              </span><span class="mf">5.2.4</span><span class="o">-</span><span class="n">hdff2a78_1</span><span class="w">     </span><span class="n">rpi</span><span class="w"></span>
+<span class="w">    </span><span class="nl">zlib</span><span class="p">:</span><span class="w">            </span><span class="mf">1.2.11</span><span class="o">-</span><span class="n">hdff2a78_1003</span><span class="w"> </span><span class="n">rpi</span><span class="w"></span>
+
+<span class="n">Proceed</span><span class="w"> </span><span class="p">(</span><span class="o">[</span><span class="n">y</span><span class="o">]/</span><span class="n">n</span><span class="p">)</span><span class="vm">?</span><span class="w"> </span><span class="n">y</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
+<h2 id="add-the-conda-shell-to-the-end-of-our-bashrc-file">Add the conda shell to the end of our .bashrc file</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">echo</span> <span class="s2">&quot;. /home/pi/miniconda3/etc/profile.d/conda.sh&quot;</span> &gt;&gt; ~/.bashrc
+</code></pre></div>
+</td></tr></table>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>conda activate
+</code></pre></div>
+</td></tr></table>
+<p>The shell prompt should now be "base"</p>
+<h2 id="activate-your-donkey-python-environment">Activate Your Donkey Python Environment</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">source</span> activate donkey
+</code></pre></div>
+</td></tr></table>
+<p>You should see the prompt:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">(donkey) pi@myhost:~ $</span>
+</code></pre></div>
+</td></tr></table>
+<h2 id="verify-git-is-installed">Verify Git Is installed</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git --version
+</code></pre></div>
+</td></tr></table>
+<p>git version 2.20.1</p>
+<h2 id="clone-the-donkeycar-repository">Clone the DonkeyCar repository</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git clone https://github.com/autorope/donkeycar
+<span class="nb">cd</span> donkeycar
+git checkout master
+</code></pre></div>
+</td></tr></table>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo apt-get install build-essential python3 python3-dev python3-pip python3-virtualenv python3-numpy python3-picamera python3-pandas python3-rpi.gpio i2c-tools avahi-utils joystick libopenjp2-7-dev libtiff5-dev gfortran libatlas-base-dev libopenblas-dev libhdf5-serial-dev libgeos-dev git ntp
+</code></pre></div>
+</td></tr></table>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo apt-get install libilmbase-dev libopenexr-dev libgstreamer1.0-dev libjasper-dev libwebp-dev libatlas-base-dev libavcodec-dev libavformat-dev libswscale-dev libqtgui4 libqt4-test
+</code></pre></div>
+</td></tr></table>
+<h2 id="clone-donkeycar-repo">Clone DonkeyCar Repo</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>pip freeze
+</code></pre></div>
+</td></tr></table>
+<p>certifi==2018.8.24</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git clone https://github.com/autorope/donkeycar
+<span class="nb">cd</span> donkeycar
+pip install -e .<span class="o">[</span>pi<span class="o">]</span>
+</code></pre></div>
+</td></tr></table>
                 
               
               
@@ -811,7 +1027,7 @@ at the event.  Also suggest a probability they will have fun at the event.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../joystick/" title="Joystick" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../six-week-curriculum/" title="Sample Six Week Course" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -820,19 +1036,19 @@ at the event.  Also suggest a probability they will have fun at the event.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Joystick
+                Sample Six Week Course
               </span>
             </div>
           </a>
         
         
-          <a href="../media/" title="Media" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../car-parts-list/" title="Cars Parts List" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Media
+                Cars Parts List
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
