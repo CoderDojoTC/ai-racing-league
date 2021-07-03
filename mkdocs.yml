@@ -21,6 +21,7 @@ nav:
     - Hackathon: hackathon.md
     - Demos: demos.md
     - Media: media.md
+    - Command Line Tips: command-line-tips.md
   - Presentations:
     - List of Presentations: presentations.md
     - Welcome: slides/Welcome-to-the-ARL.pptx
