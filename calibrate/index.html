@@ -451,6 +451,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#i2c-functions-enabled" class="md-nav__link">
+    I2C Functions Enabled
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -804,6 +811,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#i2c-functions-enabled" class="md-nav__link">
+    I2C Functions Enabled
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -921,6 +935,45 @@
 <span class="err">crw-rw---- 1 root i2c 89, 1 Jul  3 13:17 /dev/i2c-1</span>
 </code></pre></div>
 </td></tr></table>
+<h3 id="i2c-functions-enabled">I2C Functions Enabled</h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code> i2cdetect -F <span class="m">1</span>
+</code></pre></div>
+</td></tr></table>
+<p>returns:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">Functionalities implemented by /dev/i2c-1:</span>
+<span class="err">I2C                              yes</span>
+<span class="err">SMBus Quick Command              yes</span>
+<span class="err">SMBus Send Byte                  yes</span>
+<span class="err">SMBus Receive Byte               yes</span>
+<span class="err">SMBus Write Byte                 yes</span>
+<span class="err">SMBus Read Byte                  yes</span>
+<span class="err">SMBus Write Word                 yes</span>
+<span class="err">SMBus Read Word                  yes</span>
+<span class="err">SMBus Process Call               yes</span>
+<span class="err">SMBus Block Write                yes</span>
+<span class="err">SMBus Block Read                 no</span>
+<span class="err">SMBus Block Process Call         no</span>
+<span class="err">SMBus PEC                        yes</span>
+<span class="err">I2C Block Write                  yes</span>
+<span class="err">I2C Block Read                   yes</span>
+</code></pre></div>
+</td></tr></table>
+<p>Note that both SMBus Block Read and SMBus Block Process Call are set to no.  The rest are yes.</p>
                 
               
               
