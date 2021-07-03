@@ -12,6 +12,7 @@ nav:
     - Sample Six Week Course: six-week-curriculum.md
   - Setup:
     - Setup Conda on Pi: pi-setup.md
+    - Calibrate: calibrate.md
   - Hardware:
     - Cars Parts List: car-parts-list.md
     - GPU Parts List: gpu-parts.md
