@@ -62,3 +62,33 @@ i2cdetect -y 1
 ls -ld /dev/i2*
 crw-rw---- 1 root i2c 89, 1 Jul  3 13:17 /dev/i2c-1
 ```
+
+### I2C Functions Enabled
+
+```sh
+ i2cdetect -F 1
+```
+
+returns:
+
+```
+Functionalities implemented by /dev/i2c-1:
+I2C                              yes
+SMBus Quick Command              yes
+SMBus Send Byte                  yes
+SMBus Receive Byte               yes
+SMBus Write Byte                 yes
+SMBus Read Byte                  yes
+SMBus Write Word                 yes
+SMBus Read Word                  yes
+SMBus Process Call               yes
+SMBus Block Write                yes
+SMBus Block Read                 no
+SMBus Block Process Call         no
+SMBus PEC                        yes
+I2C Block Write                  yes
+I2C Block Read                   yes
+```
+
+Note that both SMBus Block Read and SMBus Block Process Call are set to no.  The rest are yes.
+
