@@ -17,6 +17,8 @@ nav:
     - Nano SD Image Checklist: setup/nano-sd-image-checklist.md
   - Team Administration:
     - Introduction: admin/01-intro.md
+    - Custom Club Images: admin/02-sd-image.md
+    - Purchasing Guide: admin/03-purchasing-guide.md
     - Cars Parts List: admin/car-parts-list.md
     - GPU Parts List: admin/gpu-parts.md
     - Car Box Checklist: admin/car-box-checklist.md
