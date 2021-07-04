@@ -21,6 +21,6 @@ We are inspired by the values behind the CoderDojo mentoring system and their in
 
 ## Checkout Our Site:
 
-* **Education Material:** If you would like to teach AI Racing in the classroom, at a meetup or even in a corporation check out our [resources here](content/resources.md)
+* **Education Material:** If you would like to teach AI Racing in the classroom, at a meetup or even in a corporation check out our [resources here](resources.md)
 * **Resources:** Want to connect or contribute to the community check us out [here](resources.md)
 * **About us:** Want to know more about us? [Check us out](about.md)

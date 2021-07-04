@@ -1,9 +1,10 @@
-# GPU
+# AI Racing League GPU Components
 
 # Design Goals
 We wanted to create a local training system that had fast training times but was portable so that we can easily carry it in a car and ship
 it to remote events.  We can't assume any connectivity to the Internet for our events since some of them might
 be held in parking lots with no network access.  Here are our design objectives.
+
 ## Fast Training Times
 We want students to be able to drive around a track 20 times (10 times clockwise and 10 times counterclockwise) and
 generate a reasonable sized data set of 20 frames per second and 224X224 images.  This ends up being about 10,000 images.  The sizes are a bit larger for larger tracks and slower drivers.
@@ -19,12 +20,15 @@ We originally were "gifted" a somewhat old GPU server used in a data center for 
 the sever was "free", it was over 70 pounds and had far more capability for RAM and power then we needed at events.
 Based in this experience we opted to build a much smaller system using a mini enclosure with a handle.
 We selected the Mini ITX Desktop Case and determined that we could still fit the GPU in this case.
+
 ## Rugged
 Must be able to take the bumps of shipping and be able to be left out in a car overnight in freezing temperatures.
 This was a requirement for remote events in rural Minnesota communities.  We opted for a full SSD drive to keep the moving
 parts to a minimum.
+
 ## Easy to ship to remote sites
 We had to be able to put the unit is a remote shipping case.
+
 ## Visibility
 We wanted students to be able to look into the case and see the parts.  There is
 a trend to also purchase RGB LED versions of components which we thought we could

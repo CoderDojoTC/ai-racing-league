@@ -92,3 +92,24 @@ I2C Block Read                   yes
 
 Note that both SMBus Block Read and SMBus Block Process Call are set to no.  The rest are yes.
 
+## Upgrade to Python 3.70
+
+```sh
+python3 -m virtualenv -p python3.7 env --system-site-packages
+```
+
+```
+created virtual environment CPython3.7.3.final.0-32 in 2535ms
+  creator CPython3Posix(dest=/home/pi/env, clear=False, no_vcs_ignore=False, global=True)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/pi/.local/share/virtualenv)
+    added seed packages: pip==21.1.2, setuptools==57.0.0, wheel==0.36.2
+  activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+```
+
+```sh
+python --version
+```
+
+```
+Python 3.7.3
+```
