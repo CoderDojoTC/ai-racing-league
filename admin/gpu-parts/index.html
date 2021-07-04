@@ -14,7 +14,7 @@
     
     
       
-        <title>GPU - AI Racing League</title>
+        <title>GPU Parts List - AI Racing League</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gpu" class="md-skip">
+        <a href="#ai-racing-league-gpu-components" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              GPU
+              GPU Parts List
             
           </span>
         </div>
@@ -385,7 +385,31 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pi-setup/" class="md-nav__link">
+      <a href="../../setup/car-box-checklist/" class="md-nav__link">
+        Car Checklist
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/calibrate/" class="md-nav__link">
+        Calibrate
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/conda-pi-setup/" class="md-nav__link">
         Setup Conda on Pi
       </a>
     </li>
@@ -397,8 +421,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../calibrate/" class="md-nav__link">
-        Calibrate
+      <a href="../../setup/nano-sd-image-checklist/" class="md-nav__link">
+        Nano SD Image Checklist
       </a>
     </li>
   
@@ -417,21 +441,23 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
       
       <label class="md-nav__link" for="nav-5">
-        Hardware
+        Team Administration
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Hardware" data-md-level="1">
+      <nav class="md-nav" aria-label="Team Administration" data-md-level="1">
         <label class="md-nav__title" for="nav-5">
           <span class="md-nav__icon md-icon"></span>
-          Hardware
+          Team Administration
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -441,7 +467,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../car-parts-list/" class="md-nav__link">
+      <a href="../01-intro/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../car-parts-list/" class="md-nav__link">
         Cars Parts List
       </a>
     </li>
@@ -451,11 +489,20 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../gpu-parts.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         GPU Parts List
       </a>
+      
     </li>
   
 
@@ -465,7 +512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../car-box-checklist/" class="md-nav__link">
+      <a href="../car-box-checklist.md" class="md-nav__link">
         Car Box Checklist
       </a>
     </li>
@@ -477,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../joystick.md" class="md-nav__link">
+      <a href="../joystick/" class="md-nav__link">
         Joystick
       </a>
     </li>
@@ -731,7 +778,7 @@
                   </a>
                 
                 
-                <h1 id="gpu">GPU</h1>
+                <h1 id="ai-racing-league-gpu-components">AI Racing League GPU Components</h1>
 <h1 id="design-goals">Design Goals</h1>
 <p>We wanted to create a local training system that had fast training times but was portable so that we can easily carry it in a car and ship
 it to remote events.  We can't assume any connectivity to the Internet for our events since some of them might
@@ -862,6 +909,41 @@ don't have experience.  We also recommend reading the user manauals for each of 
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../car-parts-list/" title="Cars Parts List" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Cars Parts List
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../joystick/" title="Joystick" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Joystick
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
