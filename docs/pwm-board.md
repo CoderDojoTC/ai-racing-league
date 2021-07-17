@@ -10,7 +10,7 @@ The DonkeyCar uses the low cost PCA9685 PWM board.
 ![Pi 40 Pin Header](img/pi-40-pin-header.png)
 
 ## Connections
-![PWM Board Connections](img/PWM-connections.png)
+![PWM Board Connections](img/PWM-connections.jpg)
 
 ## References
 
