@@ -14,6 +14,7 @@ nav:
     - Car Checklist: setup/car-box-checklist.md
     - Calibrate: setup/calibrate.md
     - Setup Conda on Pi: setup/conda-pi-setup.md
+    - PWM Setup: pwm-board.md
     - Nano SD Image Checklist: setup/nano-sd-image-checklist.md
     - Software Installation Notes; software-install-notes.md
   - Team Administration:
