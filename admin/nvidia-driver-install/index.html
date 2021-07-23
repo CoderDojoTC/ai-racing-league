@@ -14,7 +14,7 @@
     
     
       
-        <title>Joystick - AI Racing League</title>
+        <title>NVIDIA Driver Installation - AI Racing League</title>
       
     
     
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#install-the-nvidia-driver" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -88,7 +93,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Joystick
+              NVIDIA Driver Installation
             
           </span>
         </div>
@@ -460,12 +465,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
       
       <label class="md-nav__link" for="nav-5">
         GPU Server Setup
@@ -482,11 +489,70 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../nvidia-driver-install/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          NVIDIA Driver Installation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         NVIDIA Driver Installation
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nvidia-card-verification" class="md-nav__link">
+    NVIDIA Card Verification
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nvidia-devices" class="md-nav__link">
+    NVIDIA Devices
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubuntu-drivers-autoinstall" class="md-nav__link">
+    Ubuntu Drivers Autoinstall
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-test" class="md-nav__link">
+    Final Test
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -516,14 +582,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
       
       <label class="md-nav__link" for="nav-6">
         Team Administration
@@ -612,18 +676,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../joystick/" class="md-nav__link">
         Joystick
       </a>
-      
     </li>
   
 
@@ -849,181 +906,199 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nvidia-card-verification" class="md-nav__link">
+    NVIDIA Card Verification
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nvidia-devices" class="md-nav__link">
+    NVIDIA Devices
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubuntu-drivers-autoinstall" class="md-nav__link">
+    Ubuntu Drivers Autoinstall
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-test" class="md-nav__link">
+    Final Test
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/ai-racing-league/blob/master/docs/admin/joystick.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/ai-racing-league/blob/master/docs/admin/nvidia-driver-install.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Joystick</h1>
-                
-                <p>Logitec F710 Game Controller for DonkeyCar</p>
-<p>https://docs.donkeycar.com/parts/controllers/</p>
-<p>Testing to see if the Nano Recognizes the F710 USB Dongle
-You can use the "lsusb" UNIX shell command to list all the USB devices:</p>
-<p>$ lsusb
-Bus 002 Device 002: ID 0bda:0411 Realtek Semiconductor Corp. 
-Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
-Bus 001 Device 004: ID 0bda:8179 Realtek Semiconductor Corp. RTL8188EUS 802.11n Wireless Network Adapter
-Bus 001 Device 005: ID 046d:c21f Logitech, Inc. F710 Wireless Gamepad [XInput Mode]
-Bus 001 Device 002: ID 0bda:5411 Realtek Semiconductor Corp. 
-Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub</p>
-<p>Note that the USB device with an ID of 046d:c21f has been found in the 4th line above.  The first ID before the colon is the device manufacturer (Logiteh) and the second is the id of their device (c21f).  Linux looks this number up in their system and then loads the driver for this type of device.</p>
-<p>The driver will create a device file in the /dev/input directory called js0</p>
-<p>$ ls -l /dev/input/js0
-crw-rw-r--+ 1 root input 13, 0 Aug 16 19:30 /dev/input/js0</p>
-<p>The "c" in the first letter says that this is a character I/O device.</p>
-<p>$ sudo apt-get install evtest
-[sudo] password for dan: 
-Reading package lists... Done
-Building dependency tree     <br />
-Reading state information... Done
-The following packages were automatically installed and are no longer required:
-  apt-clone archdetect-deb bogl-bterm busybox-static cryptsetup-bin dpkg-repack gir1.2-timezonemap-1.0 gir1.2-xkl-1.0
-  grub-common kde-window-manager kinit kio kpackagetool5 kwayland-data kwin-common kwin-data kwin-x11 libdebian-installer4
-  libkdecorations2-5v5 libkdecorations2private5v5 libkf5activities5 libkf5attica5 libkf5completion-data libkf5completion5
-  libkf5declarative-data libkf5declarative5 libkf5doctools5 libkf5globalaccel-data libkf5globalaccel5
-  libkf5globalaccelprivate5 libkf5idletime5 libkf5jobwidgets-data libkf5jobwidgets5 libkf5kcmutils-data libkf5kcmutils5
-  libkf5kiocore5 libkf5kiontlm5 libkf5kiowidgets5 libkf5newstuff-data libkf5newstuff5 libkf5newstuffcore5 libkf5package-data
-  libkf5package5 libkf5plasma5 libkf5quickaddons5 libkf5solid5 libkf5solid5-data libkf5sonnet5-data libkf5sonnetcore5
-  libkf5sonnetui5 libkf5textwidgets-data libkf5textwidgets5 libkf5waylandclient5 libkf5waylandserver5 libkf5xmlgui-bin
-  libkf5xmlgui-data libkf5xmlgui5 libkscreenlocker5 libkwin4-effect-builtins1 libkwineffects11 libkwinglutils11
-  libkwinxrenderutils11 libqgsttools-p1 libqt5designer5 libqt5help5 libqt5multimedia5 libqt5multimedia5-plugins
-  libqt5multimediaquick-p5 libqt5multimediawidgets5 libqt5opengl5 libqt5positioning5 libqt5printsupport5 libqt5qml5
-  libqt5quick5 libqt5quickwidgets5 libqt5sensors5 libqt5sql5 libqt5test5 libqt5webchannel5 libqt5webkit5 libxcb-composite0
-  libxcb-cursor0 libxcb-damage0 os-prober python3-dbus.mainloop.pyqt5 python3-icu python3-pam python3-pyqt5
-  python3-pyqt5.qtsvg python3-pyqt5.qtwebkit python3-sip qml-module-org-kde-kquickcontrolsaddons qml-module-qtmultimedia
-  qml-module-qtquick2 rdate tasksel tasksel-data
-Use 'sudo apt autoremove' to remove them.
-The following additional packages will be installed:
-  evemu-tools libevemu3
-The following NEW packages will be installed:
-  evemu-tools evtest libevemu3
-0 upgraded, 3 newly installed, 0 to remove and 7 not upgraded.
-Need to get 38.2 kB of archives.
-After this operation, 191 kB of additional disk space will be used.
-Do you want to continue? [Y/n] y
-Get:1 http://ports.ubuntu.com/ubuntu-ports bionic/universe arm64 libevemu3 arm64 2.6.0-0.1 [11.0 kB]
-Get:2 http://ports.ubuntu.com/ubuntu-ports bionic/universe arm64 evemu-tools arm64 2.6.0-0.1 [12.3 kB]
-Get:3 http://ports.ubuntu.com/ubuntu-ports bionic/universe arm64 evtest arm64 1:1.33-1build1 [14.9 kB]
-Fetched 38.2 kB in 1s (56.1 kB/s) 
-debconf: delaying package configuration, since apt-utils is not installed
-Selecting previously unselected package libevemu3:arm64.
-(Reading database ... 140149 files and directories currently installed.)
-Preparing to unpack .../libevemu3_2.6.0-0.1_arm64.deb ...
-Unpacking libevemu3:arm64 (2.6.0-0.1) ...
-Selecting previously unselected package evemu-tools.
-Preparing to unpack .../evemu-tools_2.6.0-0.1_arm64.deb ...
-Unpacking evemu-tools (2.6.0-0.1) ...
-Selecting previously unselected package evtest.
-Preparing to unpack .../evtest_1%3a1.33-1build1_arm64.deb ...
-Unpacking evtest (1:1.33-1build1) ...
-Setting up evtest (1:1.33-1build1) ...
-Processing triggers for libc-bin (2.27-3ubuntu1) ...
-Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
-Setting up libevemu3:arm64 (2.6.0-0.1) ...
-Setting up evemu-tools (2.6.0-0.1) ...
-Processing triggers for libc-bin (2.27-3ubuntu1) ...
-dan@danm-nano:~$ </p>
-<p>Now run it:</p>
-<p>$ evtest</p>
-<p>No device specified, trying to scan all of /dev/input/event*
-Not running as root, no devices may be available.
-Available devices:
-/dev/input/event2:  Logitech Gamepad F710</p>
-<p>Select the device event number [0-2]: 2</p>
-<p>Logitech Gamepad F710 Input driver version is 1.0.1
-Input device ID: bus 0x3 vendor 0x46d product 0xc21f version 0x305
-Input device name: "Logitech Gamepad F710"
-Supported events:
-  Event type 0 (EV_SYN)
-  Event type 1 (EV_KEY)
-    Event code 304 (BTN_SOUTH)
-    Event code 305 (BTN_EAST)
-    Event code 307 (BTN_NORTH)
-    Event code 308 (BTN_WEST)
-    Event code 310 (BTN_TL)
-    Event code 311 (BTN_TR)
-    Event code 314 (BTN_SELECT)
-    Event code 315 (BTN_START)
-    Event code 316 (BTN_MODE)
-    Event code 317 (BTN_THUMBL)
-    Event code 318 (BTN_THUMBR)
-  Event type 3 (EV_ABS)
-    Event code 0 (ABS_X)
-      Value    128
-      Min   -32768
-      Max    32767
-      Fuzz      16
-      Flat     128
-    Event code 1 (ABS_Y)
-      Value   -129
-      Min   -32768
-      Max    32767
-      Fuzz      16
-      Flat     128
-    Event code 2 (ABS_Z)
-      Value      0
-      Min        0
-      Max      255
-    Event code 3 (ABS_RX)
-      Value    128
-      Min   -32768
-      Max    32767
-      Fuzz      16
-      Flat     128
-    Event code 4 (ABS_RY)
-      Value   -129
-      Min   -32768
-      Max    32767
-      Fuzz      16
-      Flat     128
-    Event code 5 (ABS_RZ)
-      Value      0
-      Min        0
-      Max      255
-    Event code 16 (ABS_HAT0X)
-      Value      0
-      Min       -1
-      Max        1
-    Event code 17 (ABS_HAT0Y)
-      Value      0
-      Min       -1
-      Max        1
-Properties:
-Testing ... (interrupt to exit)</p>
-<p>Now as you press any key or move any joystick you will see the events.</p>
-<p>When I press the yellow Y we see:
-Event: time 1566006064.962158, type 1 (EV_KEY), code 308 (BTN_WEST), value 1
-Event: time 1566006064.962158, -------------- SYN_REPORT ------------
-Event: time 1566006065.129981, type 1 (EV_KEY), code 308 (BTN_WEST), value 0
-Event: time 1566006065.129981, -------------- SYN_REPORT ------------</p>
-<p>Blue X
-Event: time 1566006110.047015, type 1 (EV_KEY), code 307 (BTN_NORTH), value 1
-Event: time 1566006110.047015, -------------- SYN_REPORT ------------
-Event: time 1566006110.182606, type 1 (EV_KEY), code 307 (BTN_NORTH), value 0
-Event: time 1566006110.182606, -------------- SYN_REPORT ------------</p>
-<p>Red B
-Event: time 1566006143.423217, type 1 (EV_KEY), code 305 (BTN_EAST), value 1
-Event: time 1566006143.423217, -------------- SYN_REPORT ------------
-Event: time 1566006143.499642, type 1 (EV_KEY), code 305 (BTN_EAST), value 0
-Event: time 1566006143.499642, -------------- SYN_REPORT ------------</p>
-<p>Green A
-Event: time 1566006184.060282, type 1 (EV_KEY), code 304 (BTN_SOUTH), value 1
-Event: time 1566006184.060282, -------------- SYN_REPORT ------------
-Event: time 1566006184.128408, type 1 (EV_KEY), code 304 (BTN_SOUTH), value 0
-Event: time 1566006184.128408, -------------- SYN_REPORT ------------</p>
-<p>Moving the joystick generates:
-Event: time 1566006255.549652, -------------- SYN_REPORT ------------
-Event: time 1566006255.553650, type 3 (EV_ABS), code 1 (ABS_Y), value -10923
-Event: time 1566006255.553650, -------------- SYN_REPORT ------------
-Event: time 1566006255.557650, type 3 (EV_ABS), code 1 (ABS_Y), value -14264
-Event: time 1566006255.557650, -------------- SYN_REPORT ------------
-Event: time 1566006255.561652, type 3 (EV_ABS), code 1 (ABS_Y), value -18633</p>
+                <h1 id="install-the-nvidia-driver">Install the NVIDIA Driver</h1>
+<p>Ideally you should be able to use the Ubuntu "Software and Updates" tool to install the NIVIDA driver.  This usually works, but if you get errors, you may need to use the unix shell.</p>
+<h2 id="nvidia-card-verification">NVIDIA Card Verification</h2>
+<p>You can first verify that the GPU card has been installed and powered up.  We can use the "list hardware" command with the display option:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$ sudo lshw -C display
+</code></pre></div>
+</td></tr></table>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>  <span class="o">*-</span><span class="n">display</span> <span class="n">UNCLAIMED</span>       
+       <span class="nl">description</span><span class="p">:</span> <span class="n">VGA</span> <span class="n">compatible</span> <span class="n">controller</span>
+       <span class="nl">product</span><span class="p">:</span> <span class="n">GV102</span>
+       <span class="nl">vendor</span><span class="p">:</span> <span class="n">NVIDIA</span> <span class="n">Corporation</span>
+       <span class="n">physical</span> <span class="kt">id</span><span class="o">:</span> <span class="mi">0</span>
+       <span class="n">bus</span> <span class="nl">info</span><span class="p">:</span> <span class="n">pci</span><span class="mo">@0000</span><span class="o">:</span><span class="mi">09</span><span class="o">:</span><span class="mf">00.0</span>
+       <span class="nl">version</span><span class="p">:</span> <span class="n">a1</span>
+       <span class="nl">width</span><span class="p">:</span> <span class="mi">64</span> <span class="n">bits</span>
+       <span class="nl">clock</span><span class="p">:</span> <span class="mi">33</span><span class="n">MHz</span>
+       <span class="nl">capabilities</span><span class="p">:</span> <span class="n">pm</span> <span class="n">msi</span> <span class="n">pciexpress</span> <span class="n">vga_controller</span> <span class="n">bus_master</span> <span class="n">cap_list</span>
+       <span class="nl">configuration</span><span class="p">:</span> <span class="n">latency</span><span class="o">=</span><span class="mi">0</span>
+       <span class="nl">resources</span><span class="p">:</span> <span class="nl">memory</span><span class="p">:</span><span class="n">f6000000</span><span class="o">-</span><span class="n">f6ffffff</span> <span class="nl">memory</span><span class="p">:</span><span class="n">e0000000</span><span class="o">-</span><span class="n">efffffff</span> <span class="nl">memory</span><span class="p">:</span><span class="n">f0000000</span><span class="o">-</span><span class="n">f1ffffff</span> <span class="nl">ioport</span><span class="p">:</span><span class="n">e000</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span> <span class="nl">memory</span><span class="p">:</span><span class="n">c0000</span><span class="o">-</span><span class="n">dffff</span>
+</code></pre></div>
+</td></tr></table>
+<p>This shows that there is a GPU card installed but not claimed by the display.</p>
+<h2 id="nvidia-devices">NVIDIA Devices</h2>
+<p>You can then use the ubuntu-drivers command to see the devices.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$ ubuntu-drivers <span class="nv">devices</span>
+<span class="o">==</span> /sys/devices/pci0000:00/0000:00:03.1/0000:09:00.0 <span class="o">==</span>
+modalias : pci:v000010DEd00001E07sv000010DEsd000012A4bc03sc00i00
+vendor   : NVIDIA Corporation
+driver   : nvidia-driver-470 - distro non-free recommended
+driver   : nvidia-driver-460-server - distro non-free
+driver   : nvidia-driver-418-server - distro non-free
+driver   : nvidia-driver-460 - distro non-free
+driver   : nvidia-driver-450-server - distro non-free
+driver   : xserver-xorg-video-nouveau - distro free <span class="nb">builtin</span>
+
+<span class="o">==</span> /sys/devices/pci0000:00/0000:00:01.2/0000:02:00.0/0000:03:04.0/0000:05:00.0 <span class="o">==</span>
+modalias : pci:v00008086d00002723sv00008086sd00000084bc02sc80i00
+vendor   : Intel Corporation
+manual_install: True
+driver   : backport-iwlwifi-dkms - distro free
+</code></pre></div>
+</td></tr></table>
+<h2 id="ubuntu-drivers-autoinstall">Ubuntu Drivers Autoinstall</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo ubuntu-drivers autoinstall
+</code></pre></div>
+</td></tr></table>
+<p>This tool will tell you what drivers you need to install.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo apt-get install nvidia-driver-470
+</code></pre></div>
+</td></tr></table>
+<p>This will often generate errors but it will indicate what other libraries need to be installed for the 470 driver to work.</p>
+<h2 id="final-test">Final Test</h2>
+<p>Now we are ready to probe the full GPU and get all the statistics of what is in the GPU.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>nvidia-smi
+</code></pre></div>
+</td></tr></table>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Thu</span> <span class="n">Jul</span> <span class="mi">22</span> <span class="mi">22</span><span class="p">:</span><span class="mi">59</span><span class="p">:</span><span class="mi">36</span> <span class="mi">2021</span>       
+<span class="o">+</span><span class="c1">-----------------------------------------------------------------------------+</span>
+<span class="o">|</span> <span class="n">NVIDIA</span><span class="o">-</span><span class="n">SMI</span> <span class="mi">470</span><span class="p">.</span><span class="mi">57</span><span class="p">.</span><span class="mi">02</span>    <span class="n">Driver</span> <span class="k">Version</span><span class="p">:</span> <span class="mi">470</span><span class="p">.</span><span class="mi">57</span><span class="p">.</span><span class="mi">02</span>    <span class="n">CUDA</span> <span class="k">Version</span><span class="p">:</span> <span class="mi">11</span><span class="p">.</span><span class="mi">4</span>     <span class="o">|</span>
+<span class="o">|</span><span class="c1">-------------------------------+----------------------+----------------------+</span>
+<span class="o">|</span> <span class="n">GPU</span>  <span class="n">Name</span>        <span class="n">Persistence</span><span class="o">-</span><span class="n">M</span><span class="o">|</span> <span class="n">Bus</span><span class="o">-</span><span class="n">Id</span>        <span class="n">Disp</span><span class="p">.</span><span class="n">A</span> <span class="o">|</span> <span class="k">Volatile</span> <span class="n">Uncorr</span><span class="p">.</span> <span class="n">ECC</span> <span class="o">|</span>
+<span class="o">|</span> <span class="n">Fan</span>  <span class="n">Temp</span>  <span class="n">Perf</span>  <span class="n">Pwr</span><span class="p">:</span><span class="k">Usage</span><span class="o">/</span><span class="n">Cap</span><span class="o">|</span>         <span class="n">Memory</span><span class="o">-</span><span class="k">Usage</span> <span class="o">|</span> <span class="n">GPU</span><span class="o">-</span><span class="n">Util</span>  <span class="n">Compute</span> <span class="n">M</span><span class="p">.</span> <span class="o">|</span>
+<span class="o">|</span>                               <span class="o">|</span>                      <span class="o">|</span>               <span class="n">MIG</span> <span class="n">M</span><span class="p">.</span> <span class="o">|</span>
+<span class="o">|===============================+======================+======================|</span>
+<span class="o">|</span>   <span class="mi">0</span>  <span class="n">NVIDIA</span> <span class="n">GeForce</span> <span class="p">...</span>  <span class="k">Off</span>  <span class="o">|</span> <span class="mi">00000000</span><span class="p">:</span><span class="mi">09</span><span class="p">:</span><span class="mi">00</span><span class="p">.</span><span class="mi">0</span> <span class="k">Off</span> <span class="o">|</span>                  <span class="n">N</span><span class="o">/</span><span class="n">A</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">41</span><span class="o">%</span>   <span class="mi">36</span><span class="k">C</span>    <span class="n">P8</span>     <span class="mi">2</span><span class="n">W</span> <span class="o">/</span> <span class="mi">260</span><span class="n">W</span> <span class="o">|</span>    <span class="mi">283</span><span class="n">MiB</span> <span class="o">/</span> <span class="mi">11016</span><span class="n">MiB</span> <span class="o">|</span>      <span class="mi">0</span><span class="o">%</span>      <span class="k">Default</span> <span class="o">|</span>
+<span class="o">|</span>                               <span class="o">|</span>                      <span class="o">|</span>                  <span class="n">N</span><span class="o">/</span><span class="n">A</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">-------------------------------+----------------------+----------------------+</span>
+
+<span class="o">+</span><span class="c1">-----------------------------------------------------------------------------+</span>
+<span class="o">|</span> <span class="n">Processes</span><span class="p">:</span>                                                                  <span class="o">|</span>
+<span class="o">|</span>  <span class="n">GPU</span>   <span class="n">GI</span>   <span class="n">CI</span>        <span class="n">PID</span>   <span class="k">Type</span>   <span class="n">Process</span> <span class="n">name</span>                  <span class="n">GPU</span> <span class="n">Memory</span> <span class="o">|</span>
+<span class="o">|</span>        <span class="n">ID</span>   <span class="n">ID</span>                                                   <span class="k">Usage</span>      <span class="o">|</span>
+<span class="o">|=============================================================================|</span>
+<span class="o">|</span>    <span class="mi">0</span>   <span class="n">N</span><span class="o">/</span><span class="n">A</span>  <span class="n">N</span><span class="o">/</span><span class="n">A</span>      <span class="mi">1327</span>      <span class="k">G</span>   <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">xorg</span><span class="o">/</span><span class="n">Xorg</span>                 <span class="mi">18</span><span class="n">MiB</span> <span class="o">|</span>
+<span class="o">|</span>    <span class="mi">0</span>   <span class="n">N</span><span class="o">/</span><span class="n">A</span>  <span class="n">N</span><span class="o">/</span><span class="n">A</span>      <span class="mi">1398</span>      <span class="k">G</span>   <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">gnome</span><span class="o">-</span><span class="n">shell</span>               <span class="mi">71</span><span class="n">MiB</span> <span class="o">|</span>
+<span class="o">|</span>    <span class="mi">0</span>   <span class="n">N</span><span class="o">/</span><span class="n">A</span>  <span class="n">N</span><span class="o">/</span><span class="n">A</span>      <span class="mi">1574</span>      <span class="k">G</span>   <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">xorg</span><span class="o">/</span><span class="n">Xorg</span>                 <span class="mi">98</span><span class="n">MiB</span> <span class="o">|</span>
+<span class="o">|</span>    <span class="mi">0</span>   <span class="n">N</span><span class="o">/</span><span class="n">A</span>  <span class="n">N</span><span class="o">/</span><span class="n">A</span>      <span class="mi">1705</span>      <span class="k">G</span>   <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">gnome</span><span class="o">-</span><span class="n">shell</span>               <span class="mi">91</span><span class="n">MiB</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">-----------------------------------------------------------------------------+</span>
+</code></pre></div>
+</td></tr></table>
+<p>If you don't get this or a similar display, you must continue to search for installation instructions.</p>
+<p>After you get this screen you can reboot.</p>
                 
               
               
@@ -1042,7 +1117,7 @@ Event: time 1566006255.561652, type 3 (EV_ABS), code 1 (ABS_Y), value -18633</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../car-box-checklist/" title="Car Box Checklist" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../setup/software-install-notes/" title="Software Installation Notes" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1051,19 +1126,19 @@ Event: time 1566006255.561652, type 3 (EV_ABS), code 1 (ABS_Y), value -18633</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Car Box Checklist
+                Software Installation Notes
               </span>
             </div>
           </a>
         
         
-          <a href="../../hackathon/" title="Hackathon" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../gpu-shell/" title="GPU Shell Commands" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Hackathon
+                GPU Shell Commands
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

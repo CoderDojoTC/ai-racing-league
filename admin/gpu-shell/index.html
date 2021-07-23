@@ -14,7 +14,7 @@
     
     
       
-        <title>Joystick - AI Racing League</title>
+        <title>GPU Shell Commands - AI Racing League</title>
       
     
     
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#shell-commands-for-the-gpu-server" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -88,7 +93,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Joystick
+              GPU Shell Commands
             
           </span>
         </div>
@@ -460,12 +465,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
       
       <label class="md-nav__link" for="nav-5">
         GPU Server Setup
@@ -494,11 +501,104 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../gpu-shell/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          GPU Shell Commands
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         GPU Shell Commands
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#secure-shell-login" class="md-nav__link">
+    Secure Shell Login
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-the-version-of-ubuntu" class="md-nav__link">
+    Check the Version of Ubuntu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-the-cpu-information" class="md-nav__link">
+    List the CPU Information
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ram" class="md-nav__link">
+    RAM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disk-space" class="md-nav__link">
+    Disk Space
+  </a>
+  
+    <nav class="md-nav" aria-label="Disk Space">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#per-user-disk-usage" class="md-nav__link">
+    Per User Disk Usage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-new-gpu-server-user" class="md-nav__link">
+    Add A New GPU Server User
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-the-hostname" class="md-nav__link">
+    Change the Hostname
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -516,14 +616,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
       
       <label class="md-nav__link" for="nav-6">
         Team Administration
@@ -612,18 +710,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../joystick/" class="md-nav__link">
         Joystick
       </a>
-      
     </li>
   
 
@@ -849,181 +940,232 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#secure-shell-login" class="md-nav__link">
+    Secure Shell Login
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-the-version-of-ubuntu" class="md-nav__link">
+    Check the Version of Ubuntu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-the-cpu-information" class="md-nav__link">
+    List the CPU Information
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ram" class="md-nav__link">
+    RAM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disk-space" class="md-nav__link">
+    Disk Space
+  </a>
+  
+    <nav class="md-nav" aria-label="Disk Space">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#per-user-disk-usage" class="md-nav__link">
+    Per User Disk Usage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-new-gpu-server-user" class="md-nav__link">
+    Add A New GPU Server User
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-the-hostname" class="md-nav__link">
+    Change the Hostname
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/ai-racing-league/blob/master/docs/admin/joystick.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/ai-racing-league/blob/master/docs/admin/gpu-shell.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Joystick</h1>
-                
-                <p>Logitec F710 Game Controller for DonkeyCar</p>
-<p>https://docs.donkeycar.com/parts/controllers/</p>
-<p>Testing to see if the Nano Recognizes the F710 USB Dongle
-You can use the "lsusb" UNIX shell command to list all the USB devices:</p>
-<p>$ lsusb
-Bus 002 Device 002: ID 0bda:0411 Realtek Semiconductor Corp. 
-Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
-Bus 001 Device 004: ID 0bda:8179 Realtek Semiconductor Corp. RTL8188EUS 802.11n Wireless Network Adapter
-Bus 001 Device 005: ID 046d:c21f Logitech, Inc. F710 Wireless Gamepad [XInput Mode]
-Bus 001 Device 002: ID 0bda:5411 Realtek Semiconductor Corp. 
-Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub</p>
-<p>Note that the USB device with an ID of 046d:c21f has been found in the 4th line above.  The first ID before the colon is the device manufacturer (Logiteh) and the second is the id of their device (c21f).  Linux looks this number up in their system and then loads the driver for this type of device.</p>
-<p>The driver will create a device file in the /dev/input directory called js0</p>
-<p>$ ls -l /dev/input/js0
-crw-rw-r--+ 1 root input 13, 0 Aug 16 19:30 /dev/input/js0</p>
-<p>The "c" in the first letter says that this is a character I/O device.</p>
-<p>$ sudo apt-get install evtest
-[sudo] password for dan: 
-Reading package lists... Done
-Building dependency tree     <br />
-Reading state information... Done
-The following packages were automatically installed and are no longer required:
-  apt-clone archdetect-deb bogl-bterm busybox-static cryptsetup-bin dpkg-repack gir1.2-timezonemap-1.0 gir1.2-xkl-1.0
-  grub-common kde-window-manager kinit kio kpackagetool5 kwayland-data kwin-common kwin-data kwin-x11 libdebian-installer4
-  libkdecorations2-5v5 libkdecorations2private5v5 libkf5activities5 libkf5attica5 libkf5completion-data libkf5completion5
-  libkf5declarative-data libkf5declarative5 libkf5doctools5 libkf5globalaccel-data libkf5globalaccel5
-  libkf5globalaccelprivate5 libkf5idletime5 libkf5jobwidgets-data libkf5jobwidgets5 libkf5kcmutils-data libkf5kcmutils5
-  libkf5kiocore5 libkf5kiontlm5 libkf5kiowidgets5 libkf5newstuff-data libkf5newstuff5 libkf5newstuffcore5 libkf5package-data
-  libkf5package5 libkf5plasma5 libkf5quickaddons5 libkf5solid5 libkf5solid5-data libkf5sonnet5-data libkf5sonnetcore5
-  libkf5sonnetui5 libkf5textwidgets-data libkf5textwidgets5 libkf5waylandclient5 libkf5waylandserver5 libkf5xmlgui-bin
-  libkf5xmlgui-data libkf5xmlgui5 libkscreenlocker5 libkwin4-effect-builtins1 libkwineffects11 libkwinglutils11
-  libkwinxrenderutils11 libqgsttools-p1 libqt5designer5 libqt5help5 libqt5multimedia5 libqt5multimedia5-plugins
-  libqt5multimediaquick-p5 libqt5multimediawidgets5 libqt5opengl5 libqt5positioning5 libqt5printsupport5 libqt5qml5
-  libqt5quick5 libqt5quickwidgets5 libqt5sensors5 libqt5sql5 libqt5test5 libqt5webchannel5 libqt5webkit5 libxcb-composite0
-  libxcb-cursor0 libxcb-damage0 os-prober python3-dbus.mainloop.pyqt5 python3-icu python3-pam python3-pyqt5
-  python3-pyqt5.qtsvg python3-pyqt5.qtwebkit python3-sip qml-module-org-kde-kquickcontrolsaddons qml-module-qtmultimedia
-  qml-module-qtquick2 rdate tasksel tasksel-data
-Use 'sudo apt autoremove' to remove them.
-The following additional packages will be installed:
-  evemu-tools libevemu3
-The following NEW packages will be installed:
-  evemu-tools evtest libevemu3
-0 upgraded, 3 newly installed, 0 to remove and 7 not upgraded.
-Need to get 38.2 kB of archives.
-After this operation, 191 kB of additional disk space will be used.
-Do you want to continue? [Y/n] y
-Get:1 http://ports.ubuntu.com/ubuntu-ports bionic/universe arm64 libevemu3 arm64 2.6.0-0.1 [11.0 kB]
-Get:2 http://ports.ubuntu.com/ubuntu-ports bionic/universe arm64 evemu-tools arm64 2.6.0-0.1 [12.3 kB]
-Get:3 http://ports.ubuntu.com/ubuntu-ports bionic/universe arm64 evtest arm64 1:1.33-1build1 [14.9 kB]
-Fetched 38.2 kB in 1s (56.1 kB/s) 
-debconf: delaying package configuration, since apt-utils is not installed
-Selecting previously unselected package libevemu3:arm64.
-(Reading database ... 140149 files and directories currently installed.)
-Preparing to unpack .../libevemu3_2.6.0-0.1_arm64.deb ...
-Unpacking libevemu3:arm64 (2.6.0-0.1) ...
-Selecting previously unselected package evemu-tools.
-Preparing to unpack .../evemu-tools_2.6.0-0.1_arm64.deb ...
-Unpacking evemu-tools (2.6.0-0.1) ...
-Selecting previously unselected package evtest.
-Preparing to unpack .../evtest_1%3a1.33-1build1_arm64.deb ...
-Unpacking evtest (1:1.33-1build1) ...
-Setting up evtest (1:1.33-1build1) ...
-Processing triggers for libc-bin (2.27-3ubuntu1) ...
-Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
-Setting up libevemu3:arm64 (2.6.0-0.1) ...
-Setting up evemu-tools (2.6.0-0.1) ...
-Processing triggers for libc-bin (2.27-3ubuntu1) ...
-dan@danm-nano:~$ </p>
-<p>Now run it:</p>
-<p>$ evtest</p>
-<p>No device specified, trying to scan all of /dev/input/event*
-Not running as root, no devices may be available.
-Available devices:
-/dev/input/event2:  Logitech Gamepad F710</p>
-<p>Select the device event number [0-2]: 2</p>
-<p>Logitech Gamepad F710 Input driver version is 1.0.1
-Input device ID: bus 0x3 vendor 0x46d product 0xc21f version 0x305
-Input device name: "Logitech Gamepad F710"
-Supported events:
-  Event type 0 (EV_SYN)
-  Event type 1 (EV_KEY)
-    Event code 304 (BTN_SOUTH)
-    Event code 305 (BTN_EAST)
-    Event code 307 (BTN_NORTH)
-    Event code 308 (BTN_WEST)
-    Event code 310 (BTN_TL)
-    Event code 311 (BTN_TR)
-    Event code 314 (BTN_SELECT)
-    Event code 315 (BTN_START)
-    Event code 316 (BTN_MODE)
-    Event code 317 (BTN_THUMBL)
-    Event code 318 (BTN_THUMBR)
-  Event type 3 (EV_ABS)
-    Event code 0 (ABS_X)
-      Value    128
-      Min   -32768
-      Max    32767
-      Fuzz      16
-      Flat     128
-    Event code 1 (ABS_Y)
-      Value   -129
-      Min   -32768
-      Max    32767
-      Fuzz      16
-      Flat     128
-    Event code 2 (ABS_Z)
-      Value      0
-      Min        0
-      Max      255
-    Event code 3 (ABS_RX)
-      Value    128
-      Min   -32768
-      Max    32767
-      Fuzz      16
-      Flat     128
-    Event code 4 (ABS_RY)
-      Value   -129
-      Min   -32768
-      Max    32767
-      Fuzz      16
-      Flat     128
-    Event code 5 (ABS_RZ)
-      Value      0
-      Min        0
-      Max      255
-    Event code 16 (ABS_HAT0X)
-      Value      0
-      Min       -1
-      Max        1
-    Event code 17 (ABS_HAT0Y)
-      Value      0
-      Min       -1
-      Max        1
-Properties:
-Testing ... (interrupt to exit)</p>
-<p>Now as you press any key or move any joystick you will see the events.</p>
-<p>When I press the yellow Y we see:
-Event: time 1566006064.962158, type 1 (EV_KEY), code 308 (BTN_WEST), value 1
-Event: time 1566006064.962158, -------------- SYN_REPORT ------------
-Event: time 1566006065.129981, type 1 (EV_KEY), code 308 (BTN_WEST), value 0
-Event: time 1566006065.129981, -------------- SYN_REPORT ------------</p>
-<p>Blue X
-Event: time 1566006110.047015, type 1 (EV_KEY), code 307 (BTN_NORTH), value 1
-Event: time 1566006110.047015, -------------- SYN_REPORT ------------
-Event: time 1566006110.182606, type 1 (EV_KEY), code 307 (BTN_NORTH), value 0
-Event: time 1566006110.182606, -------------- SYN_REPORT ------------</p>
-<p>Red B
-Event: time 1566006143.423217, type 1 (EV_KEY), code 305 (BTN_EAST), value 1
-Event: time 1566006143.423217, -------------- SYN_REPORT ------------
-Event: time 1566006143.499642, type 1 (EV_KEY), code 305 (BTN_EAST), value 0
-Event: time 1566006143.499642, -------------- SYN_REPORT ------------</p>
-<p>Green A
-Event: time 1566006184.060282, type 1 (EV_KEY), code 304 (BTN_SOUTH), value 1
-Event: time 1566006184.060282, -------------- SYN_REPORT ------------
-Event: time 1566006184.128408, type 1 (EV_KEY), code 304 (BTN_SOUTH), value 0
-Event: time 1566006184.128408, -------------- SYN_REPORT ------------</p>
-<p>Moving the joystick generates:
-Event: time 1566006255.549652, -------------- SYN_REPORT ------------
-Event: time 1566006255.553650, type 3 (EV_ABS), code 1 (ABS_Y), value -10923
-Event: time 1566006255.553650, -------------- SYN_REPORT ------------
-Event: time 1566006255.557650, type 3 (EV_ABS), code 1 (ABS_Y), value -14264
-Event: time 1566006255.557650, -------------- SYN_REPORT ------------
-Event: time 1566006255.561652, type 3 (EV_ABS), code 1 (ABS_Y), value -18633</p>
+                <h1 id="shell-commands-for-the-gpu-server">Shell Commands for the GPU Server</h1>
+<p>The following are a list of shell commands for the AI Racing League GPU Server.  We have moved all the commands for setting up the NVIDIA GPU to the file <a href="../nvidia-driver-install/">NVIDIA Driver Install</a>.</p>
+<h2 id="secure-shell-login">Secure Shell Login</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>ssh arl@arl1.local
+</code></pre></div>
+</td></tr></table>
+<h2 id="check-the-version-of-ubuntu">Check the Version of Ubuntu</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$ lsb_release -a
+</code></pre></div>
+</td></tr></table>
+<p>Response:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">No LSB modules are available.</span>
+<span class="err">Distributor ID: Ubuntu</span>
+<span class="c">Description:    Ubuntu 18.04.3 LTS</span>
+<span class="c">Release:    18.04</span>
+<span class="c">Codename:   bionic</span>
+</code></pre></div>
+</td></tr></table>
+<h2 id="list-the-cpu-information">List the CPU Information</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>lscpu
+</code></pre></div>
+</td></tr></table>
+<p>Response:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Architecture</span><span class="p">:</span>        <span class="n">x86_64</span>
+<span class="n">CPU</span> <span class="n">op</span><span class="o">-</span><span class="n">mode</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>      <span class="mi">32</span><span class="o">-</span><span class="n">bit</span><span class="p">,</span> <span class="mi">64</span><span class="o">-</span><span class="n">bit</span>
+<span class="n">Byte</span> <span class="n">Order</span><span class="p">:</span>          <span class="n">Little</span> <span class="n">Endian</span>
+<span class="n">CPU</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>              <span class="mi">12</span>
+<span class="n">On</span><span class="o">-</span><span class="n">line</span> <span class="n">CPU</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">list</span><span class="p">:</span> <span class="mi">0</span><span class="o">-</span><span class="mi">11</span>
+<span class="n">Thread</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">per</span> <span class="n">core</span><span class="p">:</span>  <span class="mi">2</span>
+<span class="n">Core</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">per</span> <span class="n">socket</span><span class="p">:</span>  <span class="mi">6</span>
+<span class="n">Socket</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>           <span class="mi">1</span>
+<span class="n">NUMA</span> <span class="n">node</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>        <span class="mi">1</span>
+<span class="n">Vendor</span> <span class="n">ID</span><span class="p">:</span>           <span class="n">AuthenticAMD</span>
+<span class="n">CPU</span> <span class="n">family</span><span class="p">:</span>          <span class="mi">23</span>
+<span class="n">Model</span><span class="p">:</span>               <span class="mi">113</span>
+<span class="n">Model</span> <span class="n">name</span><span class="p">:</span>          <span class="n">AMD</span> <span class="n">Ryzen</span> <span class="mi">5</span> <span class="mi">3600</span> <span class="mi">6</span><span class="o">-</span><span class="n">Core</span> <span class="n">Processor</span>
+<span class="n">Stepping</span><span class="p">:</span>            <span class="mi">0</span>
+<span class="n">CPU</span> <span class="n">MHz</span><span class="p">:</span>             <span class="mf">2195.902</span>
+<span class="n">CPU</span> <span class="nb">max</span> <span class="n">MHz</span><span class="p">:</span>         <span class="mf">3600.0000</span>
+<span class="n">CPU</span> <span class="nb">min</span> <span class="n">MHz</span><span class="p">:</span>         <span class="mf">2200.0000</span>
+<span class="n">BogoMIPS</span><span class="p">:</span>            <span class="mf">7187.07</span>
+<span class="n">Virtualization</span><span class="p">:</span>      <span class="n">AMD</span><span class="o">-</span><span class="n">V</span>
+<span class="n">L1d</span> <span class="n">cache</span><span class="p">:</span>           <span class="mi">32</span><span class="n">K</span>
+<span class="n">L1i</span> <span class="n">cache</span><span class="p">:</span>           <span class="mi">32</span><span class="n">K</span>
+<span class="n">L2</span> <span class="n">cache</span><span class="p">:</span>            <span class="mi">512</span><span class="n">K</span>
+<span class="n">L3</span> <span class="n">cache</span><span class="p">:</span>            <span class="mi">16384</span><span class="n">K</span>
+<span class="n">NUMA</span> <span class="n">node0</span> <span class="n">CPU</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>   <span class="mi">0</span><span class="o">-</span><span class="mi">11</span>
+<span class="n">Flags</span><span class="p">:</span>               <span class="n">fpu</span> <span class="n">vme</span> <span class="n">de</span> <span class="n">pse</span> <span class="n">tsc</span> <span class="n">msr</span> <span class="n">pae</span> <span class="n">mce</span> <span class="n">cx8</span> <span class="n">apic</span> <span class="n">sep</span> <span class="n">mtrr</span> <span class="n">pge</span> <span class="n">mca</span> <span class="n">cmov</span> <span class="n">pat</span> <span class="n">pse36</span> <span class="n">clflush</span> <span class="n">mmx</span> <span class="n">fxsr</span> <span class="n">sse</span> <span class="n">sse2</span> <span class="n">ht</span> <span class="n">syscall</span> <span class="n">nx</span> <span class="n">mmxext</span> <span class="n">fxsr_opt</span> <span class="n">pdpe1gb</span> <span class="n">rdtscp</span> <span class="n">lm</span> <span class="n">constant_tsc</span> <span class="n">rep_good</span> <span class="n">nopl</span> <span class="n">nonstop_tsc</span> <span class="n">cpuid</span> <span class="n">extd_apicid</span> <span class="n">aperfmperf</span> <span class="n">pni</span> <span class="n">pclmulqdq</span> <span class="n">monitor</span> <span class="n">ssse3</span> <span class="n">fma</span> <span class="n">cx16</span> <span class="n">sse4_1</span> <span class="n">sse4_2</span> <span class="n">movbe</span> <span class="n">popcnt</span> <span class="n">aes</span> <span class="n">xsave</span> <span class="n">avx</span> <span class="n">f16c</span> <span class="n">rdrand</span> <span class="n">lahf_lm</span> <span class="n">cmp_legacy</span> <span class="n">svm</span> <span class="n">extapic</span> <span class="n">cr8_legacy</span> <span class="n">abm</span> <span class="n">sse4a</span> <span class="n">misalignsse</span> <span class="mi">3</span><span class="n">dnowprefetch</span> <span class="n">osvw</span> <span class="n">ibs</span> <span class="n">skinit</span> <span class="n">wdt</span> <span class="n">tce</span> <span class="n">topoext</span> <span class="n">perfctr_core</span> <span class="n">perfctr_nb</span> <span class="n">bpext</span> <span class="n">perfctr_llc</span> <span class="n">mwaitx</span> <span class="n">cpb</span> <span class="n">cat_l3</span> <span class="n">cdp_l3</span> <span class="n">hw_pstate</span> <span class="n">sme</span> <span class="n">ssbd</span> <span class="n">mba</span> <span class="n">sev</span> <span class="n">ibpb</span> <span class="n">stibp</span> <span class="n">vmmcall</span> <span class="n">fsgsbase</span> <span class="n">bmi1</span> <span class="n">avx2</span> <span class="n">smep</span> <span class="n">bmi2</span> <span class="n">cqm</span> <span class="n">rdt_a</span> <span class="n">rdseed</span> <span class="n">adx</span> <span class="n">smap</span> <span class="n">clflushopt</span> <span class="n">clwb</span> <span class="n">sha_ni</span> <span class="n">xsaveopt</span> <span class="n">xsavec</span> <span class="n">xgetbv1</span> <span class="n">xsaves</span> <span class="n">cqm_llc</span> <span class="n">cqm_occup_llc</span> <span class="n">cqm_mbm_total</span> <span class="n">cqm_mbm_local</span> <span class="n">clzero</span> <span class="n">irperf</span> <span class="n">xsaveerptr</span> <span class="n">wbnoinvd</span> <span class="n">arat</span> <span class="n">npt</span> <span class="n">lbrv</span> <span class="n">svm_lock</span> <span class="n">nrip_save</span> <span class="n">tsc_scale</span> <span class="n">vmcb_clean</span> <span class="n">flushbyasid</span> <span class="n">decodeassists</span> <span class="n">pausefilter</span> <span class="n">pfthreshold</span> <span class="n">avic</span> <span class="n">v_vmsave_vmload</span> <span class="n">vgif</span> <span class="n">umip</span> <span class="n">rdpid</span> <span class="n">overflow_recov</span> <span class="n">succor</span> <span class="n">smca</span>
+</code></pre></div>
+</td></tr></table>
+<p>The key is that we have 12 CPUs and each CPU has two threads.  That means that we have 24 threads that run concurrent operations on this server.  This is plenty of capacity for our GPU server.</p>
+<h2 id="ram">RAM</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>free -m
+</code></pre></div>
+</td></tr></table>
+<p>Response:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">              total        used        free      shared  buff/cache   available</span>
+<span class="c">Mem:          32124        1627       28879          75        1618       30019</span>
+<span class="c">Swap:          2047           0        2047</span>
+</code></pre></div>
+</td></tr></table>
+<p>This indicates we have 32 GB RAM.  The GPU server should have a minimum of 8 GB of RAM.</p>
+<h2 id="disk-space">Disk Space</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>df -h /
+</code></pre></div>
+</td></tr></table>
+<p>Response:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">Filesystem      Size  Used Avail Use% Mounted on</span>
+<span class="err">/dev/nvme0n1p3  229G  178G   40G  82% /</span>
+</code></pre></div>
+</td></tr></table>
+<p>This shows we have a total of 229 gigabytes of RAM and we have 40 gigabytes available.  We will need about 4 GB for each training set we store.</p>
+<h3 id="per-user-disk-usage">Per User Disk Usage</h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>du -hs /home/* <span class="m">2</span>&gt;/dev/null
+</code></pre></div>
+</td></tr></table>
+<p>Response:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">8.5G    /home/arl</span>
+<span class="err">1.4G    /home/dan</span>
+<span class="err">16K /home/dan2</span>
+<span class="err">155G    /home/donkey</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="add-a-new-gpu-server-user">Add A New GPU Server User</h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>adduser donkey
+</code></pre></div>
+</td></tr></table>
+<p>You can also allow the user to have "sudo" rights by using the following command:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo usermod -aG sudo donkey
+</code></pre></div>
+</td></tr></table>
+<h3 id="change-the-hostname">Change the Hostname</h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo vi hostname
+</code></pre></div>
+</td></tr></table>
+<p>Change the name to "gpu-server2" or a similar name.</p>
                 
               
               
@@ -1042,7 +1184,7 @@ Event: time 1566006255.561652, type 3 (EV_ABS), code 1 (ABS_Y), value -18633</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../car-box-checklist/" title="Car Box Checklist" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../nvidia-driver-install/" title="NVIDIA Driver Installation" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1051,19 +1193,19 @@ Event: time 1566006255.561652, type 3 (EV_ABS), code 1 (ABS_Y), value -18633</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Car Box Checklist
+                NVIDIA Driver Installation
               </span>
             </div>
           </a>
         
         
-          <a href="../../hackathon/" title="Hackathon" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../01-intro/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Hackathon
+                Introduction
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
