@@ -36,7 +36,7 @@ nav:
   - Presentations:
     - List of Presentations: presentations.md
     - Welcome: slides/Welcome-to-the-ARL.pptx
-    - Command Reference Card: slides/Command-Reference-Card.md
+    - Command Reference Card: slides/Command-Reference-Card.pptx
     - Code Savvy Slides: slides/AI-Racing-League-Code-Savvy.pptx
     - Connecting PWM Cards: slides/Connecting-PWM-Cards.pptx
   - FAQs: faqs.md
