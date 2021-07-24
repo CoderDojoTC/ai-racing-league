@@ -858,6 +858,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#calibration" class="md-nav__link">
+    Calibration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#coderdojo" class="md-nav__link">
     CoderDojo
   </a>
@@ -907,6 +914,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#gpu-server" class="md-nav__link">
+    GPU Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#electronic-speed-control" class="md-nav__link">
     Electronic Speed Control
   </a>
@@ -930,6 +944,27 @@
         <li class="md-nav__item">
   <a href="#tracks" class="md-nav__link">
     Tracks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training-step" class="md-nav__link">
+    Training Step
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tubs" class="md-nav__link">
+    Tubs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tub-catalog-format" class="md-nav__link">
+    Tub Catalog Format
   </a>
   
 </li>
@@ -990,6 +1025,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#calibration" class="md-nav__link">
+    Calibration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#coderdojo" class="md-nav__link">
     CoderDojo
   </a>
@@ -1039,6 +1081,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#gpu-server" class="md-nav__link">
+    GPU Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#electronic-speed-control" class="md-nav__link">
     Electronic Speed Control
   </a>
@@ -1062,6 +1111,27 @@
         <li class="md-nav__item">
   <a href="#tracks" class="md-nav__link">
     Tracks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training-step" class="md-nav__link">
+    Training Step
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tubs" class="md-nav__link">
+    Tubs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tub-catalog-format" class="md-nav__link">
+    Tub Catalog Format
   </a>
   
 </li>
@@ -1091,6 +1161,8 @@
                 
                 
                 <h1 id="ai-racing-league-glossary-of-term">AI Racing League Glossary of Term</h1>
+<h4 id="calibration">Calibration</h4>
+<p>A step in setting up a DonkeyCar where around five values configuration file is created that reflect the physical aspects of the RC car.  There are three parameters for the throttle and two parameters for the steering.  It is important to get these five parameters correct so you can precisely drive your DonkeyCar.</p>
 <h4 id="coderdojo">CoderDojo</h4>
 <p>An international program of over 2,300 coding clubs that uses data-driven practices to get students interested in coding.  Many of the aspects of the AI Racing League uses these same principals.</p>
 <p>Key aspects of CoderDojo are:</p>
@@ -1133,6 +1205,14 @@ The robot will get you familiar with concepts like PWM, motor controllers and se
 <ul>
 <li><a href="http://donkeycar.com">DonkeyCar web site</a></li>
 </ul>
+<h4 id="gpu-server">GPU Server</h4>
+<p><img alt="GPU Case with Handle" src="GPU-case-with-handle.png" /></p>
+<p>Each of the AI Racing League events usually has at least one GPU server for training our models.  These are typically small portable PCs with a GPU card in them.  The entire GPU server cost around $1,200 each and can train a 20,000 image data set in under five minutes.</p>
+<p>We typically suggest that clubs writing grants use a <a href="https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2070/">NVIDIA RTX 2070</a> or similar card since it is both fast enough for 10-team events but cost effective that schools can afford them.</p>
+<p>Note that we have tried to use cloud-based services at some of our events but we can't be guaranteed that there is enough WiFi bandwidth to move large datasets and models to and from the cloud.  We feel that the tasks involved in setting up the GPU server is also a valuable skill for our students.</p>
+<ul>
+<li>See the <a href="../admin/gpu-parts/">GPU Parts List</a> for a list of components.</li>
+</ul>
 <h4 id="electronic-speed-control">Electronic Speed Control</h4>
 <p>An electronic circuit that controls and regulates the speed of an electric motor. It also can reverse the direction of the motor.  Our ESC</p>
 <ul>
@@ -1151,8 +1231,26 @@ The robot will get you familiar with concepts like PWM, motor controllers and se
 <li>https://billboardtarps.com/product-category/billboard-vinyl/</li>
 <li><a href="https://youtu.be/urOLMJDGVdw">YouTube Video</a></li>
 </ul>
+<h4 id="training-step">Training Step</h4>
+<p>The step in DonkeyCar setup where we take approximately 20,000 small image files and the throttle and steering information with each image to build a deep neural network.  The training step requires us to move the data off the DonkeyCar's SD card and transfer the data to a more powerful GPU server.  Using a typical $1,200 GPU server we can build a model file in around five minutes.  This file is then transferred back to the DonkeyCar for autonomous driving.</p>
+<h4 id="tubs">Tubs</h4>
+<p>This is the term that the DonkeyCar software uses to store training data.  Each tub consists of a catalog of information about the drive and the images associated with that drive.</p>
+<p>Note that the format of the tubs changes over time so old tubs formats may need to be converted to newer formats.</p>
+<ul>
+<li><a href="https://github.com/autorope/donkeycar/blob/dev/scripts/convert_to_tub_v2.py">Script to Convert Tugs from V1 format to V2 Format</a></li>
+<li><a href="#tub-catalog">DonkeyCar Catalog Format</a></li>
+</ul>
+<h4 id="tub-catalog-format">Tub Catalog Format</h4>
+<p>Each Tub is a directory (folder) has two components:</p>
+<ol>
+<li>A sub folder called "images" that contains the jpeg images gathered during a training run.  There are typically 10,000 to 20,000 small images in a tub image folder.</li>
+<li>A file that describes the data about all the images called a Catalog file.  The Catalog file is similar to a JSON file but it has no root data elements.</li>
+</ol>
 <h4 id="nvidia-nano">NVIDIA Nano</h4>
-<p>This is the board we use in our cars.  They have 4GB RAM and a GPU for accelerating real-time inference.</p>
+<p>One of the two single board computers we use in our DonkeyCars.  The current Nanos have 4GB RAM and a GPU for accelerating real-time inference.</p>
+<p>The full product name is the NVIDIA Jetson Nano.</p>
+<p>The price for a 4GB Nano is around $99 but they occasionally go on sale for $79.  The Nano became available for sale in the US in April of 2019.  A 2GB version has also been sold for $59 but the lack of RAM memory makes it difficult to use for many of our AI Racing League events and we don't recommend it.</p>
+<p>Note that we do not use the Nano for training.  We transfer the data to a GPU server that has more parallel cores for training.</p>
                 
               
               

@@ -549,6 +549,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#cuda-version" class="md-nav__link">
+    CUDA Version
+  </a>
+  
+    <nav class="md-nav" aria-label="CUDA Version">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cuda-tookkit-install-for-pytorch" class="md-nav__link">
+    CUDA Tookkit Install for PyTorch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -963,6 +983,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#cuda-version" class="md-nav__link">
+    CUDA Version
+  </a>
+  
+    <nav class="md-nav" aria-label="CUDA Version">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cuda-tookkit-install-for-pytorch" class="md-nav__link">
+    CUDA Tookkit Install for PyTorch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1111,6 +1151,27 @@ driver   : backport-iwlwifi-dkms - distro free
 </td></tr></table>
 <p>If you don't get this or a similar display, you must continue to search for installation instructions.</p>
 <p>After you get this screen you can reboot.</p>
+<h2 id="cuda-version">CUDA Version</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>nvcc --version
+</code></pre></div>
+</td></tr></table>
+<p>Results:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">nvcc</span><span class="o">:</span> <span class="n">NVIDIA</span> <span class="o">(</span><span class="n">R</span><span class="o">)</span> <span class="n">Cuda</span> <span class="n">compiler</span> <span class="n">driver</span>
+<span class="n">Copyright</span> <span class="o">(</span><span class="n">c</span><span class="o">)</span> <span class="mi">2005</span><span class="o">-</span><span class="mi">2017</span> <span class="n">NVIDIA</span> <span class="n">Corporation</span>
+<span class="n">Built</span> <span class="n">on</span> <span class="n">Fri_Nov__3_21</span><span class="o">:</span><span class="mi">07</span><span class="o">:</span><span class="mi">56</span><span class="n">_CDT_2017</span>
+<span class="n">Cuda</span> <span class="n">compilation</span> <span class="n">tools</span><span class="o">,</span> <span class="n">release</span> <span class="mf">9.1</span><span class="o">,</span> <span class="n">V9</span><span class="o">.</span><span class="mf">1.85</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="cuda-tookkit-install-for-pytorch">CUDA Tookkit Install for PyTorch</h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>conda install <span class="nv">cudatoolkit</span><span class="o">=</span>&lt;CUDA Version&gt; -c pytorch
+</code></pre></div>
+</td></tr></table>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>conda install <span class="nv">cudatoolkit</span><span class="o">=</span><span class="m">11</span> -c pytorch
+</code></pre></div>
+</td></tr></table>
                 
               
               
