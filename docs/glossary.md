@@ -58,7 +58,7 @@ This is a trademarked name of a car that is used at our events.  The name implie
 
 Each of the AI Racing League events usually has at least one GPU server for training our models.  These are typically small portable PCs with a GPU card in them.  The entire GPU server cost around $1,200 each and can train a 20,000 image data set in under five minutes.
 
-We typically suggest that clubs writing grants use a [NVIDIA RTX 2070](https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2070/) or similar card since it is both fast enough for 10-team events but cost effective that schools can afford them.
+We typically suggest that clubs writing grants use a [NVIDIA GEFORCE RTX 2070 8GB](https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2070/) or similar card since it is both fast enough for 10-team events but cost effective that schools can afford them.  These card are often available used on e-Bay for a few hundred dollars.
 
 Note that we have tried to use cloud-based services at some of our events but we can't be guaranteed that there is enough WiFi bandwidth to move large datasets and models to and from the cloud.  We feel that the tasks involved in setting up the GPU server is also a valuable skill for our students.
 
