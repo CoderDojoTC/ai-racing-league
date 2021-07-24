@@ -1,5 +1,8 @@
 # AI Racing League Glossary of Term
 
+#### Calibration
+A step in setting up a DonkeyCar where around five values configuration file is created that reflect the physical aspects of the RC car.  There are three parameters for the throttle and two parameters for the steering.  It is important to get these five parameters correct so you can precisely drive your DonkeyCar.
+
 #### CoderDojo
 An international program of over 2,300 coding clubs that uses data-driven practices to get students interested in coding.  Many of the aspects of the AI Racing League uses these same principals.
 
@@ -49,6 +52,18 @@ This is a trademarked name of a car that is used at our events.  The name implie
 
 * [DonkeyCar web site](http://donkeycar.com)
 
+#### GPU Server
+
+![GPU Case with Handle](GPU-case-with-handle.png)
+
+Each of the AI Racing League events usually has at least one GPU server for training our models.  These are typically small portable PCs with a GPU card in them.  The entire GPU server cost around $1,200 each and can train a 20,000 image data set in under five minutes.
+
+We typically suggest that clubs writing grants use a [NVIDIA RTX 2070](https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2070/) or similar card since it is both fast enough for 10-team events but cost effective that schools can afford them.
+
+Note that we have tried to use cloud-based services at some of our events but we can't be guaranteed that there is enough WiFi bandwidth to move large datasets and models to and from the cloud.  We feel that the tasks involved in setting up the GPU server is also a valuable skill for our students.
+
+* See the [GPU Parts List](admin/gpu-parts.md) for a list of components.
+
 #### Electronic Speed Control
 An electronic circuit that controls and regulates the speed of an electric motor. It also can reverse the direction of the motor.  Our ESC
 
@@ -70,6 +85,31 @@ We want our clubs to all have affordable but high-quality tracks that are easy t
 * https://billboardtarps.com/product-category/billboard-vinyl/
 * [YouTube Video](https://youtu.be/urOLMJDGVdw)
 
+#### Training Step
+The step in DonkeyCar setup where we take approximately 20,000 small image files and the throttle and steering information with each image to build a deep neural network.  The training step requires us to move the data off the DonkeyCar's SD card and transfer the data to a more powerful GPU server.  Using a typical $1,200 GPU server we can build a model file in around five minutes.  This file is then transferred back to the DonkeyCar for autonomous driving.
+
+#### Tubs
+This is the term that the DonkeyCar software uses to store training data.  Each tub consists of a catalog of information about the drive and the images associated with that drive.
+
+Note that the format of the tubs changes over time so old tubs formats may need to be converted to newer formats.
+
+* [Script to Convert Tugs from V1 format to V2 Format](https://github.com/autorope/donkeycar/blob/dev/scripts/convert_to_tub_v2.py)
+* [DonkeyCar Catalog Format](#tub-catalog)
+
+#### Tub Catalog Format
+
+Each Tub is a directory (folder) has two components:
+
+1. A sub folder called "images" that contains the jpeg images gathered during a training run.  There are typically 10,000 to 20,000 small images in a tub image folder.
+2. A file that describes the data about all the images called a Catalog file.  The Catalog file is similar to a JSON file but it has no root data elements.
+
 #### NVIDIA Nano
-This is the board we use in our cars.  They have 4GB RAM and a GPU for accelerating real-time inference.
+
+One of the two single board computers we use in our DonkeyCars.  The current Nanos have 4GB RAM and a GPU for accelerating real-time inference.
+
+The full product name is the NVIDIA Jetson Nano.
+
+The price for a 4GB Nano is around $99 but they occasionally go on sale for $79.  The Nano became available for sale in the US in April of 2019.  A 2GB version has also been sold for $59 but the lack of RAM memory makes it difficult to use for many of our AI Racing League events and we don't recommend it.
+
+Note that we do not use the Nano for training.  We transfer the data to a GPU server that has more parallel cores for training.
 
