@@ -54,14 +54,14 @@ sample designs.  We create these at the IoT hackthons each year.
 | Power Supply | Corsair SF 600W 80+ Gold SFX Power Supply | $114.99 | Link | 600W is an overkill |
 
 Note that this motherboard does come with builtin WiFi.
-The external antenna must be connected but it is easy to get lost in transport.
+The external antenna must be connected but it is easy to get lost in transport. 
+You might want to get a few additional WiFi antennas like [these RP-SMA Male Antenna](https://www.amazon.com/gp/product/B08S396GRP/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1)
 We also think we could get buy with a smaller and lighter power supply, but the 600W model gives
 the system the opportunity to add external devices that might draw more power.
 
 # Assembly
 There are several good videos on YouTube that show how to assemble custom systems.
-You can also use a search
-engine to find videos for each of the parts.  The Liquid coolers can be tricky to install correctly if you
+You can also use a search engine to find videos for each of the parts.  The Liquid coolers can be tricky to install correctly if you
 don't have experience.  We also recommend reading the user manauals for each of the parts.  They are usually on line.
 
 [Jon Herke's Tiny Monster](https://pcpartpicker.com/user/Herk89/saved/ypHZf7)
