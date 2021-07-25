@@ -20,8 +20,11 @@ def iter_jsons(s):
 
 # Open the JSON test file for read only
 f = open(path_to_catalog_file, 'r')
-objects = json.load(f)
-
-for item in objects:
-    _index = item['_index']
-    print(_index)
+f2 = list(iter_jsons(f))
+  
+# Iterating through the json file for the items in the drive data dictionary
+for i in f2:
+    print(i)
+  
+# Close the JSON file
+f.close()
