@@ -29,7 +29,12 @@ nav:
     - Car Box Checklist: admin/car-box-checklist.md
     - Joystick: admin/joystick.md
   - Data Analysis:
-    - Introduction: analysis/01-intro.md
+    - Introduction: data-analysis/01-intro.md
+    - Listing Files: data-analysis/02-listing-files.md
+    - Viewing Images: data-analysis/03-viewing-images.md
+    - Viewing Catalog Files: data-analysis/04-viewing-catalog-files.md
+    - Cleaning Datasets: data-analysis/05-cleaning-datasets.md
+    - Data Distributions: data-analysis/06-data-distributions.md
   - Misc:
     - Hackathon: hackathon.md
     - Demos: demos.md
