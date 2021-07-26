@@ -4,7 +4,7 @@ This is a sample suggested curriculum for a six week AI Racing League summer sch
 
 ## Week 1: Overview and Unboxing
 
-1. Slides: Welcome to the AI Racing League? [Link to Slides](sides/Welcome-to-the-ARL.pptx)
+1. Slides: Welcome to the AI Racing League? [Link to Slides](slides/Welcome-to-the-ARL.pptx)
 2. What is the DonkeyCar?
 3. Lab: Unbox the car (requires tools such as cable tie cutter and screwdrivers)
 4. What is AI? What is Machine Learning?

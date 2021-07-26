@@ -1,6 +1,18 @@
 # AI Racing League Glossary of Term
 
+#### Calibration
+A step in setting up a DonkeyCar where around five values configuration file is created that reflect the physical aspects of the RC car.  There are three parameters for the throttle and two parameters for the steering.  It is important to get these five parameters correct so you can precisely drive your DonkeyCar.
+
+#### Catalog File
+
+A format of storing our image-related throttle and steering data in line-oriented file where each line contains the serialized JSON information when the image was captured.
+
+Note that the catalog files are not pure JSON files.  Only the data within each line is a valid data JSON object.
+
+The catalog file formats have changed between DonkeyCar releases.  The current version is called V2 format.
+
 #### CoderDojo
+
 An international program of over 2,300 coding clubs that uses data-driven practices to get students interested in coding.  Many of the aspects of the AI Racing League uses these same principals.
 
 Key aspects of CoderDojo are:
@@ -49,6 +61,18 @@ This is a trademarked name of a car that is used at our events.  The name implie
 
 * [DonkeyCar web site](http://donkeycar.com)
 
+#### GPU Server
+
+![GPU Case with Handle](GPU-case-with-handle.png)
+
+Each of the AI Racing League events usually has at least one GPU server for training our models.  These are typically small portable PCs with a GPU card in them.  The entire GPU server cost around $1,200 each and can train a 20,000 image data set in under five minutes.
+
+We typically suggest that clubs writing grants use a [NVIDIA GEFORCE RTX 2070 8GB](https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2070/) or similar card since it is both fast enough for 10-team events but cost effective that schools can afford them.  These card are often available used on e-Bay for a few hundred dollars.
+
+Note that we have tried to use cloud-based services at some of our events but we can't be guaranteed that there is enough WiFi bandwidth to move large datasets and models to and from the cloud.  We feel that the tasks involved in setting up the GPU server is also a valuable skill for our students.
+
+* See the [GPU Parts List](admin/gpu-parts.md) for a list of components.
+
 #### Electronic Speed Control
 An electronic circuit that controls and regulates the speed of an electric motor. It also can reverse the direction of the motor.  Our ESC
 
@@ -56,6 +80,12 @@ An electronic circuit that controls and regulates the speed of an electric motor
 
 #### Fifteen Degree Camera Angle
 The angle our cameras need to point down to have a good view of the road ahead.
+
+#### Normalized
+
+Values that have been converted into a standard that can be used across many situations.
+
+For example, we don't store the exact PWM ratios of the throttle and steering values in our catalog files.  We convert these values into ranges from 0.0 to 1.0 so that all our machine learning models can share them.  This is why we also need the configuration values when the drive commands are used to convert the normalized values back to the appropriate PWM ranges unique to each car.
 
 #### Pulse Width Modulation
 The way that we control the [Electronic Speed Controller] (ESC) and the servo by sending digital square waves with a variable ratio of the width of the positive part of the square wave.
@@ -70,6 +100,31 @@ We want our clubs to all have affordable but high-quality tracks that are easy t
 * https://billboardtarps.com/product-category/billboard-vinyl/
 * [YouTube Video](https://youtu.be/urOLMJDGVdw)
 
+#### Training Step
+The step in DonkeyCar setup where we take approximately 20,000 small image files and the throttle and steering information with each image to build a deep neural network.  The training step requires us to move the data off the DonkeyCar's SD card and transfer the data to a more powerful GPU server.  Using a typical $1,200 GPU server we can build a model file in around five minutes.  This file is then transferred back to the DonkeyCar for autonomous driving.
+
+#### Tubs
+This is the term that the DonkeyCar software uses to store training data.  Each tub consists of a catalog of information about the drive and the images associated with that drive.
+
+Note that the format of the tubs changes over time so old tubs formats may need to be converted to newer formats.
+
+* [Script to Convert Tugs from V1 format to V2 Format](https://github.com/autorope/donkeycar/blob/dev/scripts/convert_to_tub_v2.py)
+* [DonkeyCar Catalog Format](#tub-catalog)
+
+#### Tub Catalog Format
+
+Each Tub is a directory (folder) has two components:
+
+1. A sub folder called "images" that contains the jpeg images gathered during a training run.  There are typically 10,000 to 20,000 small images in a tub image folder.
+2. A file that describes the data about all the images called a Catalog file.  The Catalog file is similar to a JSON file but it has no root data elements.
+
 #### NVIDIA Nano
-This is the board we use in our cars.  They have 4GB RAM and a GPU for accelerating real-time inference.
+
+One of the two single board computers we use in our DonkeyCars.  The current Nanos have 4GB RAM and a GPU for accelerating real-time inference.
+
+The full product name is the NVIDIA Jetson Nano.
+
+The price for a 4GB Nano is around $99 but they occasionally go on sale for $79.  The Nano became available for sale in the US in April of 2019.  A 2GB version has also been sold for $59 but the lack of RAM memory makes it difficult to use for many of our AI Racing League events and we don't recommend it.
+
+Note that we do not use the Nano for training.  We transfer the data to a GPU server that has more parallel cores for training.
 

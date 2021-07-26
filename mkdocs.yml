@@ -10,15 +10,42 @@ nav:
     - Learning Strategy: learning-strategy.md
     - Curriculum: curriculum.md
     - Sample Six Week Course: six-week-curriculum.md
-  - Hardware:
-    - Cars Parts List: car-parts-list.md
-    - GPU Parts List: gpu-parts.md
-    - Car Box Checklist: car-box-checklist.md
-    - Joystick: joystick.md
+  - Setup:
+    - Car Checklist: setup/car-box-checklist.md
+    - Calibrate: setup/calibrate.md
+    - Setup Conda on Pi: setup/conda-pi-setup.md
+    - PWM Setup: setup/pwm-board.md
+    - Nano SD Image Checklist: setup/nano-sd-image-checklist.md
+    - Software Installation Notes: setup/software-install-notes.md
+  - GPU Server Setup:
+    - NVIDIA Driver Installation: admin/nvidia-driver-install.md
+    - GPU Shell Commands: admin/gpu-shell.md
+  - Team Administration:
+    - Introduction: admin/01-intro.md
+    - Custom Club Images: admin/02-sd-image.md
+    - Purchasing Guide: admin/03-purchasing-guide.md
+    - Cars Parts List: admin/car-parts-list.md
+    - GPU Parts List: admin/gpu-parts.md
+    - Car Box Checklist: admin/car-box-checklist.md
+    - Joystick: admin/joystick.md
+  - Data Analysis:
+    - Introduction: data-analysis/01-intro.md
+    - Listing Files: data-analysis/02-listing-files.md
+    - Viewing Images: data-analysis/03-viewing-images.md
+    - Viewing Catalog Files: data-analysis/04-viewing-catalog-files.md
+    - Cleaning Datasets: data-analysis/05-cleaning-datasets.md
+    - Data Distributions: data-analysis/06-data-distributions.md
   - Misc:
     - Hackathon: hackathon.md
     - Demos: demos.md
     - Media: media.md
+    - Command Line Tips: command-line-tips.md
+  - Presentations:
+    - List of Presentations: presentations.md
+    - Welcome: slides/Welcome-to-the-ARL.pptx
+    - Command Reference Card: slides/Command-Reference-Card.pptx
+    - Code Savvy Slides: slides/AI-Racing-League-Code-Savvy.pptx
+    - Connecting PWM Cards: slides/Connecting-PWM-Cards.pptx
   - FAQs: faqs.md
   - Glossary: glossary.md
   - Resources: resources.md

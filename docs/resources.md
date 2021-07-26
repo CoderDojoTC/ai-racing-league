@@ -10,14 +10,19 @@ Here are some sites that are of interest:
 
 * [DonkeyCar web site](http://donkeycar.com)
 * [Donkey Car Nano Setup Page](https://docs.donkeycar.com/guide/robot_sbc/setup_jetson_nano/)
+* [DonkeyCar Assembly Video](https://youtu.be/OaVqWiR2rS0) - Chris Anderson's detailed assembly video from 2018.
 
 ## Track Options
 
-In Minnesota there is a place that sells used vynil sign material.
+In Minnesota there is a place that sells used vinyl sign material.  For around $60 you can get a 16' X 25' used black billboard vinyl sign that is ideal for creating your own track.
+
+![Used Black Vinyl Track for $60](img/track-vinyl-black.jpg)
 
 [Billboard Tarps and Vinyl](https://billboardtarps.com/product-category/billboard-vinyl/) - We suggest you get a dark color (block or dark blue) and then tape down white edges and a yellow dashed line in the center.
 
 ![Sample Track Template](img/donkeycartrack4_1080x.jpg)
+
+Sample of track.  Note the actual track is twice this size since it is still folded in half in this photo.
 
 ## Hardware Options
 
@@ -36,3 +41,10 @@ Jetson Nano References
 * [Nvidia Jetson Nano Kaya Video](https://www.youtube.com/watch?v=X3qGDYie1_I)
 * [Adding a Joystick to your DonkeyCar - From Dan McCreary's Blog](https://medium.com/@dmccreary/a-joystick-for-your-donkeycar-d4266c0b91f4)
 
+## Videos
+
+* [Video of Wide Track](https://www.youtube.com/watch?v=lfwq73D7oHg)
+* [PID Theory and Steering](https://www.youtube.com/watch?v=4Y7zG48uHRo) - why using machine learning is easier than setting PID parameters.  This is covered in control theory.
+* [Real time optimal control of an autonomous RC car with minimum-time maneuvers](https://www.youtube.com/watch?v=HADLEr5eTj0) - nice video of optimization of driving algorithm using a "U" shaped track.
+* [Sparkfun Autonomous Vehicle Race from 2016](https://www.youtube.com/watch?v=NBr71Dww_-k)
+* [Ed Murphy on Maker Faire](https://www.youtube.com/watch?v=cKhrV_RYVOw)

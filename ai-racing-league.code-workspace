@@ -4,5 +4,18 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"cSpell.words": [
+			"AORUS",
+			"Dupont",
+			"GEFORCE",
+			"Lian",
+			"NVME",
+			"Rima",
+			"Ryzen",
+			"donkeycar",
+			"jsons",
+			"milliamp"
+		]
+	}
 }
