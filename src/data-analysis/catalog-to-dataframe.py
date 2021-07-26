@@ -8,12 +8,12 @@ import pandas as pd
 script_dir = os.path.dirname(__file__)
 
 # get a relative path to the script dir
-path_to_catalog_file = script_dir + '/test.catalog'
+path_to_catalog_file = script_dir + './test.catalog'
 
 f = open(path_to_catalog_file)
 lines = f.readlines()
 # create a dictionary object
-dict = {}
+records = []
 count = 0
 total_throttle = 0
 total_angle = 0
@@ -22,7 +22,7 @@ for line in lines:
     # each line as a JSON dictionary object
     j = json.loads(line)
     count += 1
-    dict.update(j)
+    records.append(j)
 
 # print ('type:', type(dict))
 # print('column count', len(dict))
@@ -30,7 +30,7 @@ for line in lines:
 
 # df = pd.DataFrame(list(dict.items()), )
 # df=pd.DataFrame.from_dict(dict, orient='index', columns={'id', 'session', 'time', 'img', 'angle', 'mode', 'throttle'})
-df=pd.DataFrame.from_dict(dict, orient='index')
+df=pd.DataFrame(records)
 # _index                                16099
 # _session_id                      21-07-20_1
 #_timestamp_ms                 1626797880229
@@ -47,7 +47,17 @@ df.rename({
     'user/angle': 'angle', 
     'user/throttle': 'throttle'
     }, axis=1, inplace=True)
-# print(df)
-print(df.columns)
-print(df.last(7))
-# print(df.nlargest(3, 'user/throttle'))
+
+print(df)
+print(df.describe())
+
+df.to_csv("./test.csv")
+
+'''
+Create histogram of angle from dataframe
+'''
+import matplotlib.pyplot as plt
+
+plt.hist(df['angle'], bins=20)
+plt.savefig('./testAngle.png')
+
