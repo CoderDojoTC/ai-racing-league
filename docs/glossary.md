@@ -3,7 +3,16 @@
 #### Calibration
 A step in setting up a DonkeyCar where around five values configuration file is created that reflect the physical aspects of the RC car.  There are three parameters for the throttle and two parameters for the steering.  It is important to get these five parameters correct so you can precisely drive your DonkeyCar.
 
+#### Catalog File
+
+A format of storing our image-related throttle and steering data in line-oriented file where each line contains the serialized JSON information when the image was captured.
+
+Note that the catalog files are not pure JSON files.  Only the data within each line is a valid data JSON object.
+
+The catalog file formats have changed between DonkeyCar releases.  The current version is called V2 format.
+
 #### CoderDojo
+
 An international program of over 2,300 coding clubs that uses data-driven practices to get students interested in coding.  Many of the aspects of the AI Racing League uses these same principals.
 
 Key aspects of CoderDojo are:
@@ -71,6 +80,12 @@ An electronic circuit that controls and regulates the speed of an electric motor
 
 #### Fifteen Degree Camera Angle
 The angle our cameras need to point down to have a good view of the road ahead.
+
+#### Normalized
+
+Values that have been converted into a standard that can be used across many situations.
+
+For example, we don't store the exact PWM ratios of the throttle and steering values in our catalog files.  We convert these values into ranges from 0.0 to 1.0 so that all our machine learning models can share them.  This is why we also need the configuration values when the drive commands are used to convert the normalized values back to the appropriate PWM ranges unique to each car.
 
 #### Pulse Width Modulation
 The way that we control the [Electronic Speed Controller] (ESC) and the servo by sending digital square waves with a variable ratio of the width of the positive part of the square wave.
