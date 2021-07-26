@@ -14,7 +14,7 @@
     
     
       
-        <title>Cleaning Datasets - AI Racing League</title>
+        <title>Catalog Statistics - AI Racing League</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cleaning-datasets" class="md-skip">
+        <a href="#catalog-statistics" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Cleaning Datasets
+              Catalog Statistics
             
           </span>
         </div>
@@ -637,14 +637,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
       
       <label class="md-nav__link" for="nav-7">
         Data Analysis
@@ -709,49 +707,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Cleaning Datasets
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../05-cleaning-datasets.md" class="md-nav__link">
         Cleaning Datasets
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#splitting-datasets" class="md-nav__link">
-    Splitting Datasets
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1019,8 +979,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#splitting-datasets" class="md-nav__link">
-    Splitting Datasets
+  <a href="#calculating-average-throttle-and-angle" class="md-nav__link">
+    Calculating Average Throttle and Angle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#viewing-min-and-max-values" class="md-nav__link">
+    Viewing Min and Max values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plotting-steering-distributions" class="md-nav__link">
+    Plotting Steering Distributions
   </a>
   
 </li>
@@ -1037,21 +1011,210 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/ai-racing-league/blob/master/docs/data-analysis/05-cleaning-datasets.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/ai-racing-league/blob/master/docs/data-analysis/05-catalog-statistics.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="cleaning-datasets">Cleaning Datasets</h1>
-<p>Up until now, we have only been viewing metrics and files.  These are all read-only operations. Now we will write our first programs that change the tub datasets.</p>
-<h2 id="splitting-datasets">Splitting Datasets</h2>
-<p>In this lab we will assume that we want to break our data into two distinct subsets and place them in different "tubs", which are just directories that contain both the catalogs and images for a dataset.</p>
-<p>You can begin by taking a single dataset in a tub and then duplicating that tub.  You can then selectively remove the data from the two tubs to effectively split the tubs.</p>
-<p>The UNIX shell command to copy an entire directly is the "cp" command with the "-r" option for recursive copy.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>cp -r from-dir to-dir
+                <h1 id="catalog-statistics">Catalog Statistics</h1>
+<p>Now that we know how to reach each item in the tub catalog, we can now do some simple statistics on this data.  For example we can calculate the average throttle and steering angle and create some plots of the distribution of these values.</p>
+<h2 id="calculating-average-throttle-and-angle">Calculating Average Throttle and Angle</h2>
+<p>When we drive around the track each image records both the throttle and steering values at the instant the image was taken by the camera.  Although the values sent to the Electronic Speed Controller (ESC) and the servo are unique to every car, instead we store values that have been converted to a range between 0 and 1.  Both these values are <a href="#glossary#normalized">Normalized</a> to values of between 0 and 1.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1"># program to read a DonkeyCar Catalog File</span>
+<span class="kn">import</span> <span class="nn">os</span><span class="o">,</span><span class="nn">json</span>
+
+<span class="c1"># this program assumes that test.catalog is in the same directory as this script</span>
+<span class="c1"># get the direcotry that this script is running</span>
+<span class="n">script_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span>
+
+<span class="c1"># get a relative path to the script dir</span>
+<span class="n">path_to_catalog_file</span> <span class="o">=</span> <span class="n">script_dir</span> <span class="o">+</span> <span class="s1">&#39;/test.catalog&#39;</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_catalog_file</span><span class="p">)</span>
+<span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+<span class="c1"># create a dictionary object</span>
+<span class="nb">dict</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">total_throttle</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">total_angle</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="c1"># Add each line to our dictionary</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+    <span class="c1"># each line as a JSON dictionary object</span>
+    <span class="n">j</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="nb">dict</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">line</span><span class="p">))</span>
+    <span class="n">total_throttle</span> <span class="o">+=</span> <span class="n">j</span><span class="p">[</span><span class="s2">&quot;user/throttle&quot;</span><span class="p">]</span>
+    <span class="n">total_angle</span> <span class="o">+=</span> <span class="n">j</span><span class="p">[</span><span class="s2">&quot;user/angle&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">count</span><span class="p">,</span> <span class="s2">&quot;items in dictionary&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Average throttle: &quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">total_throttle</span><span class="o">/</span><span class="n">count</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Average angle:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">total_angle</span><span class="o">/</span><span class="n">count</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 </code></pre></div>
 </td></tr></table>
-<p>You can also add the "-v" option to see what files are being copied.</p>
+<p>returns:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">100 items in dictionary</span>
+<span class="err">Average throttle:  0.31</span>
+<span class="err">Average angle: 0.53</span>
+</code></pre></div>
+</td></tr></table>
+<p>These values look reasonable.  Our throttle should be between 0 and 1 and our average steering should be around 0.5.  If we drive in a pure circle only in a single direction the average angle will be offset from the 0.5 center value.</p>
+<h2 id="viewing-min-and-max-values">Viewing Min and Max values</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1"># program to read a DonkeyCar Catalog File</span>
+<span class="kn">import</span> <span class="nn">os</span><span class="o">,</span><span class="nn">json</span>
+
+<span class="c1"># this program assumes that test.catalog is in the same directory as this script</span>
+<span class="c1"># get the direcotry that this script is running</span>
+<span class="n">script_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span>
+
+<span class="c1"># get a relative path to the script dir</span>
+<span class="n">path_to_catalog_file</span> <span class="o">=</span> <span class="n">script_dir</span> <span class="o">+</span> <span class="s1">&#39;/test.catalog&#39;</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_catalog_file</span><span class="p">)</span>
+<span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+<span class="c1"># create a dictionary object</span>
+<span class="nb">dict</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">total_throttle</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">min_throttle</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">max_throttle</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">total_angle</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">min_angle</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">max_angle</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Add each line to our dictionary</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+    <span class="c1"># each line as a JSON dictionary object</span>
+    <span class="n">j</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="nb">dict</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">line</span><span class="p">))</span>
+    <span class="n">total_throttle</span> <span class="o">+=</span> <span class="n">j</span><span class="p">[</span><span class="s2">&quot;user/throttle&quot;</span><span class="p">]</span>
+    <span class="n">total_angle</span> <span class="o">+=</span> <span class="n">j</span><span class="p">[</span><span class="s2">&quot;user/angle&quot;</span><span class="p">]</span>
+
+    <span class="c1"># check for min and max throttle</span>
+    <span class="k">if</span> <span class="n">j</span><span class="p">[</span><span class="s2">&quot;user/throttle&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">min_throttle</span><span class="p">:</span>
+        <span class="n">min_throttle</span> <span class="o">=</span> <span class="n">j</span><span class="p">[</span><span class="s2">&quot;user/throttle&quot;</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">j</span><span class="p">[</span><span class="s2">&quot;user/throttle&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">max_throttle</span><span class="p">:</span>
+        <span class="n">max_throttle</span> <span class="o">=</span> <span class="n">j</span><span class="p">[</span><span class="s2">&quot;user/throttle&quot;</span><span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">j</span><span class="p">[</span><span class="s2">&quot;user/angle&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">min_angle</span><span class="p">:</span>
+        <span class="n">min_angle</span> <span class="o">=</span> <span class="n">j</span><span class="p">[</span><span class="s2">&quot;user/angle&quot;</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">j</span><span class="p">[</span><span class="s2">&quot;user/angle&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">max_angle</span><span class="p">:</span>
+        <span class="n">max_angle</span> <span class="o">=</span> <span class="n">j</span><span class="p">[</span><span class="s2">&quot;user/angle&quot;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">count</span><span class="p">,</span> <span class="s2">&quot;items in catalog&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Min throttle:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">min_throttle</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Average throttle: &quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">total_throttle</span><span class="o">/</span><span class="n">count</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Max throttle:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">max_throttle</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Min angle:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">min_throttle</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Average angle:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">total_angle</span><span class="o">/</span><span class="n">count</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Max angle:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">max_angle</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<p>returns:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">100 items in catalog</span>
+<span class="err">Min throttle: -0.31</span>
+<span class="err">Average throttle:  0.308</span>
+<span class="err">Max throttle: 0.5</span>
+<span class="err">Min angle: -0.31</span>
+<span class="err">Average angle: 0.534</span>
+<span class="err">Max angle: 1.0</span>
+</code></pre></div>
+</td></tr></table>
+<h2 id="plotting-steering-distributions">Plotting Steering Distributions</h2>
                 
               
               
@@ -1066,41 +1229,6 @@
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        
-          <a href="../04-viewing-catalog-files/" title="Viewing Catalog Files" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Viewing Catalog Files
-              </span>
-            </div>
-          </a>
-        
-        
-          <a href="../../hackathon/" title="Hackathon" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Hackathon
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
