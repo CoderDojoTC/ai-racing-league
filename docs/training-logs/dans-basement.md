@@ -1,6 +1,14 @@
 # Dans Basement Training Log
 
+I have a very small track in my basement.  I put down a single white line about 3/4 inch wide using white electrical tape.  The background was a marble blue expoy floor with a lot of color variation.  The surface was very reflective and there were lights in the ceiling with lots of glare.  I drove the car around 10 times in each direction and collected around 4,500 images.
+
 ## Catalogs
+
+I manually edited the catlog files and then edited the manifest.json file to modify the paths:
+
+```
+{"paths": ["catalog_3.catalog", "catalog_4.catalog", "catalog_5.catalog", "catalog_6.catalog", "catalog_7.catalog"]
+```
 
 ```sh
 wc -l data/dans-basement/*.catalog
@@ -15,6 +23,9 @@ wc -l data/dans-basement/*.catalog
   4531 total
 ```
 
+This matched the ```ls -1 ~/mycar/data/dans-basement/images | wc -l``` command that counted the number of images.
+
+I time the training time on the NIVID RTX 2080 and got the model trained in about 1.5 minutes.
 ```
 $ time donkey train --tub=./data/dans-basement --model=./models/dans-basement.h5
 ________             ______                   _________              
