@@ -1109,7 +1109,12 @@
                 
                 
                 <h1 id="dans-basement-training-log">Dans Basement Training Log</h1>
+<p>I have a very small track in my basement.  I put down a single white line about 3/4 inch wide using white electrical tape.  The background was a marble blue expoy floor with a lot of color variation.  The surface was very reflective and there were lights in the ceiling with lots of glare.  I drove the car around 10 times in each direction and collected around 4,500 images.</p>
 <h2 id="catalogs">Catalogs</h2>
+<p>I manually edited the catlog files and then edited the manifest.json file to modify the paths:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>{&quot;paths&quot;: [&quot;catalog_3.catalog&quot;, &quot;catalog_4.catalog&quot;, &quot;catalog_5.catalog&quot;, &quot;catalog_6.catalog&quot;, &quot;catalog_7.catalog&quot;]
+</code></pre></div>
+</td></tr></table>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>wc -l data/dans-basement/*.catalog
 </code></pre></div>
 </td></tr></table>
@@ -1126,6 +1131,8 @@
   4531 total
 </code></pre></div>
 </td></tr></table>
+<p>This matched the <code>ls -1 ~/mycar/data/dans-basement/images | wc -l</code> command that counted the number of images.</p>
+<p>I time the training time on the NIVID RTX 2080 and got the model trained in about 1.5 minutes.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">  1</span>
 <span class="normal">  2</span>
 <span class="normal">  3</span>
