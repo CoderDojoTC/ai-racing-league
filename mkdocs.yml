@@ -20,6 +20,7 @@ nav:
   - GPU Server Setup:
     - NVIDIA Driver Installation: admin/nvidia-driver-install.md
     - GPU Shell Commands: admin/gpu-shell.md
+    - Tensorflow GPU Software: admin/tensorflow-gpu-install.md
   - Team Administration:
     - Introduction: admin/01-intro.md
     - Custom Club Images: admin/02-sd-image.md
@@ -35,6 +36,10 @@ nav:
     - Viewing Catalog Files: data-analysis/04-viewing-catalog-files.md
     - Cleaning Datasets: data-analysis/05-cleaning-datasets.md
     - Data Distributions: data-analysis/06-data-distributions.md
+  - Training Logs:
+     - MSP Car 1: training-logs/msp-car-1.md
+     - MSP Car 2: training-logs/msp-car-2.md
+     - Dans Basement: training-logs/dans-basement.md
   - Misc:
     - Hackathon: hackathon.md
     - Demos: demos.md
