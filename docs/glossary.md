@@ -63,7 +63,7 @@ This is a trademarked name of a car that is used at our events.  The name implie
 
 #### GPU Server
 
-![GPU Case with Handle](GPU-case-with-handle.png)
+![GPU Case with Handle](img/GPU-case-with-handle.png)
 
 Each of the AI Racing League events usually has at least one GPU server for training our models.  These are typically small portable PCs with a GPU card in them.  The entire GPU server cost around $1,200 each and can train a 20,000 image data set in under five minutes.
 
