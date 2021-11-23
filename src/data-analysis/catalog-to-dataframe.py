@@ -8,7 +8,7 @@ import pandas as pd
 script_dir = os.path.dirname(__file__)
 
 # get a relative path to the script dir
-path_to_catalog_file = script_dir + './test.catalog'
+path_to_catalog_file = script_dir + '/test.catalog'
 
 f = open(path_to_catalog_file)
 lines = f.readlines()
