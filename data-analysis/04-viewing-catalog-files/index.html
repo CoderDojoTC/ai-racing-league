@@ -1152,25 +1152,25 @@
                 
                 <h1 id="viewing-catalog-files">Viewing Catalog Files</h1>
 <p>The data about each image, sometimes called the image "metadata", is stored in a file that ends with the file extension <strong>.catalog.</strong>  If you open these files, you will see a simple layout that looks like the following:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">{&#39;_index&#39;: 16000, &#39;_session_id&#39;: &#39;21-07-20_0&#39;, &#39;_timestamp_ms&#39;: 1626797545360, &#39;cam/image_array&#39;: &#39;16000_cam_image_array_.jpg&#39;, &#39;user/angle&#39;: 1.0, &#39;user/mode&#39;: &#39;user&#39;, &#39;user/throttle&#39;: 0.5}</span>
-<span class="err">{&#39;_index&#39;: 16001, &#39;_session_id&#39;: &#39;21-07-20_0&#39;, &#39;_timestamp_ms&#39;: 1626797545411, &#39;cam/image_array&#39;: &#39;16001_cam_image_array_.jpg&#39;, &#39;user/angle&#39;: 0.37, &#39;user/mode&#39;: &#39;user&#39;, &#39;user/throttle&#39;: 0.7}</span>
-<span class="err">{&#39;_index&#39;: 16002, &#39;_session_id&#39;: &#39;21-07-20_0&#39;, &#39;_timestamp_ms&#39;: 1626797545460, &#39;cam/image_array&#39;: &#39;16002_cam_image_array_.jpg&#39;, &#39;user/angle&#39;: -0.23, &#39;user/mode&#39;: &#39;user&#39;, &#39;user/throttle&#39;: 0.25}</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>{&#39;_index&#39;: 16000, &#39;_session_id&#39;: &#39;21-07-20_0&#39;, &#39;_timestamp_ms&#39;: 1626797545360, &#39;cam/image_array&#39;: &#39;16000_cam_image_array_.jpg&#39;, &#39;user/angle&#39;: 1.0, &#39;user/mode&#39;: &#39;user&#39;, &#39;user/throttle&#39;: 0.5}
+{&#39;_index&#39;: 16001, &#39;_session_id&#39;: &#39;21-07-20_0&#39;, &#39;_timestamp_ms&#39;: 1626797545411, &#39;cam/image_array&#39;: &#39;16001_cam_image_array_.jpg&#39;, &#39;user/angle&#39;: 0.37, &#39;user/mode&#39;: &#39;user&#39;, &#39;user/throttle&#39;: 0.7}
+{&#39;_index&#39;: 16002, &#39;_session_id&#39;: &#39;21-07-20_0&#39;, &#39;_timestamp_ms&#39;: 1626797545460, &#39;cam/image_array&#39;: &#39;16002_cam_image_array_.jpg&#39;, &#39;user/angle&#39;: -0.23, &#39;user/mode&#39;: &#39;user&#39;, &#39;user/throttle&#39;: 0.25}
 </code></pre></div>
 </td></tr></table>
 <p>This file consists of multiple lines, each line starts and ends with curly braces "{" and "}".  Within these curly braces are a set of key-value pairs where the label is a string in single quotes followed by a colon, the value and a comma.  This file uses newlines to separate records and a JSON object format within each single line.  Note this is NOT a full JSON file format so you can't just use a standard JSON library to read the catalog file.</p>
 <p>Here is that format with a the key and value on separate lines to make the line easier to read.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
     <span class="err">&#39;_i</span><span class="kc">n</span><span class="err">dex&#39;</span><span class="p">:</span> <span class="mi">16000</span><span class="p">,</span>
     <span class="err">&#39;_sessio</span><span class="kc">n</span><span class="err">_id&#39;</span><span class="p">:</span> <span class="err">&#39;</span><span class="mi">21-07-20</span><span class="err">_</span><span class="mi">0</span><span class="err">&#39;</span><span class="p">,</span>
     <span class="err">&#39;_</span><span class="kc">t</span><span class="err">imes</span><span class="kc">ta</span><span class="err">mp_ms&#39;</span><span class="p">:</span> <span class="mi">1626797545360</span><span class="p">,</span>
@@ -1188,37 +1188,37 @@
 <li>There are no commas between the item</li>
 </ol>
 <p>Here is what a properly formatted JSON file would look like:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;driveData&quot;</span><span class="p">:</span> <span class="p">[</span>
         <span class="p">{</span>
             <span class="nt">&quot;_index&quot;</span><span class="p">:</span> <span class="mi">16000</span><span class="p">,</span>
@@ -1252,27 +1252,27 @@
 </code></pre></div>
 </td></tr></table>
 <p>Here is a sample JSON file reader that would read this file:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1"># program to read a DonkeyCar Catalog File</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1"># program to read a DonkeyCar Catalog File</span>
 <span class="kn">import</span> <span class="nn">os</span><span class="o">,</span><span class="nn">json</span>
 
 <span class="c1"># this program assumes that test.json is in the same directory as this script</span>
@@ -1300,36 +1300,36 @@
 <h2 id="reading-catalog-lines-to-json-objects">Reading Catalog Lines to JSON Objects</h2>
 <p>To read in the values of the catalog file we will open using a line-oriented data structure assuming that there is a newline at the end of each record.  We can then just the json library's <code>loads()</code> function which will convert each line to a JSON object.</p>
 <p>Sample Objects.json file:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">{&quot;name&quot;:&quot;Ann&quot;,&quot;age&quot;:15}</span>
-<span class="err">{&quot;name&quot;:&quot;Peggy&quot;,&quot;age&quot;:16}</span>
-<span class="err">{&quot;name&quot;:&quot;Rima&quot;,&quot;age&quot;:13}</span>
-<span class="err">{&quot;name&quot;:&quot;Sue&quot;,&quot;age&quot;:14}</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>{&quot;name&quot;:&quot;Ann&quot;,&quot;age&quot;:15}
+{&quot;name&quot;:&quot;Peggy&quot;,&quot;age&quot;:16}
+{&quot;name&quot;:&quot;Rima&quot;,&quot;age&quot;:13}
+{&quot;name&quot;:&quot;Sue&quot;,&quot;age&quot;:14}
 </code></pre></div>
 </td></tr></table>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">json</span>    
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">json</span>    
 <span class="n">json_file</span> <span class="o">=</span> <span class="s2">&quot;objects.json&quot;</span>
 <span class="n">script_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span>
 
@@ -1353,60 +1353,60 @@
 </code></pre></div>
 </td></tr></table>
 <p>Returns</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">1  {&#39;name&#39;: &#39;Ann&#39;, &#39;age&#39;: 15}</span>
-<span class="c">Name: Ann</span>
-<span class="c">Age: 15</span>
-<span class="err">2  {&#39;name&#39;: &#39;Peggy&#39;, &#39;age&#39;: 16}</span>
-<span class="c">Name: Peggy</span>
-<span class="c">Age: 16</span>
-<span class="err">3  {&#39;name&#39;: &#39;Rima&#39;, &#39;age&#39;: 13}</span>
-<span class="c">Name: Rima</span>
-<span class="c">Age: 13</span>
-<span class="err">4  {&#39;name&#39;: &#39;Sue&#39;, &#39;age&#39;: 14}</span>
-<span class="c">Name: Sue</span>
-<span class="c">Age: 14</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="mf">1</span>  <span class="err">{&#39;</span><span class="n">name</span><span class="err">&#39;</span><span class="p">:</span> <span class="err">&#39;</span><span class="n">Ann</span><span class="err">&#39;</span><span class="p">,</span> <span class="err">&#39;</span><span class="n">age</span><span class="err">&#39;</span><span class="p">:</span> <span class="mf">15</span><span class="err">}</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">Ann</span>
+<span class="n">Age</span><span class="p">:</span> <span class="mf">15</span>
+<span class="mf">2</span>  <span class="err">{&#39;</span><span class="n">name</span><span class="err">&#39;</span><span class="p">:</span> <span class="err">&#39;</span><span class="n">Peggy</span><span class="err">&#39;</span><span class="p">,</span> <span class="err">&#39;</span><span class="n">age</span><span class="err">&#39;</span><span class="p">:</span> <span class="mf">16</span><span class="err">}</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">Peggy</span>
+<span class="n">Age</span><span class="p">:</span> <span class="mf">16</span>
+<span class="mf">3</span>  <span class="err">{&#39;</span><span class="n">name</span><span class="err">&#39;</span><span class="p">:</span> <span class="err">&#39;</span><span class="n">Rima</span><span class="err">&#39;</span><span class="p">,</span> <span class="err">&#39;</span><span class="n">age</span><span class="err">&#39;</span><span class="p">:</span> <span class="mf">13</span><span class="err">}</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">Rima</span>
+<span class="n">Age</span><span class="p">:</span> <span class="mf">13</span>
+<span class="mf">4</span>  <span class="err">{&#39;</span><span class="n">name</span><span class="err">&#39;</span><span class="p">:</span> <span class="err">&#39;</span><span class="n">Sue</span><span class="err">&#39;</span><span class="p">,</span> <span class="err">&#39;</span><span class="n">age</span><span class="err">&#39;</span><span class="p">:</span> <span class="mf">14</span><span class="err">}</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">Sue</span>
+<span class="n">Age</span><span class="p">:</span> <span class="mf">14</span>
 </code></pre></div>
 </td></tr></table>
 <h2 id="sample-catalog-reader-program">Sample CataLog Reader Program</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1"># program to read a DonkeyCar Catalog File</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1"># program to read a DonkeyCar Catalog File</span>
 <span class="kn">import</span> <span class="nn">os</span><span class="o">,</span><span class="nn">json</span>
 
 <span class="c1"># this program assumes that test.catalog is in the same directory as this script</span>
@@ -1437,34 +1437,34 @@
 </code></pre></div>
 </td></tr></table>
 <p>returns:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">line</span><span class="o">:</span> <span class="mi">1</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">line</span><span class="o">:</span> <span class="mi">1</span>
 <span class="n">Index</span><span class="o">:</span> <span class="mi">16000</span>
 <span class="n">Session</span><span class="o">:</span> <span class="mi">21</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">20</span><span class="n">_0</span>
 <span class="n">Timestamp</span><span class="o">:</span> <span class="mi">1626797545360</span>

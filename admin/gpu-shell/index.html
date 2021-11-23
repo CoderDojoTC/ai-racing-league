@@ -1263,55 +1263,55 @@
                 <h1 id="shell-commands-for-the-gpu-server">Shell Commands for the GPU Server</h1>
 <p>The following are a list of shell commands for the AI Racing League GPU Server.  We have moved all the commands for setting up the NVIDIA GPU to the file <a href="../nvidia-driver-install/">NVIDIA Driver Install</a>.</p>
 <h2 id="secure-shell-login">Secure Shell Login</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>ssh arl@arl1.local
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>ssh arl@arl1.local
 </code></pre></div>
 </td></tr></table>
 <h2 id="check-the-version-of-ubuntu">Check the Version of Ubuntu</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$ lsb_release -a
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$ lsb_release -a
 </code></pre></div>
 </td></tr></table>
 <p>Response:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">No LSB modules are available.</span>
-<span class="err">Distributor ID: Ubuntu</span>
-<span class="c">Description:    Ubuntu 18.04.3 LTS</span>
-<span class="c">Release:    18.04</span>
-<span class="c">Codename:   bionic</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 18.04.3 LTS
+Release:    18.04
+Codename:   bionic
 </code></pre></div>
 </td></tr></table>
 <h2 id="list-the-cpu-information">List the CPU Information</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>lscpu
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>lscpu
 </code></pre></div>
 </td></tr></table>
 <p>Response:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Architecture</span><span class="p">:</span>        <span class="n">x86_64</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Architecture</span><span class="p">:</span>        <span class="n">x86_64</span>
 <span class="n">CPU</span> <span class="n">op</span><span class="o">-</span><span class="n">mode</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>      <span class="mi">32</span><span class="o">-</span><span class="n">bit</span><span class="p">,</span> <span class="mi">64</span><span class="o">-</span><span class="n">bit</span>
 <span class="n">Byte</span> <span class="n">Order</span><span class="p">:</span>          <span class="n">Little</span> <span class="n">Endian</span>
 <span class="n">CPU</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>              <span class="mi">12</span>
@@ -1340,116 +1340,116 @@
 </td></tr></table>
 <p>The key is that we have 12 CPUs and each CPU has two threads.  That means that we have 24 threads that run concurrent operations on this server.  This is plenty of capacity for our GPU server.</p>
 <h2 id="ram">RAM</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>free -m
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>free -m
 </code></pre></div>
 </td></tr></table>
 <p>Response:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">              total        used        free      shared  buff/cache   available</span>
-<span class="c">Mem:          32124        1627       28879          75        1618       30019</span>
-<span class="c">Swap:          2047           0        2047</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>              total        used        free      shared  buff/cache   available
+Mem:          32124        1627       28879          75        1618       30019
+Swap:          2047           0        2047
 </code></pre></div>
 </td></tr></table>
 <p>This indicates we have 32 GB RAM.  The GPU server should have a minimum of 8 GB of RAM.</p>
 <h2 id="disk-space">Disk Space</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>df -h /
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>df -h /
 </code></pre></div>
 </td></tr></table>
 <p>Response:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">Filesystem      Size  Used Avail Use% Mounted on</span>
-<span class="err">/dev/nvme0n1p3  229G  178G   40G  82% /</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p3  229G  178G   40G  82% /
 </code></pre></div>
 </td></tr></table>
 <p>This shows we have a total of 229 gigabytes of RAM and we have 40 gigabytes available.  We will need about 4 GB for each training set we store.</p>
 <h3 id="per-user-disk-usage">Per User Disk Usage</h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>du -hs /home/* <span class="m">2</span>&gt;/dev/null
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>du -hs /home/* <span class="m">2</span>&gt;/dev/null
 </code></pre></div>
 </td></tr></table>
 <p>Response:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">8.5G    /home/arl</span>
-<span class="err">1.4G    /home/dan</span>
-<span class="err">16K /home/dan2</span>
-<span class="err">155G    /home/donkey</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="mf">8.5</span><span class="n">G</span>    <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">arl</span>
+<span class="mf">1.4</span><span class="n">G</span>    <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">dan</span>
+<span class="mf">16</span><span class="n">K</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">dan2</span>
+<span class="mf">155</span><span class="n">G</span>    <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">donkey</span>
 </code></pre></div>
 </td></tr></table>
 <h3 id="add-a-new-gpu-server-user">Add A New GPU Server User</h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>adduser donkey
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>adduser donkey
 </code></pre></div>
 </td></tr></table>
 <p>You can also allow the user to have "sudo" rights by using the following command:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo usermod -aG sudo donkey
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo usermod -aG sudo donkey
 </code></pre></div>
 </td></tr></table>
 <h3 id="change-the-hostname">Change the Hostname</h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo vi hostname
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo vi hostname
 </code></pre></div>
 </td></tr></table>
 <p>Change the name to "gpu-server2" or a similar name.</p>
 <h2 id="nvidia-gpu-monitor">NVIDIA GPU Monitor</h2>
 <p>The runs similar to the UNIX top command, but for the GPU.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>watch -d -n <span class="m">0</span>.5 nvidia-smi
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>watch -d -n <span class="m">0</span>.5 nvidia-smi
 </code></pre></div>
 </td></tr></table>
 <h2 id="nvidia-gpu-utlization">NVIDIA GPU Utlization</h2>
 <p>This shows the GPU running at 42% utilization during the training process.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">nvidia</span><span class="o">-</span><span class="n">smi</span>
-<span class="n">Mon</span> <span class="n">Jul</span> <span class="mi">26</span> <span class="mi">20</span><span class="p">:</span><span class="mi">24</span><span class="p">:</span><span class="mi">16</span> <span class="mi">2021</span>       
-<span class="o">+</span><span class="c1">-----------------------------------------------------------------------------+</span>
-<span class="o">|</span> <span class="n">NVIDIA</span><span class="o">-</span><span class="n">SMI</span> <span class="mi">470</span><span class="p">.</span><span class="mi">57</span><span class="p">.</span><span class="mi">02</span>    <span class="n">Driver</span> <span class="k">Version</span><span class="p">:</span> <span class="mi">470</span><span class="p">.</span><span class="mi">57</span><span class="p">.</span><span class="mi">02</span>    <span class="n">CUDA</span> <span class="k">Version</span><span class="p">:</span> <span class="mi">11</span><span class="p">.</span><span class="mi">4</span>     <span class="o">|</span>
-<span class="o">|</span><span class="c1">-------------------------------+----------------------+----------------------+</span>
-<span class="o">|</span> <span class="n">GPU</span>  <span class="n">Name</span>        <span class="n">Persistence</span><span class="o">-</span><span class="n">M</span><span class="o">|</span> <span class="n">Bus</span><span class="o">-</span><span class="n">Id</span>        <span class="n">Disp</span><span class="p">.</span><span class="n">A</span> <span class="o">|</span> <span class="k">Volatile</span> <span class="n">Uncorr</span><span class="p">.</span> <span class="n">ECC</span> <span class="o">|</span>
-<span class="o">|</span> <span class="n">Fan</span>  <span class="n">Temp</span>  <span class="n">Perf</span>  <span class="n">Pwr</span><span class="p">:</span><span class="k">Usage</span><span class="o">/</span><span class="n">Cap</span><span class="o">|</span>         <span class="n">Memory</span><span class="o">-</span><span class="k">Usage</span> <span class="o">|</span> <span class="n">GPU</span><span class="o">-</span><span class="n">Util</span>  <span class="n">Compute</span> <span class="n">M</span><span class="p">.</span> <span class="o">|</span>
-<span class="o">|</span>                               <span class="o">|</span>                      <span class="o">|</span>               <span class="n">MIG</span> <span class="n">M</span><span class="p">.</span> <span class="o">|</span>
-<span class="o">|===============================+======================+======================|</span>
-<span class="o">|</span>   <span class="mi">0</span>  <span class="n">NVIDIA</span> <span class="n">GeForce</span> <span class="p">...</span>  <span class="k">Off</span>  <span class="o">|</span> <span class="mi">00000000</span><span class="p">:</span><span class="mi">09</span><span class="p">:</span><span class="mi">00</span><span class="p">.</span><span class="mi">0</span>  <span class="k">On</span> <span class="o">|</span>                  <span class="n">N</span><span class="o">/</span><span class="n">A</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">41</span><span class="o">%</span>   <span class="mi">49</span><span class="k">C</span>    <span class="n">P2</span>   <span class="mi">136</span><span class="n">W</span> <span class="o">/</span> <span class="mi">260</span><span class="n">W</span> <span class="o">|</span>  <span class="mi">10892</span><span class="n">MiB</span> <span class="o">/</span> <span class="mi">11016</span><span class="n">MiB</span> <span class="o">|</span>     <span class="mi">42</span><span class="o">%</span>      <span class="k">Default</span> <span class="o">|</span>
-<span class="o">|</span>                               <span class="o">|</span>                      <span class="o">|</span>                  <span class="n">N</span><span class="o">/</span><span class="n">A</span> <span class="o">|</span>
-<span class="o">+</span><span class="c1">-------------------------------+----------------------+----------------------+</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>nvidia-smi
+Mon Jul 26 20:24:16 2021       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.57.02    Driver Version: 470.57.02    CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA GeForce ...  Off  | 00000000:09:00.0  On |                  N/A |
+| 41%   49C    P2   136W / 260W |  10892MiB / 11016MiB |     42%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
 
-<span class="o">+</span><span class="c1">-----------------------------------------------------------------------------+</span>
-<span class="o">|</span> <span class="n">Processes</span><span class="p">:</span>                                                                  <span class="o">|</span>
-<span class="o">|</span>  <span class="n">GPU</span>   <span class="n">GI</span>   <span class="n">CI</span>        <span class="n">PID</span>   <span class="k">Type</span>   <span class="n">Process</span> <span class="n">name</span>                  <span class="n">GPU</span> <span class="n">Memory</span> <span class="o">|</span>
-<span class="o">|</span>        <span class="n">ID</span>   <span class="n">ID</span>                                                   <span class="k">Usage</span>      <span class="o">|</span>
-<span class="o">|=============================================================================|</span>
-<span class="o">|</span>    <span class="mi">0</span>   <span class="n">N</span><span class="o">/</span><span class="n">A</span>  <span class="n">N</span><span class="o">/</span><span class="n">A</span>      <span class="mi">1327</span>      <span class="k">G</span>   <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">xorg</span><span class="o">/</span><span class="n">Xorg</span>                 <span class="mi">18</span><span class="n">MiB</span> <span class="o">|</span>
-<span class="o">|</span>    <span class="mi">0</span>   <span class="n">N</span><span class="o">/</span><span class="n">A</span>  <span class="n">N</span><span class="o">/</span><span class="n">A</span>      <span class="mi">1398</span>      <span class="k">G</span>   <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">gnome</span><span class="o">-</span><span class="n">shell</span>               <span class="mi">71</span><span class="n">MiB</span> <span class="o">|</span>
-<span class="o">|</span>    <span class="mi">0</span>   <span class="n">N</span><span class="o">/</span><span class="n">A</span>  <span class="n">N</span><span class="o">/</span><span class="n">A</span>      <span class="mi">1574</span>      <span class="k">G</span>   <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">xorg</span><span class="o">/</span><span class="n">Xorg</span>                <span class="mi">155</span><span class="n">MiB</span> <span class="o">|</span>
-<span class="o">|</span>    <span class="mi">0</span>   <span class="n">N</span><span class="o">/</span><span class="n">A</span>  <span class="n">N</span><span class="o">/</span><span class="n">A</span>      <span class="mi">1705</span>      <span class="k">G</span>   <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">gnome</span><span class="o">-</span><span class="n">shell</span>               <span class="mi">32</span><span class="n">MiB</span> <span class="o">|</span>
-<span class="o">|</span>    <span class="mi">0</span>   <span class="n">N</span><span class="o">/</span><span class="n">A</span>  <span class="n">N</span><span class="o">/</span><span class="n">A</span>     <span class="mi">23722</span>      <span class="k">G</span>   <span class="p">...</span><span class="n">AAAAAAAAA</span><span class="o">=</span> <span class="c1">--shared-files       25MiB |</span>
-<span class="o">|</span>    <span class="mi">0</span>   <span class="n">N</span><span class="o">/</span><span class="n">A</span>  <span class="n">N</span><span class="o">/</span><span class="n">A</span>     <span class="mi">27071</span>      <span class="k">G</span>   <span class="p">...</span><span class="n">AAAAAAAAA</span><span class="o">=</span> <span class="c1">--shared-files        9MiB |</span>
-<span class="o">|</span>    <span class="mi">0</span>   <span class="n">N</span><span class="o">/</span><span class="n">A</span>  <span class="n">N</span><span class="o">/</span><span class="n">A</span>     <span class="mi">32486</span>      <span class="k">C</span>   <span class="p">...</span><span class="n">a3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">donkey</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">python</span>    <span class="mi">10571</span><span class="n">MiB</span> <span class="o">|</span>
-<span class="o">+</span><span class="c1">-----------------------------------------------------------------------------+</span>
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A      1327      G   /usr/lib/xorg/Xorg                 18MiB |
+|    0   N/A  N/A      1398      G   /usr/bin/gnome-shell               71MiB |
+|    0   N/A  N/A      1574      G   /usr/lib/xorg/Xorg                155MiB |
+|    0   N/A  N/A      1705      G   /usr/bin/gnome-shell               32MiB |
+|    0   N/A  N/A     23722      G   ...AAAAAAAAA= --shared-files       25MiB |
+|    0   N/A  N/A     27071      G   ...AAAAAAAAA= --shared-files        9MiB |
+|    0   N/A  N/A     32486      C   ...a3/envs/donkey/bin/python    10571MiB |
++-----------------------------------------------------------------------------+
 </code></pre></div>
 </td></tr></table>
                 

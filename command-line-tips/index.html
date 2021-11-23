@@ -1166,38 +1166,38 @@
                 
                 <h1 id="command-line-tips">Command Line Tips</h1>
 <h2 id="get-setup">Get Setup</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git config --global user.name <span class="s2">&quot;Joe Smith&quot;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git config --global user.name <span class="s2">&quot;Joe Smith&quot;</span>
 git config --global user.email <span class="s2">&quot;Joe.Smith123@gmail.com&quot;</span>
 git config --global credential.helper store
 </code></pre></div>
 </td></tr></table>
 <h2 id="raspberry-pi-command-line-tips">Raspberry Pi Command Line Tips</h2>
 <p>From Terminal, you can open the current directory in the File Manager using the <code>xdg-open</code> command.  This is similar to the Mac open command.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$ xdg-open .
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$ xdg-open .
 </code></pre></div>
 </td></tr></table>
 <h2 id="see-if-the-pwm-board-is-working">See If the PWM Board Is Working</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>i2cdetect -l
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>i2cdetect -l
 </code></pre></div>
 </td></tr></table>
 <p>This should return</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">i2c</span><span class="mi">-1</span>   <span class="n">i2c</span>   <span class="n">bcm2835</span> <span class="p">(</span><span class="n">i2c</span><span class="mf">@7e804000</span><span class="p">)</span>   <span class="n">I2C</span> <span class="n">adapter</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">i2c</span><span class="mi">-1</span><span class="w">   </span><span class="n">i2c</span><span class="w">   </span><span class="n">bcm2835</span><span class="w"> </span><span class="p">(</span><span class="n">i2c</span><span class="mf">@7e804000</span><span class="p">)</span><span class="w">   </span><span class="n">I2C</span><span class="w"> </span><span class="n">adapter</span><span class="w"></span>
 </code></pre></div>
 </td></tr></table>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>i2cdetect -y <span class="m">1</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>i2cdetect -y <span class="m">1</span>
 </code></pre></div>
 </td></tr></table>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f</span>
 <span class="c">00:          </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span>
 <span class="c">10: </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span>
 <span class="c">20: </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span>
@@ -1210,15 +1210,15 @@ git config --global credential.helper store
 </td></tr></table>
 <p>Note that the line 40 and 70 has values under column 0 (I2C bus 1)
 If you unplug the data you should get:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f</span>
 <span class="c">00:          </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span>
 <span class="c">10: </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span>
 <span class="c">20: </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span>
@@ -1231,19 +1231,19 @@ If you unplug the data you should get:</p>
 </td></tr></table>
 <h2 id="sd-card-speed-test">SD Card Speed Test</h2>
 <p>Home -&gt; Accessories -&gt; Raspberry Pi Diagnostics</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nt">Raspberry</span> <span class="nt">Pi</span> <span class="nt">Diagnostics</span> <span class="nt">-</span> <span class="nt">version</span> <span class="nt">0</span><span class="p">.</span><span class="nc">9</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nt">Raspberry</span> <span class="nt">Pi</span> <span class="nt">Diagnostics</span> <span class="nt">-</span> <span class="nt">version</span> <span class="nt">0</span><span class="p">.</span><span class="nc">9</span>
 <span class="nt">Sat</span> <span class="nt">Jul</span>  <span class="nt">3</span> <span class="nt">14</span><span class="p">:</span><span class="nd">25</span><span class="p">:</span><span class="nd">23</span> <span class="nt">2021</span>
 
 <span class="nt">Test</span> <span class="o">:</span> <span class="nt">SD</span> <span class="nt">Card</span> <span class="nt">Speed</span> <span class="nt">Test</span>

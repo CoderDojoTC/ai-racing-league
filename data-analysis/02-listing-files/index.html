@@ -1196,12 +1196,12 @@
 <h2 id="listing-files-with-the-os-library">Listing Files with the OS library</h2>
 <p>Python provides a powerful library for working with Operating System resources like file systems.  We will start out with the <code>listdir()</code> function that lists the files in a directory.</p>
 <p>Here is program that lists all the tub files in our mycar/data directory:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 <span class="n">data_dir</span> <span class="o">=</span> <span class="s2">&quot;/home/arl/mycar/data/&quot;</span>
 
 <span class="n">files</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">data_dir</span><span class="p">)</span>
@@ -1210,36 +1210,36 @@
 </code></pre></div>
 </td></tr></table>
 <p>returns:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">a-test-tub</span>
-<span class="err">my-test-tub</span>
-<span class="err">junk-tub</span>
-<span class="err">production-run</span>
-<span class="err">tub-47</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>a-test-tub
+my-test-tub
+junk-tub
+production-run
+tub-47
 </code></pre></div>
 </td></tr></table>
 <h2 id="listing-files-in-a">Listing Files in a</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
 
 <span class="n">image_dir</span> <span class="o">=</span> <span class="s2">&quot;/home/arl/mycar/data/dans-msp/data/images&quot;</span>
@@ -1260,16 +1260,16 @@
 </code></pre></div>
 </td></tr></table>
 <h2 id="list-random-files-in-images-directory">List Random Files In Images Directory</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
 
@@ -1282,45 +1282,45 @@
 </code></pre></div>
 </td></tr></table>
 <p>returns:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">10263_cam_image_array_.jpg</span>
-<span class="err">6257_cam_image_array_.jpg</span>
-<span class="err">15248_cam_image_array_.jpg</span>
-<span class="err">3916_cam_image_array_.jpg</span>
-<span class="err">5223_cam_image_array_.jpg</span>
-<span class="err">15765_cam_image_array_.jpg</span>
-<span class="err">8437_cam_image_array_.jpg</span>
-<span class="err">5871_cam_image_array_.jpg</span>
-<span class="err">16681_cam_image_array_.jpg</span>
-<span class="err">15281_cam_image_array_.jpg</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="mf">10263</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span>
+<span class="mf">6257</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span>
+<span class="mf">15248</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span>
+<span class="mf">3916</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span>
+<span class="mf">5223</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span>
+<span class="mf">15765</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span>
+<span class="mf">8437</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span>
+<span class="mf">5871</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span>
+<span class="mf">16681</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span>
+<span class="mf">15281</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span>
 </code></pre></div>
 </td></tr></table>
 <p>Note that the files are not in any specific order.</p>
 <h2 id="show-images-for-10-random-files">Show Images for 10 Random Files</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">glob</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">matplotlib.image</span> <span class="kn">as</span> <span class="nn">mpimg</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">glob</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib.image</span> <span class="k">as</span> <span class="nn">mpimg</span>
 <span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
 
 <span class="n">images</span> <span class="o">=</span> <span class="p">[]</span>
@@ -1337,31 +1337,31 @@
 <p><img alt="" src="../../img/ten-random-images.png" /></p>
 <h2 id="sorting-images-by-file-name">Sorting Images By File Name</h2>
 <p>We can add an additional step if we want to sort the images by the file name:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">image_file_name_list</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">image_dir</span><span class="p">)</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">image_file_name_list</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">image_dir</span><span class="p">)</span>
 <span class="n">image_file_name_list</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
 </code></pre></div>
 </td></tr></table>
 <h2 id="return-images-based-on-creation-date">Return Images Based On Creation Date</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
 <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
