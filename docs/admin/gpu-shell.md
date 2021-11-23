@@ -127,3 +127,44 @@ sudo vi hostname
 
 Change the name to "gpu-server2" or a similar name.
 
+## NVIDIA GPU Monitor
+
+The runs similar to the UNIX top command, but for the GPU.
+
+```sh
+watch -d -n 0.5 nvidia-smi
+```
+
+## NVIDIA GPU Utlization
+
+This shows the GPU running at 42% utilization during the training process.
+
+```
+nvidia-smi
+Mon Jul 26 20:24:16 2021       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.57.02    Driver Version: 470.57.02    CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA GeForce ...  Off  | 00000000:09:00.0  On |                  N/A |
+| 41%   49C    P2   136W / 260W |  10892MiB / 11016MiB |     42%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A      1327      G   /usr/lib/xorg/Xorg                 18MiB |
+|    0   N/A  N/A      1398      G   /usr/bin/gnome-shell               71MiB |
+|    0   N/A  N/A      1574      G   /usr/lib/xorg/Xorg                155MiB |
+|    0   N/A  N/A      1705      G   /usr/bin/gnome-shell               32MiB |
+|    0   N/A  N/A     23722      G   ...AAAAAAAAA= --shared-files       25MiB |
+|    0   N/A  N/A     27071      G   ...AAAAAAAAA= --shared-files        9MiB |
+|    0   N/A  N/A     32486      C   ...a3/envs/donkey/bin/python    10571MiB |
++-----------------------------------------------------------------------------+
+```

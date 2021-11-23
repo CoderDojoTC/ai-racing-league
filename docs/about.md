@@ -1,4 +1,4 @@
-# About the AI Racking League
+# About the AI Racing League
 
 DIY Robocars is the community that kickstarted donkey into existence by hosting self driving races. There are now several meetups around the country. See diyrobocars.com to learn about events, classes, tips, projects, and instructions to build other types of cars.</br>
 **Checkout the Official Donkey Car Site** [https://www.donkeycar.com/](https://www.donkeycar.com/)

@@ -10,6 +10,8 @@ script_dir = os.path.dirname(__file__)
 # get a relative path to the script dir
 path_to_catalog_file = script_dir + '/test.catalog'
 
+print('data file path:', path_to_catalog_file)
+
 f = open(path_to_catalog_file)
 lines = f.readlines()
 # create a dictionary object

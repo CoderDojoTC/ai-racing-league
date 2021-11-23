@@ -119,4 +119,26 @@ Average angle: 0.534
 Max angle: 1.0
 ```
 
+## Converting the Dictionary to a DataFrame
+
+```py
+df = pd.DataFrame(list(dict.items()))
+print(df)
+```
+
+returns
+
+```
+                0                           1
+0           _index                       16099
+1      _session_id                  21-07-20_1
+2    _timestamp_ms               1626797880229
+3  cam/image_array  16099_cam_image_array_.jpg
+4       user/angle                     0.56914
+5        user/mode                        user
+6    user/throttle                   0.0632649
+```
+
 ## Plotting Steering Distributions
+
+
