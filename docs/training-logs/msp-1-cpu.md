@@ -1,4 +1,11 @@
+# Training Log for MSP Car #1
+
+After cleanup we only got about 1,500 records.  But here is a log of the training.  It took about 1.5 minutes.
+
+```sh
 $ donkey train --tub=./data/msp-car-1 --model=./models/msp-car-1.f5
+
+```
 ________             ______                   _________              
 ___  __ \_______________  /___________  __    __  ____/_____ ________
 __  / / /  __ \_  __ \_  //_/  _ \_  / / /    _  /    _  __ `/_  ___/
@@ -220,3 +227,4 @@ Epoch 00037: val_loss did not improve from 0.16278
 WARNING: CPU random generator seem to be failing, disable hardware random number generation
 WARNING: RDRND generated: 0xffffffff 0xffffffff 0xffffffff 0xffffffff
 (donkey) arl@arl1:
+```
