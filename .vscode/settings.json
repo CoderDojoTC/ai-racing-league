@@ -1,3 +1,12 @@
 {
+<<<<<<< HEAD
     "python.pythonPath": "/Users/dan/opt/miniconda3/envs/donkey/bin/python"
+=======
+    "cSpell.words": [
+        "COVID",
+        "Pico",
+        "financials"
+    ],
+    "python.pythonPath": "/opt/anaconda3/envs/donkey/bin/python"
+>>>>>>> 139c60f9318ec9609f0368efa9daf56cf3548ea0
 }
