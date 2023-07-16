@@ -21,3 +21,8 @@ extra:
 See our mkdocs.yml on GitHub here:
 
 [mkdocs.yml file in GitHub](https://github.com/CoderDojoTC/ai-racing-league/blob/master/mkdocs.yml)
+
+The following line is placed into each HTML web page in the site branch:
+```html
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-RL4MZ0MHZ4"></script>
+```
