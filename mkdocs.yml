@@ -12,7 +12,15 @@ nav:
     - Sample Six Week Course: six-week-curriculum.md
     - Computer Vision Labs: lesson-plans/computer-vision/index.md
     - Jupyter Notebooks: lesson-plans/jupyter-notebooks/index.md
-    - Data Analysis: lesson-plans/data-analysis/index.md
+    - Car Data Analysis:
+      - Introduction: lesson-plans/data-analysis/index.md
+      - Intro Part 2: lesson-plans/data-analysis/01-intro.md
+      - Listing Files: lesson-plans/data-analysis/02-listing-files.md
+      - Viewing Images: lesson-plans/data-analysis/03-viewing-images.md
+      - Viewing Catalog Files: lesson-plans/data-analysis/04-viewing-catalog-files.md
+      - Catalog Statistics: lesson-plans/data-analysis/05-catalog-statistics.md
+      - Cleaning Datasets: lesson-plans/data-analysis/06-cleaning-datasets.md
+      - Data Distributions: data-analysis/06-data-distributions.md
   - Setup:
     - Car Checklist: setup/car-box-checklist.md
     - Calibrate: setup/calibrate.md
@@ -32,17 +40,10 @@ nav:
     - GPU Parts List: admin/gpu-parts.md
     - Car Box Checklist: admin/car-box-checklist.md
     - Joystick: admin/joystick.md
-  - Data Analysis:
-    - Introduction: data-analysis/01-intro.md
-    - Listing Files: data-analysis/02-listing-files.md
-    - Viewing Images: data-analysis/03-viewing-images.md
-    - Viewing Catalog Files: data-analysis/04-viewing-catalog-files.md
-    - Cleaning Datasets: data-analysis/05-cleaning-datasets.md
-    - Data Distributions: data-analysis/06-data-distributions.md
   - Training Logs:
      - MSP Car 1: training-logs/msp-car-1.md
      - MSP Car 2: training-logs/msp-car-2.md
-     - Dans Basement: training-logs/dans-basement.md
+     - Dan's Basement: training-logs/dans-basement.md
   - Misc:
     - Hackathon: hackathon.md
     - Demos: demos.md
@@ -73,6 +74,7 @@ theme:
   include_sidebar: true
 markdown_extensions:
   - admonition
+  - attr_list
   - footnotes
   - toc:
       permalink: true
@@ -83,3 +85,9 @@ plugins:
 markdown_extensions:
   - codehilite:
       linenums: true
+
+extra:
+  analytics:
+    provider: google
+    property: G-RL4MZ0MHZ4
+
