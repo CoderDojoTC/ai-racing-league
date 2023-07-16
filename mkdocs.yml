@@ -26,6 +26,7 @@ nav:
       - GPU Commands: quizzes/gpu-commands.md
   - Setup:
     - Track Options: setup/track-options.md
+    - Battery Options: setup/battery-options.md
     - Car Checklist: admin/car-box-checklist/index.html
     - Calibrate: setup/calibrate.md
     - Setup Conda on Pi: setup/conda-pi-setup.md
