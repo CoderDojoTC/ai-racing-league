@@ -10,6 +10,9 @@ nav:
     - Learning Strategy: learning-strategy.md
     - Curriculum: curriculum.md
     - Sample Six Week Course: six-week-curriculum.md
+    - Computer Vision Labs: lesson-plans/computer-vision/index.md
+    - Jupyter Notebooks: lesson-plans/jupyter-notebooks/index.md
+    - Data Analysis: lesson-plans/data-analysis/index.md
   - Setup:
     - Car Checklist: setup/car-box-checklist.md
     - Calibrate: setup/calibrate.md
