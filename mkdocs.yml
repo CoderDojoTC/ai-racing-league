@@ -22,7 +22,7 @@ nav:
       - Cleaning Datasets: lesson-plans/data-analysis/06-cleaning-datasets.md
       - Data Distributions: data-analysis/06-data-distributions.md
   - Setup:
-    - Car Checklist: setup/car-box-checklist.md
+    - Car Checklist: admin/car-box-checklist/index.html
     - Calibrate: setup/calibrate.md
     - Setup Conda on Pi: setup/conda-pi-setup.md
     - PWM Setup: setup/pwm-board.md
