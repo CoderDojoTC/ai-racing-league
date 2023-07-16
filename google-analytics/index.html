@@ -1063,9 +1063,40 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Google Analytics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Google Analytics
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-we-enabled-google-analytics" class="md-nav__link">
+    How We Enabled Google Analytics
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1247,6 +1278,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-we-enabled-google-analytics" class="md-nav__link">
+    How We Enabled Google Analytics
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1267,6 +1313,19 @@
 <p>Our Google Tracking ID is: G-RL4MZ0MHZ4</p>
 <p>You can see the activity here:</p>
 <p><a href="https://analytics.google.com/analytics/web/?authuser=0#/p396897933/reports/intelligenthome">Google Dashboard</a></p>
+<h2 id="how-we-enabled-google-analytics">How We Enabled Google Analytics</h2>
+<p>mkdocs material supports Google Analysis.  We only need to add four lines
+to our mkdocs.yml configuration file.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">extra</span><span class="o">:</span><span class="w"></span>
+<span class="w">  </span><span class="n">analytics</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">provider</span><span class="o">:</span><span class="w"> </span><span class="n">google</span><span class="w"></span>
+<span class="w">    </span><span class="n">property</span><span class="o">:</span><span class="w"> </span><span class="n">G</span><span class="o">-</span><span class="n">RL4MZ0MHZ4</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
+<p>(mkdocs.yml file in GitHub)[https://github.com/CoderDojoTC/ai-racing-league/blob/master/mkdocs.yml]</p>
 
               
             </article>
