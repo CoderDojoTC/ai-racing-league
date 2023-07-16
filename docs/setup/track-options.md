@@ -1,5 +1,6 @@
 # Track Options
 
+
 Although you can just put tape down on a floor, that is time-consuming and is often a low-quality track.   There are several other options and the prices vary from under $100 to $1,300.
 
 In Minnesota, [Billboard Tarps](https://billboardtarps.com/product-category/billboard-vinyl/) sells used vinyl sign material.  For around $70 you can get a 16' X 25' used black billboard vinyl sign that is ideal for creating your own track.
@@ -7,6 +8,14 @@ In Minnesota, [Billboard Tarps](https://billboardtarps.com/product-category/bill
 ![Used Black Vinyl Track for $70](./../img/track-vinyl-black.jpg)
 
 [Billboard Tarps and Vinyl](https://billboardtarps.com/product-category/billboard-vinyl/) - We suggest you get a dark color (black or dark blue) and then tape down white edges and a yellow dashed line in the center.
+
+## Picking the Right Size
+
+The typical dimensions of a full event track is 22 x 34 feet. These dimensions are based on the [DIYRobocars Standard Track](https://www.robocarstore.com/products/diyrobocars-standard-track), which is a popular track for donkey car racing.
+
+The smaller track is a good option for beginners, as it is easier to navigate and control. The larger track is a better option for experienced drivers, as it offers more challenges and opportunities for speed.
+
+Of course, the dimensions of a donkey car track can vary depending on the specific design. However, the dimensions listed above are a good starting point for anyone who is planning to build or race a donkey car.
 
 ## Minnesota STEM Partners Tracks
 
