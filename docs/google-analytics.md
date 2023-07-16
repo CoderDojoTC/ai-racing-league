@@ -18,4 +18,6 @@ extra:
     property: G-RL4MZ0MHZ4
 ```
 
-(mkdocs.yml file in GitHub)[https://github.com/CoderDojoTC/ai-racing-league/blob/master/mkdocs.yml]
+See our mkdocs.yml on GitHub here:
+
+[mkdocs.yml file in GitHub](https://github.com/CoderDojoTC/ai-racing-league/blob/master/mkdocs.yml)
