@@ -7,7 +7,7 @@ nav:
     - Contacts: contacts.md
   - Curriculum:
     - Learning Strategy: learning-strategy.md
-    - Curriculum: curriculum.md
+    - Curriculum Overview: curriculum.md
     - Sample Six Week Course: six-week-curriculum.md
     - Computer Vision Labs: lesson-plans/computer-vision/index.md
     - Jupyter Notebooks: lesson-plans/jupyter-notebooks/index.md
@@ -20,6 +20,10 @@ nav:
       - Catalog Statistics: lesson-plans/data-analysis/05-catalog-statistics.md
       - Cleaning Datasets: lesson-plans/data-analysis/06-cleaning-datasets.md
       - Data Distributions: data-analysis/06-data-distributions.md
+    - Generative AI:
+      - Generating Block Diagrams: lesson-plans/car-structure/index.md
+    - Sample Quizzes:
+      - GPU Commands: quizzes/gpu-commands.md
   - Setup:
     - Car Checklist: admin/car-box-checklist/index.html
     - Calibrate: setup/calibrate.md

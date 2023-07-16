@@ -1,11 +1,13 @@
 # Shell Commands for the GPU Server
 
-The following are a list of shell commands for the AI Racing League GPU Server.  We have moved all the commands for setting up the NVIDIA GPU to the file [NVIDIA Driver Install](nvidia-driver-install.md).
+The following is a list of shell commands for the AI Racing League GPU Server.  We have moved all the commands for setting up the NVIDIA GPU to the file [NVIDIA Driver Install](nvidia-driver-install.md).
+
+The samples below are run if you are on the GPU running the Terminal shell or you have logged on using the secure shell program.
 
 ## Secure Shell Login
 
-```sh
-ssh arl@arl1.local
+```linenums="0"
+$ ssh arl@arl1.local
 ```
 
 ## Check the Version of Ubuntu
@@ -135,7 +137,7 @@ The runs similar to the UNIX top command, but for the GPU.
 watch -d -n 0.5 nvidia-smi
 ```
 
-## NVIDIA GPU Utlization
+## NVIDIA GPU Utilization
 
 This shows the GPU running at 42% utilization during the training process.
 
