@@ -13,7 +13,7 @@
     
     
       
-        <title>PWM Setup - AI Racing League</title>
+        <title>Generating Block Diagrams - AI Racing League</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pwm-board-deep-dive" class="md-skip">
+        <a href="#rc-car-structure" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PWM Setup
+              Generating Block Diagrams
             
           </span>
         </div>
@@ -303,12 +303,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -373,7 +375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lesson-plans/computer-vision/" class="md-nav__link">
+      <a href="../computer-vision/" class="md-nav__link">
         Computer Vision Labs
       </a>
     </li>
@@ -387,7 +389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lesson-plans/jupyter-notebooks/" class="md-nav__link">
+      <a href="../jupyter-notebooks/" class="md-nav__link">
         Jupyter Notebooks
       </a>
     </li>
@@ -427,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lesson-plans/data-analysis/" class="md-nav__link">
+      <a href="../data-analysis/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -441,7 +443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lesson-plans/data-analysis/01-intro/" class="md-nav__link">
+      <a href="../data-analysis/01-intro/" class="md-nav__link">
         Intro Part 2
       </a>
     </li>
@@ -455,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lesson-plans/data-analysis/02-listing-files/" class="md-nav__link">
+      <a href="../data-analysis/02-listing-files/" class="md-nav__link">
         Listing Files
       </a>
     </li>
@@ -469,7 +471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lesson-plans/data-analysis/03-viewing-images/" class="md-nav__link">
+      <a href="../data-analysis/03-viewing-images/" class="md-nav__link">
         Viewing Images
       </a>
     </li>
@@ -483,7 +485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lesson-plans/data-analysis/04-viewing-catalog-files/" class="md-nav__link">
+      <a href="../data-analysis/04-viewing-catalog-files/" class="md-nav__link">
         Viewing Catalog Files
       </a>
     </li>
@@ -497,7 +499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lesson-plans/data-analysis/05-catalog-statistics/" class="md-nav__link">
+      <a href="../data-analysis/05-catalog-statistics/" class="md-nav__link">
         Catalog Statistics
       </a>
     </li>
@@ -511,7 +513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lesson-plans/data-analysis/06-cleaning-datasets/" class="md-nav__link">
+      <a href="../data-analysis/06-cleaning-datasets/" class="md-nav__link">
         Cleaning Datasets
       </a>
     </li>
@@ -544,12 +546,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_7" type="checkbox" id="__nav_3_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_7" type="checkbox" id="__nav_3_7" checked>
       
       
       
@@ -570,11 +574,59 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../lesson-plans/car-structure/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Generating Block Diagrams
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Generating Block Diagrams
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-gptchat-to-help-generate-block-diagrams" class="md-nav__link">
+    Using GPTChat To Help Generate Block Diagrams
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gptchat-prompt" class="md-nav__link">
+    GPTChat Prompt
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -646,14 +698,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
       
@@ -690,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../calibrate/" class="md-nav__link">
+      <a href="../../setup/calibrate/" class="md-nav__link">
         Calibrate
       </a>
     </li>
@@ -704,7 +754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../conda-pi-setup/" class="md-nav__link">
+      <a href="../../setup/conda-pi-setup/" class="md-nav__link">
         Setup Conda on Pi
       </a>
     </li>
@@ -716,73 +766,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          PWM Setup
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../setup/pwm-board/" class="md-nav__link">
         PWM Setup
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pca9685-pwm-board" class="md-nav__link">
-    PCA9685 PWM Board
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pi-40-pin-header" class="md-nav__link">
-    Pi 40 Pin Header
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#connections" class="md-nav__link">
-    Connections
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    References
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -794,7 +782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nano-sd-image-checklist/" class="md-nav__link">
+      <a href="../../setup/nano-sd-image-checklist/" class="md-nav__link">
         Nano SD Image Checklist
       </a>
     </li>
@@ -808,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software-install-notes/" class="md-nav__link">
+      <a href="../../setup/software-install-notes/" class="md-nav__link">
         Software Installation Notes
       </a>
     </li>
@@ -1386,29 +1374,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pca9685-pwm-board" class="md-nav__link">
-    PCA9685 PWM Board
+  <a href="#using-gptchat-to-help-generate-block-diagrams" class="md-nav__link">
+    Using GPTChat To Help Generate Block Diagrams
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pi-40-pin-header" class="md-nav__link">
-    Pi 40 Pin Header
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#connections" class="md-nav__link">
-    Connections
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    References
+  <a href="#gptchat-prompt" class="md-nav__link">
+    GPTChat Prompt
   </a>
   
 </li>
@@ -1425,26 +1399,78 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/CoderDojoTC/ai-racing-league/blob/master/docs/setup/pwm-board.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/CoderDojoTC/ai-racing-league/blob/master/docs/lesson-plans/car-structure/index.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="pwm-board-deep-dive">PWM Board Deep Dive</h1>
-<p>The DonkeyCar uses the low cost PCA9685 PWM board.</p>
-<h2 id="pca9685-pwm-board">PCA9685 PWM Board</h2>
-<p><img alt="PWM Board Front" src="../../img/PWM-board-front.png" />
-<img alt="PWM Board Back" src="../../img/PWM-board-back.png" /></p>
-<h2 id="pi-40-pin-header">Pi 40 Pin Header</h2>
-<p><img alt="Pi 40 Pin Header" src="../../img/pi-40-pin-header.png" /></p>
-<h2 id="connections">Connections</h2>
-<p><img alt="PWM Board Connections" src="../../img/PWM-connections.jpg" /></p>
-<h2 id="references">References</h2>
-<ul>
-<li><a href="../../slides/Connecting-PWM-Cards.pptx">Connections Handown (PowerPoint)</a></li>
-<li><a href="https://www.aranacorp.com/en/using-a-pca9685-module-with-raspberry-pi/">Using a PCA9685 module with Raspberry Pi</a></li>
-</ul>
+<h1 id="rc-car-structure">RC Car Structure</h1>
+<p><img alt="RC Car Block Diagram" src="./../img/rc-car-block-diagram.png" /></p>
+<h2 id="using-gptchat-to-help-generate-block-diagrams">Using GPTChat To Help Generate Block Diagrams</h2>
+<p>Generating architecture diagrams can be a slow and painful process.
+But ChatGPT can help.  here is a process of generating a block diagram
+using ChatGPT.  We can use the <a href="https://mermaid.live/">Mermaid Live</a> program to view the diagram.  ChatGPT also has a <code>diagram</code> plugin that will render the image within ChatGPT.</p>
+<h2 id="gptchat-prompt">GPTChat Prompt</h2>
+<p>```linenums="0"
+Create a mermaid block diagram for the structure of a Donkey Car.  Make sure to label all the components and their connection types.  Return the results in raw mermaid format.  Include the following structures:</p>
+<ol>
+<li>The main computer (Raspberry Pi or NVIDIA Nano)</li>
+<li>The main computer has an I2C connection to the Servo Controller board</li>
+<li>The Servo Controller connects to the Steering Servo and the Electronic Speed Controller (ESC) via PWM connections</li>
+<li>The ESC connects to the RC Car Battery</li>
+<li>THE ESC connects to the Car Motor</li>
+<li>The 5v battery powers the main computer</li>
+<li>There are two batteries: a 5V battery and a 7V RC Car Battery.</li>
+<li>The Servo controller is a PCA9685 board.</li>
+</ol>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>## ChatGPT Response
+</code></pre></div>
+</td></tr></table>
+<p>This code will create a block diagram where:</p>
+<p>The "Main Computer" (A) connects to the "Servo Controller" (B) via an I2C connection.
+The "Servo Controller" (B) connects to both the "Steering Servo" (C) and "Electronic Speed Controller" (D) via PWM connections.
+The "Electronic Speed Controller" (D) connects to both the "RC Car Battery" (E) and the "Car Motor" (F).
+The "5V Battery" (G) connects to the "Main Computer" (A) as well as to the "Positive Connection" (H) and "Negative Connection" (I).
+The "RC Car Battery" (E) also connects to both the "Positive Connection" (H) and "Negative Connection" (I).
+Please note that this is a simplified diagram and does not necessarily represent the physical arrangement of the components in an actual Donkey Car setup. This diagram should be taken as an abstract representation of how the components interact.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cp">## Mermaid Diagram</span><span class="w"></span>
+
+<span class="err">```</span><span class="n">mermaid</span><span class="w"></span>
+<span class="nf">graph</span><span class="w"> </span><span class="n">TB</span><span class="w"></span>
+<span class="w">  </span><span class="n">A</span><span class="p">[</span><span class="s">&quot;Main Computer&lt;br&gt;Raspberry Pi or NVIDIA Nano&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="n">B</span><span class="p">[</span><span class="s">&quot;Servo Controller&lt;br&gt;PCA9685 board&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="n">C</span><span class="p">[</span><span class="s">&quot;Steering Servo&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="n">D</span><span class="p">[</span><span class="s">&quot;Electronic Speed Controller&lt;br&gt;(ESC)&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="n">E</span><span class="p">[</span><span class="s">&quot;RC Car Battery (7V)&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="n">F</span><span class="p">[</span><span class="s">&quot;Car Motor&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="n">G</span><span class="p">[</span><span class="s">&quot;5V Battery&quot;</span><span class="p">]</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">A</span><span class="w"> </span><span class="o">--</span><span class="n">I2C</span><span class="o">--&gt;</span><span class="w"> </span><span class="n">B</span><span class="w"></span>
+<span class="w">  </span><span class="n">B</span><span class="w"> </span><span class="o">--</span><span class="n">PWM</span><span class="o">--&gt;</span><span class="w"> </span><span class="n">C</span><span class="w"></span>
+<span class="w">  </span><span class="n">B</span><span class="w"> </span><span class="o">--</span><span class="n">PWM</span><span class="o">--&gt;</span><span class="w"> </span><span class="n">D</span><span class="w"></span>
+<span class="w">  </span><span class="n">D</span><span class="w"> </span><span class="o">---</span><span class="w"> </span><span class="n">E</span><span class="w"></span>
+<span class="w">  </span><span class="n">D</span><span class="w"> </span><span class="o">---</span><span class="w"> </span><span class="n">F</span><span class="w"></span>
+<span class="w">  </span><span class="n">G</span><span class="w"> </span><span class="o">---</span><span class="w"> </span><span class="n">A</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
 
               
             </article>
@@ -1459,7 +1485,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../conda-pi-setup/" title="Setup Conda on Pi" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../data-analysis/06-cleaning-datasets/" title="Cleaning Datasets" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1468,19 +1494,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Setup Conda on Pi
+                Cleaning Datasets
               </span>
             </div>
           </a>
         
         
-          <a href="../nano-sd-image-checklist/" title="Nano SD Image Checklist" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../quizzes/gpu-commands/" title="GPU Commands" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Nano SD Image Checklist
+                GPU Commands
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

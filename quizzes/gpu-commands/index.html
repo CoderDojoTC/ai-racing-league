@@ -13,7 +13,7 @@
     
     
       
-        <title>PWM Setup - AI Racing League</title>
+        <title>GPU Commands - AI Racing League</title>
       
     
     
@@ -72,11 +72,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#pwm-board-deep-dive" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -105,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PWM Setup
+              GPU Commands
             
           </span>
         </div>
@@ -303,12 +298,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -591,12 +588,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_8" type="checkbox" id="__nav_3_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_8" type="checkbox" id="__nav_3_8" checked>
       
       
       
@@ -617,11 +616,19 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../quizzes/gpu-commands/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         GPU Commands
       </a>
+      
     </li>
   
 
@@ -646,14 +653,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
       
@@ -690,7 +695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../calibrate/" class="md-nav__link">
+      <a href="../../setup/calibrate/" class="md-nav__link">
         Calibrate
       </a>
     </li>
@@ -704,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../conda-pi-setup/" class="md-nav__link">
+      <a href="../../setup/conda-pi-setup/" class="md-nav__link">
         Setup Conda on Pi
       </a>
     </li>
@@ -716,73 +721,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          PWM Setup
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../setup/pwm-board/" class="md-nav__link">
         PWM Setup
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pca9685-pwm-board" class="md-nav__link">
-    PCA9685 PWM Board
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pi-40-pin-header" class="md-nav__link">
-    Pi 40 Pin Header
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#connections" class="md-nav__link">
-    Connections
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    References
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -794,7 +737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nano-sd-image-checklist/" class="md-nav__link">
+      <a href="../../setup/nano-sd-image-checklist/" class="md-nav__link">
         Nano SD Image Checklist
       </a>
     </li>
@@ -808,7 +751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software-install-notes/" class="md-nav__link">
+      <a href="../../setup/software-install-notes/" class="md-nav__link">
         Software Installation Notes
       </a>
     </li>
@@ -1376,44 +1319,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pca9685-pwm-board" class="md-nav__link">
-    PCA9685 PWM Board
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pi-40-pin-header" class="md-nav__link">
-    Pi 40 Pin Header
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#connections" class="md-nav__link">
-    Connections
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    References
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1425,26 +1330,15 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/CoderDojoTC/ai-racing-league/blob/master/docs/setup/pwm-board.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/CoderDojoTC/ai-racing-league/blob/master/docs/quizzes/gpu-commands.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="pwm-board-deep-dive">PWM Board Deep Dive</h1>
-<p>The DonkeyCar uses the low cost PCA9685 PWM board.</p>
-<h2 id="pca9685-pwm-board">PCA9685 PWM Board</h2>
-<p><img alt="PWM Board Front" src="../../img/PWM-board-front.png" />
-<img alt="PWM Board Back" src="../../img/PWM-board-back.png" /></p>
-<h2 id="pi-40-pin-header">Pi 40 Pin Header</h2>
-<p><img alt="Pi 40 Pin Header" src="../../img/pi-40-pin-header.png" /></p>
-<h2 id="connections">Connections</h2>
-<p><img alt="PWM Board Connections" src="../../img/PWM-connections.jpg" /></p>
-<h2 id="references">References</h2>
-<ul>
-<li><a href="../../slides/Connecting-PWM-Cards.pptx">Connections Handown (PowerPoint)</a></li>
-<li><a href="https://www.aranacorp.com/en/using-a-pca9685-module-with-raspberry-pi/">Using a PCA9685 module with Raspberry Pi</a></li>
-</ul>
+  <h1>GPU Commands</h1>
+
+
 
               
             </article>
@@ -1459,7 +1353,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../conda-pi-setup/" title="Setup Conda on Pi" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../lesson-plans/car-structure/" title="Generating Block Diagrams" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1468,19 +1362,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Setup Conda on Pi
+                Generating Block Diagrams
               </span>
             </div>
           </a>
         
         
-          <a href="../nano-sd-image-checklist/" title="Nano SD Image Checklist" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../setup/calibrate/" title="Calibrate" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Nano SD Image Checklist
+                Calibrate
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

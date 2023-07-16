@@ -346,7 +346,7 @@
   
     <li class="md-nav__item">
       <a href="../../curriculum/" class="md-nav__link">
-        Curriculum
+        Curriculum Overview
       </a>
     </li>
   
@@ -527,6 +527,100 @@
     <li class="md-nav__item">
       <a href="../../data-analysis/06-data-distributions.md" class="md-nav__link">
         Data Distributions
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_7" type="checkbox" id="__nav_3_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_7">
+          Generative AI
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Generative AI" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          Generative AI
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/car-structure/" class="md-nav__link">
+        Generating Block Diagrams
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_8" type="checkbox" id="__nav_3_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_8">
+          Sample Quizzes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Sample Quizzes" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_8">
+          <span class="md-nav__icon md-icon"></span>
+          Sample Quizzes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quizzes/gpu-commands/" class="md-nav__link">
+        GPU Commands
       </a>
     </li>
   
@@ -755,13 +849,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#check-the-version-of-ubuntu" class="md-nav__link">
-    Check the Version of Ubuntu
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#list-the-cpu-information" class="md-nav__link">
     List the CPU Information
   </a>
@@ -817,8 +904,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#nvidia-gpu-utlization" class="md-nav__link">
-    NVIDIA GPU Utlization
+  <a href="#nvidia-gpu-utilization" class="md-nav__link">
+    NVIDIA GPU Utilization
   </a>
   
 </li>
@@ -1347,13 +1434,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#check-the-version-of-ubuntu" class="md-nav__link">
-    Check the Version of Ubuntu
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#list-the-cpu-information" class="md-nav__link">
     List the CPU Information
   </a>
@@ -1409,8 +1489,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#nvidia-gpu-utlization" class="md-nav__link">
-    NVIDIA GPU Utlization
+  <a href="#nvidia-gpu-utilization" class="md-nav__link">
+    NVIDIA GPU Utilization
   </a>
   
 </li>
@@ -1434,13 +1514,18 @@
 
 
 <h1 id="shell-commands-for-the-gpu-server">Shell Commands for the GPU Server</h1>
-<p>The following are a list of shell commands for the AI Racing League GPU Server.  We have moved all the commands for setting up the NVIDIA GPU to the file <a href="../nvidia-driver-install/">NVIDIA Driver Install</a>.</p>
+<p>The following is a list of shell commands for the AI Racing League GPU Server.  We have moved all the commands for setting up the NVIDIA GPU to the file <a href="../nvidia-driver-install/">NVIDIA Driver Install</a>.</p>
+<p>The samples below are run if you are on the GPU running the Terminal shell or you have logged on using the secure shell program.</p>
 <h2 id="secure-shell-login">Secure Shell Login</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>ssh arl@arl1.local
-</code></pre></div>
-</td></tr></table>
-<h2 id="check-the-version-of-ubuntu">Check the Version of Ubuntu</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$ lsb_release -a
+<p>```linenums="0"
+$ ssh arl@arl1.local</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>## Check the Version of Ubuntu
+
+```sh
+$ lsb_release -a
 </code></pre></div>
 </td></tr></table>
 <p>Response:</p>
@@ -1568,7 +1653,7 @@ Swap:          2047           0        2047
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>watch -d -n <span class="m">0</span>.5 nvidia-smi
 </code></pre></div>
 </td></tr></table>
-<h2 id="nvidia-gpu-utlization">NVIDIA GPU Utlization</h2>
+<h2 id="nvidia-gpu-utilization">NVIDIA GPU Utilization</h2>
 <p>This shows the GPU running at 42% utilization during the training process.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
 <span class="normal"> 2</span>

@@ -13,7 +13,7 @@
     
     
       
-        <title>PWM Setup - AI Racing League</title>
+        <title>GPU Shell Commands Quiz - AI Racing League</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pwm-board-deep-dive" class="md-skip">
+        <a href="#gpu-shell-commands-quiz" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PWM Setup
+              GPU Shell Commands Quiz
             
           </span>
         </div>
@@ -619,7 +619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../quizzes/gpu-commands/" class="md-nav__link">
+      <a href="../gpu-commands/" class="md-nav__link">
         GPU Commands
       </a>
     </li>
@@ -646,14 +646,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
       
@@ -690,7 +688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../calibrate/" class="md-nav__link">
+      <a href="../../setup/calibrate/" class="md-nav__link">
         Calibrate
       </a>
     </li>
@@ -704,7 +702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../conda-pi-setup/" class="md-nav__link">
+      <a href="../../setup/conda-pi-setup/" class="md-nav__link">
         Setup Conda on Pi
       </a>
     </li>
@@ -716,73 +714,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          PWM Setup
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../setup/pwm-board/" class="md-nav__link">
         PWM Setup
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pca9685-pwm-board" class="md-nav__link">
-    PCA9685 PWM Board
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pi-40-pin-header" class="md-nav__link">
-    Pi 40 Pin Header
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#connections" class="md-nav__link">
-    Connections
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    References
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -794,7 +730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nano-sd-image-checklist/" class="md-nav__link">
+      <a href="../../setup/nano-sd-image-checklist/" class="md-nav__link">
         Nano SD Image Checklist
       </a>
     </li>
@@ -808,7 +744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software-install-notes/" class="md-nav__link">
+      <a href="../../setup/software-install-notes/" class="md-nav__link">
         Software Installation Notes
       </a>
     </li>
@@ -1386,29 +1322,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pca9685-pwm-board" class="md-nav__link">
-    PCA9685 PWM Board
+  <a href="#questions" class="md-nav__link">
+    Questions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pi-40-pin-header" class="md-nav__link">
-    Pi 40 Pin Header
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#connections" class="md-nav__link">
-    Connections
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    References
+  <a href="#answers" class="md-nav__link">
+    Answers
   </a>
   
 </li>
@@ -1425,26 +1347,80 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/CoderDojoTC/ai-racing-league/blob/master/docs/setup/pwm-board.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/CoderDojoTC/ai-racing-league/blob/master/docs/quizzes/gpu-shell-commands.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="pwm-board-deep-dive">PWM Board Deep Dive</h1>
-<p>The DonkeyCar uses the low cost PCA9685 PWM board.</p>
-<h2 id="pca9685-pwm-board">PCA9685 PWM Board</h2>
-<p><img alt="PWM Board Front" src="../../img/PWM-board-front.png" />
-<img alt="PWM Board Back" src="../../img/PWM-board-back.png" /></p>
-<h2 id="pi-40-pin-header">Pi 40 Pin Header</h2>
-<p><img alt="Pi 40 Pin Header" src="../../img/pi-40-pin-header.png" /></p>
-<h2 id="connections">Connections</h2>
-<p><img alt="PWM Board Connections" src="../../img/PWM-connections.jpg" /></p>
-<h2 id="references">References</h2>
-<ul>
-<li><a href="../../slides/Connecting-PWM-Cards.pptx">Connections Handown (PowerPoint)</a></li>
-<li><a href="https://www.aranacorp.com/en/using-a-pca9685-module-with-raspberry-pi/">Using a PCA9685 module with Raspberry Pi</a></li>
-</ul>
+<h1 id="gpu-shell-commands-quiz">GPU Shell Commands Quiz</h1>
+<p>When you use a new GPU server at an AI Racing League event there are
+many questions you need to have answered about your GPU server.</p>
+<p>Here is a handy quiz you can use to check your knowledge.  The answers to the questions are listed below.</p>
+<h2 id="questions">Questions</h2>
+<p><strong>Question 1:</strong> How would you log into the GPU server using the secure shell program?</p>
+<p>A) <code>$ login arl@arl1.local</code>
+B) <code>$ ssh arl@arl1.local</code>
+C) <code>$ enter arl@arl1.local</code>
+D) <code>$ connect arl@arl1.local</code></p>
+<p><strong>Question 2:</strong> How would you check the version of Ubuntu on the GPU server?</p>
+<p>A) <code>$ version -a</code>
+B) <code>$ lsb_release -a</code>
+C) <code>$ ubuntu_version -all</code>
+D) <code>$ check_ubuntu -a</code></p>
+<p><strong>Question 3:</strong> What information does the <code>lscpu</code> command provide?</p>
+<p>A) It provides the CPU information.
+B) It lists the amount of RAM on the server.
+C) It checks the disk space.
+D) It shows per-user disk usage.</p>
+<p><strong>Question 4:</strong> Which command is used to check the total RAM on the GPU server?</p>
+<p>A) <code>$ free -m</code>
+B) <code>$ checkram -m</code>
+C) <code>$ listram -m</code>
+D) <code>$ raminfo -m</code></p>
+<p><strong>Question 5:</strong> What does the command <code>df -h /</code> provide?</p>
+<p>A) It lists per user disk usage.
+B) It adds a new GPU server user.
+C) It checks the disk space.
+D) It monitors the NVIDIA GPU.</p>
+<p><strong>Question 6:</strong> How can a new GPU server user be added?</p>
+<p>A) <code>$ adduser &lt;username&gt;</code>
+B) <code>$ newuser &lt;username&gt;</code>
+C) <code>$ createuser &lt;username&gt;</code>
+D) <code>$ useradd &lt;username&gt;</code></p>
+<p><strong>Question 7:</strong> How can you give a user "sudo" rights?</p>
+<p>A) <code>$ sudo usermod -aG sudo &lt;username&gt;</code>
+B) <code>$ sudo addrights -aG sudo &lt;username&gt;</code>
+C) <code>$ sudo giverights -aG sudo &lt;username&gt;</code>
+D) <code>$ sudo addrules -aG sudo &lt;username&gt;</code></p>
+<p><strong>Question 8:</strong> How can the hostname be changed?</p>
+<p>A) <code>$ sudo vi hostname</code>
+B) <code>$ sudo edit hostname</code>
+C) <code>$ sudo change hostname</code>
+D) <code>$ sudo alter hostname</code></p>
+<p><strong>Question 9:</strong> What does the command <code>watch -d -n 0.5 nvidia-smi</code> do?</p>
+<p>A) It adds a new GPU server user.
+B) It runs similar to the UNIX top command, but for the GPU.
+C) It checks the version of Ubuntu.
+D) It lists the CPU information.</p>
+<p><strong>Question 10:</strong> How would you check the NVIDIA GPU utilization?</p>
+<p>A) <code>$ checkgpu</code>
+B) <code>$ nvidia-smi</code>
+C) <code>$ gpu-utilization</code>
+D) <code>$ utilization nvidia</code></p>
+<h2 id="answers">Answers</h2>
+<ol>
+<li>B) <code>$ ssh arl@arl1.local</code></li>
+<li>B) <code>$ lsb_release -a</code></li>
+<li>A) It provides the CPU information.</li>
+<li>A) <code>$ free -m</code></li>
+<li>C) It checks the disk space.</li>
+<li>A) <code>$ adduser &lt;username&gt;</code></li>
+<li>A) <code>$ sudo usermod -aG sudo &lt;username&gt;</code></li>
+<li>A) <code>$ sudo vi hostname</code></li>
+<li>B) It runs similar to the UNIX top command, but for the GPU.</li>
+<li>B) <code>$ nvidia-smi</code></li>
+</ol>
 
               
             </article>
@@ -1455,41 +1431,6 @@
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        
-          <a href="../conda-pi-setup/" title="Setup Conda on Pi" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Setup Conda on Pi
-              </span>
-            </div>
-          </a>
-        
-        
-          <a href="../nano-sd-image-checklist/" title="Nano SD Image Checklist" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Nano SD Image Checklist
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
