@@ -38,7 +38,7 @@ nav:
     - Purchasing Guide: admin/03-purchasing-guide.md
     - Cars Parts List: admin/car-parts-list.md
     - GPU Parts List: admin/gpu-parts.md
-    - Car Box Checklist: admin/car-box-checklist.md
+    - Car Box Checklist: admin/car-box-checklist/index.html
     - Joystick: admin/joystick.md
   - Training Logs:
      - MSP Car 1: training-logs/msp-car-1.md
