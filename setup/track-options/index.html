@@ -13,7 +13,7 @@
     
     
       
-        <title>Nano SD Image Checklist - AI Racing League</title>
+        <title>Track Options - AI Racing League</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nano-sd-image-checklist" class="md-skip">
+        <a href="#track-options" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Nano SD Image Checklist
+              Track Options
             
           </span>
         </div>
@@ -674,11 +674,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../track-options/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Track Options
       </a>
+      
     </li>
   
 
@@ -744,59 +754,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Nano SD Image Checklist
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../nano-sd-image-checklist/" class="md-nav__link">
         Nano SD Image Checklist
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#required" class="md-nav__link">
-    Required
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#optional" class="md-nav__link">
-    Optional
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1379,28 +1341,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#required" class="md-nav__link">
-    Required
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#optional" class="md-nav__link">
-    Optional
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1411,48 +1351,19 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/CoderDojoTC/ai-racing-league/blob/master/docs/setup/nano-sd-image-checklist.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/CoderDojoTC/ai-racing-league/blob/master/docs/setup/track-options.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="nano-sd-image-checklist">Nano SD Image Checklist</h1>
-<p>This is a checklist that is genralized for all our events.  We can't assume any network connectivity at these events.</p>
-<h2 id="required">Required</h2>
-<ol>
-<li>Image is based on the Nvidia Jetson image</li>
-<li>There is a user "donkey" with a password "car"</li>
-<li>The desktop has Chromium and Terminl locked at the top</li>
-<li>The DonkeyCar Bookmarks are in place</li>
-<li>The default WiFi is setup and working for the event (use a guest account if we are at company site?)</li>
-<li>A virtual envinroment is setup and the user is set to that automatically at the end of the .basrc script</li>
-<li>The Latest DonkeyCar software installed consistently and tested</li>
-</ol>
-<h2 id="optional">Optional</h2>
-<ol>
-<li>Swap file setup (at least 6 gig) for compiling OpenCV</li>
-<li>The CSI Camera demo is installed from the Jetson Hacks site to test the camera and do face recognition demos</li>
-<li>The evtest program in installed to test the Logitech F710 joystick</li>
-<li>The default config.py and myconfig.py are setup and customized for the CSI camera</li>
-<li>The default image in the config.py file is 224X224</li>
-<li>The "desktop" apps (word processing, spreadsheets, presentations) have been removed from the default dock</li>
-<li>The Chrome browser and the Terminal are on the dock</li>
-<li>The Chome bookmark bar is enabled (go to the Chrome Settings)</li>
-<li>The latest version of OpenCV (cv2) is installed, compiled and tested</li>
-<li>Decent python editor?</li>
-<li>Jupyter notebook support (arm version!)</li>
-<li>Sample Jupyter notebooks installed for viewing tub data and cleaning up the tub files (removing data with no speed)</li>
-</ol>
-<h1 id="unknowns">Unknowns</h1>
-<ol>
-<li>Can we write a menu-driven UNIX script that will automatically copy tubs to a GPU server and get a model back?</li>
-<li>Can we assign static IP addresses and names to each car (dk1, dk2, dk3)</li>
-<li>Can we assume that ALL cars use the same default calibration?</li>
-<li>Can we write a short test script to verify that all the components are installed and working?</li>
-<li>What standards should we have for the GPU servers (Ubuntu, not RedHat)</li>
-<li>What other </li>
-</ol>
+<h1 id="track-options">Track Options</h1>
+<p>In Minnesota, <a href="https://billboardtarps.com/product-category/billboard-vinyl/">Billboard Tarps</a> sells used vinyl sign material.  For around $70 you can get a 16' X 25' used black billboard vinyl sign that is ideal for creating your own track.</p>
+<p><img alt="Used Black Vinyl Track for $70" src="../../img/track-vinyl-black.jpg" /></p>
+<p><a href="https://billboardtarps.com/product-category/billboard-vinyl/">Billboard Tarps and Vinyl</a> - We suggest you get a dark color (black or dark blue) and then tape down white edges and a yellow dashed line in the center.</p>
+<p><img alt="Sample Track Template" src="../../img/donkeycartrack4_1080x.jpg" /></p>
+<p>Above is a sample of a tarp purchased from Billboard Tarps.  Note the actual track is twice this size since it is still folded in half in this photo.</p>
+<p><img alt="OTU Track" src="../../img/otu-track.png" /></p>
 
               
             </article>
@@ -1467,7 +1378,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../pwm-board/" title="PWM Setup" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../quizzes/gpu-commands/" title="GPU Commands" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1476,19 +1387,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                PWM Setup
+                GPU Commands
               </span>
             </div>
           </a>
         
         
-          <a href="../software-install-notes/" title="Software Installation Notes" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../calibrate/" title="Calibrate" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Software Installation Notes
+                Calibrate
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
