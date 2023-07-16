@@ -49,6 +49,7 @@ nav:
     - Demos: demos.md
     - Media: media.md
     - Command Line Tips: command-line-tips.md
+    - Google Analytics: google-analytics.md
   - Presentations:
     - List of Presentations: presentations.md
     - Welcome: slides/Welcome-to-the-ARL.pptx
