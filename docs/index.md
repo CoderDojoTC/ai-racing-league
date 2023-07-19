@@ -16,7 +16,7 @@ We are in the process of restarting our events starting in the fall of 2023.  Pl
 
 The following organizations have expressed an interest in helping out:
 
-1. [Code Savvy](https://www.codesavvy.org/) - Contact: [Val Lockhard](https://www.linkedin.com/in/valockhart/) - The AI Racing League runs as a project under Code Savvy.  They are a 503C not-for profit organization.
+1. [Code Savvy](https://www.codesavvy.org/) - Contact: [Valarie Lockhart](https://www.linkedin.com/in/valockhart/) - The AI Racing League runs as a project under Code Savvy.  They are a 503C not-for-profit organization.
 2. [Minneanalytics](https://minneanalytics.org/) - Contact: [Dan Atkins](https://www.linkedin.com/in/danalytics/) - contact Dan Atkins directly if you are looking for funding for your team.
 3. [Washburn High School]() - Contact: [Peter Grul](https://www.linkedin.com/in/peter-grul-785ab66/)
 4. [Best Buy Education](https://www.bestbuy.com/site/bestbuy-business/bestbuy-education) - Contact: [Wes Strait](https://www.linkedin.com/in/wesstrait/) - Wes and his team have run several events using the Amazon deep racer.
