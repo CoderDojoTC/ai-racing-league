@@ -13,7 +13,7 @@ Static IP Address: ______________________
    4. [ ] 128GB micro SD card (inserted in Nvidia Nano) (2)
    5. [ ] RC Car Battery (7.2v NiMh)
 2. [ ] Nvidia Nano with 4GB RAM
-2. [ ] Ankar 5v 6800mHA battery with charging cable - note draws 900ma when charging
+2. [ ] Ankar 5v 6800mHA battery with charging cable - note draws 900ma when charging so use a 1ft high current USB cable.
 
 3. [ ] 2.5 amp 5v barrel connector for desktop use of Nvidia
 4. [ ] Jumper for enabling the barrele connector
