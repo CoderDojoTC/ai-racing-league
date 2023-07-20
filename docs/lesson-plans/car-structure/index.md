@@ -1,6 +1,6 @@
 # RC Car Structure
 
-![RC Car Block Diagram](./../img/rc-car-block-diagram.png)
+![RC Car Block Diagram](./../../img/rc-car-block-diagram.png)
 
 ## Using GPTChat To Help Generate Block Diagrams
 
