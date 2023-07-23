@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Map Hover Demo</title>
+  <link rel="stylesheet" type="text/css" href="journey-map.css">
+</head>
+<body>
+    <p>Event Journey Map</p>
+  <div class="map-container">
+    <img src="./img/journey-map.png" id="map" alt="Map with Regions">
+    <div class="regions">
+      <!-- row 1 -->
+      <div class="region" data-x="20" data-y="100" data-width="100" data-height="50" data-text="Setup" data-url="./jm/setup"></div>
+      <div class="region" data-x="120" data-y="100" data-width="100" data-height="50" data-text="Calibration" data-url="./jm/calibration"></div>
+      <div class="region" data-x="220" data-y="100" data-width="100" data-height="50" data-text="Drive Manual" data-url="./jm/drive-manual"></div>
+      <div class="region" data-x="330" data-y="100" data-width="100" data-height="50" data-text="Gather Images" data-url="./jm/gather-images"></div>
+      <!-- row 2 -->
+      <div class="region" data-x="20" data-y="200" data-width="100" data-height="50" data-text="Transfer Images to GPU" data-url="./jm/transfer-to-images"></div>
+      <div class="region" data-x="120" data-y="200" data-width="100" data-height="50" data-text="Build Model" data-url="./jm/build-model"></div>
+      <div class="region" data-x="220" data-y="200" data-width="100" data-height="50" data-text="Transfer Model to Car" data-url="./jm/transfer-model"></div>
+      <div class="region" data-x="320" data-y="200" data-width="100" data-height="50" data-text="Drive Autonomously" data-url="./jm/drive-auto"></div>
+      <!-- Add more regions as needed -->
+    </div>
+  </div>
+  <div id="tooltip" class="hidden">Hover over a region</div>
+  <script src="./journey-map.js"></script>
+</body>
+</html>
