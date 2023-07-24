@@ -2,7 +2,7 @@
 
 *Promoting equity and innovation in AI education.*
 
-![Event Journey Map](./img/journey-map.png)
+![Event Journey Map](./img/event-journey-map.png)
 
 The AI Racing League is a fun way to learn the concepts behind artificial intelligence!  We learn AI by teaching small remote-controlled (RC) cars to drive around a track autonomously.  The cars use a low-cost Raspberry Pi computer (or NVIDIA Nano) with a camera.  Students drive around the track and gather a set of images to "train" a neural network that can be used to automatically steer the car.
 
