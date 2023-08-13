@@ -9,21 +9,22 @@
 
 ## Haar Cascades
 
-### Understanding Haarcascades in OpenCV
+### Understanding Haar Cascades in OpenCV
 
-**Haarcascades** are a type of machine learning object detection method used to identify objects in images or video. In OpenCV, Haarcascades are mainly used to detect faces, but they can also identify other objects like eyes, smiles, and more.
+**Haar Cascades** are a type of machine learning object detection method used to identify objects in images or video. In OpenCV, Haar Cascades are mainly used to detect faces, but they can also identify other objects like eyes, smiles, and more.  There were named after Hungarian mathematician [Alfréd Haar](https://en.wikipedia.org/wiki/Alfr%C3%A9d_Haar) who
+make key contributions to the mathematics of transformation of matrix data in the 1920s.
 
-Imagine you have a magic magnifying glass that you move across a photo. Whenever this magnifying glass sees a face, it lights up! That's kind of what Haarcascades does in OpenCV.
+Imagine you have a magic magnifying glass that you move across a photo. Whenever this magnifying glass sees a face, it lights up! That's kind of what Haar Cascades does in OpenCV.
 
-### How Does Harr Cascades Work?
+### How Do Harr Cascades Work?
 
-1. **Features**: Haarcascades work by looking at simple features of faces (like the bridge of the nose being brighter than the eyes on either side because it sticks out and catches light).
-2. **Training**: To make Haarcascades 'learn' these features, it's shown many pictures of faces and non-faces. Through this, it learns what a face typically looks like.
+1. **Features**: Haar Cascades work by looking at simple features in an area of the image, like the bridge of the nose being brighter than the eyes on either side because it sticks out and catches the light.
+2. **Training**: To make Haar Cascades 'learn' these features, it's shown many pictures of faces and non-faces. Through this, it learns what a face typically looks like.
 3. **Cascade**: The term 'cascade' is used because the algorithm employs a series of increasingly complex features to determine if a particular region is a face.
 
-### Building Face-Filters Using Haarcascades:
+### Building Face-Filters Using Haar Cascades:
 
-Creating a Snapchat-like face filter using Haarcascades involves two main steps:
+Creating a Snapchat-like face filter using Haar Cascades involves two main steps:
 
 1. **Face Detection**: Detecting the location of the face in an image or video stream.
 2. **Overlaying the Filter**: Once we know where the face is, we can overlay our filter (like cat ears or sunglasses) at the correct position.
@@ -33,7 +34,7 @@ Creating a Snapchat-like face filter using Haarcascades involves two main steps:
 ```python
 import cv2
 
-# Load the Haarcascade for face detection
+# Load the Haar cascade for face detection
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 # Read the image

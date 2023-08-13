@@ -25,7 +25,7 @@ Combine OpenCV for image processing and Tesseract for character recognition to d
 
 ### Color Detection
 
-Write a simple program that detects specific colors in real-time. This can be used as a stepping stone to more advanced object tracking projects.
+Write a simple program that detects specific colors in real-time. This can be used as a stepping stone to more advanced object-tracking projects.
 
 We can also combine this lab with our Raspberry Pi Pico color detection sensors.
 
@@ -43,7 +43,7 @@ Create a program that recognizes hand gestures and associates them with commands
 You can implement a simple Automatic Number Plate Recognition (ANPR) system using image processing techniques in OpenCV and OCR.
 
 ### QR Code and Barcode Scanner
-Use OpenCV for real-time detection and decoding of QR codes and barcodes.
+Use OpenCV for real-time detection and decoding of QR codes and bar codes.
 
 Most of these demonstrations will require additional Python libraries beyond just OpenCV, like NumPy, Pillow, or TensorFlow.
 
