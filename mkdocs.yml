@@ -9,7 +9,10 @@ nav:
     - Learning Strategy: learning-strategy.md
     - Curriculum Overview: curriculum.md
     - Sample Six Week Course: six-week-curriculum.md
-    - Computer Vision Labs: lesson-plans/computer-vision/index.md
+    - Computer Vision Labs:
+      - Introduction: lesson-plans/computer-vision/index.md
+      - Open Computer Vision: lesson-plans/computer-vision/open-cv.md
+      - Face Filters: lesson-plans/computer-vision/face-filters.md
     - Jupyter Notebooks: lesson-plans/jupyter-notebooks/index.md
     - Car Data Analysis:
       - Introduction: lesson-plans/data-analysis/index.md
