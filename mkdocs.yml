@@ -34,6 +34,7 @@ nav:
     - PWM Setup: setup/pwm-board.md
     - Nano SD Image Checklist: setup/nano-sd-image-checklist.md
     - Software Installation Notes: setup/software-install-notes.md
+    - Tools: admin/tools.md
   - GPU Server Setup:
     - NVIDIA Driver Installation: admin/nvidia-driver-install.md
     - GPU Shell Commands: admin/gpu-shell.md
