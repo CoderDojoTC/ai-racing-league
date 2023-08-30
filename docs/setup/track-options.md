@@ -2,7 +2,15 @@
 
 Although you can just put tape down on a floor, that is time-consuming and is often a low-quality track.   There are several other options and the prices vary from under $100 to $1,300.
 
+## Vinyl Tarps
+
 In Minnesota, [Billboard Tarps](https://billboardtarps.com/product-category/billboard-vinyl/) sells used vinyl sign material.  For around $70 you can get a 16' X 25' used black billboard 9oz black vinyl sign that is ideal for creating your own track.
+
+Here is a full-size track that is 25' X 35' for about $170:
+
+![](./../img/whs-track.jpg)
+
+This is what 1/2 of the 16'X'25 foot tarp looks like after delivery from [Billboard Tarps and Vinyl](https://billboardtarps.com/product-category/billboard-vinyl/).
 
 ![Used Black Vinyl Track for $70](./../img/track-vinyl-black.jpg)
 
