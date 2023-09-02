@@ -803,7 +803,49 @@
     GStreamer Test on the Nano
   </a>
   
-    <nav class="md-nav" aria-label="GStreamer Test on the Nano">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identify-the-microsd-card-device" class="md-nav__link">
+    Identify the microSD Card Device
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unmount-the-microsd-card" class="md-nav__link">
+    Unmount the microSD Card
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-backup-image" class="md-nav__link">
+    Create a Backup Image
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copy-the-backup-image-to-new-microsd-cards" class="md-nav__link">
+    Copy the Backup Image to New microSD Cards
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expand-the-filesystem-optional" class="md-nav__link">
+    Expand the Filesystem (Optional)
+  </a>
+  
+    <nav class="md-nav" aria-label="Expand the Filesystem (Optional)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -953,6 +995,20 @@
     <li class="md-nav__item">
       <a href="../software-install-notes/" class="md-nav__link">
         Software Installation Notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clone-sd/" class="md-nav__link">
+        Clone an SD Card
       </a>
     </li>
   
@@ -1547,7 +1603,49 @@
     GStreamer Test on the Nano
   </a>
   
-    <nav class="md-nav" aria-label="GStreamer Test on the Nano">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identify-the-microsd-card-device" class="md-nav__link">
+    Identify the microSD Card Device
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unmount-the-microsd-card" class="md-nav__link">
+    Unmount the microSD Card
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-backup-image" class="md-nav__link">
+    Create a Backup Image
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copy-the-backup-image-to-new-microsd-cards" class="md-nav__link">
+    Copy the Backup Image to New microSD Cards
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expand-the-filesystem-optional" class="md-nav__link">
+    Expand the Filesystem (Optional)
+  </a>
+  
+    <nav class="md-nav" aria-label="Expand the Filesystem (Optional)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1618,10 +1716,110 @@
 <p>To test the camera and cable, we need a command that captures video from a CSI camera connected to an NVIDIA Jetson Nano, converts the video format and resolution, and then displays the video on the screen.  We will
 use the GStreamer command first.</p>
 <h2 id="gstreamer-test-on-the-nano">GStreamer Test on the Nano</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$ gst-launch-1.0 nvarguscamerasrc <span class="nv">sensor_mode</span><span class="o">=</span><span class="m">0</span> ! <span class="s1">&#39;video/x-raw(memory:NVMM),width=3820, height=2464, framerate=21/1, format=NV12&#39;</span> ! nvvidconv flip-method<span class="o">=</span><span class="m">0</span> ! <span class="s1">&#39;video/x-raw,width=960, height=616&#39;</span> ! nvvidconv ! nvegltransform ! nveglglessink -e
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>gst-launch-1.0 nvarguscamerasrc ! <span class="se">\</span>
+<span class="s1">&#39;video/x-raw(memory:NVMM),width=3820, height=2464, framerate=21/1, format=NV12&#39;</span> ! <span class="se">\</span>
+nvvidconv flip-method<span class="o">=</span><span class="m">0</span> ! <span class="se">\</span>
+<span class="s1">&#39;video/x-raw,width=960, height=616&#39;</span> ! 
+nvvidconv ! <span class="se">\</span>
+nvegltransform ! <span class="se">\</span>
+nveglglessink -e
 </code></pre></div>
 </td></tr></table>
 <p>This command is a GStreamer command used to test the functionality of a camera on a NVIDIA Jetson Nano device. GStreamer is a multimedia framework that provides a pipeline for media data. The <code>gst-launch-1.0</code> utility is used to build and run basic GStreamer pipelines.</p>
+<p>On newer systems with two cameras you can add: <code>sensor-id=0</code> to make sure you are getting camera 0.</p>
+<p>This guide explains how to clone a Raspberry Pi microSD card using the <code>dd</code> command on UNIX and UNIX-like systems.</p>
+<hr />
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#testing-the-camera">Testing the Camera</a></li>
+<li><a href="#gstreamer-test-on-the-nano">GStreamer Test on the Nano</a></li>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#identify-the-microsd-card-device">Identify the microSD Card Device</a></li>
+<li><a href="#unmount-the-microsd-card">Unmount the microSD Card</a></li>
+<li><a href="#create-a-backup-image">Create a Backup Image</a></li>
+<li><a href="#copy-the-backup-image-to-new-microsd-cards">Copy the Backup Image to New microSD Cards</a></li>
+<li><a href="#expand-the-filesystem-optional">Expand the Filesystem (Optional)</a><ul>
+<li><a href="#why--and-not-">Why "!" and not "|"?</a></li>
+<li><a href="#flip-modes">Flip Modes</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#dans-blog">Dan's Blog</a></li>
+<li><a href="#jetson-hacks-blog">Jetson Hacks Blog</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="identify-the-microsd-card-device">Identify the microSD Card Device</h2>
+<ol>
+<li>
+<p>First, identify the device name for your microSD card. Use either <code>lsblk</code> or <code>df</code> to list devices and their mount points.</p>
+<p><code>bash
+lsblk</code></p>
+<p>Or:</p>
+<p><code>bash
+df -h</code></p>
+</li>
+<li>
+<p>Look for the device corresponding to your microSD card. It's generally something like <code>/dev/sdX</code> or <code>/dev/mmcblkX</code>, where <code>X</code> is a letter.</p>
+<p>⚠️ <strong>Caution</strong>: Be very careful to identify the correct device, as choosing the wrong one could result in data loss.</p>
+</li>
+</ol>
+<hr />
+<h2 id="unmount-the-microsd-card">Unmount the microSD Card</h2>
+<ol>
+<li>
+<p>Before copying data, unmount the partitions of the microSD card to ensure that no data is being read or written during the cloning process.</p>
+<p><code>bash
+sudo umount /dev/sdX*</code></p>
+</li>
+</ol>
+<hr />
+<h2 id="create-a-backup-image">Create a Backup Image</h2>
+<ol>
+<li>
+<p>Use the <code>dd</code> command to create an image file of the microSD card.</p>
+<p><code>bash
+sudo dd if=/dev/sdX of=raspberrypi_backup.img bs=4M status=progress</code></p>
+<ul>
+<li><code>if</code>: Input File — the device you are copying from (your microSD card).</li>
+<li><code>of</code>: Output File — the image file you are creating.</li>
+<li><code>bs</code>: Block Size — specifies how much data should be read at each iteration. <code>4M</code> is usually a good size.</li>
+<li><code>status=progress</code>: shows the progress during the copy.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="copy-the-backup-image-to-new-microsd-cards">Copy the Backup Image to New microSD Cards</h2>
+<ol>
+<li>
+<p>To clone the image onto a new microSD card, insert the new card and identify it just like you did in the first step.</p>
+<p><code>bash
+sudo dd if=raspberrypi_backup.img of=/dev/sdY bs=4M status=progress</code></p>
+<p>Replace <code>/dev/sdY</code> with the device name of your new microSD card.</p>
+<p>⚠️ <strong>Caution</strong>: Again, be very careful to identify the correct device to avoid data loss.</p>
+</li>
+</ol>
+<hr />
+<h2 id="expand-the-filesystem-optional">Expand the Filesystem (Optional)</h2>
+<ol>
+<li>
+<p>If your new microSD card is larger than the original, you might need to expand the filesystem to use the additional space. You can do this using <code>raspi-config</code> on the Raspberry Pi.</p>
+<p><code>bash
+sudo raspi-config</code></p>
+<p>Navigate to <code>Advanced Options</code> &gt; <code>Expand Filesystem</code>.</p>
+</li>
+</ol>
+<p>After following these steps, you should have successfully cloned your Raspberry Pi's microSD card.</p>
+<hr />
+<p><strong>Note</strong>: The <code>dd</code> command can be very dangerous if misused. Always double-check your device names and ensure you understand the commands you're running.
+```</p>
 <p>Here's a breakdown of the command:</p>
 <ol>
 <li>
