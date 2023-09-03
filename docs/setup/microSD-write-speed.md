@@ -6,6 +6,8 @@ Although you can boot the Raspberry Pi and NVIDIA Nano on a 16GB microSD card, i
 
 ![64 GB micro SD card](../img/64GB-microSD.png)
 
+In the item above, the "Class 10" indicates it will write above 10 MB/sec.
+
 ## Bandwidth Calculation for 224x224 Color Images
 
 What speed microSD card should you purchase?  Low-cost cards write at 10 MB/sec and more expensive cards can run up to 100 MB/sec.  What one should we purchase?
