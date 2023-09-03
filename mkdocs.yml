@@ -30,6 +30,7 @@ nav:
   - Setup:
     - Track Options: setup/track-options.md
     - Battery Options: setup/battery-options.md
+    - MicroSD Options: microSD-write-speed.md
     - Camera Testing: setup/camera-testing.md
     - Car Checklist: admin/car-box-checklist/index.html
     - Building ARL Image: setup/building-arl-image.md
