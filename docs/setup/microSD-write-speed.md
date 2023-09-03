@@ -16,42 +16,27 @@ So, each pixel would need 3 bytes.
 
 The size of a single image would be:
 
-\[
-\text{Size of a single image} = \text{Number of pixels} \times \text{Bytes per pixel}
-\]
-\[
-= 50,176 \, \text{pixels} \times 3 \, \text{bytes/pixel}
-\]
-\[
-= 150,528 \, \text{bytes}
-\]
-\[
-= 150.528 \, \text{KB}
-\]
-\[
-\approx 0.147 \, \text{MB}
-\]
+```linenums="0"
+Size of a single image = Number of pixels * Bytes per pixel
+
+= 50,176 pixels * 3 bytes/pixel
+= 150,528 bytes/image
+= 150 KB
+approx 0.147 MB
+```
 
 ### Step 2: Calculate the Total Bandwidth Needed Per Second
 
 We are writing 10 images a second to the disk, so the total bandwidth needed per second would be:
 
-\[
-\text{Total bandwidth per second} = \text{Size of a single image} \times \text{Number of images per second}
-\]
-\[
-= 150,528 \, \text{bytes/image} \times 10 \, \text{images/second}
-\]
-\[
-= 1,505,280 \, \text{bytes/second}
-\]
-\[
-= 1,505.28 \, \text{KB/s}
-\]
-\[
-\approx 1.47 \, \text{MB/s}
-\]
+```linenums="0"
+Total bandwidth per second = Size of a single image * Number of images per second
+
+= 0.147 MB * 10
+= approx 1.47 megabytes/s
+```
 
 ## Conclusion
 
-The camera would need a total bandwidth of approximately \(1.47 \, \text{MB/s}\) to write 10 224x224 color images to the disk each second.
+The microSD would need a total bandwidth of approximately 1.47 MB/s to write 10 224x224 color images to the disk each second.  Since most microSD cards today write from 10 MB/s to 100 MB/s
+there is no worry about having enough write speed to the microSD card.

@@ -32,6 +32,7 @@ nav:
     - Battery Options: setup/battery-options.md
     - MicroSD Options: setup/microSD-write-speed.md
     - Camera Testing: setup/camera-testing.md
+    - GPU Options: setup/gpu-options.md
     - Car Checklist: admin/car-box-checklist/index.html
     - Building ARL Image: setup/building-arl-image.md
     - Calibrate: setup/calibrate.md
