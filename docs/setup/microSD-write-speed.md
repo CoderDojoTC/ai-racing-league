@@ -1,10 +1,22 @@
-# Bandwidth Calculation for 224x224 Color Images
+# Selecting the Right MicroSD Card
 
-## Objective
+## Size
 
-Calculate the total bandwidth needed for a camera that reads 224x224 color images and needs to write 10 images per second to the disk.
+Although you can boot the Raspberry Pi and NIVIDA Nano on a 16GB microSD card, it will quick run out of room after you download the 36K Python libraries.  Our suggestion is to use a minimum of a 64 GB card and ideally a 128 GB microSD card.
 
-## Step-by-Step Calculation
+![64 GB micro SD card](../img/64GB-microSD.png)
+
+## Bandwidth Calculation for 224x224 Color Images
+
+What speed microSD card should you purchase?  Low-cost cards write at 10 MB/sec and more expensive cards can run up to 100 MB/sec.  What one should we purchase?
+
+The default image for the Donkey Car is 224x224 color images.
+
+### Analysis
+
+Calculate the total microSD card write bandwidth needed for a camera that reads 224x224 color images and needs to write 10 images per second to the disk.
+
+### Step-by-Step Calculation
 
 ### Step 1: Calculate the Size of a Single Image
 
