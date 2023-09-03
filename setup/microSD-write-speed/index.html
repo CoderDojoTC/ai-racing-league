@@ -820,13 +820,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#step-2-calculate-the-total-bandwidth-needed-per-second" class="md-nav__link">
-    Step 2: Calculate the Total Bandwidth Needed Per Second
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -856,6 +849,20 @@
     <li class="md-nav__item">
       <a href="../camera-testing/" class="md-nav__link">
         Camera Testing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gpu-options/" class="md-nav__link">
+        GPU Options
       </a>
     </li>
   
@@ -1579,13 +1586,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#step-2-calculate-the-total-bandwidth-needed-per-second" class="md-nav__link">
-    Step 2: Calculate the Total Bandwidth Needed Per Second
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1625,40 +1625,34 @@
 <p>Assuming the image uses a standard RGB color scheme, each pixel would have three color channels: Red, Green, and Blue. Each channel typically requires 1 byte (or 8 bits) to store its intensity value.</p>
 <p>So, each pixel would need 3 bytes.</p>
 <p>The size of a single image would be:</p>
-<p>[
-\text{Size of a single image} = \text{Number of pixels} \times \text{Bytes per pixel}
-]
-[
-= 50,176 \, \text{pixels} \times 3 \, \text{bytes/pixel}
-]
-[
-= 150,528 \, \text{bytes}
-]
-[
-= 150.528 \, \text{KB}
-]
-[
-\approx 0.147 \, \text{MB}
-]</p>
-<h3 id="step-2-calculate-the-total-bandwidth-needed-per-second">Step 2: Calculate the Total Bandwidth Needed Per Second</h3>
-<p>We are writing 10 images a second to the disk, so the total bandwidth needed per second would be:</p>
-<p>[
-\text{Total bandwidth per second} = \text{Size of a single image} \times \text{Number of images per second}
-]
-[
-= 150,528 \, \text{bytes/image} \times 10 \, \text{images/second}
-]
-[
-= 1,505,280 \, \text{bytes/second}
-]
-[
-= 1,505.28 \, \text{KB/s}
-]
-[
-\approx 1.47 \, \text{MB/s}
-]</p>
+<p>```linenums="0"
+Size of a single image = Number of pixels * Bytes per pixel</p>
+<p>= 50,176 pixels * 3 bytes/pixel
+= 150,528 bytes/image
+= 150 KB
+approx 0.147 MB</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1">### Step 2: Calculate the Total Bandwidth Needed Per Second</span><span class="w"></span>
+
+<span class="n">We</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="n">writing</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="n">images</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">second</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">disk</span><span class="p">,</span><span class="w"> </span><span class="n">so</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="n">bandwidth</span><span class="w"> </span><span class="n">needed</span><span class="w"> </span><span class="n">per</span><span class="w"> </span><span class="n">second</span><span class="w"> </span><span class="n">would</span><span class="w"> </span><span class="n">be</span><span class="p">:</span><span class="w"></span>
+
+<span class="err">```</span><span class="n">linenums</span><span class="o">=</span><span class="s2">&quot;0&quot;</span><span class="w"></span>
+<span class="n">Total</span><span class="w"> </span><span class="n">bandwidth</span><span class="w"> </span><span class="n">per</span><span class="w"> </span><span class="n">second</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Size</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">single</span><span class="w"> </span><span class="n">image</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Number</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">images</span><span class="w"> </span><span class="n">per</span><span class="w"> </span><span class="n">second</span><span class="w"></span>
+
+<span class="o">=</span><span class="w"> </span><span class="mf">0.147</span><span class="w"> </span><span class="n">MB</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">10</span><span class="w"></span>
+<span class="o">=</span><span class="w"> </span><span class="n">approx</span><span class="w"> </span><span class="mf">1.47</span><span class="w"> </span><span class="n">megabytes</span><span class="o">/</span><span class="n">s</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
 <h2 id="conclusion">Conclusion</h2>
-<p>The camera would need a total bandwidth of approximately (1.47 \, \text{MB/s}) to write 10 224x224 color images to the disk each second.</p>
+<p>The microSD would need a total bandwidth of approximately 1.47 MB/s to write 10 224x224 color images to the disk each second.  Since most microSD cards today write from 10 MB/s to 100 MB/s
+there is no worry about having enough write speed to the microSD card.</p>
 
               
             </article>
