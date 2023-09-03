@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bandwidth-calculation-for-224x224-color-images" class="md-skip">
+        <a href="#selecting-the-right-microsd-card" class="md-skip">
           Skip to content
         </a>
       
@@ -799,19 +799,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
-    Objective
+  <a href="#size" class="md-nav__link">
+    Size
   </a>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#bandwidth-calculation-for-224x224-color-images" class="md-nav__link">
+    Bandwidth Calculation for 224x224 Color Images
+  </a>
+  
+    <nav class="md-nav" aria-label="Bandwidth Calculation for 224x224 Color Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analysis" class="md-nav__link">
+    Analysis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#step-by-step-calculation" class="md-nav__link">
     Step-by-Step Calculation
   </a>
   
-    <nav class="md-nav" aria-label="Step-by-Step Calculation">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#step-1-calculate-the-size-of-a-single-image" class="md-nav__link">
@@ -961,6 +975,20 @@
     <li class="md-nav__item">
       <a href="../software-install-notes/" class="md-nav__link">
         Software Installation Notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation-tips/" class="md-nav__link">
+        Installation Tips
       </a>
     </li>
   
@@ -1565,19 +1593,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
-    Objective
+  <a href="#size" class="md-nav__link">
+    Size
   </a>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#bandwidth-calculation-for-224x224-color-images" class="md-nav__link">
+    Bandwidth Calculation for 224x224 Color Images
+  </a>
+  
+    <nav class="md-nav" aria-label="Bandwidth Calculation for 224x224 Color Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analysis" class="md-nav__link">
+    Analysis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#step-by-step-calculation" class="md-nav__link">
     Step-by-Step Calculation
   </a>
   
-    <nav class="md-nav" aria-label="Step-by-Step Calculation">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#step-1-calculate-the-size-of-a-single-image" class="md-nav__link">
@@ -1616,10 +1658,16 @@
 
 
 
-<h1 id="bandwidth-calculation-for-224x224-color-images">Bandwidth Calculation for 224x224 Color Images</h1>
-<h2 id="objective">Objective</h2>
-<p>Calculate the total bandwidth needed for a camera that reads 224x224 color images and needs to write 10 images per second to the disk.</p>
-<h2 id="step-by-step-calculation">Step-by-Step Calculation</h2>
+<h1 id="selecting-the-right-microsd-card">Selecting the Right MicroSD Card</h1>
+<h2 id="size">Size</h2>
+<p>Although you can boot the Raspberry Pi and NIVIDA Nano on a 16GB microSD card, it will quick run out of room after you download the 36K Python libraries.  Our suggestion is to use a minimum of a 64 GB card and ideally a 128 GB microSD card.</p>
+<p><img alt="64 GB micro SD card" src="../../img/64GB-microSD.png" /></p>
+<h2 id="bandwidth-calculation-for-224x224-color-images">Bandwidth Calculation for 224x224 Color Images</h2>
+<p>What speed microSD card should you purchase?  Low-cost cards write at 10 MB/sec and more expensive cards can run up to 100 MB/sec.  What one should we purchase?</p>
+<p>The default image for the Donkey Car is 224x224 color images.</p>
+<h3 id="analysis">Analysis</h3>
+<p>Calculate the total microSD card write bandwidth needed for a camera that reads 224x224 color images and needs to write 10 images per second to the disk.</p>
+<h3 id="step-by-step-calculation">Step-by-Step Calculation</h3>
 <h3 id="step-1-calculate-the-size-of-a-single-image">Step 1: Calculate the Size of a Single Image</h3>
 <p>A 224x224 color image would have (224 \times 224 = 50,176) pixels.</p>
 <p>Assuming the image uses a standard RGB color scheme, each pixel would have three color channels: Red, Green, and Blue. Each channel typically requires 1 byte (or 8 bits) to store its intensity value.</p>
