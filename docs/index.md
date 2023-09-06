@@ -21,7 +21,7 @@ The following organizations have expressed an interest in helping out:
 3. [Washburn High School]() - Contact: [Peter Grul](https://www.linkedin.com/in/peter-grul-785ab66/)
 4. [Best Buy Education](https://www.bestbuy.com/site/bestbuy-business/bestbuy-education) - Contact: [Wes Strait](https://www.linkedin.com/in/wesstrait/) - Wes and his team have run several events using the Amazon deep racer.
 5. [Minnesota STEM Partnership](https://mnstempartners.org/) - Contact: [Michael Wulf](https://www.linkedin.com/in/mgwulf/) - Michael created his first AI Racing League team in the summer of 2021.
-6. [Create Minneapolis](https://www.creatempls.org/) Contacts: [Krista Stommes](krista@creatempls.org) and Rob
+6. [Create Minneapolis](https://www.creatempls.org/) Contacts: [Krista Stommes](mailto:krista@creatempls.org) and Rob
 
 ## Mission
 
