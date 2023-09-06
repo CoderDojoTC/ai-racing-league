@@ -1648,38 +1648,11 @@
 
 
 
-<h1 id="catalog-statistics">Catalog Statistics</h1>
+<h1 id="catalog-statistics">Catalog Statistics<a class="headerlink" href="#catalog-statistics" title="Permanent link">&para;</a></h1>
 <p>Now that we know how to reach each item in the tub catalog, we can now do some simple statistics on this data.  For example we can calculate the average throttle and steering angle and create some plots of the distribution of these values.</p>
-<h2 id="calculating-average-throttle-and-angle">Calculating Average Throttle and Angle</h2>
+<h2 id="calculating-average-throttle-and-angle">Calculating Average Throttle and Angle<a class="headerlink" href="#calculating-average-throttle-and-angle" title="Permanent link">&para;</a></h2>
 <p>When we drive around the track each image records both the throttle and steering values at the instant the image was taken by the camera.  Although the values sent to the Electronic Speed Controller (ESC) and the servo are unique to every car, instead we store values that have been converted to a range between 0 and 1.  Both these values are <a href="#glossary#normalized">Normalized</a> to values of between 0 and 1.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1"># program to read a DonkeyCar Catalog File</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># program to read a DonkeyCar Catalog File</span>
 <span class="kn">import</span> <span class="nn">os</span><span class="o">,</span><span class="nn">json</span>
 
 <span class="c1"># this program assumes that test.catalog is in the same directory as this script</span>
@@ -1708,72 +1681,14 @@
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Average throttle: &quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">total_throttle</span><span class="o">/</span><span class="n">count</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Average angle:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">total_angle</span><span class="o">/</span><span class="n">count</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 </code></pre></div>
-</td></tr></table>
 <p>returns:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="mf">100</span><span class="w"> </span><span class="n">items</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">dictionary</span><span class="w"></span>
-<span class="n">Average</span><span class="w"> </span><span class="n">throttle</span><span class="p">:</span><span class="w">  </span><span class="mf">0.31</span><span class="w"></span>
-<span class="n">Average</span><span class="w"> </span><span class="n">angle</span><span class="p">:</span><span class="w"> </span><span class="mf">0.53</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code>100 items in dictionary
+Average throttle:  0.31
+Average angle: 0.53
 </code></pre></div>
-</td></tr></table>
 <p>These values look reasonable.  Our throttle should be between 0 and 1 and our average steering should be around 0.5.  If we drive in a pure circle only in a single direction the average angle will be offset from the 0.5 center value.</p>
-<h2 id="viewing-min-and-max-values">Viewing Min and Max values</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span>
-<span class="normal">31</span>
-<span class="normal">32</span>
-<span class="normal">33</span>
-<span class="normal">34</span>
-<span class="normal">35</span>
-<span class="normal">36</span>
-<span class="normal">37</span>
-<span class="normal">38</span>
-<span class="normal">39</span>
-<span class="normal">40</span>
-<span class="normal">41</span>
-<span class="normal">42</span>
-<span class="normal">43</span>
-<span class="normal">44</span>
-<span class="normal">45</span>
-<span class="normal">46</span>
-<span class="normal">47</span>
-<span class="normal">48</span>
-<span class="normal">49</span>
-<span class="normal">50</span>
-<span class="normal">51</span>
-<span class="normal">52</span>
-<span class="normal">53</span>
-<span class="normal">54</span>
-<span class="normal">55</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1"># program to read a DonkeyCar Catalog File</span>
+<h2 id="viewing-min-and-max-values">Viewing Min and Max values<a class="headerlink" href="#viewing-min-and-max-values" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># program to read a DonkeyCar Catalog File</span>
 <span class="kn">import</span> <span class="nn">os</span><span class="o">,</span><span class="nn">json</span>
 
 <span class="c1"># this program assumes that test.catalog is in the same directory as this script</span>
@@ -1829,38 +1744,21 @@
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Max angle:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">max_angle</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 <p>returns:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="mf">100</span><span class="w"> </span><span class="n">items</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">catalog</span><span class="w"></span>
-<span class="n">Min</span><span class="w"> </span><span class="n">throttle</span><span class="p">:</span><span class="w"> </span><span class="o">-</span><span class="mf">0.31</span><span class="w"></span>
-<span class="n">Average</span><span class="w"> </span><span class="n">throttle</span><span class="p">:</span><span class="w">  </span><span class="mf">0.308</span><span class="w"></span>
-<span class="n">Max</span><span class="w"> </span><span class="n">throttle</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="w"></span>
-<span class="n">Min</span><span class="w"> </span><span class="n">angle</span><span class="p">:</span><span class="w"> </span><span class="o">-</span><span class="mf">0.31</span><span class="w"></span>
-<span class="n">Average</span><span class="w"> </span><span class="n">angle</span><span class="p">:</span><span class="w"> </span><span class="mf">0.534</span><span class="w"></span>
-<span class="n">Max</span><span class="w"> </span><span class="n">angle</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code>100 items in catalog
+Min throttle: -0.31
+Average throttle:  0.308
+Max throttle: 0.5
+Min angle: -0.31
+Average angle: 0.534
+Max angle: 1.0
 </code></pre></div>
-</td></tr></table>
-<h2 id="converting-the-dictionary-to-a-dataframe">Converting the Dictionary to a DataFrame</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">dict</span><span class="o">.</span><span class="n">items</span><span class="p">()))</span>
+<h2 id="converting-the-dictionary-to-a-dataframe">Converting the Dictionary to a DataFrame<a class="headerlink" href="#converting-the-dictionary-to-a-dataframe" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">dict</span><span class="o">.</span><span class="n">items</span><span class="p">()))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 <p>returns</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>                0                           1
+<div class="highlight"><pre><span></span><code>                0                           1
 0           _index                       16099
 1      _session_id                  21-07-20_1
 2    _timestamp_ms               1626797880229
@@ -1869,8 +1767,7 @@
 5        user/mode                        user
 6    user/throttle                   0.0632649
 </code></pre></div>
-</td></tr></table>
-<h2 id="plotting-steering-distributions">Plotting Steering Distributions</h2>
+<h2 id="plotting-steering-distributions">Plotting Steering Distributions<a class="headerlink" href="#plotting-steering-distributions" title="Permanent link">&para;</a></h2>
 
               
             </article>

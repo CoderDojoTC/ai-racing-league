@@ -1674,25 +1674,25 @@
 
 
 
-<h1 id="opencv-lab-fun-face-filters">OpenCV Lab: Fun Face Filters**</h1>
+<h1 id="opencv-lab-fun-face-filters">OpenCV Lab: Fun Face Filters**<a class="headerlink" href="#opencv-lab-fun-face-filters" title="Permanent link">&para;</a></h1>
 <p><strong>Objective:</strong> Learn to detect faces using OpenCV and apply fun filters like cat whiskers and ears.</p>
-<h2 id="tools-libraries">Tools &amp; Libraries</h2>
+<h2 id="tools-libraries">Tools &amp; Libraries<a class="headerlink" href="#tools-libraries" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Python</li>
 <li>OpenCV</li>
 </ul>
-<h2 id="haar-cascades">Haar Cascades</h2>
-<h3 id="understanding-haar-cascades-in-opencv">Understanding Haar Cascades in OpenCV</h3>
+<h2 id="haar-cascades">Haar Cascades<a class="headerlink" href="#haar-cascades" title="Permanent link">&para;</a></h2>
+<h3 id="understanding-haar-cascades-in-opencv">Understanding Haar Cascades in OpenCV<a class="headerlink" href="#understanding-haar-cascades-in-opencv" title="Permanent link">&para;</a></h3>
 <p><strong>Haar Cascades</strong> are a type of machine learning object detection method used to identify objects in images or video. In OpenCV, Haar Cascades are mainly used to detect faces, but they can also identify other objects like eyes, smiles, and more.  There were named after Hungarian mathematician <a href="https://en.wikipedia.org/wiki/Alfr%C3%A9d_Haar">Alfréd Haar</a> who
 make key contributions to the mathematics of transformation of matrix data in the 1920s.</p>
 <p>Imagine you have a magic magnifying glass that you move across a photo. Whenever this magnifying glass sees a face, it lights up! That's kind of what Haar Cascades does in OpenCV.</p>
-<h3 id="how-do-harr-cascades-work">How Do Harr Cascades Work?</h3>
+<h3 id="how-do-harr-cascades-work">How Do Harr Cascades Work?<a class="headerlink" href="#how-do-harr-cascades-work" title="Permanent link">&para;</a></h3>
 <ol>
 <li><strong>Features</strong>: Haar Cascades work by looking at simple features in an area of the image, like the bridge of the nose being brighter than the eyes on either side because it sticks out and catches the light.</li>
 <li><strong>Training</strong>: To make Haar Cascades 'learn' these features, it's shown many pictures of faces and non-faces. Through this, it learns what a face typically looks like.</li>
 <li><strong>Cascade</strong>: The term 'cascade' is used because the algorithm employs a series of increasingly complex features to determine if a particular region is a face.</li>
 </ol>
-<h3 id="building-face-filters-using-haar-cascades">Building Face-Filters Using Haar Cascades:</h3>
+<h3 id="building-face-filters-using-haar-cascades">Building Face-Filters Using Haar Cascades:<a class="headerlink" href="#building-face-filters-using-haar-cascades" title="Permanent link">&para;</a></h3>
 <p>Creating a Snapchat-like face filter using Haar Cascades involves two main steps:</p>
 <ol>
 <li><strong>Face Detection</strong>: Detecting the location of the face in an image or video stream.</li>
@@ -1701,12 +1701,12 @@ make key contributions to the mathematics of transformation of matrix data in th
 <p><strong>Example Python Code</strong>:</p>
 <p>```python
 import cv2</p>
-<h1 id="load-the-haar-cascade-for-face-detection">Load the Haar cascade for face detection</h1>
+<h1 id="load-the-haar-cascade-for-face-detection">Load the Haar cascade for face detection<a class="headerlink" href="#load-the-haar-cascade-for-face-detection" title="Permanent link">&para;</a></h1>
 <p>face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')</p>
-<h1 id="read-the-image">Read the image</h1>
+<h1 id="read-the-image">Read the image<a class="headerlink" href="#read-the-image" title="Permanent link">&para;</a></h1>
 <p>img = cv2.imread('your_photo.jpg')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)</p>
-<h1 id="detect-faces">Detect faces</h1>
+<h1 id="detect-faces">Detect faces<a class="headerlink" href="#detect-faces" title="Permanent link">&para;</a></h1>
 <p>faces = face_cascade.detectMultiScale(gray, 1.1, 4)</p>
 <p>for (x, y, w, h) in faces:
     # Here you'd typically overlay your filter, e.g., cat ears at coordinates (x, y)
@@ -1774,12 +1774,12 @@ pip install opencv-python</code></p>
 <p>Given the coordinates <code>(x, y, w, h)</code> of the detected face:</p>
 <p>```python
 ear_image = cv2.imread('path_to_ear_image.png', -1)  # The -1 reads the alpha channel</p>
-<h1 id="resize-the-cat-ear-image-to-fit-the-width-of-the-face">Resize the cat ear image to fit the width of the face</h1>
+<h1 id="resize-the-cat-ear-image-to-fit-the-width-of-the-face">Resize the cat ear image to fit the width of the face<a class="headerlink" href="#resize-the-cat-ear-image-to-fit-the-width-of-the-face" title="Permanent link">&para;</a></h1>
 <p>ear_width = w
 aspect_ratio = ear_image.shape[1] / float(ear_image.shape[0])
 ear_height = int(ear_width / aspect_ratio)
 ear_image = cv2.resize(ear_image, (ear_width, ear_height))</p>
-<h1 id="region-where-we-want-to-place-the-cat-ears-taking-care-not-to-exceed-image-dimensions">Region where we want to place the cat ears (taking care not to exceed image dimensions)</h1>
+<h1 id="region-where-we-want-to-place-the-cat-ears-taking-care-not-to-exceed-image-dimensions">Region where we want to place the cat ears (taking care not to exceed image dimensions)<a class="headerlink" href="#region-where-we-want-to-place-the-cat-ears-taking-care-not-to-exceed-image-dimensions" title="Permanent link">&para;</a></h1>
 <p>for c in range(0, 3):
     img[y:y+ear_image.shape[0], x:x+ear_image.shape[1], c] = img[y:y+ear_image.shape[0], x:x+ear_image.shape[1], c] * (1 - ear_image[:, :, 3] / 255.0) + ear_image[:, :, c] * (ear_image[:, :, 3] / 255.0)
 ```</p>

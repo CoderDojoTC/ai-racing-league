@@ -1618,25 +1618,24 @@
 
 
 
-<h1 id="installation-tips">Installation Tips</h1>
+<h1 id="installation-tips">Installation Tips<a class="headerlink" href="#installation-tips" title="Permanent link">&para;</a></h1>
 <p>Installing the Donkey Car software is a complex process.  It typically takes
 about six hours to add the required tools and Python libraries to
 a raw NVIDIA or Raspberry Pi OS image.</p>
 <p>Here are a few tips.</p>
-<h2 id="use-the-h-mode-when-installing-software">Use the -H mode when installing software</h2>
+<h2 id="use-the-h-mode-when-installing-software">Use the -H mode when installing software<a class="headerlink" href="#use-the-h-mode-when-installing-software" title="Permanent link">&para;</a></h2>
 <p>We should always use the HOME environment variables when using sudo:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo -H pip install package_name
+<div class="highlight"><pre><span></span><code>sudo -H pip install package_name
 </code></pre></div>
-</td></tr></table>
 <p>In this command, sudo -H is used to ensure that the home environment variable is set to the home directory of the target user (root in this case), which can sometimes avoid permissions issues that arise when sudo retains your normal user's home directory environment variable. Essentially, the -H option makes sure that the operation is as clean as possible from an environment perspective, which can be important when installing software that might write configuration files or data into the user's home directory.</p>
-<h2 id="remember-to-use-python3-and-pip3">Remember to Use Python3 and Pip3</h2>
+<h2 id="remember-to-use-python3-and-pip3">Remember to Use Python3 and Pip3<a class="headerlink" href="#remember-to-use-python3-and-pip3" title="Permanent link">&para;</a></h2>
 <p>Sometimes older Python2 tools get mixed up with the current Python 3 tools.  By adding the "3" suffix to your commands you can guarantee that that your path will pick up the right version of Python tools.</p>
-<h1 id="when-to-use-python3-and-pip3-over-python-and-pip-in-unix-shell">When to Use <code>python3</code> and <code>pip3</code> Over <code>python</code> and <code>pip</code> in UNIX Shell</h1>
-<h2 id="python-version">Python Version</h2>
+<h1 id="when-to-use-python3-and-pip3-over-python-and-pip-in-unix-shell">When to Use <code>python3</code> and <code>pip3</code> Over <code>python</code> and <code>pip</code> in UNIX Shell<a class="headerlink" href="#when-to-use-python3-and-pip3-over-python-and-pip-in-unix-shell" title="Permanent link">&para;</a></h1>
+<h2 id="python-version">Python Version<a class="headerlink" href="#python-version" title="Permanent link">&para;</a></h2>
 <ol>
 <li><strong>Python 2 vs Python 3</strong>: Python 2 and Python 3 are two different versions of the Python programming language. Python 2 is no longer maintained as of January 1, 2020, but it still exists on some systems for legacy reasons. <code>python3</code> explicitly runs Python 3.x, whereas <code>python</code> might run either Python 2.x or Python 3.x depending on the system configuration.</li>
 </ol>
-<h3 id="system-configuration">System Configuration</h3>
+<h3 id="system-configuration">System Configuration<a class="headerlink" href="#system-configuration" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p><strong>Multiple Python Installations</strong>: On some systems, you may have both Python 2 and Python 3 installed. In such cases, <code>python</code> usually refers to Python 2 and <code>python3</code> to Python 3. Similarly, <code>pip</code> might point to the package manager for Python 2, and <code>pip3</code> will point to Python 3. Always use <code>python3</code> and <code>pip3</code> to ensure that you're working with Python 3.x.</p>
@@ -1645,7 +1644,7 @@ a raw NVIDIA or Raspberry Pi OS image.</p>
 <p><strong>Aliases</strong>: Some systems alias <code>python</code> to <code>python3</code>. This is common in more recent Linux distributions. On such systems, it may not matter if you use <code>python</code> or <code>python3</code>. However, using <code>python3</code> is more explicit and can avoid ambiguity.</p>
 </li>
 </ol>
-<h3 id="script-compatibility">Script Compatibility</h3>
+<h3 id="script-compatibility">Script Compatibility<a class="headerlink" href="#script-compatibility" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p><strong>Version-Specific Code</strong>: If you're running or writing code that is specific to Python 3, use <code>python3</code>. Similarly, if you're installing packages that are intended for use with Python 3, use <code>pip3</code>.</p>
@@ -1654,11 +1653,11 @@ a raw NVIDIA or Raspberry Pi OS image.</p>
 <p><strong>Portability</strong>: If you're writing a script that you plan to share with others, it's safer to specify <code>python3</code> if your code is not compatible with Python 2.</p>
 </li>
 </ol>
-<h3 id="virtual-environments">Virtual Environments</h3>
+<h3 id="virtual-environments">Virtual Environments<a class="headerlink" href="#virtual-environments" title="Permanent link">&para;</a></h3>
 <ol>
 <li><strong>Virtualenv</strong>: If you're using a Python virtual environment, the <code>python</code> and <code>pip</code> commands will point to the versions associated with the active environment, regardless of whether it's Python 2 or 3. So, within a Python 3 virtual environment, <code>python</code> and <code>pip</code> will be equivalent to <code>python3</code> and <code>pip3</code>.</li>
 </ol>
-<h3 id="best-practices">Best Practices</h3>
+<h3 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p><strong>Explicit is Better</strong>: If you're in doubt, being explicit is usually better. Using <code>python3</code> and <code>pip3</code> makes it clear that you're using Python 3.</p>

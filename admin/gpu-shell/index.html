@@ -1064,6 +1064,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#check-the-version-of-ubuntu" class="md-nav__link">
+    Check the Version of Ubuntu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#list-the-cpu-information" class="md-nav__link">
     List the CPU Information
   </a>
@@ -1649,6 +1656,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#check-the-version-of-ubuntu" class="md-nav__link">
+    Check the Version of Ubuntu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#list-the-cpu-information" class="md-nav__link">
     List the CPU Information
   </a>
@@ -1728,175 +1742,96 @@
 
 
 
-<h1 id="shell-commands-for-the-gpu-server">Shell Commands for the GPU Server</h1>
+<h1 id="shell-commands-for-the-gpu-server">Shell Commands for the GPU Server<a class="headerlink" href="#shell-commands-for-the-gpu-server" title="Permanent link">&para;</a></h1>
 <p>The following is a list of shell commands for the AI Racing League GPU Server.  We have moved all the commands for setting up the NVIDIA GPU to the file <a href="../nvidia-driver-install/">NVIDIA Driver Install</a>.</p>
 <p>The samples below are run if you are on the GPU running the Terminal shell or you have logged on using the secure shell program.</p>
-<h2 id="secure-shell-login">Secure Shell Login</h2>
-<p>```linenums="0"
-$ ssh arl@arl1.local</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>## Check the Version of Ubuntu
-
-```sh
-$ lsb_release -a
+<h2 id="secure-shell-login">Secure Shell Login<a class="headerlink" href="#secure-shell-login" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>$ ssh arl@arl1.local
 </code></pre></div>
-</td></tr></table>
+<h2 id="check-the-version-of-ubuntu">Check the Version of Ubuntu<a class="headerlink" href="#check-the-version-of-ubuntu" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>$ lsb_release -a
+</code></pre></div>
 <p>Response:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>No LSB modules are available.
+<div class="highlight"><pre><span></span><code>No LSB modules are available.
 Distributor ID: Ubuntu
 Description:    Ubuntu 18.04.3 LTS
 Release:    18.04
 Codename:   bionic
 </code></pre></div>
-</td></tr></table>
-<h2 id="list-the-cpu-information">List the CPU Information</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>lscpu
+<h2 id="list-the-cpu-information">List the CPU Information<a class="headerlink" href="#list-the-cpu-information" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>lscpu
 </code></pre></div>
-</td></tr></table>
 <p>Response:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">Architecture</span><span class="p">:</span><span class="w">        </span><span class="n">x86_64</span><span class="w"></span>
-<span class="n">CPU</span><span class="w"> </span><span class="n">op</span><span class="o">-</span><span class="n">mode</span><span class="p">(</span><span class="n">s</span><span class="p">):</span><span class="w">      </span><span class="mi">32</span><span class="o">-</span><span class="n">bit</span><span class="p">,</span><span class="w"> </span><span class="mi">64</span><span class="o">-</span><span class="n">bit</span><span class="w"></span>
-<span class="n">Byte</span><span class="w"> </span><span class="n">Order</span><span class="p">:</span><span class="w">          </span><span class="n">Little</span><span class="w"> </span><span class="n">Endian</span><span class="w"></span>
-<span class="n">CPU</span><span class="p">(</span><span class="n">s</span><span class="p">):</span><span class="w">              </span><span class="mi">12</span><span class="w"></span>
-<span class="n">On</span><span class="o">-</span><span class="n">line</span><span class="w"> </span><span class="n">CPU</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="n">list</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="o">-</span><span class="mi">11</span><span class="w"></span>
-<span class="n">Thread</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="n">per</span><span class="w"> </span><span class="n">core</span><span class="p">:</span><span class="w">  </span><span class="mi">2</span><span class="w"></span>
-<span class="n">Core</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="n">per</span><span class="w"> </span><span class="n">socket</span><span class="p">:</span><span class="w">  </span><span class="mi">6</span><span class="w"></span>
-<span class="n">Socket</span><span class="p">(</span><span class="n">s</span><span class="p">):</span><span class="w">           </span><span class="mi">1</span><span class="w"></span>
-<span class="n">NUMA</span><span class="w"> </span><span class="n">node</span><span class="p">(</span><span class="n">s</span><span class="p">):</span><span class="w">        </span><span class="mi">1</span><span class="w"></span>
-<span class="n">Vendor</span><span class="w"> </span><span class="n">ID</span><span class="p">:</span><span class="w">           </span><span class="n">AuthenticAMD</span><span class="w"></span>
-<span class="n">CPU</span><span class="w"> </span><span class="n">family</span><span class="p">:</span><span class="w">          </span><span class="mi">23</span><span class="w"></span>
-<span class="n">Model</span><span class="p">:</span><span class="w">               </span><span class="mi">113</span><span class="w"></span>
-<span class="n">Model</span><span class="w"> </span><span class="n">name</span><span class="p">:</span><span class="w">          </span><span class="n">AMD</span><span class="w"> </span><span class="n">Ryzen</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="mi">3600</span><span class="w"> </span><span class="mi">6</span><span class="o">-</span><span class="n">Core</span><span class="w"> </span><span class="n">Processor</span><span class="w"></span>
-<span class="n">Stepping</span><span class="p">:</span><span class="w">            </span><span class="mi">0</span><span class="w"></span>
-<span class="n">CPU</span><span class="w"> </span><span class="n">MHz</span><span class="p">:</span><span class="w">             </span><span class="mf">2195.902</span><span class="w"></span>
-<span class="n">CPU</span><span class="w"> </span><span class="nb">max</span><span class="w"> </span><span class="n">MHz</span><span class="p">:</span><span class="w">         </span><span class="mf">3600.0000</span><span class="w"></span>
-<span class="n">CPU</span><span class="w"> </span><span class="nb">min</span><span class="w"> </span><span class="n">MHz</span><span class="p">:</span><span class="w">         </span><span class="mf">2200.0000</span><span class="w"></span>
-<span class="n">BogoMIPS</span><span class="p">:</span><span class="w">            </span><span class="mf">7187.07</span><span class="w"></span>
-<span class="n">Virtualization</span><span class="p">:</span><span class="w">      </span><span class="n">AMD</span><span class="o">-</span><span class="n">V</span><span class="w"></span>
-<span class="n">L1d</span><span class="w"> </span><span class="n">cache</span><span class="p">:</span><span class="w">           </span><span class="mi">32</span><span class="n">K</span><span class="w"></span>
-<span class="n">L1i</span><span class="w"> </span><span class="n">cache</span><span class="p">:</span><span class="w">           </span><span class="mi">32</span><span class="n">K</span><span class="w"></span>
-<span class="n">L2</span><span class="w"> </span><span class="n">cache</span><span class="p">:</span><span class="w">            </span><span class="mi">512</span><span class="n">K</span><span class="w"></span>
-<span class="n">L3</span><span class="w"> </span><span class="n">cache</span><span class="p">:</span><span class="w">            </span><span class="mi">16384</span><span class="n">K</span><span class="w"></span>
-<span class="n">NUMA</span><span class="w"> </span><span class="n">node0</span><span class="w"> </span><span class="n">CPU</span><span class="p">(</span><span class="n">s</span><span class="p">):</span><span class="w">   </span><span class="mi">0</span><span class="o">-</span><span class="mi">11</span><span class="w"></span>
-<span class="n">Flags</span><span class="p">:</span><span class="w">               </span><span class="n">fpu</span><span class="w"> </span><span class="n">vme</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">pse</span><span class="w"> </span><span class="n">tsc</span><span class="w"> </span><span class="n">msr</span><span class="w"> </span><span class="n">pae</span><span class="w"> </span><span class="n">mce</span><span class="w"> </span><span class="n">cx8</span><span class="w"> </span><span class="n">apic</span><span class="w"> </span><span class="n">sep</span><span class="w"> </span><span class="n">mtrr</span><span class="w"> </span><span class="n">pge</span><span class="w"> </span><span class="n">mca</span><span class="w"> </span><span class="n">cmov</span><span class="w"> </span><span class="n">pat</span><span class="w"> </span><span class="n">pse36</span><span class="w"> </span><span class="n">clflush</span><span class="w"> </span><span class="n">mmx</span><span class="w"> </span><span class="n">fxsr</span><span class="w"> </span><span class="n">sse</span><span class="w"> </span><span class="n">sse2</span><span class="w"> </span><span class="n">ht</span><span class="w"> </span><span class="n">syscall</span><span class="w"> </span><span class="n">nx</span><span class="w"> </span><span class="n">mmxext</span><span class="w"> </span><span class="n">fxsr_opt</span><span class="w"> </span><span class="n">pdpe1gb</span><span class="w"> </span><span class="n">rdtscp</span><span class="w"> </span><span class="n">lm</span><span class="w"> </span><span class="n">constant_tsc</span><span class="w"> </span><span class="n">rep_good</span><span class="w"> </span><span class="n">nopl</span><span class="w"> </span><span class="n">nonstop_tsc</span><span class="w"> </span><span class="n">cpuid</span><span class="w"> </span><span class="n">extd_apicid</span><span class="w"> </span><span class="n">aperfmperf</span><span class="w"> </span><span class="n">pni</span><span class="w"> </span><span class="n">pclmulqdq</span><span class="w"> </span><span class="n">monitor</span><span class="w"> </span><span class="n">ssse3</span><span class="w"> </span><span class="n">fma</span><span class="w"> </span><span class="n">cx16</span><span class="w"> </span><span class="n">sse4_1</span><span class="w"> </span><span class="n">sse4_2</span><span class="w"> </span><span class="n">movbe</span><span class="w"> </span><span class="n">popcnt</span><span class="w"> </span><span class="n">aes</span><span class="w"> </span><span class="n">xsave</span><span class="w"> </span><span class="n">avx</span><span class="w"> </span><span class="n">f16c</span><span class="w"> </span><span class="n">rdrand</span><span class="w"> </span><span class="n">lahf_lm</span><span class="w"> </span><span class="n">cmp_legacy</span><span class="w"> </span><span class="n">svm</span><span class="w"> </span><span class="n">extapic</span><span class="w"> </span><span class="n">cr8_legacy</span><span class="w"> </span><span class="n">abm</span><span class="w"> </span><span class="n">sse4a</span><span class="w"> </span><span class="n">misalignsse</span><span class="w"> </span><span class="mi">3</span><span class="n">dnowprefetch</span><span class="w"> </span><span class="n">osvw</span><span class="w"> </span><span class="n">ibs</span><span class="w"> </span><span class="n">skinit</span><span class="w"> </span><span class="n">wdt</span><span class="w"> </span><span class="n">tce</span><span class="w"> </span><span class="n">topoext</span><span class="w"> </span><span class="n">perfctr_core</span><span class="w"> </span><span class="n">perfctr_nb</span><span class="w"> </span><span class="n">bpext</span><span class="w"> </span><span class="n">perfctr_llc</span><span class="w"> </span><span class="n">mwaitx</span><span class="w"> </span><span class="n">cpb</span><span class="w"> </span><span class="n">cat_l3</span><span class="w"> </span><span class="n">cdp_l3</span><span class="w"> </span><span class="n">hw_pstate</span><span class="w"> </span><span class="n">sme</span><span class="w"> </span><span class="n">ssbd</span><span class="w"> </span><span class="n">mba</span><span class="w"> </span><span class="n">sev</span><span class="w"> </span><span class="n">ibpb</span><span class="w"> </span><span class="n">stibp</span><span class="w"> </span><span class="n">vmmcall</span><span class="w"> </span><span class="n">fsgsbase</span><span class="w"> </span><span class="n">bmi1</span><span class="w"> </span><span class="n">avx2</span><span class="w"> </span><span class="n">smep</span><span class="w"> </span><span class="n">bmi2</span><span class="w"> </span><span class="n">cqm</span><span class="w"> </span><span class="n">rdt_a</span><span class="w"> </span><span class="n">rdseed</span><span class="w"> </span><span class="n">adx</span><span class="w"> </span><span class="n">smap</span><span class="w"> </span><span class="n">clflushopt</span><span class="w"> </span><span class="n">clwb</span><span class="w"> </span><span class="n">sha_ni</span><span class="w"> </span><span class="n">xsaveopt</span><span class="w"> </span><span class="n">xsavec</span><span class="w"> </span><span class="n">xgetbv1</span><span class="w"> </span><span class="n">xsaves</span><span class="w"> </span><span class="n">cqm_llc</span><span class="w"> </span><span class="n">cqm_occup_llc</span><span class="w"> </span><span class="n">cqm_mbm_total</span><span class="w"> </span><span class="n">cqm_mbm_local</span><span class="w"> </span><span class="n">clzero</span><span class="w"> </span><span class="n">irperf</span><span class="w"> </span><span class="n">xsaveerptr</span><span class="w"> </span><span class="n">wbnoinvd</span><span class="w"> </span><span class="n">arat</span><span class="w"> </span><span class="n">npt</span><span class="w"> </span><span class="n">lbrv</span><span class="w"> </span><span class="n">svm_lock</span><span class="w"> </span><span class="n">nrip_save</span><span class="w"> </span><span class="n">tsc_scale</span><span class="w"> </span><span class="n">vmcb_clean</span><span class="w"> </span><span class="n">flushbyasid</span><span class="w"> </span><span class="n">decodeassists</span><span class="w"> </span><span class="n">pausefilter</span><span class="w"> </span><span class="n">pfthreshold</span><span class="w"> </span><span class="n">avic</span><span class="w"> </span><span class="n">v_vmsave_vmload</span><span class="w"> </span><span class="n">vgif</span><span class="w"> </span><span class="n">umip</span><span class="w"> </span><span class="n">rdpid</span><span class="w"> </span><span class="n">overflow_recov</span><span class="w"> </span><span class="n">succor</span><span class="w"> </span><span class="n">smca</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code>Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              12
+On-line CPU(s) list: 0-11
+Thread(s) per core:  2
+Core(s) per socket:  6
+Socket(s):           1
+NUMA node(s):        1
+Vendor ID:           AuthenticAMD
+CPU family:          23
+Model:               113
+Model name:          AMD Ryzen 5 3600 6-Core Processor
+Stepping:            0
+CPU MHz:             2195.902
+CPU max MHz:         3600.0000
+CPU min MHz:         2200.0000
+BogoMIPS:            7187.07
+Virtualization:      AMD-V
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            512K
+L3 cache:            16384K
+NUMA node0 CPU(s):   0-11
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate sme ssbd mba sev ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr wbnoinvd arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip rdpid overflow_recov succor smca
 </code></pre></div>
-</td></tr></table>
 <p>The key is that we have 12 CPUs and each CPU has two threads.  That means that we have 24 threads that run concurrent operations on this server.  This is plenty of capacity for our GPU server.</p>
-<h2 id="ram">RAM</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>free -m
+<h2 id="ram">RAM<a class="headerlink" href="#ram" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>free -m
 </code></pre></div>
-</td></tr></table>
 <p>Response:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>              total        used        free      shared  buff/cache   available
+<div class="highlight"><pre><span></span><code>              total        used        free      shared  buff/cache   available
 Mem:          32124        1627       28879          75        1618       30019
 Swap:          2047           0        2047
 </code></pre></div>
-</td></tr></table>
 <p>This indicates we have 32 GB RAM.  The GPU server should have a minimum of 8 GB of RAM.</p>
-<h2 id="disk-space">Disk Space</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>df -h /
+<h2 id="disk-space">Disk Space<a class="headerlink" href="#disk-space" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>df -h /
 </code></pre></div>
-</td></tr></table>
 <p>Response:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>Filesystem      Size  Used Avail Use% Mounted on
+<div class="highlight"><pre><span></span><code>Filesystem      Size  Used Avail Use% Mounted on
 /dev/nvme0n1p3  229G  178G   40G  82% /
 </code></pre></div>
-</td></tr></table>
 <p>This shows we have a total of 229 gigabytes of RAM and we have 40 gigabytes available.  We will need about 4 GB for each training set we store.</p>
-<h3 id="per-user-disk-usage">Per User Disk Usage</h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>du -hs /home/* <span class="m">2</span>&gt;/dev/null
+<h3 id="per-user-disk-usage">Per User Disk Usage<a class="headerlink" href="#per-user-disk-usage" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>du -hs /home/* <span class="m">2</span>&gt;/dev/null
 </code></pre></div>
-</td></tr></table>
 <p>Response:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="mf">8.5</span><span class="n">G</span><span class="w">    </span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">arl</span><span class="w"></span>
-<span class="mf">1.4</span><span class="n">G</span><span class="w">    </span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">dan</span><span class="w"></span>
-<span class="mf">16</span><span class="n">K</span><span class="w"> </span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">dan2</span><span class="w"></span>
-<span class="mf">155</span><span class="n">G</span><span class="w">    </span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">donkey</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code>8.5G    /home/arl
+1.4G    /home/dan
+16K /home/dan2
+155G    /home/donkey
 </code></pre></div>
-</td></tr></table>
-<h3 id="add-a-new-gpu-server-user">Add A New GPU Server User</h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>adduser donkey
+<h3 id="add-a-new-gpu-server-user">Add A New GPU Server User<a class="headerlink" href="#add-a-new-gpu-server-user" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>adduser donkey
 </code></pre></div>
-</td></tr></table>
-<p>You can also allow the user to have "sudo" rights by using the following command:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo usermod -aG sudo donkey
+You can also allow the user to have "sudo" rights by using the following command:
+<div class="highlight"><pre><span></span><code>sudo usermod -aG sudo donkey
+</code></pre></div></p>
+<h3 id="change-the-hostname">Change the Hostname<a class="headerlink" href="#change-the-hostname" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>sudo vi hostname
 </code></pre></div>
-</td></tr></table>
-<h3 id="change-the-hostname">Change the Hostname</h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo vi hostname
-</code></pre></div>
-</td></tr></table>
 <p>Change the name to "gpu-server2" or a similar name.</p>
-<h2 id="nvidia-gpu-monitor">NVIDIA GPU Monitor</h2>
+<h2 id="nvidia-gpu-monitor">NVIDIA GPU Monitor<a class="headerlink" href="#nvidia-gpu-monitor" title="Permanent link">&para;</a></h2>
 <p>The runs similar to the UNIX top command, but for the GPU.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>watch -d -n <span class="m">0</span>.5 nvidia-smi
+<div class="highlight"><pre><span></span><code>watch -d -n <span class="m">0</span>.5 nvidia-smi
 </code></pre></div>
-</td></tr></table>
-<h2 id="nvidia-gpu-utilization">NVIDIA GPU Utilization</h2>
+<h2 id="nvidia-gpu-utilization">NVIDIA GPU Utilization<a class="headerlink" href="#nvidia-gpu-utilization" title="Permanent link">&para;</a></h2>
 <p>This shows the GPU running at 42% utilization during the training process.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>nvidia-smi
+<div class="highlight"><pre><span></span><code>nvidia-smi
 Mon Jul 26 20:24:16 2021       
 +-----------------------------------------------------------------------------+
 | NVIDIA-SMI 470.57.02    Driver Version: 470.57.02    CUDA Version: 11.4     |
@@ -1924,7 +1859,6 @@ Mon Jul 26 20:24:16 2021
 |    0   N/A  N/A     32486      C   ...a3/envs/donkey/bin/python    10571MiB |
 +-----------------------------------------------------------------------------+
 </code></pre></div>
-</td></tr></table>
 
               
             </article>

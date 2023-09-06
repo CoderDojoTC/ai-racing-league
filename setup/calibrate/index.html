@@ -1672,161 +1672,93 @@
 
 
 
-<h1 id="calibrate">Calibrate</h1>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$ donkey calibrate --channel <span class="m">0</span> --bus<span class="o">=</span><span class="m">1</span>
+<h1 id="calibrate">Calibrate<a class="headerlink" href="#calibrate" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code>$ donkey calibrate --channel <span class="m">0</span> --bus<span class="o">=</span><span class="m">1</span>
 </code></pre></div>
-</td></tr></table>
 <p>Result</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">________</span><span class="w">             </span><span class="n">______</span><span class="w">                   </span><span class="n">_________</span><span class="w">              </span>
-<span class="n">___</span><span class="w">  </span><span class="n">__</span><span class="w"> </span>\<span class="n">_______________</span><span class="w">  </span><span class="o">/</span><span class="n">___________</span><span class="w">  </span><span class="n">__</span><span class="w">    </span><span class="n">__</span><span class="w">  </span><span class="n">____</span><span class="o">/</span><span class="n">_____</span><span class="w"> </span><span class="n">________</span><span class="w"></span>
-<span class="n">__</span><span class="w">  </span><span class="o">/</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="o">/</span><span class="w">  </span><span class="n">__</span><span class="w"> </span>\<span class="n">_</span><span class="w">  </span><span class="n">__</span><span class="w"> </span>\<span class="n">_</span><span class="w">  </span><span class="o">//</span><span class="n">_</span><span class="o">/</span><span class="w">  </span><span class="n">_</span><span class="w"> </span>\<span class="n">_</span><span class="w">  </span><span class="o">/</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="o">/</span><span class="w">    </span><span class="n">_</span><span class="w">  </span><span class="o">/</span><span class="w">    </span><span class="n">_</span><span class="w">  </span><span class="n">__</span><span class="w"> </span><span class="err">`</span><span class="o">/</span><span class="n">_</span><span class="w">  </span><span class="n">___</span><span class="o">/</span><span class="w"></span>
-<span class="n">_</span><span class="w">  </span><span class="o">/</span><span class="n">_</span><span class="o">/</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="o">/</span><span class="n">_</span><span class="o">/</span><span class="w"> </span><span class="o">/</span><span class="w">  </span><span class="o">/</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="o">/</span><span class="w">  </span><span class="p">,</span><span class="o">&lt;</span><span class="w">  </span><span class="o">/</span><span class="w">  </span><span class="n">__</span><span class="o">/</span><span class="w">  </span><span class="o">/</span><span class="n">_</span><span class="o">/</span><span class="w"> </span><span class="o">/</span><span class="w">     </span><span class="o">/</span><span class="w"> </span><span class="o">/</span><span class="n">___</span><span class="w">  </span><span class="o">/</span><span class="w"> </span><span class="o">/</span><span class="n">_</span><span class="o">/</span><span class="w"> </span><span class="o">/</span><span class="n">_</span><span class="w">  </span><span class="o">/</span><span class="w">    </span>
-<span class="o">/</span><span class="n">_____</span><span class="o">/</span><span class="w"> </span>\<span class="n">____</span><span class="o">//</span><span class="n">_</span><span class="o">/</span><span class="w"> </span><span class="o">/</span><span class="n">_</span><span class="o">//</span><span class="n">_</span><span class="o">/|</span><span class="n">_</span><span class="o">|</span><span class="w"> </span>\<span class="n">___</span><span class="o">/</span><span class="n">_</span>\<span class="n">__</span><span class="p">,</span><span class="w"> </span><span class="o">/</span><span class="w">      </span>\<span class="n">____</span><span class="o">/</span><span class="w">  </span>\<span class="n">__</span><span class="p">,</span><span class="n">_</span><span class="o">/</span><span class="w"> </span><span class="o">/</span><span class="n">_</span><span class="o">/</span><span class="w">     </span>
-<span class="w">                                 </span><span class="o">/</span><span class="n">____</span><span class="o">/</span><span class="w">                              </span>
+<div class="highlight"><pre><span></span><code>________             ______                   _________              
+___  __ \_______________  /___________  __    __  ____/_____ ________
+__  / / /  __ \_  __ \_  //_/  _ \_  / / /    _  /    _  __ `/_  ___/
+_  /_/ // /_/ /  / / /  ,&lt;  /  __/  /_/ /     / /___  / /_/ /_  /    
+/_____/ \____//_/ /_//_/|_| \___/_\__, /      \____/  \__,_/ /_/     
+                                 /____/                              
 
-<span class="n">using</span><span class="w"> </span><span class="n">donkey</span><span class="w"> </span><span class="n">v4</span><span class="o">.</span><span class="mf">2.1</span><span class="w"> </span><span class="o">...</span><span class="w"></span>
-<span class="n">sombrero</span><span class="w"> </span><span class="n">enabled</span><span class="w"></span>
-<span class="n">init</span><span class="w"> </span><span class="n">PCA9685</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">channel</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">address</span><span class="w"> </span><span class="mh">0x40</span><span class="w"> </span><span class="n">bus</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
-<span class="n">Using</span><span class="w"> </span><span class="n">PWM</span><span class="w"> </span><span class="n">freq</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="w"></span>
-<span class="n">Traceback</span><span class="w"> </span><span class="p">(</span><span class="n">most</span><span class="w"> </span><span class="n">recent</span><span class="w"> </span><span class="n">call</span><span class="w"> </span><span class="n">last</span><span class="p">):</span><span class="w"></span>
-<span class="w">  </span><span class="n">File</span><span class="w"> </span><span class="s2">&quot;/home/pi/env/bin/donkey&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="mi">33</span><span class="p">,</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span><span class="w"></span>
-<span class="w">    </span><span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">load_entry_point</span><span class="p">(</span><span class="s1">&#39;donkeycar&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;console_scripts&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;donkey&#39;</span><span class="p">)())</span><span class="w"></span>
-<span class="w">  </span><span class="n">File</span><span class="w"> </span><span class="s2">&quot;/home/pi/projects/donkeycar/donkeycar/management/base.py&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="mi">500</span><span class="p">,</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">execute_from_command_line</span><span class="w"></span>
-<span class="w">    </span><span class="n">c</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span><span class="w"></span>
-<span class="w">  </span><span class="n">File</span><span class="w"> </span><span class="s2">&quot;/home/pi/projects/donkeycar/donkeycar/management/base.py&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="mi">219</span><span class="p">,</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">run</span><span class="w"></span>
-<span class="w">    </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PCA9685</span><span class="p">(</span><span class="n">channel</span><span class="p">,</span><span class="w"> </span><span class="n">address</span><span class="o">=</span><span class="n">address</span><span class="p">,</span><span class="w"> </span><span class="n">busnum</span><span class="o">=</span><span class="n">busnum</span><span class="p">,</span><span class="w"> </span><span class="n">frequency</span><span class="o">=</span><span class="n">freq</span><span class="p">)</span><span class="w"></span>
-<span class="w">  </span><span class="n">File</span><span class="w"> </span><span class="s2">&quot;/home/pi/projects/donkeycar/donkeycar/parts/actuator.py&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">__init__</span><span class="w"></span>
-<span class="w">    </span><span class="bp">self</span><span class="o">.</span><span class="n">pwm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Adafruit_PCA9685</span><span class="o">.</span><span class="n">PCA9685</span><span class="p">(</span><span class="n">address</span><span class="o">=</span><span class="n">address</span><span class="p">)</span><span class="w"></span>
-<span class="w">  </span><span class="n">File</span><span class="w"> </span><span class="s2">&quot;/home/pi/env/lib/python3.7/site-packages/Adafruit_PCA9685/PCA9685.py&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="mi">75</span><span class="p">,</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">__init__</span><span class="w"></span>
-<span class="w">    </span><span class="bp">self</span><span class="o">.</span><span class="n">set_all_pwm</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
-<span class="w">  </span><span class="n">File</span><span class="w"> </span><span class="s2">&quot;/home/pi/env/lib/python3.7/site-packages/Adafruit_PCA9685/PCA9685.py&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="mi">111</span><span class="p">,</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">set_all_pwm</span><span class="w"></span>
-<span class="w">    </span><span class="bp">self</span><span class="o">.</span><span class="n">_device</span><span class="o">.</span><span class="n">write8</span><span class="p">(</span><span class="n">ALL_LED_ON_L</span><span class="p">,</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0xFF</span><span class="p">)</span><span class="w"></span>
-<span class="w">  </span><span class="n">File</span><span class="w"> </span><span class="s2">&quot;/home/pi/env/lib/python3.7/site-packages/Adafruit_GPIO/I2C.py&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="mi">114</span><span class="p">,</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">write8</span><span class="w"></span>
-<span class="w">    </span><span class="bp">self</span><span class="o">.</span><span class="n">_bus</span><span class="o">.</span><span class="n">write_byte_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_address</span><span class="p">,</span><span class="w"> </span><span class="n">register</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="p">)</span><span class="w"></span>
-<span class="w">  </span><span class="n">File</span><span class="w"> </span><span class="s2">&quot;/home/pi/env/lib/python3.7/site-packages/Adafruit_PureIO/smbus.py&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="mi">327</span><span class="p">,</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">write_byte_data</span><span class="w"></span>
-<span class="w">    </span><span class="bp">self</span><span class="o">.</span><span class="n">_device</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="w"></span>
-<span class="n">OSError</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="n">Errno</span><span class="w"> </span><span class="mi">121</span><span class="p">]</span><span class="w"> </span><span class="n">Remote</span><span class="w"> </span><span class="n">I</span><span class="o">/</span><span class="n">O</span><span class="w"> </span><span class="n">error</span><span class="w"></span>
-<span class="n">sombrero</span><span class="w"> </span><span class="n">disabled</span><span class="w"></span>
+using donkey v4.2.1 ...
+sombrero enabled
+init PCA9685 on channel 0 address 0x40 bus 1
+Using PWM freq: 60
+Traceback (most recent call last):
+  File &quot;/home/pi/env/bin/donkey&quot;, line 33, in &lt;module&gt;
+    sys.exit(load_entry_point(&#39;donkeycar&#39;, &#39;console_scripts&#39;, &#39;donkey&#39;)())
+  File &quot;/home/pi/projects/donkeycar/donkeycar/management/base.py&quot;, line 500, in execute_from_command_line
+    c.run(args[2:])
+  File &quot;/home/pi/projects/donkeycar/donkeycar/management/base.py&quot;, line 219, in run
+    c = PCA9685(channel, address=address, busnum=busnum, frequency=freq)
+  File &quot;/home/pi/projects/donkeycar/donkeycar/parts/actuator.py&quot;, line 30, in __init__
+    self.pwm = Adafruit_PCA9685.PCA9685(address=address)
+  File &quot;/home/pi/env/lib/python3.7/site-packages/Adafruit_PCA9685/PCA9685.py&quot;, line 75, in __init__
+    self.set_all_pwm(0, 0)
+  File &quot;/home/pi/env/lib/python3.7/site-packages/Adafruit_PCA9685/PCA9685.py&quot;, line 111, in set_all_pwm
+    self._device.write8(ALL_LED_ON_L, on &amp; 0xFF)
+  File &quot;/home/pi/env/lib/python3.7/site-packages/Adafruit_GPIO/I2C.py&quot;, line 114, in write8
+    self._bus.write_byte_data(self._address, register, value)
+  File &quot;/home/pi/env/lib/python3.7/site-packages/Adafruit_PureIO/smbus.py&quot;, line 327, in write_byte_data
+    self._device.write(data)
+OSError: [Errno 121] Remote I/O error
+sombrero disabled
 </code></pre></div>
-</td></tr></table>
-<h2 id="diagnostics">Diagnostics</h2>
-<h3 id="i2c-detect">I2C Detect</h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">i2cdetect </span><span class="nb">-</span><span class="c">y 1</span>
-<span class="c">     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f</span>
-<span class="c">00:          </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span>
-<span class="c">10: </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span>
-<span class="c">20: </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span>
-<span class="c">30: </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span>
-<span class="c">40: 40 </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span>
-<span class="c">50: </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span>
-<span class="c">60: </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span>
-<span class="c">70: 70 </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c"> </span><span class="nb">--</span><span class="c">                        </span>
+<h2 id="diagnostics">Diagnostics<a class="headerlink" href="#diagnostics" title="Permanent link">&para;</a></h2>
+<h3 id="i2c-detect">I2C Detect<a class="headerlink" href="#i2c-detect" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>i2cdetect -y 1
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+40: 40 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+70: 70 -- -- -- -- -- -- --                        
 </code></pre></div>
-</td></tr></table>
-<h3 id="i2c-device-file">I2C Device File</h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>ls -ld /dev/i2*
+<h3 id="i2c-device-file">I2C Device File<a class="headerlink" href="#i2c-device-file" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ls -ld /dev/i2*
 crw-rw---- 1 root i2c 89, 1 Jul  3 13:17 /dev/i2c-1
 </code></pre></div>
-</td></tr></table>
-<h3 id="i2c-functions-enabled">I2C Functions Enabled</h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code> i2cdetect -F <span class="m">1</span>
+<h3 id="i2c-functions-enabled">I2C Functions Enabled<a class="headerlink" href="#i2c-functions-enabled" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code> i2cdetect -F <span class="m">1</span>
 </code></pre></div>
-</td></tr></table>
 <p>returns:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nv">Functionalities</span> <span class="nv">implemented</span> <span class="nv">by</span> <span class="o">/</span><span class="nv">dev</span><span class="o">/</span><span class="nv">i2c</span><span class="o">-</span><span class="mi">1</span>:
-<span class="nv">I2C</span>                              <span class="nv">yes</span>
-<span class="nv">SMBus</span> <span class="nv">Quick</span> <span class="nv">Command</span>              <span class="nv">yes</span>
-<span class="nv">SMBus</span> <span class="k">Send</span> <span class="nv">Byte</span>                  <span class="nv">yes</span>
-<span class="nv">SMBus</span> <span class="nv">Receive</span> <span class="nv">Byte</span>               <span class="nv">yes</span>
-<span class="nv">SMBus</span> <span class="nv">Write</span> <span class="nv">Byte</span>                 <span class="nv">yes</span>
-<span class="nv">SMBus</span> <span class="nv">Read</span> <span class="nv">Byte</span>                  <span class="nv">yes</span>
-<span class="nv">SMBus</span> <span class="nv">Write</span> <span class="nv">Word</span>                 <span class="nv">yes</span>
-<span class="nv">SMBus</span> <span class="nv">Read</span> <span class="nv">Word</span>                  <span class="nv">yes</span>
-<span class="nv">SMBus</span> <span class="nv">Process</span> <span class="k">Call</span>               <span class="nl">yes</span>
-<span class="nv">SMBus</span> <span class="nv">Block</span> <span class="nv">Write</span>                <span class="nv">yes</span>
-<span class="nv">SMBus</span> <span class="nv">Block</span> <span class="nv">Read</span>                 <span class="nv">no</span>
-<span class="nv">SMBus</span> <span class="nv">Block</span> <span class="nv">Process</span> <span class="k">Call</span>         <span class="nl">no</span>
-<span class="nv">SMBus</span> <span class="nv">PEC</span>                        <span class="nv">yes</span>
-<span class="nv">I2C</span> <span class="nv">Block</span> <span class="nv">Write</span>                  <span class="nv">yes</span>
-<span class="nv">I2C</span> <span class="nv">Block</span> <span class="nv">Read</span>                   <span class="nv">yes</span>
+<div class="highlight"><pre><span></span><code>Functionalities implemented by /dev/i2c-1:
+I2C                              yes
+SMBus Quick Command              yes
+SMBus Send Byte                  yes
+SMBus Receive Byte               yes
+SMBus Write Byte                 yes
+SMBus Read Byte                  yes
+SMBus Write Word                 yes
+SMBus Read Word                  yes
+SMBus Process Call               yes
+SMBus Block Write                yes
+SMBus Block Read                 no
+SMBus Block Process Call         no
+SMBus PEC                        yes
+I2C Block Write                  yes
+I2C Block Read                   yes
 </code></pre></div>
-</td></tr></table>
 <p>Note that both SMBus Block Read and SMBus Block Process Call are set to no.  The rest are yes.</p>
-<h2 id="upgrade-to-python-370">Upgrade to Python 3.70</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>python3 -m virtualenv -p python3.7 env --system-site-packages
+<h2 id="upgrade-to-python-370">Upgrade to Python 3.70<a class="headerlink" href="#upgrade-to-python-370" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>python3 -m virtualenv -p python3.7 env --system-site-packages
 </code></pre></div>
-</td></tr></table>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">created</span><span class="w"> </span><span class="n">virtual</span><span class="w"> </span><span class="n">environment</span><span class="w"> </span><span class="n">CPython3</span><span class="o">.</span><span class="mf">7.3</span><span class="o">.</span><span class="n">final</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="mi">32</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="mi">2535</span><span class="n">ms</span><span class="w"></span>
-<span class="w">  </span><span class="n">creator</span><span class="w"> </span><span class="n">CPython3Posix</span><span class="p">(</span><span class="n">dest</span><span class="o">=/</span><span class="n">home</span><span class="o">/</span><span class="n">pi</span><span class="o">/</span><span class="n">env</span><span class="p">,</span><span class="w"> </span><span class="n">clear</span><span class="o">=</span><span class="n">False</span><span class="p">,</span><span class="w"> </span><span class="n">no_vcs_ignore</span><span class="o">=</span><span class="n">False</span><span class="p">,</span><span class="w"> </span><span class="n">global</span><span class="o">=</span><span class="n">True</span><span class="p">)</span><span class="w"></span>
-<span class="w">  </span><span class="n">seeder</span><span class="w"> </span><span class="n">FromAppData</span><span class="p">(</span><span class="n">download</span><span class="o">=</span><span class="n">False</span><span class="p">,</span><span class="w"> </span><span class="n">pip</span><span class="o">=</span><span class="n">bundle</span><span class="p">,</span><span class="w"> </span><span class="n">setuptools</span><span class="o">=</span><span class="n">bundle</span><span class="p">,</span><span class="w"> </span><span class="n">wheel</span><span class="o">=</span><span class="n">bundle</span><span class="p">,</span><span class="w"> </span><span class="n">via</span><span class="o">=</span><span class="n">copy</span><span class="p">,</span><span class="w"> </span><span class="n">app_data_dir</span><span class="o">=/</span><span class="n">home</span><span class="o">/</span><span class="n">pi</span><span class="o">/.</span><span class="n">local</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">virtualenv</span><span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="n">added</span><span class="w"> </span><span class="nb">seed</span><span class="w"> </span><span class="n">packages</span><span class="p">:</span><span class="w"> </span><span class="n">pip</span><span class="o">==</span><span class="mf">21.1</span><span class="o">.</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">setuptools</span><span class="o">==</span><span class="mf">57.0</span><span class="o">.</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">wheel</span><span class="o">==</span><span class="mf">0.36</span><span class="o">.</span><span class="mi">2</span><span class="w"></span>
-<span class="w">  </span><span class="n">activators</span><span class="w"> </span><span class="n">BashActivator</span><span class="p">,</span><span class="n">CShellActivator</span><span class="p">,</span><span class="n">FishActivator</span><span class="p">,</span><span class="n">PowerShellActivator</span><span class="p">,</span><span class="n">PythonActivator</span><span class="p">,</span><span class="n">XonshActivator</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code>created virtual environment CPython3.7.3.final.0-32 in 2535ms
+  creator CPython3Posix(dest=/home/pi/env, clear=False, no_vcs_ignore=False, global=True)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/pi/.local/share/virtualenv)
+    added seed packages: pip==21.1.2, setuptools==57.0.0, wheel==0.36.2
+  activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
 </code></pre></div>
-</td></tr></table>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>python --version
+<div class="highlight"><pre><span></span><code>python --version
 </code></pre></div>
-</td></tr></table>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>Python 3.7.3
+<div class="highlight"><pre><span></span><code>Python 3.7.3
 </code></pre></div>
-</td></tr></table>
 
               
             </article>

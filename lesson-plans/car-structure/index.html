@@ -684,6 +684,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#chatgpt-response" class="md-nav__link">
+    ChatGPT Response
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mermaid-diagram" class="md-nav__link">
+    Mermaid Diagram
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1602,6 +1616,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#chatgpt-response" class="md-nav__link">
+    ChatGPT Response
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mermaid-diagram" class="md-nav__link">
+    Mermaid Diagram
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1620,72 +1648,51 @@
 
 
 
-<h1 id="rc-car-structure">RC Car Structure</h1>
+<h1 id="rc-car-structure">RC Car Structure<a class="headerlink" href="#rc-car-structure" title="Permanent link">&para;</a></h1>
 <p><img alt="RC Car Block Diagram" src="../../img/rc-car-block-diagram.png" /></p>
-<h2 id="using-gptchat-to-help-generate-block-diagrams">Using GPTChat To Help Generate Block Diagrams</h2>
+<h2 id="using-gptchat-to-help-generate-block-diagrams">Using GPTChat To Help Generate Block Diagrams<a class="headerlink" href="#using-gptchat-to-help-generate-block-diagrams" title="Permanent link">&para;</a></h2>
 <p>Generating architecture diagrams can be a slow and painful process.
 But ChatGPT can help.  here is a process of generating a block diagram
 using ChatGPT.  We can use the <a href="https://mermaid.live/">Mermaid Live</a> program to view the diagram.  ChatGPT also has a <code>diagram</code> plugin that will render the image within ChatGPT.</p>
-<h2 id="gptchat-prompt">GPTChat Prompt</h2>
-<p>```linenums="0"
-Create a mermaid block diagram for the structure of a Donkey Car.  Make sure to label all the components and their connection types.  Return the results in raw mermaid format.  Include the following structures:</p>
-<ol>
-<li>The main computer (Raspberry Pi or NVIDIA Nano)</li>
-<li>The main computer has an I2C connection to the Servo Controller board</li>
-<li>The Servo Controller connects to the Steering Servo and the Electronic Speed Controller (ESC) via PWM connections</li>
-<li>The ESC connects to the RC Car Battery</li>
-<li>THE ESC connects to the Car Motor</li>
-<li>The 5v battery powers the main computer</li>
-<li>There are two batteries: a 5V battery and a 7V RC Car Battery.</li>
-<li>The Servo controller is a PCA9685 board.</li>
-</ol>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>## ChatGPT Response
-</code></pre></div>
-</td></tr></table>
-<p>This code will create a block diagram where:</p>
-<p>The "Main Computer" (A) connects to the "Servo Controller" (B) via an I2C connection.
-The "Servo Controller" (B) connects to both the "Steering Servo" (C) and "Electronic Speed Controller" (D) via PWM connections.
-The "Electronic Speed Controller" (D) connects to both the "RC Car Battery" (E) and the "Car Motor" (F).
-The "5V Battery" (G) connects to the "Main Computer" (A) as well as to the "Positive Connection" (H) and "Negative Connection" (I).
-The "RC Car Battery" (E) also connects to both the "Positive Connection" (H) and "Negative Connection" (I).
-Please note that this is a simplified diagram and does not necessarily represent the physical arrangement of the components in an actual Donkey Car setup. This diagram should be taken as an abstract representation of how the components interact.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cp">## Mermaid Diagram</span><span class="w"></span>
+<h2 id="gptchat-prompt">GPTChat Prompt<a class="headerlink" href="#gptchat-prompt" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>Create a mermaid block diagram for the structure of a Donkey Car.  Make sure to label all the components and their connection types.  Return the results in raw mermaid format.  Include the following structures:
 
-<span class="err">```</span><span class="n">mermaid</span><span class="w"></span>
-<span class="nf">graph</span><span class="w"> </span><span class="n">TB</span><span class="w"></span>
-<span class="w">  </span><span class="n">A</span><span class="p">[</span><span class="s">&quot;Main Computer&lt;br&gt;Raspberry Pi or NVIDIA Nano&quot;</span><span class="p">]</span><span class="w"></span>
-<span class="w">  </span><span class="n">B</span><span class="p">[</span><span class="s">&quot;Servo Controller&lt;br&gt;PCA9685 board&quot;</span><span class="p">]</span><span class="w"></span>
-<span class="w">  </span><span class="n">C</span><span class="p">[</span><span class="s">&quot;Steering Servo&quot;</span><span class="p">]</span><span class="w"></span>
-<span class="w">  </span><span class="n">D</span><span class="p">[</span><span class="s">&quot;Electronic Speed Controller&lt;br&gt;(ESC)&quot;</span><span class="p">]</span><span class="w"></span>
-<span class="w">  </span><span class="n">E</span><span class="p">[</span><span class="s">&quot;RC Car Battery (7V)&quot;</span><span class="p">]</span><span class="w"></span>
-<span class="w">  </span><span class="n">F</span><span class="p">[</span><span class="s">&quot;Car Motor&quot;</span><span class="p">]</span><span class="w"></span>
-<span class="w">  </span><span class="n">G</span><span class="p">[</span><span class="s">&quot;5V Battery&quot;</span><span class="p">]</span><span class="w"></span>
-
-<span class="w">  </span><span class="n">A</span><span class="w"> </span><span class="o">--</span><span class="n">I2C</span><span class="o">--&gt;</span><span class="w"> </span><span class="n">B</span><span class="w"></span>
-<span class="w">  </span><span class="n">B</span><span class="w"> </span><span class="o">--</span><span class="n">PWM</span><span class="o">--&gt;</span><span class="w"> </span><span class="n">C</span><span class="w"></span>
-<span class="w">  </span><span class="n">B</span><span class="w"> </span><span class="o">--</span><span class="n">PWM</span><span class="o">--&gt;</span><span class="w"> </span><span class="n">D</span><span class="w"></span>
-<span class="w">  </span><span class="n">D</span><span class="w"> </span><span class="o">---</span><span class="w"> </span><span class="n">E</span><span class="w"></span>
-<span class="w">  </span><span class="n">D</span><span class="w"> </span><span class="o">---</span><span class="w"> </span><span class="n">F</span><span class="w"></span>
-<span class="w">  </span><span class="n">G</span><span class="w"> </span><span class="o">---</span><span class="w"> </span><span class="n">A</span><span class="w"></span>
+1. The main computer (Raspberry Pi or NVIDIA Nano)
+2. The main computer has an I2C connection to the Servo Controller board
+3. The Servo Controller connects to the Steering Servo and the Electronic Speed Controller (ESC) via PWM connections
+4. The ESC connects to the RC Car Battery
+5. THE ESC connects to the Car Motor
+6. The 5v battery powers the main computer
+7. There are two batteries: a 5V battery and a 7V RC Car Battery.
+8. The Servo controller is a PCA9685 board.
 </code></pre></div>
-</td></tr></table>
+<h2 id="chatgpt-response">ChatGPT Response<a class="headerlink" href="#chatgpt-response" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>This code will create a block diagram where:
+
+The &quot;Main Computer&quot; (A) connects to the &quot;Servo Controller&quot; (B) via an I2C connection.
+The &quot;Servo Controller&quot; (B) connects to both the &quot;Steering Servo&quot; (C) and &quot;Electronic Speed Controller&quot; (D) via PWM connections.
+The &quot;Electronic Speed Controller&quot; (D) connects to both the &quot;RC Car Battery&quot; (E) and the &quot;Car Motor&quot; (F).
+The &quot;5V Battery&quot; (G) connects to the &quot;Main Computer&quot; (A) as well as to the &quot;Positive Connection&quot; (H) and &quot;Negative Connection&quot; (I).
+The &quot;RC Car Battery&quot; (E) also connects to both the &quot;Positive Connection&quot; (H) and &quot;Negative Connection&quot; (I).
+Please note that this is a simplified diagram and does not necessarily represent the physical arrangement of the components in an actual Donkey Car setup. This diagram should be taken as an abstract representation of how the components interact.
+</code></pre></div>
+<h2 id="mermaid-diagram">Mermaid Diagram<a class="headerlink" href="#mermaid-diagram" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>graph TB
+  A[&quot;Main Computer&lt;br&gt;Raspberry Pi or NVIDIA Nano&quot;]
+  B[&quot;Servo Controller&lt;br&gt;PCA9685 board&quot;]
+  C[&quot;Steering Servo&quot;]
+  D[&quot;Electronic Speed Controller&lt;br&gt;(ESC)&quot;]
+  E[&quot;RC Car Battery (7V)&quot;]
+  F[&quot;Car Motor&quot;]
+  G[&quot;5V Battery&quot;]
+
+  A --I2C--&gt; B
+  B --PWM--&gt; C
+  B --PWM--&gt; D
+  D --- E
+  D --- F
+  G --- A
+</code></pre></div>
 
               
             </article>

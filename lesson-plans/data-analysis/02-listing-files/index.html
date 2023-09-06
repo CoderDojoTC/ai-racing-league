@@ -1676,54 +1676,26 @@
 
 
 
-<h1 id="working-with-files">Working with Files</h1>
-<h2 id="listing-files-with-the-os-library">Listing Files with the OS library</h2>
+<h1 id="working-with-files">Working with Files<a class="headerlink" href="#working-with-files" title="Permanent link">&para;</a></h1>
+<h2 id="listing-files-with-the-os-library">Listing Files with the OS library<a class="headerlink" href="#listing-files-with-the-os-library" title="Permanent link">&para;</a></h2>
 <p>Python provides a powerful library for working with Operating System resources like file systems.  We will start out with the <code>listdir()</code> function that lists the files in a directory.</p>
 <p>Here is program that lists all the tub files in our mycar/data directory:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 <span class="n">data_dir</span> <span class="o">=</span> <span class="s2">&quot;/home/arl/mycar/data/&quot;</span>
 
 <span class="n">files</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">data_dir</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 <p>returns:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>a-test-tub
+<div class="highlight"><pre><span></span><code>a-test-tub
 my-test-tub
 junk-tub
 production-run
 tub-47
 </code></pre></div>
-</td></tr></table>
-<h2 id="listing-files-in-a">Listing Files in a</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<h2 id="listing-files-in-a">Listing Files in a<a class="headerlink" href="#listing-files-in-a" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
 
 <span class="n">image_dir</span> <span class="o">=</span> <span class="s2">&quot;/home/arl/mycar/data/dans-msp/data/images&quot;</span>
@@ -1742,18 +1714,8 @@ tub-47
 
 <span class="n">display</span><span class="p">(</span><span class="n">i1</span><span class="p">,</span> <span class="n">i2</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
-<h2 id="list-random-files-in-images-directory">List Random Files In Images Directory</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<h2 id="list-random-files-in-images-directory">List Random Files In Images Directory<a class="headerlink" href="#list-random-files-in-images-directory" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
 
@@ -1764,88 +1726,43 @@ tub-47
     <span class="n">file_name</span> <span class="o">=</span> <span class="n">image_file_name_list</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 <p>returns:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="mf">10263</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span><span class="w"></span>
-<span class="mf">6257</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span><span class="w"></span>
-<span class="mf">15248</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span><span class="w"></span>
-<span class="mf">3916</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span><span class="w"></span>
-<span class="mf">5223</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span><span class="w"></span>
-<span class="mf">15765</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span><span class="w"></span>
-<span class="mf">8437</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span><span class="w"></span>
-<span class="mf">5871</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span><span class="w"></span>
-<span class="mf">16681</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span><span class="w"></span>
-<span class="mf">15281</span><span class="n">_cam_image_array_</span><span class="mf">.</span><span class="n">jpg</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code>10263_cam_image_array_.jpg
+6257_cam_image_array_.jpg
+15248_cam_image_array_.jpg
+3916_cam_image_array_.jpg
+5223_cam_image_array_.jpg
+15765_cam_image_array_.jpg
+8437_cam_image_array_.jpg
+5871_cam_image_array_.jpg
+16681_cam_image_array_.jpg
+15281_cam_image_array_.jpg
 </code></pre></div>
-</td></tr></table>
 <p>Note that the files are not in any specific order.</p>
-<h2 id="show-images-for-10-random-files">Show Images for 10 Random Files</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">glob</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">matplotlib.image</span> <span class="k">as</span> <span class="nn">mpimg</span>
-<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<h2 id="show-images-for-10-random-files">Show Images for 10 Random Files<a class="headerlink" href="#show-images-for-10-random-files" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>import glob
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+%matplotlib inline
 
-<span class="n">images</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">img_path</span> <span class="ow">in</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;/home/arl/mycar/data/dans-msp/data/images/*.jpg&#39;</span><span class="p">):</span>
-    <span class="n">images</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mpimg</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">img_path</span><span class="p">))</span>
+images = []
+for img_path in glob.glob(&#39;/home/arl/mycar/data/dans-msp/data/images/*.jpg&#39;):
+    images.append(mpimg.imread(img_path))
 
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
-<span class="n">columns</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">image</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">images</span><span class="p">):</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">images</span><span class="p">)</span> <span class="o">/</span> <span class="n">columns</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">columns</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+plt.figure(figsize=(20,10))
+columns = 5
+for i, image in enumerate(images):
+    plt.subplot(len(images) / columns + 1, columns, i + 1)
+    plt.imshow(image)
 </code></pre></div>
-</td></tr></table>
 <p><img alt="" src="../img/ten-random-images.png" /></p>
-<h2 id="sorting-images-by-file-name">Sorting Images By File Name</h2>
+<h2 id="sorting-images-by-file-name">Sorting Images By File Name<a class="headerlink" href="#sorting-images-by-file-name" title="Permanent link">&para;</a></h2>
 <p>We can add an additional step if we want to sort the images by the file name:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">image_file_name_list</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">image_dir</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">image_file_name_list</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">image_dir</span><span class="p">)</span>
 <span class="n">image_file_name_list</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
 </code></pre></div>
-</td></tr></table>
-<h2 id="return-images-based-on-creation-date">Return Images Based On Creation Date</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<h2 id="return-images-based-on-creation-date">Return Images Based On Creation Date<a class="headerlink" href="#return-images-based-on-creation-date" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
 <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
@@ -1865,7 +1782,6 @@ tub-47
     <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">images</span><span class="p">)</span> <span class="o">/</span> <span class="n">columns</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">columns</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 
               
             </article>

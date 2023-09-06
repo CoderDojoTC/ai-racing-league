@@ -1632,61 +1632,52 @@
 
 
 
-<h1 id="docker-on-nano">Docker on Nano</h1>
-<p>!!! Note
-    These instructions were copied from a message on the Discord Server
-    that were posed by user <strong>naisy</strong> on at 08/31/2023 5:48 AM.
-    They are not supported by the DonkeyCar project (yet).</p>
+<h1 id="docker-on-nano">Docker on Nano<a class="headerlink" href="#docker-on-nano" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These instructions were copied from a message on the Discord Server
+that were posed by user <strong>naisy</strong> on at 08/31/2023 5:48 AM.
+They are not supported by the DonkeyCar project (yet).</p>
+</div>
 <p>Due to the complexities of building the correct environments on the Nano, one alternative is to use the Docker container system.  Although this adds some additional overhead, it means that you can download a virtual machine with all the correct software installed.</p>
 <p>You must have a minumum of a 64GB microSD card to run Docker on the NVIDIA Nano.</p>
-<h2 id="step-1-download-docker-github-repo">Step 1: Download Docker GitHub Repo</h2>
+<h2 id="step-1-download-docker-github-repo">Step 1: Download Docker GitHub Repo<a class="headerlink" href="#step-1-download-docker-github-repo" title="Permanent link">&para;</a></h2>
 <p>In this step we will clone a repository that has some
 very small UNIX shell scripts.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>mkdir ~/projects
+<div class="highlight"><pre><span></span><code>mkdir ~/projects
 <span class="nb">cd</span> ~/projects
 git clone https://github.com/naisy/Docker
 <span class="nb">cd</span> Docker
 </code></pre></div>
-</td></tr></table>
-<h2 id="step-2-run-the-permissions-shell-script">Step 2: Run the Permissions Shell Script</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>mkdir ~/docker
+<h2 id="step-2-run-the-permissions-shell-script">Step 2: Run the Permissions Shell Script<a class="headerlink" href="#step-2-run-the-permissions-shell-script" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>mkdir ~/docker
 cp run-jetson-jp461-donkeycar??.sh ~/docker
 cp run-jetson-jp461-gpio-permission.sh ~/docker
 
 cd ~/docker
 ./run-jetson-jp461-gpio-permission.sh
 </code></pre></div>
-</td></tr></table>
-<h2 id="step-3-run-the-main-shell-script">Step 3: Run the Main Shell Script</h2>
+<h2 id="step-3-run-the-main-shell-script">Step 3: Run the Main Shell Script<a class="headerlink" href="#step-3-run-the-main-shell-script" title="Permanent link">&para;</a></h2>
 <p>Due to memory limitations, only one of either DonkeyCar 4.5 or DonkeyCar 5.0 should be activated.</p>
-<h1 id="donkeycar-45">DonkeyCar 4.5</h1>
+<h1 id="donkeycar-45">DonkeyCar 4.5<a class="headerlink" href="#donkeycar-45" title="Permanent link">&para;</a></h1>
 <p>./run-jetson-jp461-donkeycar45.sh</p>
-<h1 id="or-donkeycar-50">or DonkeyCar 5.0</h1>
+<h1 id="or-donkeycar-50">or DonkeyCar 5.0<a class="headerlink" href="#or-donkeycar-50" title="Permanent link">&para;</a></h1>
 <p>./run-jetson-jp461-donkeycar50.sh</p>
-<h2 id="login-into-the-virtual-machine">Login into the Virtual Machine</h2>
+<h2 id="login-into-the-virtual-machine">Login into the Virtual Machine<a class="headerlink" href="#login-into-the-virtual-machine" title="Permanent link">&para;</a></h2>
 <p>Log in to the jupyterlab terminal:
 PC Web browser
 for DonkeyCar 4.5</p>
 <p>``
-http://your_jetson_ip:8890/</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">for</span> <span class="nv">DonkeyCar</span> <span class="mi">5</span>.<span class="mi">0</span> <span class="ss">(</span><span class="nv">dev3</span><span class="ss">)</span>
+http://your_jetson_ip:8890/
+<div class="highlight"><pre><span></span><code>for DonkeyCar 5.0 (dev3)
 </code></pre></div>
-</td></tr></table>
-<p>http://your_jetson_ip:8891/
+http://your_jetson_ip:8891/
 Password: jupyterlab
 Launch JupyterLab Terminal
 ```</p>
 <p>DonkeyCar:
 From this point on, it is exactly the same as a official donkeycar.</p>
-<h1 id="create-mycar">create mycar</h1>
+<h1 id="create-mycar">create mycar<a class="headerlink" href="#create-mycar" title="Permanent link">&para;</a></h1>
 <p>donkey createcar --path ~/data/mycar45
 cd ~/data/mycar45
 ls</p>

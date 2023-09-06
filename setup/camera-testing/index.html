@@ -1782,17 +1782,11 @@
 
 
 
-<h1 id="testing-the-camera">Testing the Camera</h1>
+<h1 id="testing-the-camera">Testing the Camera<a class="headerlink" href="#testing-the-camera" title="Permanent link">&para;</a></h1>
 <p>To test the camera and cable, we need a command that captures video from a CSI camera connected to an NVIDIA Jetson Nano, converts the video format and resolution, and then displays the video on the screen.  We will
 use the GStreamer command first.</p>
-<h2 id="gstreamer-test-on-the-nano">GStreamer Test on the Nano</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>gst-launch-1.0 nvarguscamerasrc ! <span class="se">\</span>
+<h2 id="gstreamer-test-on-the-nano">GStreamer Test on the Nano<a class="headerlink" href="#gstreamer-test-on-the-nano" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>gst-launch-1.0 nvarguscamerasrc ! <span class="se">\</span>
 <span class="s1">&#39;video/x-raw(memory:NVMM),width=3820, height=2464, framerate=21/1, format=NV12&#39;</span> ! <span class="se">\</span>
 nvvidconv flip-method<span class="o">=</span><span class="m">0</span> ! <span class="se">\</span>
 <span class="s1">&#39;video/x-raw,width=960, height=616&#39;</span> ! 
@@ -1800,12 +1794,11 @@ nvvidconv ! <span class="se">\</span>
 nvegltransform ! <span class="se">\</span>
 nveglglessink -e
 </code></pre></div>
-</td></tr></table>
 <p>This command is a GStreamer command used to test the functionality of a camera on a NVIDIA Jetson Nano device. GStreamer is a multimedia framework that provides a pipeline for media data. The <code>gst-launch-1.0</code> utility is used to build and run basic GStreamer pipelines.</p>
 <p>On newer systems with two cameras you can add: <code>sensor-id=0</code> to make sure you are getting camera 0.</p>
 <p>This guide explains how to clone a Raspberry Pi microSD card using the <code>dd</code> command on UNIX and UNIX-like systems.</p>
 <hr />
-<h2 id="table-of-contents">Table of Contents</h2>
+<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="#testing-the-camera">Testing the Camera</a></li>
 <li><a href="#gstreamer-test-on-the-nano">GStreamer Test on the Nano</a></li>
@@ -1826,15 +1819,15 @@ nveglglessink -e
 </li>
 </ul>
 <hr />
-<h2 id="identify-the-microsd-card-device">Identify the microSD Card Device</h2>
+<h2 id="identify-the-microsd-card-device">Identify the microSD Card Device<a class="headerlink" href="#identify-the-microsd-card-device" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
 <p>First, identify the device name for your microSD card. Use either <code>lsblk</code> or <code>df</code> to list devices and their mount points.</p>
-<p><code>bash
-lsblk</code></p>
+<div class="highlight"><pre><span></span><code>lsblk
+</code></pre></div>
 <p>Or:</p>
-<p><code>bash
-df -h</code></p>
+<div class="highlight"><pre><span></span><code>df -h
+</code></pre></div>
 </li>
 <li>
 <p>Look for the device corresponding to your microSD card. It's generally something like <code>/dev/sdX</code> or <code>/dev/mmcblkX</code>, where <code>X</code> is a letter.</p>
@@ -1842,21 +1835,21 @@ df -h</code></p>
 </li>
 </ol>
 <hr />
-<h2 id="unmount-the-microsd-card">Unmount the microSD Card</h2>
+<h2 id="unmount-the-microsd-card">Unmount the microSD Card<a class="headerlink" href="#unmount-the-microsd-card" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
 <p>Before copying data, unmount the partitions of the microSD card to ensure that no data is being read or written during the cloning process.</p>
-<p><code>bash
-sudo umount /dev/sdX*</code></p>
+<div class="highlight"><pre><span></span><code>sudo umount /dev/sdX*
+</code></pre></div>
 </li>
 </ol>
 <hr />
-<h2 id="create-a-backup-image">Create a Backup Image</h2>
+<h2 id="create-a-backup-image">Create a Backup Image<a class="headerlink" href="#create-a-backup-image" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
 <p>Use the <code>dd</code> command to create an image file of the microSD card.</p>
-<p><code>bash
-sudo dd if=/dev/sdX of=raspberrypi_backup.img bs=4M status=progress</code></p>
+<div class="highlight"><pre><span></span><code>sudo dd <span class="k">if</span><span class="o">=</span>/dev/sdX <span class="nv">of</span><span class="o">=</span>raspberrypi_backup.img <span class="nv">bs</span><span class="o">=</span>4M <span class="nv">status</span><span class="o">=</span>progress
+</code></pre></div>
 <ul>
 <li><code>if</code>: Input File — the device you are copying from (your microSD card).</li>
 <li><code>of</code>: Output File — the image file you are creating.</li>
@@ -1866,23 +1859,23 @@ sudo dd if=/dev/sdX of=raspberrypi_backup.img bs=4M status=progress</code></p>
 </li>
 </ol>
 <hr />
-<h2 id="copy-the-backup-image-to-new-microsd-cards">Copy the Backup Image to New microSD Cards</h2>
+<h2 id="copy-the-backup-image-to-new-microsd-cards">Copy the Backup Image to New microSD Cards<a class="headerlink" href="#copy-the-backup-image-to-new-microsd-cards" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
 <p>To clone the image onto a new microSD card, insert the new card and identify it just like you did in the first step.</p>
-<p><code>bash
-sudo dd if=raspberrypi_backup.img of=/dev/sdY bs=4M status=progress</code></p>
+<div class="highlight"><pre><span></span><code>sudo dd <span class="k">if</span><span class="o">=</span>raspberrypi_backup.img <span class="nv">of</span><span class="o">=</span>/dev/sdY <span class="nv">bs</span><span class="o">=</span>4M <span class="nv">status</span><span class="o">=</span>progress
+</code></pre></div>
 <p>Replace <code>/dev/sdY</code> with the device name of your new microSD card.</p>
 <p>⚠️ <strong>Caution</strong>: Again, be very careful to identify the correct device to avoid data loss.</p>
 </li>
 </ol>
 <hr />
-<h2 id="expand-the-filesystem-optional">Expand the Filesystem (Optional)</h2>
+<h2 id="expand-the-filesystem-optional">Expand the Filesystem (Optional)<a class="headerlink" href="#expand-the-filesystem-optional" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
 <p>If your new microSD card is larger than the original, you might need to expand the filesystem to use the additional space. You can do this using <code>raspi-config</code> on the Raspberry Pi.</p>
-<p><code>bash
-sudo raspi-config</code></p>
+<div class="highlight"><pre><span></span><code>sudo raspi-config
+</code></pre></div>
 <p>Navigate to <code>Advanced Options</code> &gt; <code>Expand Filesystem</code>.</p>
 </li>
 </ol>
@@ -1908,11 +1901,11 @@ sudo raspi-config</code></p>
 <p><code>nvvidconv ! nvegltransform ! nveglglessink -e</code>: This part of the pipeline takes the video from the conversion, applies an EGLStream transformation (<code>nvegltransform</code>) and then sends it to a EGL/GLES-based render sink (<code>nveglglessink</code>). This sink displays the video on the device's screen. The <code>-e</code> flag at the end of the command tells GStreamer to send an end-of-stream signal when the source stops, which will properly close down the pipeline.</p>
 </li>
 </ol>
-<h3 id="why-and-not">Why "!" and not "|"?</h3>
+<h3 id="why-and-not">Why "!" and not "|"?<a class="headerlink" href="#why-and-not" title="Permanent link">&para;</a></h3>
 <p>In the context of a GStreamer command, the "!" (aka bang) character is used to connect different elements of a GStreamer pipeline together. It serves a similar role to the UNIX "|" (pipe) character in a regular UNIX shell command, where it's used to pipe the output from one command into another.</p>
 <p>However, there's an important difference between the two. In a UNIX shell command, the | character sends the standard output (stdout) of one command to the standard input (stdin) of another. In a GStreamer pipeline, the ! character doesn't simply pipe data from one element to the next. Instead, it establishes a connection between two GStreamer elements, allowing them to negotiate formats, buffer management, and other details. This negotiation process can involve more complex operations like format conversion, and it happens before any data is actually transferred.</p>
 <p>So, in summary, while | and ! might seem similar, the latter is used in GStreamer to create more complex, negotiated connections between different multimedia processing elements.</p>
-<h3 id="flip-modes">Flip Modes</h3>
+<h3 id="flip-modes">Flip Modes<a class="headerlink" href="#flip-modes" title="Permanent link">&para;</a></h3>
 <p>The <code>flip-method</code> property of the <code>nvvidconv</code> (NVIDIA Video Converter) plugin controls the orientation of the output video in the NVIDIA Jetson platform. This is useful for handling scenarios where the camera could be mounted in various orientations.</p>
 <p>Here are the possible values for the <code>flip-method</code> parameter:</p>
 <ul>
@@ -1926,10 +1919,10 @@ sudo raspi-config</code></p>
 <li><code>7</code> (Upper Left Diagonal) - Flip across upper left/lower right diagonal.</li>
 </ul>
 <p>Each number corresponds to a specific operation on the video frames. The specific operation will be applied to each frame of the video before it's sent to the next element in the GStreamer pipeline.</p>
-<h2 id="resources">Resources</h2>
-<h3 id="dans-blog">Dan's Blog</h3>
+<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
+<h3 id="dans-blog">Dan's Blog<a class="headerlink" href="#dans-blog" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/JetsonHacksNano/CSI-Camera">NVIDIA CSI Camera GitHub Repo</a></p>
-<h3 id="jetson-hacks-blog">Jetson Hacks Blog</h3>
+<h3 id="jetson-hacks-blog">Jetson Hacks Blog<a class="headerlink" href="#jetson-hacks-blog" title="Permanent link">&para;</a></h3>
 <p>https://jetsonhacks.com/2019/04/02/jetson-nano-raspberry-pi-camera/</p>
 
               

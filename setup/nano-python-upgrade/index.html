@@ -1604,21 +1604,17 @@
 
 
 
-<h1 id="how-to-upgrade-python-on-the-nvidia-nano">How to Upgrade Python on the NVIDIA Nano</h1>
+<h1 id="how-to-upgrade-python-on-the-nvidia-nano">How to Upgrade Python on the NVIDIA Nano<a class="headerlink" href="#how-to-upgrade-python-on-the-nvidia-nano" title="Permanent link">&para;</a></h1>
 <p>The current Jetson Nano image is version 4.6.1.
 The Donkey Car software only runs on 4.5.1</p>
 <p>There are several bugs with the Donkey Car system that do not run on Jetson Nano 4.5.2. So how do we get the latest good stuff without allowing the system to automatically update to 4.5.2?</p>
-<p>!!! Warning
-    Do not run these commands!</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>```sh
-sudo apt-get update -y
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not run these commands!</p>
+<div class="highlight"><pre><span></span><code>sudo apt-get update -y
 sudo apt-get upgrade -y
-```
 </code></pre></div>
-</td></tr></table>
+</div>
 <p>When the command <code>sudo apt-get upgrade -y</code> is sent, the JetPack dependency tree tries to upgrade to Jetpack version 4.5.2 which will cause the JetPack to lock up when it tries to boot into the Ubuntu Desktop.  Note, this is a bug in the NVIDIA code, not the Donkey Car code.</p>
 <p>We should never run <code>sudo apt-get update -y</code> or <code>sudo apt-get upgrade -y</code> when running JP4.5.1.</p>
 <p>The following is how we upgrade Ubuntu, but keep JP from attempting to upgrade to JP4.5.2:</p>
@@ -1628,13 +1624,13 @@ sudo apt-get upgrade -y
 <li>When the "Other Software" Tab opens, starting from the top, uncheck boxes 3, 6, and 7, then select "close".</li>
 <li>Unchecking those boxes prevents the "Software Updater" from updating JP to 4.5.2, but allows Ubuntu and other software to update.</li>
 </ol>
-<p>!!! warning</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>Always use the &quot;Software Updater GUI&quot; to update your Ubuntu and never run ```sudo apt-get upgrade -y```.
-</code></pre></div>
-</td></tr></table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Always use the "Software Updater GUI" to update your Ubuntu and never run <code>sudo apt-get upgrade -y</code>.</p>
+</div>
 <p>After completing the above process, let the Desktop stay open for a while and the "Software Updater" will appear.</p>
 <p>Let the "Software Updater" update Ubuntu whenever you use the Desktop. </p>
-<h2 id="references">References</h2>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://jetsonhacks.com/2023/06/12/upgrade-python-on-jetson-nano-tutorial/">Jetson Hacks</a></li>
 </ul>

@@ -1686,57 +1686,29 @@
 
 
 
-<h1 id="install-the-nvidia-driver">Install the NVIDIA Driver</h1>
+<h1 id="install-the-nvidia-driver">Install the NVIDIA Driver<a class="headerlink" href="#install-the-nvidia-driver" title="Permanent link">&para;</a></h1>
 <p>Ideally you should be able to use the Ubuntu "Software and Updates" tool to install the NIVIDA driver.  This usually works, but if you get errors, you may need to use the unix shell.</p>
-<h2 id="nvidia-card-verification">NVIDIA Card Verification</h2>
+<h2 id="nvidia-card-verification">NVIDIA Card Verification<a class="headerlink" href="#nvidia-card-verification" title="Permanent link">&para;</a></h2>
 <p>You can first verify that the GPU card has been installed and powered up.  We can use the "list hardware" command with the display option:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$ sudo lshw -C display
+<div class="highlight"><pre><span></span><code>$ sudo lshw -C display
 </code></pre></div>
-</td></tr></table>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="w">  </span><span class="o">*-</span><span class="n">display</span><span class="w"> </span><span class="n">UNCLAIMED</span><span class="w">       </span>
-<span class="w">       </span><span class="nl">description</span><span class="p">:</span><span class="w"> </span><span class="n">VGA</span><span class="w"> </span><span class="n">compatible</span><span class="w"> </span><span class="n">controller</span><span class="w"></span>
-<span class="w">       </span><span class="nl">product</span><span class="p">:</span><span class="w"> </span><span class="n">GV102</span><span class="w"></span>
-<span class="w">       </span><span class="nl">vendor</span><span class="p">:</span><span class="w"> </span><span class="n">NVIDIA</span><span class="w"> </span><span class="n">Corporation</span><span class="w"></span>
-<span class="w">       </span><span class="n">physical</span><span class="w"> </span><span class="kt">id</span><span class="o">:</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
-<span class="w">       </span><span class="n">bus</span><span class="w"> </span><span class="n">info</span><span class="o">:</span><span class="w"> </span><span class="n">pci</span><span class="mo">@0000</span><span class="o">:</span><span class="mi">09</span><span class="o">:</span><span class="mf">00.0</span><span class="w"></span>
-<span class="w">       </span><span class="nl">version</span><span class="p">:</span><span class="w"> </span><span class="n">a1</span><span class="w"></span>
-<span class="w">       </span><span class="nl">width</span><span class="p">:</span><span class="w"> </span><span class="mi">64</span><span class="w"> </span><span class="n">bits</span><span class="w"></span>
-<span class="w">       </span><span class="nl">clock</span><span class="p">:</span><span class="w"> </span><span class="mi">33</span><span class="n">MHz</span><span class="w"></span>
-<span class="w">       </span><span class="nl">capabilities</span><span class="p">:</span><span class="w"> </span><span class="n">pm</span><span class="w"> </span><span class="n">msi</span><span class="w"> </span><span class="n">pciexpress</span><span class="w"> </span><span class="n">vga_controller</span><span class="w"> </span><span class="n">bus_master</span><span class="w"> </span><span class="n">cap_list</span><span class="w"></span>
-<span class="w">       </span><span class="nl">configuration</span><span class="p">:</span><span class="w"> </span><span class="n">latency</span><span class="o">=</span><span class="mi">0</span><span class="w"></span>
-<span class="w">       </span><span class="nl">resources</span><span class="p">:</span><span class="w"> </span><span class="n">memory</span><span class="o">:</span><span class="n">f6000000</span><span class="o">-</span><span class="n">f6ffffff</span><span class="w"> </span><span class="n">memory</span><span class="o">:</span><span class="n">e0000000</span><span class="o">-</span><span class="n">efffffff</span><span class="w"> </span><span class="n">memory</span><span class="o">:</span><span class="n">f0000000</span><span class="o">-</span><span class="n">f1ffffff</span><span class="w"> </span><span class="n">ioport</span><span class="o">:</span><span class="n">e000</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span><span class="w"> </span><span class="n">memory</span><span class="o">:</span><span class="n">c0000</span><span class="o">-</span><span class="n">dffff</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code>  *-display UNCLAIMED       
+       description: VGA compatible controller
+       product: GV102
+       vendor: NVIDIA Corporation
+       physical id: 0
+       bus info: pci@0000:09:00.0
+       version: a1
+       width: 64 bits
+       clock: 33MHz
+       capabilities: pm msi pciexpress vga_controller bus_master cap_list
+       configuration: latency=0
+       resources: memory:f6000000-f6ffffff memory:e0000000-efffffff memory:f0000000-f1ffffff ioport:e000(size=128) memory:c0000-dffff
 </code></pre></div>
-</td></tr></table>
 <p>This shows that there is a GPU card installed but not claimed by the display.</p>
-<h2 id="nvidia-devices">NVIDIA Devices</h2>
+<h2 id="nvidia-devices">NVIDIA Devices<a class="headerlink" href="#nvidia-devices" title="Permanent link">&para;</a></h2>
 <p>You can then use the ubuntu-drivers command to see the devices.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$ ubuntu-drivers <span class="nv">devices</span>
+<div class="highlight"><pre><span></span><code>$ ubuntu-drivers <span class="nv">devices</span>
 <span class="o">==</span> /sys/devices/pci0000:00/0000:00:03.1/0000:09:00.0 <span class="o">==</span>
 modalias : pci:v000010DEd00001E07sv000010DEsd000012A4bc03sc00i00
 vendor   : NVIDIA Corporation
@@ -1753,44 +1725,18 @@ vendor   : Intel Corporation
 manual_install: True
 driver   : backport-iwlwifi-dkms - distro free
 </code></pre></div>
-</td></tr></table>
-<h2 id="ubuntu-drivers-autoinstall">Ubuntu Drivers Autoinstall</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo ubuntu-drivers autoinstall
+<h2 id="ubuntu-drivers-autoinstall">Ubuntu Drivers Autoinstall<a class="headerlink" href="#ubuntu-drivers-autoinstall" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>sudo ubuntu-drivers autoinstall
 </code></pre></div>
-</td></tr></table>
 <p>This tool will tell you what drivers you need to install.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo apt-get install nvidia-driver-470
+<div class="highlight"><pre><span></span><code>sudo apt-get install nvidia-driver-470
 </code></pre></div>
-</td></tr></table>
 <p>This will often generate errors but it will indicate what other libraries need to be installed for the 470 driver to work.</p>
-<h2 id="final-test">Final Test</h2>
+<h2 id="final-test">Final Test<a class="headerlink" href="#final-test" title="Permanent link">&para;</a></h2>
 <p>Now we are ready to probe the full GPU and get all the statistics of what is in the GPU.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>nvidia-smi
+<div class="highlight"><pre><span></span><code>nvidia-smi
 </code></pre></div>
-</td></tr></table>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>Thu Jul 22 22:59:36 2021       
+<div class="highlight"><pre><span></span><code>Thu Jul 22 22:59:36 2021       
 +-----------------------------------------------------------------------------+
 | NVIDIA-SMI 470.57.02    Driver Version: 470.57.02    CUDA Version: 11.4     |
 |-------------------------------+----------------------+----------------------+
@@ -1814,30 +1760,22 @@ driver   : backport-iwlwifi-dkms - distro free
 |    0   N/A  N/A      1705      G   /usr/bin/gnome-shell               91MiB |
 +-----------------------------------------------------------------------------+
 </code></pre></div>
-</td></tr></table>
 <p>If you don't get this or a similar display, you must continue to search for installation instructions.</p>
 <p>After you get this screen you can reboot.</p>
-<h2 id="cuda-version">CUDA Version</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>nvcc --version
+<h2 id="cuda-version">CUDA Version<a class="headerlink" href="#cuda-version" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>nvcc --version
 </code></pre></div>
-</td></tr></table>
 <p>Results:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">nvcc</span><span class="o">:</span><span class="w"> </span><span class="n">NVIDIA</span><span class="w"> </span><span class="o">(</span><span class="n">R</span><span class="o">)</span><span class="w"> </span><span class="n">Cuda</span><span class="w"> </span><span class="n">compiler</span><span class="w"> </span><span class="n">driver</span><span class="w"></span>
-<span class="n">Copyright</span><span class="w"> </span><span class="o">(</span><span class="n">c</span><span class="o">)</span><span class="w"> </span><span class="mi">2005</span><span class="o">-</span><span class="mi">2017</span><span class="w"> </span><span class="n">NVIDIA</span><span class="w"> </span><span class="n">Corporation</span><span class="w"></span>
-<span class="n">Built</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">Fri_Nov__3_21</span><span class="o">:</span><span class="mi">07</span><span class="o">:</span><span class="mi">56</span><span class="n">_CDT_2017</span><span class="w"></span>
-<span class="n">Cuda</span><span class="w"> </span><span class="n">compilation</span><span class="w"> </span><span class="n">tools</span><span class="o">,</span><span class="w"> </span><span class="n">release</span><span class="w"> </span><span class="mf">9.1</span><span class="o">,</span><span class="w"> </span><span class="n">V9</span><span class="o">.</span><span class="mf">1.85</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code>nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2017 NVIDIA Corporation
+Built on Fri_Nov__3_21:07:56_CDT_2017
+Cuda compilation tools, release 9.1, V9.1.85
 </code></pre></div>
-</td></tr></table>
-<h3 id="cuda-tookkit-install-for-pytorch">CUDA Tookkit Install for PyTorch</h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>conda install <span class="nv">cudatoolkit</span><span class="o">=</span>&lt;CUDA Version&gt; -c pytorch
+<h3 id="cuda-tookkit-install-for-pytorch">CUDA Tookkit Install for PyTorch<a class="headerlink" href="#cuda-tookkit-install-for-pytorch" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>conda install <span class="nv">cudatoolkit</span><span class="o">=</span>&lt;CUDA Version&gt; -c pytorch
 </code></pre></div>
-</td></tr></table>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>conda install <span class="nv">cudatoolkit</span><span class="o">=</span><span class="m">11</span> -c pytorch
+<div class="highlight"><pre><span></span><code>conda install <span class="nv">cudatoolkit</span><span class="o">=</span><span class="m">11</span> -c pytorch
 </code></pre></div>
-</td></tr></table>
 
               
             </article>
