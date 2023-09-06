@@ -92,6 +92,8 @@ theme:
   include_sidebar: true
 markdown_extensions:
   - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - attr_list
   - footnotes
   - toc:
@@ -100,10 +102,6 @@ markdown_extensions:
       linenums: true
 plugins:
     - search
-markdown_extensions:
-  - codehilite:
-      linenums: true
-
 extra:
   analytics:
     provider: google
