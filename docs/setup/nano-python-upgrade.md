@@ -24,7 +24,8 @@ The following is how we upgrade Ubuntu, but keep JP from attempting to upgrade t
 3. When the "Other Software" Tab opens, starting from the top, uncheck boxes 3, 6, and 7, then select "close".
 4. Unchecking those boxes prevents the "Software Updater" from updating JP to 4.5.2, but allows Ubuntu and other software to update.
 
-!!! Warning
+!!! warning
+
     Always use the "Software Updater GUI" to update your Ubuntu and never run ```sudo apt-get upgrade -y```.
 
 After completing the above process, let the Desktop stay open for a while and the "Software Updater" will appear.
