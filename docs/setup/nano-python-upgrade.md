@@ -21,10 +21,11 @@ The following is how we upgrade Ubuntu, but keep JP from attempting to upgrade t
 
 1. Once the Desktop has opened, select "System Settings" (the Gear with the wrench on top), then select "System & Updates".
 2. When "System & Updates" has opened, select the "Other Software" Tab.
-3. When the "Other Software" Tab opens, starting from the top, uncheck boxes 3, 6, and 7, then select "close".
+3. When the "Other Software" Tab opens, starting from the top, uncheck boxes that reference the Jetpack and CUDA libraries - 3, 6, and 7, then select "close".
 4. Unchecking those boxes prevents the "Software Updater" from updating JP to 4.5.2, but allows Ubuntu and other software to update.
 
-![](../img/disable-nvidia-updates.png)
+![Disable NVIDIA Upgrade](../img/disable-nvidia-updates.png)
+
 !!! warning
 
     Always use the "Software Updater GUI" to update your Ubuntu and never run ```sudo apt-get upgrade -y```.
