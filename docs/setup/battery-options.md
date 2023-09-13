@@ -48,9 +48,30 @@ the fact that the INIU batteries showed the percent power remaining.
 
 The [INIU Portable Charger, Slimmest 10000mAh 5V/3A Power Bank](https://www.amazon.com/dp/B07CZDXDG8) is also a popular choice since they only cost about $19.
 
-## RC Car Batteries
+## Traditional RC Car Batteries
 
+The traditional RC car batteries are based on standard "Safe" battery chemistry that can be fully drained and are not a strong fire hazard.  The problem is that they
+take a long time to charge (typically overnight) and they don't store a lot of power so they typically only last a few minutes at high speed.
 
+## Camera LiPo Batteries
+
+![NP-F Battery on RC Car](../img/np-f-on-rc-car.png)
+
+A newer option is lower-cost rechargeable camera batteries that are built around 
+the Sony NP-F standard.  These are wildly regarded as safe by the camera industry
+and there are many low-cost smart batteries and chargers available for around $10 each. They produce a stable 7.4 volt output that is perfect for our DC motors
+in RC cars.
+
+The only consideration is getting cables that convert the batteries to use the RC car standards.  I have made by own cables, but the quality of the connectors on the Donkey Car still leaves some things to be desired.  The ends of the connectors are easy to pull off.  I think that soldering a new barrel connector on all the RC cars
+might be another option.
+
+The one other challenge is trying to fine a low-cost connection plate.  Right now the lowest cost plate is about $27 on Amazon.  I hope we can find lower-cost options.
+
+![NP-F Batteries on EBay](../img/np-f-batteries-ebay.png)
+
+[Two batteries and charger on e-Bay for $23](https://www.ebay.com/itm/254450799703)
+
+[Neewer Battery Connection Plate for $27 on Amazon](https://www.amazon.com/Mirrorless-Indicators-5-5x2-5mm-5-5x2-1mm-Compatible/dp/B0BRQGGVX4)
 
 ## Battery Cables
 
