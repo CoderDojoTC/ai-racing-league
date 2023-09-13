@@ -94,11 +94,9 @@ Several participants used long battery cables with a small wire gauge.  These ca
 
 * [Ferrule Crimping Tool Kit](https://www.amazon.com/dp/B073TZ5BBG)
 
-## Camera Batteries
-
-
-
 ## 7.4 Volt LiPo Batteries
+
+You can also purchase "raw" 7.4-volt LiPo batteries that are designed to work with RC cars.  I have not purchased these directly so I can't attest to their reliability or safety.  I will say that the power connector on them appears to be incompatible with our current cars.
 
 [1500mAh 7.4V 2S 18650 Battery](https://www.ebay.com/itm/394666724323?_trkparms=amclksrc%3DITM%26aid)
 
