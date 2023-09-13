@@ -58,20 +58,31 @@ take a long time to charge (typically overnight) and they don't store a lot of p
 ![NP-F Battery on RC Car](../img/np-f-on-rc-car.png)
 
 A newer option is lower-cost rechargeable camera batteries that are built around 
-the Sony NP-F standard.  These are wildly regarded as safe by the camera industry
-and there are many low-cost smart batteries and chargers available for around $10 each. They produce a stable 7.4 volt output that is perfect for our DC motors
+the Sony NP-F standard.  These are widely regarded as safe by the camera industry
+and there are many low-cost smart batteries and chargers available for around $10 each. They produce a stable 7.4-volt output that is perfect for our DC motors
 in RC cars.
 
-The only consideration is getting cables that convert the batteries to use the RC car standards.  I have made by own cables, but the quality of the connectors on the Donkey Car still leaves some things to be desired.  The ends of the connectors are easy to pull off.  I think that soldering a new barrel connector on all the RC cars
+The only consideration is getting cables that convert the batteries to use the RC car standards.  I have made my own cables, but the quality of the connectors on the Donkey Car still leaves some things to be desired.  The ends of the connectors are easy to pull off.  I think that soldering a new barrel connector on all the RC cars
 might be another option.
 
-The one other challenge is trying to fine a low-cost connection plate.  Right now the lowest cost plate is about $27 on Amazon.  I hope we can find lower-cost options.
+The one other challenge is trying to find a low-cost connection plate.  Right now the lowest cost plate is about $27 on Amazon.  I hope we can find lower-cost options.
 
 ![NP-F Batteries on EBay](../img/np-f-batteries-ebay.png)
 
 [Two batteries and charger on e-Bay for $23](https://www.ebay.com/itm/254450799703)
 
 [Neewer Battery Connection Plate for $27 on Amazon](https://www.amazon.com/Mirrorless-Indicators-5-5x2-5mm-5-5x2-1mm-Compatible/dp/B0BRQGGVX4)
+
+The camera industry has also developed standard 7.4-volt battery packs that
+enclose low-cost 18650 battery cells.  These standards have electronics built in
+to protect from drainage. Here is a list of parts that were recommended by the NVIDIA Jetson Hacks team:
+
+1. [SmallRig NP-F Battery Plate Adapter](https://amzn.to/3MyHwCw)
+1. [Generic NP-F 550 2 Cell Battery](https://amzn.to/3kgEsi5)
+1. [Generic NP-F 750 4 Cell Battery](https://amzn.to/3vgePo4)
+1. [Antigravity Micro-Start XP-1 Battery](https://amzn.to/3LwDbiQ)
+2. [Artman NP-F550 Battery and Dual USB Charger for Sony NP F550, F570, F530, F330, F970, F960, F750, F770, CCD-SC55, TR516, TR716, TR818, TR910 (2-Pack 2900mAh)](https://www.amazon.com/Artman-Set-Compatible-CCD-SC55-TR940%EF%BC%882-Pack-Charger%EF%BC%89/dp/B07P7W2W1T/ref=psdc_281407) - great deal - two batteries and charger for $28.99
+3. [Kastar Battery LCD Dual Charger for Sony NP-F330 NP-F530 NP-F550 NP-F750 NP-F770](https://www.ebay.com/itm/254450799703) - - two batteries and charger for $28.99
 
 ## Battery Cables
 
@@ -85,17 +96,11 @@ Several participants used long battery cables with a small wire gauge.  These ca
 
 ## Camera Batteries
 
-The camera industry has also developed standard 7.2-volt battery packs that
-enclose low-cost 18650 battery cells.  These standards have electronics built in
-to protect from drainage.
 
-1. [SmallRig NP-F Battery Plate Adapter](https://amzn.to/3MyHwCw)
-1. [Generic NP-F 550 2 Cell Battery](https://amzn.to/3kgEsi5)
-1. [Generic NP-F 750 4 Cell Battery](https://amzn.to/3vgePo4)
-1. [Antigravity Micro-Start XP-1 Battery](https://amzn.to/3LwDbiQ)
-2. [Artman NP-F550 Battery and Dual USB Charger for Sony NP F550, F570, F530, F330, F970, F960, F750, F770, CCD-SC55, TR516, TR716, TR818, TR910 (2-Pack 2900mAh)](https://www.amazon.com/Artman-Set-Compatible-CCD-SC55-TR940%EF%BC%882-Pack-Charger%EF%BC%89/dp/B07P7W2W1T/ref=psdc_281407) - great deal - two batteries and charger for $28.99
-3. [Kastar Battery LCD Dual Charger for Sony NP-F330 NP-F530 NP-F550 NP-F750 NP-F770](https://www.ebay.com/itm/254450799703) - - two batteries and charger for $28.99
 
+## 7.4 Volt LiPo Batteries
+
+[1500mAh 7.4V 2S 18650 Battery](https://www.ebay.com/itm/394666724323?_trkparms=amclksrc%3DITM%26aid)
 
 ## References
 
