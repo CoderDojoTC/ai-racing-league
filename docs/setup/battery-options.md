@@ -65,11 +65,15 @@ in RC cars.
 The only consideration is getting cables that convert the batteries to use the RC car standards.  I have made my own cables, but the quality of the connectors on the Donkey Car still leaves some things to be desired.  The ends of the connectors are easy to pull off.  I think that soldering a new barrel connector on all the RC cars
 might be another option.
 
-The one other challenge is trying to find a low-cost connection plate.  Right now the lowest cost plate is about $27 on Amazon.  I hope we can find lower-cost options.
+The one other challenge is trying to find a low-cost connection plate.  Right now the lowest cost plate is about $15 on Adafruit.  I hope we can find lower-cost options or use a 3D printer to print our own.
 
 ![NP-F Batteries on EBay](../img/np-f-batteries-ebay.png)
 
+[Adafruit Camcorder Battery Holder/Adapter for Sony NP-F750 w/ DC Jack](https://www.adafruit.com/product/2089) $15
+
 [Two batteries and charger on e-Bay for $23](https://www.ebay.com/itm/254450799703)
+
+[3D Print Thingiverse NP-F Battery Wall Mount with Soft Lock](https://www.thingiverse.com/thing:5851170)
 
 [Neewer Battery Connection Plate for $27 on Amazon](https://www.amazon.com/Mirrorless-Indicators-5-5x2-5mm-5-5x2-1mm-Compatible/dp/B0BRQGGVX4)
 
