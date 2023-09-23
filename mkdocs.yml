@@ -38,6 +38,7 @@ nav:
     - Calibrate: setup/calibrate.md
     - Setup Conda on Pi: setup/conda-pi-setup.md
     - PWM Setup: setup/pwm-board.md
+    - Raspberry Pi Parts: setup/raspberry-pi-parts.md
     - Nano Docker: setup/nano-docker.md
     - Nano SD Image Checklist: setup/nano-sd-image-checklist.md
     - Software Installation Notes: setup/software-install-notes.md
