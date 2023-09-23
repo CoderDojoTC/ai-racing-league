@@ -10,6 +10,13 @@ In addition to teaching machine learning, this course also teaches concepts like
 
 Our secret sauce is to combine the right hardware, software, mentors and a flexible learning curriculum to create fun events that students love to participate in.
 
+!!! Notice
+    We are terminating our support for the NVIDIA Nano.  This
+    is driven by the fact that the Raspberry Pi 4 with 8GB is
+    selling at $75 and the Nano 4GB is now $150.  There are
+    considerable problems with the end-of-life of the NVIDIA
+    support for the JetPack libraries.
+
 ## Current Status
 
 We are in the process of restarting our events starting in the fall of 2023.  Please contact [Dan McCreary](https://www.linkedin.com/in/danmccreary/) if you would like to participate.
