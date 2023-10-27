@@ -1464,16 +1464,43 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#gpu-commands" class="md-nav__link">
+    GPU Commands
+  </a>
+  
+    <nav class="md-nav" aria-label="GPU Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#display-type" class="md-nav__link">
+    Display Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvidia-gpu-configuration" class="md-nav__link">
+    NVIDIA GPU Configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#nvidia-gpu-monitor" class="md-nav__link">
     NVIDIA GPU Monitor
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#nvidia-gpu-utilization" class="md-nav__link">
     NVIDIA GPU Utilization
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2223,16 +2250,43 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#gpu-commands" class="md-nav__link">
+    GPU Commands
+  </a>
+  
+    <nav class="md-nav" aria-label="GPU Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#display-type" class="md-nav__link">
+    Display Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvidia-gpu-configuration" class="md-nav__link">
+    NVIDIA GPU Configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#nvidia-gpu-monitor" class="md-nav__link">
     NVIDIA GPU Monitor
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#nvidia-gpu-utilization" class="md-nav__link">
     NVIDIA GPU Utilization
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2334,14 +2388,64 @@ You can also allow the user to have "sudo" rights by using the following command
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>sudo<span class="w"> </span>donkey
 </code></pre></div></p>
 <h3 id="change-the-hostname">Change the Hostname<a class="headerlink" href="#change-the-hostname" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>vi<span class="w"> </span>hostname
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>vi<span class="w"> </span>/etc/hostname
 </code></pre></div>
 <p>Change the name to "gpu-server2" or a similar name.</p>
-<h2 id="nvidia-gpu-monitor">NVIDIA GPU Monitor<a class="headerlink" href="#nvidia-gpu-monitor" title="Permanent link">&para;</a></h2>
+<h2 id="gpu-commands">GPU Commands<a class="headerlink" href="#gpu-commands" title="Permanent link">&para;</a></h2>
+<h3 id="display-type">Display Type<a class="headerlink" href="#display-type" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>lshw<span class="w"> </span>-class<span class="w"> </span>display
+</code></pre></div>
+<p>Response:
+<div class="highlight"><pre><span></span><code>       description: VGA compatible controller
+       product: TU102 [GeForce RTX 2080 Ti Rev. A]
+       vendor: NVIDIA Corporation
+       physical id: 0
+       bus info: pci@0000:09:00.0
+       version: a1
+       width: 64 bits
+       clock: 33MHz
+       capabilities: pm msi pciexpress vga_controller bus_master cap_list rom
+       configuration: driver=nvidia latency=0
+       resources: irq:101 memory:f6000000-f6ffffff memory:e0000000-efffffff memory:f0000000-f1ffffff ioport:e000(size=128) memory:c0000-dffff
+</code></pre></div></p>
+<p>Note that line 2 lists the product of TU102 [GeForce RTX 2080 Ti Rev. A] but it does not indicate how
+much RAM we have on the defice.</p>
+<h3 id="nvidia-gpu-configuration">NVIDIA GPU Configuration<a class="headerlink" href="#nvidia-gpu-configuration" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>nvidia-smi
+</code></pre></div>
+<p>Result:
+<div class="highlight"><pre><span></span><code>Mon Sep 25 14:17:46 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.91.03    Driver Version: 460.91.03    CUDA Version: 11.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GeForce RTX 208...  Off  | 00000000:09:00.0 Off |                  N/A |
+| 40%   32C    P8    18W / 260W |    184MiB / 11018MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A      1026      G   /usr/lib/xorg/Xorg                 35MiB |
+|    0   N/A  N/A      2315      G   /usr/lib/xorg/Xorg                 90MiB |
+|    0   N/A  N/A      2509      G   /usr/bin/gnome-shell               10MiB |
+|    0   N/A  N/A      4118      G   ...eLanguageDetectionEnabled       34MiB |
++-----------------------------------------------------------------------------+
+</code></pre></div></p>
+<p>This display is difficult to read.  But the key item is in the second column under the <code>Memory-Usage</code> area:</p>
+<p><code>184MiB / 11018MiB</code></p>
+<p>This says that we are using 184 megabytes and have 11.018 Gigabyte to use to run our machine learning tasks.</p>
+<h3 id="nvidia-gpu-monitor">NVIDIA GPU Monitor<a class="headerlink" href="#nvidia-gpu-monitor" title="Permanent link">&para;</a></h3>
 <p>The runs similar to the UNIX top command, but for the GPU.</p>
 <div class="highlight"><pre><span></span><code>watch<span class="w"> </span>-d<span class="w"> </span>-n<span class="w"> </span><span class="m">0</span>.5<span class="w"> </span>nvidia-smi
 </code></pre></div>
-<h2 id="nvidia-gpu-utilization">NVIDIA GPU Utilization<a class="headerlink" href="#nvidia-gpu-utilization" title="Permanent link">&para;</a></h2>
+<h3 id="nvidia-gpu-utilization">NVIDIA GPU Utilization<a class="headerlink" href="#nvidia-gpu-utilization" title="Permanent link">&para;</a></h3>
 <p>This shows the GPU running at 42% utilization during the training process.</p>
 <div class="highlight"><pre><span></span><code>nvidia-smi
 Mon Jul 26 20:24:16 2021       
