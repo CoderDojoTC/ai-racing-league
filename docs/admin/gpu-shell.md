@@ -124,12 +124,77 @@ sudo usermod -aG sudo donkey
 ### Change the Hostname
 
 ```sh
-sudo vi hostname
+sudo vi /etc/hostname
 ```
 
 Change the name to "gpu-server2" or a similar name.
 
-## NVIDIA GPU Monitor
+## GPU Commands
+
+### Display Type
+
+```sh
+sudo lshw -class display
+```
+
+Response:
+```
+       description: VGA compatible controller
+       product: TU102 [GeForce RTX 2080 Ti Rev. A]
+       vendor: NVIDIA Corporation
+       physical id: 0
+       bus info: pci@0000:09:00.0
+       version: a1
+       width: 64 bits
+       clock: 33MHz
+       capabilities: pm msi pciexpress vga_controller bus_master cap_list rom
+       configuration: driver=nvidia latency=0
+       resources: irq:101 memory:f6000000-f6ffffff memory:e0000000-efffffff memory:f0000000-f1ffffff ioport:e000(size=128) memory:c0000-dffff
+```
+
+Note that line 2 lists the product of TU102 [GeForce RTX 2080 Ti Rev. A] but it does not indicate how
+much RAM we have on the defice.
+
+### NVIDIA GPU Configuration
+
+```sh
+nvidia-smi
+```
+
+Result:
+```
+Mon Sep 25 14:17:46 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.91.03    Driver Version: 460.91.03    CUDA Version: 11.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GeForce RTX 208...  Off  | 00000000:09:00.0 Off |                  N/A |
+| 40%   32C    P8    18W / 260W |    184MiB / 11018MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A      1026      G   /usr/lib/xorg/Xorg                 35MiB |
+|    0   N/A  N/A      2315      G   /usr/lib/xorg/Xorg                 90MiB |
+|    0   N/A  N/A      2509      G   /usr/bin/gnome-shell               10MiB |
+|    0   N/A  N/A      4118      G   ...eLanguageDetectionEnabled       34MiB |
++-----------------------------------------------------------------------------+
+```
+
+This display is difficult to read.  But the key item is in the second column under the ```Memory-Usage``` area:
+
+```184MiB / 11018MiB```
+
+This says that we are using 184 megabytes and have 11.018 Gigabyte to use to run our machine learning tasks.
+
+### NVIDIA GPU Monitor
 
 The runs similar to the UNIX top command, but for the GPU.
 
@@ -137,7 +202,7 @@ The runs similar to the UNIX top command, but for the GPU.
 watch -d -n 0.5 nvidia-smi
 ```
 
-## NVIDIA GPU Utilization
+### NVIDIA GPU Utilization
 
 This shows the GPU running at 42% utilization during the training process.
 
