@@ -1,4 +1,4 @@
-# Sample Six Week Curriculum
+# Sample Six-Week Curriculum
 
 This is a sample suggested curriculum for a six week AI Racing League summer school project.  The students would all meet together for two hours, once a week.  There are then homework assignments. The students don't need any prior experience.
 
