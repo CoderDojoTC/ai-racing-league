@@ -30,7 +30,7 @@ nav:
       - GPU Commands: quizzes/gpu-commands.md
     - Proposal Generator:
       - Introduction: proposal-generator/index.md
-      - Sample Proposal: proposal.md
+      - Sample Proposal: proposal-generator/proposal.md
   - Setup:
     - Track Options: setup/track-options.md
     - Battery Options: setup/battery-options.md
