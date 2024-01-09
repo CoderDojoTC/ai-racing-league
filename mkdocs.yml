@@ -28,6 +28,9 @@ nav:
       - Generating Block Diagrams: lesson-plans/car-structure/index.md
     - Sample Quizzes:
       - GPU Commands: quizzes/gpu-commands.md
+    - Proposal Generator:
+      - Introduction: proposal-generator/index.md
+      - Sample Proposal: proposal.md
   - Setup:
     - Track Options: setup/track-options.md
     - Battery Options: setup/battery-options.md
