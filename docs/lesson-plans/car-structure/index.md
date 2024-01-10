@@ -1,5 +1,19 @@
 # RC Car Structure
 
+## Lesson Plan Goals
+
+This lesson puts a focus on getting students familiar with the parts of the Donkey Car including:
+
+1. RC Car Chassis
+2. RC Car Motor
+3. RC Car Battery
+4. RC Car Steering Servos
+5. PWM Card
+6. Raspberry Pi
+7. Raspberry Pi Power Supply
+8. Raspberry Pi Battery
+9. Raspberry Pi Camera
+
 ![RC Car Block Diagram](./../../img/rc-car-block-diagram.png)
 
 ## Using GPTChat To Help Generate Block Diagrams

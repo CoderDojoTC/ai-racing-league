@@ -10,20 +10,27 @@ nav:
     - Curriculum Overview: curriculum.md
     - Sample Six Week Course: six-week-curriculum.md
     - Sample Collage Project: college-project.md
-    - Computer Vision Labs:
-      - Introduction: lesson-plans/computer-vision/index.md
-      - Open Computer Vision: lesson-plans/computer-vision/open-cv.md
-      - Face Filters: lesson-plans/computer-vision/face-filters.md
-    - Jupyter Notebooks: lesson-plans/jupyter-notebooks/index.md
-    - Car Data Analysis:
-      - Introduction: lesson-plans/data-analysis/index.md
-      - Intro Part 2: lesson-plans/data-analysis/01-intro.md
-      - Listing Files: lesson-plans/data-analysis/02-listing-files.md
-      - Viewing Images: lesson-plans/data-analysis/03-viewing-images.md
-      - Viewing Catalog Files: lesson-plans/data-analysis/04-viewing-catalog-files.md
-      - Catalog Statistics: lesson-plans/data-analysis/05-catalog-statistics.md
-      - Cleaning Datasets: lesson-plans/data-analysis/06-cleaning-datasets.md
-      - Data Distributions: data-analysis/06-data-distributions.md
+    - Lesson Plans:
+      - Introduction: lesson-plans/index.md
+      - GitHub: lesson-plans/github/index.md
+      - Car Structure: lesson-plans/car-structure/index.md
+      - Software Structure: lesson-plans/software-structure.md
+      - Calibration: lesson-plans/calibration/index.md
+      - Computer Vision Labs:
+        - Introduction: lesson-plans/computer-vision/index.md
+        - Open Computer Vision: lesson-plans/computer-vision/open-cv.md
+        - Face Filters: lesson-plans/computer-vision/face-filters.md
+      - Jupyter Notebooks: lesson-plans/jupyter-notebooks/index.md
+      - Car Data Analysis:
+        - Introduction: lesson-plans/data-analysis/index.md
+        - Intro Part 2: lesson-plans/data-analysis/01-intro.md
+        - Listing Files: lesson-plans/data-analysis/02-listing-files.md
+        - Viewing Images: lesson-plans/data-analysis/03-viewing-images.md
+        - Viewing Catalog Files: lesson-plans/data-analysis/04-viewing-catalog-files.md
+        - Catalog Statistics: lesson-plans/data-analysis/05-catalog-statistics.md
+        - Cleaning Datasets: lesson-plans/data-analysis/06-cleaning-datasets.md
+        - Data Distributions: data-analysis/06-data-distributions.md
+      - Object Detection: lessons/object-detection/index.md
     - Generative AI:
       - Generating Block Diagrams: lesson-plans/car-structure/index.md
     - Sample Quizzes:
