@@ -13,6 +13,7 @@ This lesson puts a focus on getting students familiar with the parts of the Donk
 7. Raspberry Pi Power Supply
 8. Raspberry Pi Battery
 9. Raspberry Pi Camera
+10. The F710 Joystick
 
 ![RC Car Block Diagram](./../../img/rc-car-block-diagram.png)
 

@@ -45,14 +45,50 @@ The first module is a baseline to get all students up to speed using our develop
 
 ### Module 2: Calibration
 
+[Calibration](./calibration/index.md)
+
 ### Module 3: Gathering Data
+
+[Gathering Data](./gathering-data/index.md)
 
 ### Module 4: Building a Model
 
+1. Transferring data to the GPU
+2. Command to build a model file
+3. Transferring model back to the Donkey Car
+
+[Building a Model](./building-a-model/index.md)
+
 ### Module 5: Using a Model for Automatic Drive
+
+[Driving with a Model](./driving-with-a-model/index.md)
 
 ### Module 6: Analyzing Data
 
+1. Data metrics
+2. Viewing sample images
+3. Viewing throttle and angle predictions for an image
+
+[Analyzing Data](./data-analysis/index.md)
+
 ### Module 7: Tuning Performance
 
-### Module 8: Advanced Topics
+[Tuning Performance](./tuning-performance/index.md)
+
+### Module 8: Managing the GPU
+
+[GPU Configuration](./gpu-config/index.md)
+
+### Module 9: Purchasing a GPU
+
+Using on-line tools to configure a low-cost GPU PC tuned for machine learning training workloads.
+
+### Module 10: Advanced Topics
+
+#### 3D Printing a chassis
+
+#### Adding a LIDAR
+
+#### Lowering the Cost of the Donkey Car
+
+Differential drives

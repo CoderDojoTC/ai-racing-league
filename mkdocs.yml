@@ -16,6 +16,7 @@ nav:
       - Car Structure: lesson-plans/car-structure/index.md
       - Software Structure: lesson-plans/software-structure.md
       - Calibration: lesson-plans/calibration/index.md
+      - GPU Configuration: lesson-plans/gpu-config/index.md
       - Computer Vision Labs:
         - Introduction: lesson-plans/computer-vision/index.md
         - Open Computer Vision: lesson-plans/computer-vision/open-cv.md
