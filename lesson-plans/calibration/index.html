@@ -591,6 +591,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Calibration
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -600,6 +611,39 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#calibration-command" class="md-nav__link">
+    Calibration Command
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenges-setting-reverse" class="md-nav__link">
+    Challenges Setting Reverse
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2354,6 +2398,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#calibration-command" class="md-nav__link">
+    Calibration Command
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenges-setting-reverse" class="md-nav__link">
+    Challenges Setting Reverse
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2371,6 +2437,70 @@
 
 
 <h1 id="donkey-car-calibration">Donkey Car Calibration<a class="headerlink" href="#donkey-car-calibration" title="Permanent link">&para;</a></h1>
+<p>We will be following the same steps
+outlined in the <a href="https://docs.donkeycar.com/guide/calibrate/">Donkey Car Docs</a></p>
+<p>To run calibration, connect a HDMI connector to the Pi and then boot.  You will also need a keyboard and mouse
+and a charged 7.2-volt battery for calibration.</p>
+<p>We would like students to work in pairs
+to calibrate each car and record the
+configuration parameters in a Python
+configuration file.  Some of the cars are in
+a plastic bin and these bins sometimes have
+a card with the right configuration parameters on them.</p>
+<p>Our cars all use the PCA9685 I2C to PWM chip.
+We don't have the Donkey Car Hats.</p>
+<p>Make sure the power LED on the PCA9685 is on.
+If not, check the power and ground connections
+to the Raspberry Pi SBC 40-pin connector.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Some of the sample configuration files use an older format.  Make sure you ONLY modify the configuration files that are generated with the
+command that generates the <code>mycar</code> files.</p>
+</div>
+<h2 id="calibration-command">Calibration Command<a class="headerlink" href="#calibration-command" title="Permanent link">&para;</a></h2>
+<p>There is an on/off switch on the Electronic Speed Control.  Make sure it is in the ON position and
+that the motor battery is charged and connected.</p>
+<p>When you turn the switch on you MUST hear the confirmation beep.  If you don't hear it you
+need to check the battery and connections.</p>
+<div class="highlight"><pre><span></span><code>donkey<span class="w"> </span>calibrate<span class="w"> </span>--channel<span class="w"> </span>&lt;your_steering_channel&gt;<span class="w"> </span>--bus<span class="o">=</span>&lt;your_i2c_bus&gt;
+</code></pre></div>
+<p>By default, our cars use channel 0 for the throttle and channel 1 for the steering.  If the team that
+assembled the car switched the connections on the PWM card these may be reversed.</p>
+<p>The key parameters to record are:</p>
+<p><strong>Throttle:</strong></p>
+<ol>
+<li>Max forward speed: THROTTLE_FORWARD_PWM</li>
+<li>Neutral: THROTTLE_STOPPED_PWM</li>
+<li>Max reverse speed: THROTTLE_REVERSE_PWM</li>
+</ol>
+<p><strong>Steering</strong></p>
+<ol>
+<li>Max left turn: STEERING_LEFT_PWM </li>
+<li>Max right turn: STEERING_RIGHT_PWM </li>
+</ol>
+<p>These should be placed online in a file that
+is associated with each car name or number.</p>
+<h2 id="challenges-setting-reverse">Challenges Setting Reverse<a class="headerlink" href="#challenges-setting-reverse" title="Permanent link">&para;</a></h2>
+<p>Reverse on RC cars is a little tricky because the ESC must receive the following sequence:</p>
+<ol>
+<li>a reverse pulse</li>
+<li>a zero pulse</li>
+<li>a reverse pulse to start to go backwards. </li>
+</ol>
+<p>To calibrate a reverse PWM setting...</p>
+<p>Use the same technique as above </p>
+<ol>
+<li>Set the PWM setting to your zero throttle.</li>
+<li>Enter the reverse value, then the zero throttle value, then the reverse value again.</li>
+<li>Enter values +/- 10 of the reverse value to find a reasonable reverse speed. Remember this reverse PWM value.</li>
+</ol>
+<p>Here is the basic command to edit the config file:</p>
+<p><div class="highlight"><pre><span></span><code>nano<span class="w"> </span>~/mycar/myconfig.py
+</code></pre></div>
+The Raspberry Pi's also have Python IDEs installed so you can also use those editors.</p>
+<ul>
+<li><a href="https://github.com/CoderDojoTC/ai-racing-league/blob/master/configs/dk4-config.py">Sample V1 Configuration File</a></li>
+</ul>
 
 
   
