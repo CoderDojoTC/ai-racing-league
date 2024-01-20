@@ -10,12 +10,19 @@ nav:
     - Curriculum Overview: curriculum.md
     - Sample Six Week Course: six-week-curriculum.md
     - Sample Collage Project: college-project.md
-    - Lesson Plans:
+    - Lesson Plans:      
       - Introduction: lesson-plans/index.md
       - GitHub: lesson-plans/github/index.md
       - Car Structure: lesson-plans/car-structure/index.md
+      - Software Setup: lesson-plans/software-setup/index.md
       - Software Structure: lesson-plans/software-structure.md
       - Calibration: lesson-plans/calibration/index.md
+      - Using the Joystick: lesson-plans/car-structure/joystick.md
+      - Gathering Image Data: lesson-plans/gathering-data/index.md
+      - Building a Model: lesson-plans/building-a-model/index.md
+      - Driving With a Model: lesson-plans/driving-with-a-model/index.md
+      - Object Detection: lesson-plans/object-detection/index.md
+      - Tuning Performance: lesson-plans/tuning-performance/index.md
       - GPU Configuration: lesson-plans/gpu-config/index.md
       - Computer Vision Labs:
         - Introduction: lesson-plans/computer-vision/index.md
@@ -74,12 +81,21 @@ nav:
      - MSP Car 1: training-logs/msp-car-1.md
      - MSP Car 2: training-logs/msp-car-2.md
      - Dan's Basement: training-logs/dans-basement.md
+  - Events:
+      - Introduction: events/index.md
+
+      - Computer Vision Table: events/computer-vision.md
+      - GPU Table: events/gpu.md
+      - Hardware: events/hardware.md
+      - events/jupyter-notebooks.md
+      - events/unix.md
   - Misc:
     - Hackathon: hackathon.md
     - Demos: demos.md
     - Media: media.md
     - Command Line Tips: command-line-tips.md
     - Google Analytics: google-analytics.md
+    - GPU Shell Command Quiz: quizzes/gpu-shell-commands.md
   - Presentations:
     - List of Presentations: presentations.md
     - Welcome: slides/Welcome-to-the-ARL.pptx
