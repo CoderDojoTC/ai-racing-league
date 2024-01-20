@@ -36,9 +36,9 @@ https://pcpartpicker.com/list/mrFYPX
 
 Here are the key reference documents:
 
-* [NVIDIA Driver Installation](admin/nvidia-driver-install.md)
-* [NVIDIA GPU Shell Commands](admin/gpu-shell.md)
-* [NVIDIA TensorFlow GPU Config](admin/tensorflow-gpu-install.md)
+* [NVIDIA Driver Installation](../../admin/nvidia-driver-install.md)
+* [NVIDIA GPU Shell Commands](../../admin/gpu-shell.md)
+* [NVIDIA TensorFlow GPU Config](../../admin/tensorflow-gpu-install.md)
 
 ## Optional Section
 

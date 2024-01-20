@@ -15,13 +15,11 @@ nav:
       - GitHub: lesson-plans/github/index.md
       - Car Structure: lesson-plans/car-structure/index.md
       - Software Setup: lesson-plans/software-setup/index.md
-      - Software Structure: lesson-plans/software-structure.md
       - Calibration: lesson-plans/calibration/index.md
       - Using the Joystick: lesson-plans/car-structure/joystick.md
       - Gathering Image Data: lesson-plans/gathering-data/index.md
       - Building a Model: lesson-plans/building-a-model/index.md
       - Driving With a Model: lesson-plans/driving-with-a-model/index.md
-      - Object Detection: lesson-plans/object-detection/index.md
       - Tuning Performance: lesson-plans/tuning-performance/index.md
       - GPU Configuration: lesson-plans/gpu-config/index.md
       - Computer Vision Labs:
@@ -75,9 +73,9 @@ nav:
     - Introduction: admin/01-intro.md
     - Custom Club Images: admin/02-sd-image.md
     - Purchasing Guide: admin/03-purchasing-guide.md
+    - Tools: admin/04-tools.md
     - Cars Parts List: admin/car-parts-list.md
     - GPU Parts List: admin/gpu-parts.md
-    - Car Box Checklist: admin/car-box-checklist.md
     - Joystick: admin/joystick.md
   - Training Logs:
      - MSP Car 1: training-logs/msp-car-1.md
