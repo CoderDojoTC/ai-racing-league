@@ -2,13 +2,13 @@
 
 The AI Racing League is a fun way to learn the concepts behind artificial intelligence!  We learn AI by teaching small remote-controlled (RC) cars to drive around a track autonomously.  The cars use a low-cost Raspberry Pi computer (or NVIDIA Nano) with a camera.  Students drive around the track and gather a set of images to "train" a neural network that can be used to automatically steer the car.
 
-In addition to teaching machine learning, this course also teaches concepts like Python programming, computer vision, data science and generative AI. Our curriculum is inspired by the [DonkeyCar](glossary#donkey-car) and the [CoderDojo](glossary#coder-dojo) mentoring system.  We feature a wide variety of lesson plans from the 5th grade up to college-level participants.
+In addition to teaching machine learning, this course also teaches concepts like Python programming, computer vision, data science and generative AI. Our curriculum is inspired by the [DonkeyCar](./glossary.md#donkey-car) and the [CoderDojo](./glossary.md#coder-dojo) mentoring system.  We feature a wide variety of lesson plans from the 5th grade up to college-level participants.
 
 Our secret sauce is to combine the right hardware, software, mentors and a flexible learning curriculum to create fun events that students love to participate in.
 
 ## DIY Robocars and Donkey Cars
 
-[DIY Robocars](http://diyrobocars.com) and the [Donkey Cars](https://www.donkeycar.com/) are the communities that inspired the AI Racing League.  We are grateful for all they have done and their willingness to share their knowledge through open source software.
+[DIY Robocars](http://diyrobocars.com) and the [Donkey Cars](https://www.donkeycar.com/) are the communities that inspired the AI Racing League.  We are grateful for all they have done and their willingness to share their knowledge through open-source software.
 
 ## Coder Dojo
 
