@@ -55,7 +55,9 @@ nav:
     - Car Checklist: admin/car-box-checklist/index.html
     - Building ARL Image: setup/building-arl-image.md
     - Calibrate: setup/calibrate.md
+    - Donkey Command: setup/donkey-cmd.md
     - Setup Conda on Pi: setup/conda-pi-setup.md
+    - Pre-Drive Checklist: setup/pre-drive-checklist.md
     - PWM Setup: setup/pwm-board.md
     - Raspberry Pi Parts: setup/raspberry-pi-parts.md
     - Nano Docker: setup/nano-docker.md
@@ -83,12 +85,12 @@ nav:
      - Dan's Basement: training-logs/dans-basement.md
   - Events:
       - Introduction: events/index.md
-
-      - Computer Vision Table: events/computer-vision.md
-      - GPU Table: events/gpu.md
       - Hardware: events/hardware.md
-      - events/jupyter-notebooks.md
-      - events/unix.md
+      - Unix Shell Table: events/unix.md
+      - Python Table: events/python.md
+      - Computer Vision Table: events/computer-vision.md
+      - Jupyter Notebooks: events/jupyter-notebooks.md
+      - GPU Table: events/gpu.md
   - Misc:
     - Hackathon: hackathon.md
     - Demos: demos.md
