@@ -91,7 +91,7 @@ nav:
       - GPU Table: events/gpu.md
   - Misc:
     - Hackathon: hackathon.md
-    - Demos: demos.md
+    - Demos: demo.md
     - Media: media.md
     - Command Line Tips: command-line-tips.md
     - Google Analytics: google-analytics.md
