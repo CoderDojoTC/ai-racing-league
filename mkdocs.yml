@@ -59,6 +59,8 @@ nav:
     - Driving Your Donkey Car and Collecting Data: umn-curriculum/driving.md
     - Training: umn-curriculum/training.md
     - Autopilot: umn-curriculum/autopilot.md
+    - Appendix:
+      - Appendix: umn-curriculum/appendix/appendix.md
   - Setup:
     - Track Options: setup/track-options.md
     - Battery Options: setup/battery-options.md
