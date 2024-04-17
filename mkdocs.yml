@@ -60,7 +60,10 @@ nav:
     - Training: umn-curriculum/training.md
     - Autopilot: umn-curriculum/autopilot.md
     - Appendix:
-      - Appendix: umn-curriculum/appendix/appendix.md
+      - Developer Install: umn-curriculum/appendix/developer-install.md
+      - Trimming Data Tubs: umn-curriculum/appendix/trimming-data.md
+      - Training Configuration: umn-curriculum/appendix/training-config.md
+      - Troubleshooting: umn-curriculum/appendix/troubleshooting.md
   - Setup:
     - Track Options: setup/track-options.md
     - Battery Options: setup/battery-options.md
