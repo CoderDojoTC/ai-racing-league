@@ -13,10 +13,10 @@ There are four main components to be concerned with.
 
 ![Raspberry Pi](../img/umn/rpi.jpg)
 
-The Pi board is mounted to the top of the car, and it acts as the brain
+The Raspberry Pi 4 Model B is mounted to the top of the car, and it acts as the brain
 of the car. It is responsible for communicating between itself, the
-controller, and your devices. It also sends driving signals to the PWM,
-which we will explore next, it records data through the camera, and it’s
+controller, and your devices. It also sends driving signals to the PWM board,
+which we will explore next. It records data through the camera, and it’s
 where you will eventually upload your trained model for the car to drive
 itself!
 
@@ -24,28 +24,17 @@ itself!
 
 ![Adafruit PCA9685](../img/umn/pwm-board.jpg)
 
-The PWM is responsible for communication between the Raspberry Pi and
-the motor and servo controllers, which we will look at next. Long story
-short, it sends bursts of square waves of varying duty cycles(example
-below) which the servo and motors recognize.
+The Adafruit PCA9685 is responsible for communication between the Raspberry Pi and
+the electronic speed controller (ESC) and steering servo. The Pi communicates with the Adafruit board using a protocol called I2C. From there, the Adafruit board sends bursts of square waves with varying duty cycles (called a PWM signal) to the ESC and servo.
 
+![Donkey Car Hardware](../img/umn/hardware.png)
 ![PWM](../img/umn/pwm.jpg)
-
-That’s a bunch of technical jargon that doesn’t matter too much, as you
-don’t hardly need to do anything with it, other than connecting wires
-between it and the Pi. This will be the bulk of the hardware setup if
-these two were not already wired together, or wired together
-incorrectly. How to wire them together will be explored later.
 
 ### The Motor and Servo
 
 ![Motor and Servo](../img/umn/motor-servo.jpg)
 
-The motor and servo are very simple to understand and you should never
-have to touch these components, outside of flipping a small switch to
-turn them on. The motor spins the wheels at a rate according to what the
-PWM told it to, similar to the servo, which rotates an arm to turn the
-wheels. There are some <u>known issues</u> with these components.
+The motor and servo are fairly simple components which shouldn't need much setup (remember to flip the "ON" switch on the ESC!). The motor spins the wheels at a rate according to the PWM signal it received. The steering servo does the same, and rotates an arm to turn the wheels.
 
 ### The Power System
 
