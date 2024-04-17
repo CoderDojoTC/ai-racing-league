@@ -32,22 +32,30 @@
 3.  **Launch the Raspberry Pi Imager**: Open the application you just
     installed.
 
+![Raspberry Pi Imager](../img/umn/pios2.png)
+![Raspberry Pi Imager](../img/umn/pios3.png)
+
 4.  **Select Your Device**: In the app, you'll see a "Choose OS" option.
     Since we're focusing on Raspberry Pi 4 and 5, ensure you select an
     option compatible with these models.
+
+![Raspberry Pi Imager](../img/umn/pios4.png)
+![Raspberry Pi Imager](../img/umn/pios5.png)
 
 5.  **Pick the Operating System**: Choose "Raspberry Pi OS (64-bit)"
     from the list. As of this writing, the latest version is called
     "Raspberry Pi Bookworm."
 
-<img src="media/image14.png" style="width:6.5in;height:3.47222in" />
+![Raspberry Pi Imager](../img/umn/pios6.png)
 
-1.  **Choose the SD Card**: Under "Storage," select the Micro SD card
+6.  **Choose the SD Card**: Under "Storage," select the Micro SD card
     you inserted.
 
-<img src="media/image19.png" style="width:3.28119in;height:4.33854in" /><img src="media/image20.png" style="width:3.05007in;height:4.10938in" />
+![Raspberry Pi Imager](../img/umn/pios7.png)
+![Raspberry Pi Imager](../img/umn/pios8.png)
+![Raspberry Pi Imager](../img/umn/pios9.png)
 
-1.  **Edit Settings Before Installation**:
+7.  **Edit Settings Before Installation**:
 
     -   Click "Next," then "Edit Settings."
 
@@ -70,7 +78,10 @@
     -   **SSH**: Enable SSH and select "Use password authentication."
         SSH allows you to connect to your Raspberry Pi remotely.
 
-2.  **Write and Eject**: Save your settings, confirm to write the OS to
+![Raspberry Pi Imager](../img/umn/pios10.png)
+![Raspberry Pi Imager](../img/umn/pios11.png)
+
+8.  **Write and Eject**: Save your settings, confirm to write the OS to
     your SD card, and then safely eject the SD card from your computer.
 
 ## Step 2: Booting Up Your Raspberry Pi
@@ -184,14 +195,6 @@ typing commands. Here’s how to get your Raspberry Pi updated:
         ```
 
 ## Step 5: Configuring Your Raspberry Pi
-
-<img src="media/image23.png" style="width:6.5in;height:3.47222in" />
-
-<img src="media/image24.png" style="width:6.5in;height:2.30556in" />
-
-<img src="media/image25.png" style="width:6.5in;height:2.26389in" />
-
-<img src="media/image26.png" style="width:6.5in;height:2.27778in" />
 
 1.  Use the command `sudo raspi-config` to open the configuration
     utility.
