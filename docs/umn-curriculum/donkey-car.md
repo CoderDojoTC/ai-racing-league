@@ -3,7 +3,7 @@ familiarize you with each of the components of the pre-assembled car and
 how they interact, and prepare you for the minimal hardware setup that
 may be required.
 
-<img src="media/image1.jpg" style="width:6.5in;height:5.48167in" />
+![Full Car](../img/umn/full-car.jpg)
 
 ## Donkey Car Parts
 
@@ -11,8 +11,8 @@ There are four main components to be concerned with.
 
 ### The Raspberry Pi
 
-**  
-**<img src="media/image2.jpg" style="width:6.5in;height:4.29in" />  
+![Raspberry Pi](../img/umn/rpi.jpg)
+
 The Pi board is mounted to the top of the car, and it acts as the brain
 of the car. It is responsible for communicating between itself, the
 controller, and your devices. It also sends driving signals to the PWM,
@@ -22,12 +22,14 @@ itself!
 
 ### The Pulse Width Modulation Board (PWM)
 
-**  
-**<img src="media/image3.jpg" style="width:6.5in;height:3.6725in" />  
+![Adafruit PCA9685](../img/umn/pwm-board.jpg)
+
 The PWM is responsible for communication between the Raspberry Pi and
 the motor and servo controllers, which we will look at next. Long story
 short, it sends bursts of square waves of varying duty cycles(example
 below) which the servo and motors recognize.
+
+![PWM](../img/umn/pwm.jpg)
 
 That’s a bunch of technical jargon that doesn’t matter too much, as you
 don’t hardly need to do anything with it, other than connecting wires
@@ -37,7 +39,7 @@ incorrectly. How to wire them together will be explored later.
 
 ### The Motor and Servo
 
-<img src="media/image4.jpg" style="width:6.5in;height:2.71917in" />
+![Motor and Servo](../img/umn/motor-servo.jpg)
 
 The motor and servo are very simple to understand and you should never
 have to touch these components, outside of flipping a small switch to
@@ -51,13 +53,13 @@ Two separate batteries are powering different items in the car. Since
 the Raspberry Pi operates at 5 volts, a small portable battery affixed
 to the top of the car powers it via a USB Type C cable.
 
-<img src="media/image1.jpg" style="width:6.5in;height:2.68667in" />
+![Battery](../img/umn/battery.jpg)
 
 The second battery powers the servo and motors, which operate at 7.2
 volts. This battery is plugged into the car and placed to the side in a
 small section designed for it to sit.
 
-<img src="media/image1.jpg" style="width:6.5in;height:3.62917in" />
+![Battery 2](../img/umn/battery2.jpg)
 
 **IMPORTANT NOTE:** Unlike the portable battery, it matters which way
 you plug this battery in. The red wire should connect to the red wire,
@@ -102,6 +104,8 @@ if the motor is connected to the farthest right column of pins, column
 1.  "`PWM_THROTTLE_PIN`": "`PCA9685.1:40.15`"
 
 You must also connect the GND, SDA, SCL, and V+ and lines of the PWM
+
+![Adafruit PCA9685](../img/umn/pca9685.jpg)
 
 Figure 1: PCA 9685 16-Channel Servo Driver
 

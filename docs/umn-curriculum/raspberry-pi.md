@@ -19,7 +19,7 @@
 
 ## Step 1: Installing the Raspberry Pi OS
 
-<img src="media/image7.png" style="width:6.5in;height:3.93056in" />
+![Raspberry Pi Imager](../img/umn/pios1.png)
 
 1.  **Download the Raspberry Pi Imager**: This software helps you set up
     the Raspberry Pi OS onto your SD card. You can find it by searching
