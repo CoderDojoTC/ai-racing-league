@@ -105,7 +105,7 @@ if the motor is connected to the farthest right column of pins, column
 
 You must also connect the GND, SDA, SCL, and V+ and lines of the PWM
 
-![Adafruit PCA9685](../img/umn/pca9685.jpg)
+![Adafruit PCA9685](../img/umn/pca9685.png)
 
 Figure 1: PCA 9685 16-Channel Servo Driver
 

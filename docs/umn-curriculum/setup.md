@@ -66,9 +66,7 @@ move correctly when you tell it to. Before we start, place your car on a box or 
 
 **About Your Car's Controls**:
 
-> <img src="media/image5.png" style="width:4.73438in;height:2.06174in" />
->
-> Figure 1: PCA 9685 16-Channel Servo Driver
+![Adafruit PCA9685](../img/umn/pca9685.png)
 
 Your car uses something called a PCA 9685 Servo Driver to control its
 wheels. Imagine it as the car's steering wheel and gas pedal. Normally,
@@ -77,8 +75,6 @@ output 1. If yours is different, you'll need to adjust the instructions
 accordingly.
 
 ## Step 3: Connecting A Joystick Controller to the Donkey Car
-
-<img src="media/image27.png" style="width:6.5in;height:0.98611in" />
 
 **Why use a joystick?** If you've ever played video games, you know how
 intuitive a joystick can be for controlling movement. We can apply this
@@ -91,6 +87,8 @@ that connect via a USB adapter will follow a similar setup process.
 We'll be using the Logitech F710 as our example, but if you have a
 different controller, check the Donkey Car documentation for specific
 instructions.
+
+![Joystick Config](../img/umn/config-joystick.png)
 
 ### **Getting Started with the Logitech F710 Controller**
 
@@ -142,7 +140,7 @@ instructions.
 
 ## Step 4: Calibrating Throttle and Steering
 
-<img src="media/image28.png" style="width:6.5in;height:2.31944in" />
+![Calibration Config](../img/umn/config-calibration.png)
 
 In this step, we're going to learn how to control the car's speed and
 direction. This might sound complex, but it's really about telling the

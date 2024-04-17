@@ -342,11 +342,9 @@ typing commands into the command line.
 The GUI is a visual tool that lets you interact with the computer more
 intuitively. Here’s how you can use it to train your model:
 
-<img src="media/image29.png" style="width:3.58854in;height:2.86617in" />
-
-<img src="media/image30.png" style="width:3.57448in;height:2.86139in" />
-
-<img src="media/image31.png" style="width:3.65104in;height:2.92504in" />
+![Donkey Car GUI](../img/umn/donkey-gui1.png)
+![Donkey Car GUI](../img/umn/donkey-gui2.png)
+![Donkey Car GUI](../img/umn/donkey-gui3.png)
 
 1.  **Start the Tool**:
 
