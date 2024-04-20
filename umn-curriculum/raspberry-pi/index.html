@@ -1,0 +1,3903 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../donkey-car/">
+      
+      
+        <link rel="next" href="../networking/">
+      
+      
+      <link rel="icon" href="../../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.3.2">
+    
+    
+      
+        <title>Getting Started with Raspberry Pi OS - AI Racing League</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.30068a00.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-RL4MZ0MHZ4"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-RL4MZ0MHZ4",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-RL4MZ0MHZ4",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#what-youll-need" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AI Racing League" class="md-header__button md-logo" aria-label="AI Racing League" data-md-component="logo">
+      
+  <img src="../../img/car-small.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Racing League
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Getting Started with Raspberry Pi OS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CoderDojoTC/ai-racing-league" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Link to GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI Racing League" class="md-nav__button md-logo" aria-label="AI Racing League" data-md-component="logo">
+      
+  <img src="../../img/car-small.png" alt="logo">
+
+    </a>
+    AI Racing League
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CoderDojoTC/ai-racing-league" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Link to GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About at ARL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-plan-2020/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Business Plan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contacts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contacts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Curriculum
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Curriculum
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning-strategy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Learning Strategy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../curriculum/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Curriculum Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../six-week-curriculum/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sample Six Week Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../college-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sample Collage Project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lesson Plans
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Lesson Plans
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/github/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GitHub
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/car-structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Car Structure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/software-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/calibration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Calibration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/car-structure/joystick/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using the Joystick
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/gathering-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gathering Image Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/building-a-model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Building a Model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/driving-with-a-model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Driving With a Model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/tuning-performance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tuning Performance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/gpu-config/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPU Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_12" >
+        
+          <label class="md-nav__link" for="__nav_3_5_12" id="__nav_3_5_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Computer Vision Labs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_12">
+            <span class="md-nav__icon md-icon"></span>
+            Computer Vision Labs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/computer-vision/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/computer-vision/open-cv/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open Computer Vision
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/computer-vision/face-filters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Face Filters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/jupyter-notebooks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jupyter Notebooks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_14" >
+        
+          <label class="md-nav__link" for="__nav_3_5_14" id="__nav_3_5_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Car Data Analysis
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_14">
+            <span class="md-nav__icon md-icon"></span>
+            Car Data Analysis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/data-analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/data-analysis/01-intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro Part 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/data-analysis/02-listing-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Listing Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/data-analysis/03-viewing-images/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Viewing Images
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/data-analysis/04-viewing-catalog-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Viewing Catalog Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/data-analysis/05-catalog-statistics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Catalog Statistics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/data-analysis/06-cleaning-datasets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cleaning Datasets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-analysis/06-data-distributions.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Distributions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lessons/object-detection/index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Object Detection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Generative AI
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Generative AI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson-plans/car-structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generating Block Diagrams
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sample Quizzes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Sample Quizzes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quizzes/gpu-commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPU Commands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Proposal Generator
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Proposal Generator
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proposal-generator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proposal-generator/proposal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sample Proposal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UMN Curriculum
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            UMN Curriculum
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Background
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Background
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/foundations-of-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Foundations of Artificial Intelligence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/introduction-to-nn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Neural Networks in Machine Learning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/introduction-to-os/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Operating Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/introduction-to-linux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/introduction-to-networking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Networking and Wi-Fi Hotspot Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/introduction-to-python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../donkey-car/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Familiar with Donkey Car
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Getting Started with Raspberry Pi OS
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started with Raspberry Pi OS
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-youll-need" class="md-nav__link">
+    What You'll Need:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-installing-the-raspberry-pi-os" class="md-nav__link">
+    Step 1: Installing the Raspberry Pi OS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-booting-up-your-raspberry-pi" class="md-nav__link">
+    Step 2: Booting Up Your Raspberry Pi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-connecting-to-your-raspberry-pi" class="md-nav__link">
+    Step 3: Connecting to Your Raspberry Pi
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3: Connecting to Your Raspberry Pi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-direct-connection" class="md-nav__link">
+    Option 1: Direct Connection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-remote-connection-via-ssh" class="md-nav__link">
+    Option 2: Remote Connection via SSH
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-updating-your-raspberry-pi" class="md-nav__link">
+    Step 4: Updating Your Raspberry Pi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-configuring-your-raspberry-pi" class="md-nav__link">
+    Step 5: Configuring Your Raspberry Pi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-setting-up-python-environment" class="md-nav__link">
+    Step 6: Setting Up Python Environment
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 6: Setting Up Python Environment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-virtual-environment" class="md-nav__link">
+    Create a Virtual Environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-required-libraries" class="md-nav__link">
+    Install Required Libraries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-installation" class="md-nav__link">
+    Verify Installation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../networking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Networking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting Up and Calibrating Your Donkey Car
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../driving/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Driving Your Donkey Car and Collecting Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../training/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Training
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autopilot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Autopilot
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_9" >
+        
+          <label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Appendix
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            Appendix
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix/developer-install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Developer Install
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix/trimming-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trimming Data Tubs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix/training-config/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Training Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix/troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix/vsc-remote/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VS Code Remote
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Setup
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/track-options/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Track Options
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/battery-options/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Battery Options
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/microSD-write-speed/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MicroSD Options
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/camera-testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Camera Testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/gpu-options/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPU Options
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/car-box-checklist/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Car Checklist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/building-arl-image/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Building ARL Image
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/calibrate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Calibrate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/donkey-cmd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Donkey Command
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/conda-pi-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Conda on Pi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/pre-drive-checklist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre-Drive Checklist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/pwm-board/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PWM Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/raspberry-pi-parts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Raspberry Pi Parts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/nano-docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nano Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/nano-sd-image-checklist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nano SD Image Checklist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/software-install-notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software Installation Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/nano-python-upgrade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nano Upgrade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/installation-tips/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation Tips
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/clone-sd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clone an SD Card
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/tools.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    GPU Server Setup
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            GPU Server Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/nvidia-driver-install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NVIDIA Driver Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/gpu-shell/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPU Shell Commands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/tensorflow-gpu-install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tensorflow GPU Software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Team Administration
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Team Administration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/01-intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/02-sd-image/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Club Images
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/03-purchasing-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Purchasing Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/04-tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/car-parts-list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cars Parts List
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/gpu-parts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPU Parts List
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/joystick/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Joystick
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Training Logs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Training Logs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../training-logs/msp-car-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MSP Car 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../training-logs/msp-car-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MSP Car 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../training-logs/dans-basement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dan's Basement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Events
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Events
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/hardware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hardware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/unix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unix Shell Table
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python Table
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/computer-vision/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Computer Vision Table
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/jupyter-notebooks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jupyter Notebooks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/gpu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPU Table
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Misc
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Misc
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hackathon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hackathon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../demo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Demos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../media/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Media
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../command-line-tips/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Command Line Tips
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../google-analytics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Google Analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quizzes/gpu-shell-commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPU Shell Command Quiz
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Presentations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Presentations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../presentations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    List of Presentations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../slides/Welcome-to-the-ARL.pptx" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../slides/Command-Reference-Card.pptx" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Command Reference Card
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../slides/AI-Racing-League-Code-Savvy.pptx" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code Savvy Slides
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../slides/Connecting-PWM-Cards.pptx" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connecting PWM Cards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-assisted-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Assisted Learning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-youll-need" class="md-nav__link">
+    What You'll Need:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-installing-the-raspberry-pi-os" class="md-nav__link">
+    Step 1: Installing the Raspberry Pi OS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-booting-up-your-raspberry-pi" class="md-nav__link">
+    Step 2: Booting Up Your Raspberry Pi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-connecting-to-your-raspberry-pi" class="md-nav__link">
+    Step 3: Connecting to Your Raspberry Pi
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3: Connecting to Your Raspberry Pi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-direct-connection" class="md-nav__link">
+    Option 1: Direct Connection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-remote-connection-via-ssh" class="md-nav__link">
+    Option 2: Remote Connection via SSH
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-updating-your-raspberry-pi" class="md-nav__link">
+    Step 4: Updating Your Raspberry Pi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-configuring-your-raspberry-pi" class="md-nav__link">
+    Step 5: Configuring Your Raspberry Pi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-setting-up-python-environment" class="md-nav__link">
+    Step 6: Setting Up Python Environment
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 6: Setting Up Python Environment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-virtual-environment" class="md-nav__link">
+    Create a Virtual Environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-required-libraries" class="md-nav__link">
+    Install Required Libraries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-installation" class="md-nav__link">
+    Verify Installation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Getting Started with Raspberry Pi OS</h1>
+
+<h2 id="what-youll-need">What You'll Need:<a class="headerlink" href="#what-youll-need" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>A Raspberry Pi 4 or 5 device.</p>
+</li>
+<li>
+<p>A high-speed Micro SD card with a capacity of 64GB or more.</p>
+<ul>
+<li>
+<p><strong>Speed Class</strong>: Class U3 Recommended.</p>
+<ul>
+<li>
+<p>Sandisk Extreme/Extreme Pro/Extreme Plus</p>
+</li>
+<li>
+<p>Samsung Evo Plus/Evo Select</p>
+</li>
+<li>
+<p>Kingston Canvas Select Plus/Canvas Go! Plus</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Capacity</strong>: A minimum capacity of 64GB is preferred. 128GB is
+    ideal</p>
+</li>
+</ul>
+</li>
+<li>
+<p>A computer with an SD card reader or SD card to USB adapter.</p>
+</li>
+</ul>
+<h2 id="step-1-installing-the-raspberry-pi-os">Step 1: Installing the Raspberry Pi OS<a class="headerlink" href="#step-1-installing-the-raspberry-pi-os" title="Permanent link">&para;</a></h2>
+<p><img alt="Raspberry Pi Imager" src="../../img/umn/pios1.png" /></p>
+<ol>
+<li>
+<p><strong>Download the Raspberry Pi Imager</strong>: This software helps you set up
+    the Raspberry Pi OS onto your SD card. You can find it by searching
+    "Raspberry Pi Imager" online. Follow the link from the official
+    Raspberry Pi website to download and install it.</p>
+</li>
+<li>
+<p><strong>Prepare Your SD Card</strong>: Insert your Micro SD card into your
+    computer's SD card reader slot.</p>
+</li>
+<li>
+<p><strong>Launch the Raspberry Pi Imager</strong>: Open the application you just
+    installed.</p>
+</li>
+</ol>
+<p><img alt="Raspberry Pi Imager" src="../../img/umn/pios2.png" />
+<img alt="Raspberry Pi Imager" src="../../img/umn/pios3.png" /></p>
+<ol>
+<li><strong>Select Your Device</strong>: In the app, you'll see a "Choose OS" option.
+    Since we're focusing on Raspberry Pi 4 and 5, ensure you select an
+    option compatible with these models.</li>
+</ol>
+<p><img alt="Raspberry Pi Imager" src="../../img/umn/pios4.png" />
+<img alt="Raspberry Pi Imager" src="../../img/umn/pios5.png" /></p>
+<ol>
+<li><strong>Pick the Operating System</strong>: Choose "Raspberry Pi OS (64-bit)"
+    from the list. As of this writing, the latest version is called
+    "Raspberry Pi Bookworm."</li>
+</ol>
+<p><img alt="Raspberry Pi Imager" src="../../img/umn/pios6.png" /></p>
+<ol>
+<li><strong>Choose the SD Card</strong>: Under "Storage," select the Micro SD card
+    you inserted.</li>
+</ol>
+<p><img alt="Raspberry Pi Imager" src="../../img/umn/pios7.png" />
+<img alt="Raspberry Pi Imager" src="../../img/umn/pios8.png" />
+<img alt="Raspberry Pi Imager" src="../../img/umn/pios9.png" /></p>
+<ol>
+<li>
+<p><strong>Edit Settings Before Installation</strong>:</p>
+<ul>
+<li>
+<p>Click "Next," then "Edit Settings."</p>
+</li>
+<li>
+<p><strong>Hostname</strong>: This is your Raspberry Pi's name on a network,
+    helping you identify it. Create a unique name by adding your
+    initials or a group name to "donkeycar-" (e.g., "donkeycar-JD").
+    Write this name down as you'll need it later.</p>
+</li>
+<li>
+<p><strong>Username and Password</strong>: Create a username and password you'll
+    remember. Example: Username: donkeycar, Password: raspberry.
+    Note these down.</p>
+</li>
+<li>
+<p><strong>Wireless LAN</strong>: Enter your WiFi's name (SSID) and password
+    here.</p>
+</li>
+<li>
+<p><strong>Local Settings</strong>: Your time zone and keyboard layout are
+    usually set automatically, but double-check to make sure they're
+    correct.</p>
+</li>
+<li>
+<p><strong>SSH</strong>: Enable SSH and select "Use password authentication."
+    SSH allows you to connect to your Raspberry Pi remotely.</p>
+</li>
+</ul>
+</li>
+</ol>
+<p><img alt="Raspberry Pi Imager" src="../../img/umn/pios10.png" />
+<img alt="Raspberry Pi Imager" src="../../img/umn/pios11.png" /></p>
+<ol>
+<li><strong>Write and Eject</strong>: Save your settings, confirm to write the OS to
+    your SD card, and then safely eject the SD card from your computer.</li>
+</ol>
+<h2 id="step-2-booting-up-your-raspberry-pi">Step 2: Booting Up Your Raspberry Pi<a class="headerlink" href="#step-2-booting-up-your-raspberry-pi" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>Insert the Micro SD Card into Your Raspberry Pi</strong>:</p>
+<ol>
+<li>
+<p>Look for the Micro SD card slot on the Raspberry Pi. It's
+    usually on the underside of the board.</p>
+</li>
+<li>
+<p>Gently insert the Micro SD card into the slot. Make sure the
+    metal contacts on the card face downwards and towards the
+    Raspberry Pi. You should feel a slight click when it's in place.</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Powering On Your Raspberry Pi</strong>:</p>
+<ol>
+<li>
+<p>Grab a USB-C cable. This is the Raspberry Pi's power cord,
+    similar to a charger for many modern smartphones.</p>
+</li>
+<li>
+<p>Connect one end of the USB-C cable to your Raspberry Pi and the
+    other end to a power source (like a USB plug adapter or a
+    powered USB port on a computer).</p>
+</li>
+<li>
+<p>Once connected, your Raspberry Pi will start to boot up. You
+    won’t need to press any buttons to turn it on, just giving it
+    power is enough!</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="step-3-connecting-to-your-raspberry-pi">Step 3: Connecting to Your Raspberry Pi<a class="headerlink" href="#step-3-connecting-to-your-raspberry-pi" title="Permanent link">&para;</a></h2>
+<p>To interact with your Raspberry Pi, you have two main options:
+connecting through SSH (Secure Shell) for remote access or hooking it up
+directly with a monitor, keyboard, and mouse. Here's how to do both:</p>
+<h3 id="option-1-direct-connection">Option 1: Direct Connection<a class="headerlink" href="#option-1-direct-connection" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Direct Setup</strong>: Simply connect your Raspberry Pi to a monitor
+    using an HDMI cable, and plug in a USB keyboard and mouse. This
+    method is straightforward and lets you work with the Pi as if it
+    were a regular desktop computer.</li>
+</ul>
+<h3 id="option-2-remote-connection-via-ssh">Option 2: Remote Connection via SSH<a class="headerlink" href="#option-2-remote-connection-via-ssh" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>What is SSH?</strong>: SSH stands for Secure Shell. It's a secure method
+    to remotely access another computer's command line interface. This
+    is useful if you can't or don't want to connect a monitor and
+    peripherals directly to the Pi.</p>
+</li>
+<li>
+<p><strong>Setting Up SSH</strong>:</p>
+<ul>
+<li>
+<p><strong>Enable SSH on Your Raspberry Pi:</strong> This can usually be done
+    from the Raspberry Pi's configuration settings. You might need
+    to do this with a monitor and keyboard attached if you're
+    setting up the Pi for the first time.</p>
+</li>
+<li>
+<p><strong>Find Your Pi's Address</strong>: You need to know your Raspberry Pi's
+    IP address or hostname to connect to it. If you're on the same
+    network, the hostname is often raspberrypi.local, unless you've
+    changed it.</p>
+</li>
+<li>
+<p><strong>Connect from Your Computer</strong>:</p>
+<ul>
+<li>
+<p>Open the Terminal application on your computer. This is
+    Command Prompt on Windows or Terminal on macOS and Linux.</p>
+</li>
+<li>
+<p>Type the SSH command: <code>ssh username@hostname.local</code>, replacing
+    username with your Raspberry Pi's username (the default is
+    pi) and hostname with your Pi's actual hostname or IP
+    address. For example, if your username is pi and your
+    hostname hasn't been changed, you'd type <code>ssh
+    pi@raspberrypi.local</code>.
+    <div class="highlight"><span class="filename">SSH Command</span><pre><span></span><code>ssh<span class="w"> </span>username@hostname.local
+</code></pre></div></p>
+</li>
+<li>
+<p>Press Enter. The first time you connect, you'll be asked if
+    you trust the connection. Type yes, then enter your
+    Raspberry Pi's password when prompted.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="step-4-updating-your-raspberry-pi">Step 4: Updating Your Raspberry Pi<a class="headerlink" href="#step-4-updating-your-raspberry-pi" title="Permanent link">&para;</a></h2>
+<p>In this step, you're going to make sure your Raspberry Pi has the latest
+software. This is a bit like ensuring your smartphone installs the
+latest updates to run smoothly and securely. First, you'll need to
+connect your Raspberry Pi to a monitor and keyboard (or access it
+remotely if you know how). Once that's done, you'll use something called
+the command line, which is a way to interact with your Raspberry Pi by
+typing commands. Here’s how to get your Raspberry Pi updated:</p>
+<ol>
+<li>
+<p><strong>Open the Terminal</strong>: This is where you'll type your commands. It's
+    a window where you can tell your Raspberry Pi what to do without
+    using the mouse.</p>
+</li>
+<li>
+<p><strong>Type the Update Commands</strong>: You will need to type two commands
+    into the terminal. Here's what they are and what they do:</p>
+<ul>
+<li>
+<p><code>sudo apt update</code>: This command checks for updates. It's like
+    asking, "Is there anything new that I should know about?" It
+    doesn’t install the updates; it just looks for them and prepares
+    a list.
+    <div class="highlight"><span class="filename">Update Version History</span><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</code></pre></div></p>
+</li>
+<li>
+<p><code>sudo apt upgrade</code>: After checking for updates, this command
+    installs them. It’s like saying, "Okay, now that we know what’s
+    new, let’s get it installed."
+    <div class="highlight"><span class="filename">Update Packages</span><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade
+</code></pre></div></p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="step-5-configuring-your-raspberry-pi">Step 5: Configuring Your Raspberry Pi<a class="headerlink" href="#step-5-configuring-your-raspberry-pi" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Use the command <code>sudo raspi-config</code> to open the configuration
+    utility.</p>
+<div class="highlight"><span class="filename">Configure System Settings</span><pre><span></span><code>sudo<span class="w"> </span>raspi-config
+</code></pre></div>
+<ul>
+<li>
+<p><strong>System Options</strong>: In the System Options menu, you'll find
+    settings that affect the whole system. Here are a few key ones
+    you might want to adjust:</p>
+<ul>
+<li>
+<p><strong>Change Password</strong>: It's a good idea to change the default
+    password to keep your Raspberry Pi secure.</p>
+</li>
+<li>
+<p><strong>Hostname</strong>: This is your Raspberry Pi's name on a network. You
+    can change it to something unique to easily identify your
+    device.</p>
+</li>
+<li>
+<p><strong>WiFi Network</strong>: Here, you can switch the WiFi network your
+    Raspberry Pi connects to. This is useful if you're moving
+    your device to a different location or if you need to
+    connect it to a different network.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Interface Options</strong>:</p>
+<ul>
+<li>
+<p><strong>Enable VNC</strong>: Turning this on allows you to control your
+    Raspberry Pi from another computer as if you were sitting
+    right in front of it. It's like having a remote desktop.</p>
+</li>
+<li>
+<p><strong>Enable I2C</strong>: This option turns on the ability for your
+    Raspberry Pi to talk to certain other hardware pieces, like
+    a PWM (Pulse Width Modulation) chip. PWM chips are used to
+    control motors and servos, letting your projects move.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Advanced Options</strong>:</p>
+<ul>
+<li><strong>Expand Filesystem</strong>: This option makes sure that the Raspberry
+    Pi uses all the space available on the SD card. It's like
+    telling the Raspberry Pi, "Hey, feel free to stretch out and
+    use all the room you have." This is especially important if
+    you've got a larger SD card to give you plenty of space for
+    projects.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Reboot your Raspberry Pi as prompted</p>
+<ul>
+<li>After making all your changes, you'll need to restart your
+    Raspberry Pi. You might see a prompt asking you to do this. If
+    not, you can always restart it by typing <code>sudo reboot</code> into the
+    terminal. This makes sure all your settings take effect.
+    <div class="highlight"><span class="filename">Reboot Raspberry Pi</span><pre><span></span><code>sudo<span class="w"> </span>reboot
+</code></pre></div></li>
+</ul>
+</li>
+</ol>
+<h2 id="step-6-setting-up-python-environment">Step 6: Setting Up Python Environment<a class="headerlink" href="#step-6-setting-up-python-environment" title="Permanent link">&para;</a></h2>
+<p>In this step, we'll create a special workspace on your computer where
+you can write and run Python code. This workspace is known as a Virtual
+Environment. Think of it as your personal lab where you can experiment
+with Python projects without affecting the rest of your computer's
+setup.</p>
+<h3 id="create-a-virtual-environment">Create a Virtual Environment<a class="headerlink" href="#create-a-virtual-environment" title="Permanent link">&para;</a></h3>
+<p>A Virtual Environment is like a sandbox for your project. It keeps all
+the tools and materials (in our case, code and libraries) you need
+separate from other projects. This way, if one project needs a specific
+tool version, it won't clash with another project's needs.Here’s how you
+set it up:</p>
+<ol>
+<li>
+<p><strong>Open your Terminal or Command Prompt</strong>: This is where you type
+    commands to talk directly to your computer.</p>
+</li>
+<li>
+<p><strong>Create the Virtual Environment</strong>: Type the following command and
+    press Enter:</p>
+<ol>
+<li>
+<p>Create the enviroment.
+    <div class="highlight"><span class="filename">Create Virtual Enviroment</span><pre><span></span><code>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>donkey<span class="w"> </span>--system-site-packages
+</code></pre></div></p>
+</li>
+<li>
+<p>You can replace donkey with any name you like, but using donkey
+    here makes it easier to follow along with later parts of this
+    course that use a system called Conda on Linux computers.</p>
+</li>
+<li>
+<p>The <code>--system-site-packages</code> option allows this environment to
+    access some Python packages already installed on your computer
+    globally, saving space and time.</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Activate Your Environment</strong>: To start using your newly created
+    environment, you need to activate it. Type the commands below:</p>
+<div class="highlight"><span class="filename">Activate Virtual Enviroment</span><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;source ~/donkey/bin/activate&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc
+<span class="nb">source</span><span class="w"> </span>~/.bashrc
+</code></pre></div>
+<p>This tells your Terminal to always use your donkey environment
+by default, making things simpler for future projects.</p>
+</li>
+</ol>
+<h3 id="install-required-libraries">Install Required Libraries<a class="headerlink" href="#install-required-libraries" title="Permanent link">&para;</a></h3>
+<p>Before you can start building projects, you need some tools and
+materials, known in Python as libraries.</p>
+<ol>
+<li>
+<p><strong>Install System Libraries</strong>: Some Python libraries depend on
+    non-Python code. To prepare for this, install the required system
+    library by typing:</p>
+<p><div class="highlight"><span class="filename">Install Dependencies</span><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>libcap-dev
+</code></pre></div>
+Note: This command might ask for your password. It's the same one you use to log into your computer.</p>
+</li>
+<li>
+<p><strong>Install Python Packages</strong>: Now, let's get the specific Python
+    packages you'll need.</p>
+<ol>
+<li>
+<p>For most users, type:</p>
+<div class="highlight"><span class="filename">Install Donkey Car Software</span><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>donkeycar<span class="o">[</span>pi<span class="o">]</span>
+</code></pre></div>
+</li>
+<li>
+<p>For developers, there's a more detailed setup. Please see
+    Appendix 2 in our course materials.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="verify-installation">Verify Installation<a class="headerlink" href="#verify-installation" title="Permanent link">&para;</a></h3>
+<p>Let's make sure everything is set up correctly by checking if a key
+library, TensorFlow, is installed. TensorFlow is a powerful tool for
+machine learning projects. Type the following command and press Enter:</p>
+<div class="highlight"><span class="filename">Check Tensorflow Installation</span><pre><span></span><code>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import tensorflow; print(tensorflow.version)&quot;</span>
+</code></pre></div>
+<p><strong>Note</strong>: If you see a version number appear, congratulations! You're all set up and ready to dive into Python and machine learning projects.</p>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../donkey-car/" title="Getting Familiar with Donkey Car" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Getting Familiar with Donkey Car
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../networking/" title="Networking" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Networking
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          All content including images are licensed under 
+          <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons 
+            Attribution NonCommercial ShareAlike</a>
+      </div>
+      <div class="md-social">
+  
+</div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+    
+  </body>
+</html>
