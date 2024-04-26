@@ -65,6 +65,7 @@ nav:
       - Training Configuration: umn-curriculum/appendix/training-config.md
       - Troubleshooting: umn-curriculum/appendix/troubleshooting.md
       - VS Code Remote: umn-curriculum/appendix/vsc-remote.md
+    - Attribution: umn-curriculum/attribution.md
   - Setup:
     - Track Options: setup/track-options.md
     - Battery Options: setup/battery-options.md
