@@ -44,6 +44,28 @@ nav:
     - Proposal Generator:
       - Introduction: proposal-generator/index.md
       - Sample Proposal: proposal-generator/proposal.md
+  - UMN Curriculum:
+    - Background:
+      - Foundations of Artificial Intelligence: umn-curriculum/background/foundations-of-ai.md
+      - Introduction to Neural Networks in Machine Learning: umn-curriculum/background/introduction-to-nn.md
+      - Introduction to Operating Systems: umn-curriculum/background/introduction-to-os.md
+      - Introduction to Linux: umn-curriculum/background/introduction-to-linux.md
+      - Introduction to Networking and Wi-Fi Hotspot Configuration: umn-curriculum/background/introduction-to-networking.md
+      - Introduction to Python: umn-curriculum/background/introduction-to-python.md
+    - Getting Familiar with Donkey Car: umn-curriculum/donkey-car.md
+    - Getting Started with Raspberry Pi OS: umn-curriculum/raspberry-pi.md
+    - Networking: umn-curriculum/networking.md
+    - Setting Up and Calibrating Your Donkey Car: umn-curriculum/setup.md
+    - Driving Your Donkey Car and Collecting Data: umn-curriculum/driving.md
+    - Training: umn-curriculum/training.md
+    - Autopilot: umn-curriculum/autopilot.md
+    - Appendix:
+      - Developer Install: umn-curriculum/appendix/developer-install.md
+      - Trimming Data Tubs: umn-curriculum/appendix/trimming-data.md
+      - Training Configuration: umn-curriculum/appendix/training-config.md
+      - Troubleshooting: umn-curriculum/appendix/troubleshooting.md
+      - VS Code Remote: umn-curriculum/appendix/vsc-remote.md
+    - Attribution: umn-curriculum/attribution.md
   - Setup:
     - Track Options: setup/track-options.md
     - Battery Options: setup/battery-options.md
